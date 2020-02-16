@@ -3,8 +3,9 @@ module.exports = {
     title: `Legendary Creatures and Fabulous Beasts`,
     description: `An encyclopaedia of creatures originating from the folklore, legends, mythos`,
     author: `CatSkald`,
-    siteUrl: `https://catskald.github.io/`,
+    siteUrl: `https://catskald.github.io/legendary-creatures`,
   },
+  pathPrefix: "/legendary-creatures",
   plugins: [
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
