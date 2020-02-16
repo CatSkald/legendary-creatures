@@ -1,0 +1,37 @@
+.HeaderWrapper {
+  background-color: var(--main);
+
+  @media screen and (min-width: 1056px /*--screen-large*/) {
+    margin-bottom: var(--space);
+  }
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  padding: var(--space);
+  position: relative;
+
+  @media screen and (min-width: 768px /*--screen-medium*/) {
+    flex-direction: row;
+    padding: 0 var(--space);
+  }
+}
+
+.NavMenu {
+  width: 100%;
+
+  @media screen and (min-width: 768px /*--screen-medium*/) {
+    left: var(--space-sm);
+    margin-right: auto;
+    width: auto;
+  }
+}
+
+.NavLanguages {
+  margin-left: var(--space);
+}

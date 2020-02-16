@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background: var(--body-bg);
+  font-weight: 400;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1170px) {
+  font-size: 1.7rem;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--link-color);
+}
+a:hover {
+  color: var(--link-color-hover);
+}
+
+:root {
+  --almost-white: #ecf1ef;
+  --extra-light: #7c9aa6;
+  --light: #436073;
+  --main: #365359;
+  --dark: #0e261d;
+  --extra-dark: #0d0d0d;
+
+  --menu-bg: var(--dark);
+  --menu-text: var(--extra-light);
+  --menu-selection: var(--extra-light);
+
+  --card-bg: var(--light);
+  --card-text: var(--almost-white);
+
+  --preview-bg: var(--light);
+  --preview-text: var(--almost-white);
+  --preview-text-hover: var(--extra-light);
+
+  --separator: var(--main);
+  --title: var(--main);
+  --text-light: var(--light);
+
+  --link-color: var(--light);
+  --link-color-hover: var(--extra-dark);
+
+  --missing-content: red;
+
+  --body-bg: var(--almost-white);
+
+  --container-width: 1040px;
+
+  --space: 2rem;
+  --space-sm: 1rem;
+  --space-lg: 3rem;
+
+  --screen-large: 1056px; /* 11" */
+  --screen-medium: 768px; /* 8" */
+  --screen-small: 576px; /* 6" */
+}

@@ -1,0 +1,11 @@
+menuItems:
+  - name: Home
+    link: /
+  - name: Creatures
+    link: /creatures
+  - name: About
+    link: /about
+  - name: Privacy & Terms
+    link: /terms
+  - name: Contact
+    link: /contact

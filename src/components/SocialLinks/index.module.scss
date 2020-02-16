@@ -1,0 +1,14 @@
+.SocialLinksList {
+  display: flex;
+}
+
+.SocialLinksItem {
+  display: block;
+  margin-right: 1rem;
+}
+
+.SocialLinksLink {
+  display: block;
+  width: 30px;
+  color: var(--main);
+}

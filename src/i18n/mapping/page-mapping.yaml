@@ -1,0 +1,9 @@
+pageMapping:
+  - en: "/creatures"
+    ru: "/creatures"
+  - en: "/about"
+    ru: "/about"
+  - en: "/terms"
+    ru: "/terms"
+  - en: "/contact"
+    ru: "/contact"

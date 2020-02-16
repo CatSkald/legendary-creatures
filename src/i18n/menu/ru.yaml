@@ -1,0 +1,11 @@
+menuItems:
+  - name: Главная
+    link: /
+  - name: Библиотека существ
+    link: /creatures
+  - name: О проекте
+    link: /about
+  - name: Конфиденциальность и условия
+    link: /terms
+  - name: Обратная связь
+    link: /contact

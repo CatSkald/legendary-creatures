@@ -1,0 +1,23 @@
+.LanguageList {
+  display: flex;
+  position: absolute;
+  top: 4px;
+  right: var(--space-sm);
+
+  @media screen and (min-width: 768px /*--screen-medium*/) {
+    margin-left: 0;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+
+.LanguageItem {
+  margin-left: var(--space-sm);
+}
+
+.LanguageLink {
+  display: inline-block;
+  margin-right: 0.2rem;
+  font-size: 2.3rem;
+}

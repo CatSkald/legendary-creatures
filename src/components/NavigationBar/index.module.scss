@@ -1,0 +1,67 @@
+.active {
+  /* placeholder to be referenced from styles */
+}
+
+.NavigationBar {
+  display: none;
+  flex-direction: column;
+  padding: var(--space-sm);
+
+  &.active {
+    display: flex;
+  }
+
+  @media screen and (min-width: 768px /*--screen-medium*/) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.NavigationLink {
+  color: var(--menu-text);
+  text-decoration: none;
+  position: relative;
+  padding: 0 var(--space-sm);
+  margin-bottom: var(--space-sm);
+  text-align: center;
+
+  @media screen and (min-width: 768px /*--screen-medium*/) {
+    margin-right: var(--space-sm);
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1056px /*--screen-large*/) {
+    margin-right: var(--space);
+  }
+
+  @media screen and (min-width: 768px /*--screen-medium*/) {
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 4px;
+      background: var(--menu-selection);
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      opacity: 0;
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  &:hover,
+  &.active {
+    font-weight: bold;
+
+    @media screen and (min-width: 768px /*--screen-medium*/) {
+      font-weight: normal;
+    }
+
+    &:after {
+      opacity: 1;
+      bottom: -10px;
+      width: 100%;
+    }
+  }
+}

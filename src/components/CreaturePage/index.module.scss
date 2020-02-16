@@ -1,0 +1,47 @@
+.CreaturePageLink {
+  text-decoration: none;
+  display: block;
+  margin-bottom: var(--space);
+  color: var(--preview-text);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+
+  &:hover {
+    color: var(--preview-text-hover);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  @media screen and (min-width: 576px /*--screen-small*/) {
+    margin-bottom: 0;
+  }
+}
+
+.CreaturePreviewContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: var(--preview-bg);
+}
+
+.CreaturePageImage {
+  width: 100%;
+}
+
+.CreatureInfo {
+  display: flex;
+  flex-direction: column;
+  padding: calc(var(--space) * 1.5) var(--space);
+  position: relative;
+}
+
+.PageTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.PageDescription {
+  margin-top: var(--space-sm);
+}
