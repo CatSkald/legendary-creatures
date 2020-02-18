@@ -18,6 +18,7 @@ fields:
     type: field_group_list
     label: Other names
     description: "Names in the languages of origin, variations of the name, alternative names."
+    default: []
     fields:
       - name: name
         type: text
@@ -58,15 +59,15 @@ fields:
     type: tag_list
     label: Origin
     description: "One or more countries or regions where the creature is originating from."
-    config:
-      required: true
+    default: []
   - name: number
     type: select
     label: Number
     description: "According to beliefs was it a single unique creature, a rare species or a common wide-spread kind?"
+    default: ""
     config:
       source:
-        type: custom
+        type: simple
         options:
           - "common"
           - "rare"
@@ -75,6 +76,7 @@ fields:
     type: tag_list
     label: Habitat
     description: "The type of environment in which the creature usually lives."
+    default: []
   - name: image
     type: file
     label: Image
@@ -85,6 +87,7 @@ fields:
     type: text
     label: Wikipedia link
     description: "An optional link to the Wikipedia article about the creature."
+    default: ""
   - name: date
     type: datetime
     label: Date
