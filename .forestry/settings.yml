@@ -2,27 +2,27 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: "/static/admin"
-webhook_url:
-upload_dir: /static/assets/images
-public_path: /static/assets/images
-front_matter_path: ""
+webhook_url: 
+sections:
+- type: directory
+  path: creatures
+  label: Creatures (English)
+  create: documents
+  match: "*.en.md"
+  new_doc_ext: en.md
+  templates:
+  - creature.en
+upload_dir: static/assets/images
+public_path: "/static/assets/images"
+front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
-  preview_docker_image: node:10
+  preview_env:
+  - ENV=staging
   preview_output_directory: public
   install_dependencies_command: npm install
-  instant_preview_command: npm run forestry:preview
+  preview_docker_image: node:10
   mount_path: "/srv"
   working_dir: "/srv"
-  preview_env:
-    - ENV=staging
-sections:
-  - type: directory
-    path: creatures
-    label: Creatures (English)
-    create: documents
-    match: "*.en.md"
-    new_doc_ext: en.md
-    templates:
-      - creature.en
+  instant_preview_command: npm run forestry:preview
