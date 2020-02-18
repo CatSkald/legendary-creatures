@@ -16,8 +16,8 @@ fields:
       required: true
   - name: names
     type: field_group_list
-    label: "Other names"
-    description: "Names in the languages of origin variations of the name alternative names."
+    label: Other names
+    description: "Names in the languages of origin, variations of the name, alternative names."
     fields:
       - name: name
         type: text
@@ -38,7 +38,7 @@ fields:
       labelField: name
   - name: description
     type: text
-    label: "Short description"
+    label: Short description
     description: "One sentence briefly describing the creature."
     config:
       required: true
@@ -63,18 +63,21 @@ fields:
   - name: number
     type: select
     label: Number
-    description: "According to beliefs was it a single unique creature a rare species or a common wide-spread kind?"
+    description: "According to beliefs was it a single unique creature, a rare species or a common wide-spread kind?"
     config:
       source:
         type: custom
-        options: ["common", "rare", "unique"]
+        options:
+          - "common"
+          - "rare"
+          - "unique"
   - name: habitat
     type: tag_list
     label: Habitat
     description: "The type of environment in which the creature usually lives."
   - name: image
     type: file
-    label: image
+    label: Image
     description: "An optional image of the creature."
     config:
       maxSize: 10
@@ -93,3 +96,14 @@ fields:
       date_format:
       time_format:
       display_utc: false
+  - name: related
+    type: select
+    label: Related creatures
+    description: "Other creatures that have any relations to the current one."
+    config:
+      use_select: true
+      min:
+      max:
+      source:
+        type: pages
+        section: creatures-english
