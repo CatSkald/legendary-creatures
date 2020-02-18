@@ -19,21 +19,21 @@ fields:
     label: "Other names"
     description: "Names in the languages of origin variations of the name alternative names."
     fields:
-    - name: name
-      type: text
-      label: Name
-      config:
-        required: true
-    - name: plural
-      type: text
-      label: Plural
-      config:
-        required: true
-    - name: language
-      type: text
-      label: Language
-      config:
-        required: true
+      - name: name
+        type: text
+        label: Name
+        config:
+          required: true
+      - name: plural
+        type: text
+        label: Plural
+        config:
+          required: true
+      - name: language
+        type: text
+        label: Language
+        config:
+          required: true
     config:
       labelField: name
   - name: description
@@ -60,15 +60,14 @@ fields:
     description: "One or more countries or regions where the creature is originating from."
     config:
       required: true
-  - 
-    name: number
+  - name: number
     type: select
     label: Number
     description: "According to beliefs was it a single unique creature a rare species or a common wide-spread kind?"
     config:
       source:
         type: custom
-        options: ["common" "rare" "unique"]
+        options: ["common", "rare", "unique"]
   - name: habitat
     type: tag_list
     label: Habitat
