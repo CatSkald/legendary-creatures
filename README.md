@@ -10,7 +10,8 @@
 
 ### Run
 
-`gatsby develop`
+- Run website locally: `npm run develop`
+- Run CMS locally: `npm run build-serve`
 
 ### Debug
 
@@ -21,6 +22,7 @@
 
 - [Website](http://localhost:8000/)
 - [GraphQL](http://localhost:8000/___graphql)
+- [CMS](http://localhost:9000/admin/)
 
 ## Thanks
 

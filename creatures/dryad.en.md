@@ -11,7 +11,7 @@ related: []
 number: "common"
 habitat: ["forest"]
 wikipedia: "https://en.wikipedia.org/wiki/Dryad"
-image: "/assets/img/Pan_e_amadriade,_collez._farnese,_27708.jpg"
+image: "/assets/images/Pan_e_amadriade,_collez._farnese,_27708.jpg"
 date: "2020-02-02 14:50:00"
 ---
 
