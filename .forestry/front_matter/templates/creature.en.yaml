@@ -2,19 +2,95 @@
 label: Creature (English)
 hide_body: false
 fields:
+  - name: title
+    type: text
+    label: Name
+    description: "The most common name of the creature."
+    config:
+      required: true
+  - name: plural
+    type: text
+    label: Plural
+    description: "The plural form of the name."
+    config:
+      required: true
+  - name: names
+    type: field_group_list
+    label: "Other names"
+    description: "Names in the languages of origin variations of the name alternative names."
+    fields:
+    - name: name
+      type: text
+      label: Name
+      config:
+        required: true
+    - name: plural
+      type: text
+      label: Plural
+      config:
+        required: true
+    - name: language
+      type: text
+      label: Language
+      config:
+        required: true
+    config:
+      labelField: name
+  - name: description
+    type: text
+    label: "Short description"
+    description: "One sentence briefly describing the creature."
+    config:
+      required: true
+  - name: folklore
+    type: tag_list
+    label: Folklore
+    description: "A folklore the creature belongs to."
+    config:
+      required: true
+  - name: categories
+    type: tag_list
+    label: Categories
+    description: "Categories that describe the creature. Please enter as many as you see fit."
+    config:
+      required: true
+  - name: origin
+    type: tag_list
+    label: Origin
+    description: "One or more countries or regions where the creature is originating from."
+    config:
+      required: true
+  - 
+    name: number
+    type: select
+    label: Number
+    description: "According to beliefs was it a single unique creature a rare species or a common wide-spread kind?"
+    config:
+      source:
+        type: custom
+        options: ["common" "rare" "unique"]
+  - name: habitat
+    type: tag_list
+    label: Habitat
+    description: "The type of environment in which the creature usually lives."
+  - name: image
+    type: file
+    label: image
+    description: "An optional image of the creature."
+    config:
+      maxSize: 10
+  - name: wikipedia
+    type: text
+    label: Wikipedia link
+    description: "An optional link to the Wikipedia article about the creature."
   - name: date
     type: datetime
     label: Date
     description: ""
+    hidden: true
+    default: now
     config:
       required: true
       date_format:
       time_format:
       display_utc: false
-    default: now
-  - name: title
-    type: text
-    label: Title
-    description: ""
-    config:
-      required: true
