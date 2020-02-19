@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { LocaleContext } from "./Layout";
+import { LocaleContext } from "../components/Layout";
 
 function useTranslations() {
   const { locale } = React.useContext(LocaleContext);
@@ -43,6 +43,10 @@ const queryTranslations = graphql`
             Next
             Prev
             Tags
+            plural
+            Number
+            Origin
+            Habitat
           }
         }
       }

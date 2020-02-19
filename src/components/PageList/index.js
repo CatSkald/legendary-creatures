@@ -10,20 +10,14 @@ const PageList = props => {
       {props.pages.map(
         ({
           node: {
-            frontmatter: {
-              folklore,
-              date,
-              description,
-              title,
-              image,
-            },
+            frontmatter: { origin, date, description, title, image },
             fields: { slug },
           },
         }) => (
           <CreaturePage
             key={slug}
             slug={`/creatures/${slug}`}
-            category={folklore}
+            category={origin}
             date={date}
             title={title}
             description={description}

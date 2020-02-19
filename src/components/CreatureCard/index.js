@@ -1,7 +1,7 @@
 import styles from "./index.module.scss";
 
 import React from "react";
-import useTranslations from "../useTranslations";
+import useTranslations from "../../i18n/useTranslations";
 
 const CreatureCard = ({ frontmatter }) => {
   const translations = useTranslations();
@@ -11,15 +11,30 @@ const CreatureCard = ({ frontmatter }) => {
       <div className={styles.Card}>
         <table className={styles.Info}>
           <caption className={styles.Title}>
-            {frontmatter.title}
+            <span>{frontmatter.title}</span>
+            <br />
+            <span className={styles.Subtitle}>
+              <span className={styles.SubtitleDescription}>
+                {translations.plural}
+              </span>
+              {` ` + frontmatter.plural}
+            </span>
           </caption>
           <tbody>
-            <CardRow header="Plural" data={frontmatter.plural} />
-            <CardRow header="Number" data={frontmatter.number} />
-            <CardRow header="Origin" data={frontmatter.origin} />
-            <CardRow header="Habitat" data={frontmatter.habitat} />
             <CardRow
-              header="Categories"
+              header={translations.Number}
+              data={frontmatter.number}
+            />
+            <CardRow
+              header={translations.Origin}
+              data={frontmatter.origin}
+            />
+            <CardRow
+              header={translations.Habitat}
+              data={frontmatter.habitat}
+            />
+            <CardRow
+              header={translations.Categories}
               data={frontmatter.categories}
             />
           </tbody>

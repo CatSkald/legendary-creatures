@@ -45,11 +45,6 @@ fields:
     required: true
   label: Краткое описание
   description: Краткое предложение описывающее существо.
-- name: folklore
-  type: tag_list
-  default: []
-  label: Фольклор
-  description: Фольклор к которому принадлежит существо.
 - name: categories
   type: tag_list
   default: []

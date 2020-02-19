@@ -5,10 +5,8 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import LocalizedLink from "../LocalizedLink";
-import useTranslations from "../useTranslations";
 
 const CreaturePage = props => {
-  const translations = useTranslations();
   const { listImages } = useStaticQuery(
     graphql`
       query {

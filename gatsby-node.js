@@ -163,7 +163,6 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         plural: { type: "String!" },
         names: { type: "[Name!]" },
         description: { type: "String!" },
-        folklore: { type: "[String!]!" },
         categories: { type: "[String!]!" },
         origin: { type: "[String!]" },
         map: { type: "String" },
