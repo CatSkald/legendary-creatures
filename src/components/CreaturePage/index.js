@@ -2,35 +2,11 @@ import styles from "./index.module.scss";
 
 import React from "react";
 import PropTypes from "prop-types";
-import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import LocalizedLink from "../LocalizedLink";
+import { useImages } from "../../hooks/use-images";
 
 const CreaturePage = props => {
-  const { listImages } = useStaticQuery(
-    graphql`
-      query {
-        listImages: allFile(
-          filter: {
-            childImageSharp: { fluid: { originalName: { ne: null } } }
-          }
-        ) {
-          edges {
-            node {
-              childImageSharp {
-                fluid(maxWidth: 600, maxHeight: 350) {
-                  src
-                  originalName
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    `,
-  );
-
   const imagePath = props.image;
 
   const imageName = imagePath
@@ -40,9 +16,8 @@ const CreaturePage = props => {
       )
     : "cover.jpg";
 
-  const image = listImages.edges.find(
-    img => img.node.childImageSharp.fluid.originalName === imageName,
-  );
+  const images = useImages();
+  const image = images.find(img => img.originalName === imageName);
 
   return (
     <LocalizedLink
@@ -52,7 +27,7 @@ const CreaturePage = props => {
       <section className={styles.CreaturePreviewContainer}>
         <Img
           className={styles.CreaturePageImage}
-          fluid={image.node.childImageSharp.fluid}
+          fluid={image}
           alt={props.title}
         />
         <div className={styles.CreatureInfo}>
