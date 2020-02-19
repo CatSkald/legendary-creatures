@@ -12,6 +12,14 @@ sections:
   new_doc_ext: en.md
   templates:
   - creature-en
+- type: directory
+  path: creatures
+  label: Creatures (Russian)
+  create: documents
+  match: "*.ru.md"
+  new_doc_ext: ru.md
+  templates:
+  - creature-ru
 upload_dir: static/assets/images
 public_path: "/static/assets/images"
 front_matter_path: ''

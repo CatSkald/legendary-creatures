@@ -1,0 +1,115 @@
+---
+label: Creature (Russian)
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Название
+  description: Наиболее распространённое название существа.
+- name: plural
+  type: text
+  config:
+    required: true
+  label: Множественное число
+  description: Название в множественном числе.
+- name: names
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: true
+    label: Название
+  - name: plural
+    type: text
+    config:
+      required: true
+    label: Множественное число
+  - name: language
+    type: text
+    config:
+      required: true
+    label: Язык
+  config:
+    min: 
+    max: 
+    labelField: name
+  label: Другие названия
+  description: Названия на языках страны происхождения, варианты или альтернативные названия.
+- name: description
+  type: text
+  config:
+    required: true
+  label: Краткое описание
+  description: Краткое предложение описывающее существо.
+- name: folklore
+  type: tag_list
+  default: []
+  label: Фольклор
+  description: Фольклор к которому принадлежит существо.
+- name: categories
+  type: tag_list
+  default: []
+  label: Категории
+  description: Категории описывающие существо. Укажите все что подходят.
+- name: origin
+  type: tag_list
+  default: []
+  label: Происхождение
+  description: Страны или регионы откуда происходит существо.
+- name: number
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Распространённое
+    - Редкое
+    - Уникальное
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Распространения
+  description: Согласно верованиям, является ли существо единственным (уникальным), редко встречающимся или широко распространённым видом?
+- name: habitat
+  type: tag_list
+  default: []
+  label: Ареал
+  description: Тип среды в которой проживает существо.
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Изображение
+  description: Необязательное изображение существа.
+- name: wikipedia
+  type: text
+  config:
+    required: false
+  description: Необязательная ссылка на статью из Википедии о существе.
+  label: Страница из Википедии
+- name: date
+  type: datetime
+  label: Дата
+  description: Текущая дата
+  config:
+    date_format: 
+    time_format: 
+    display_utc: false
+  hidden: true
+  default: now
+- name: related
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: pages
+      section: creatures-english
+  label: Родственные существа
+  description: Другие существа, которые имеют какое-либо отношение к данному существу.
