@@ -8,7 +8,7 @@ folklore: ["Древняя Греция"]
 origin: ["Греция"]
 categories: ["нимфа", "дух"]
 related: []
-number: "распространенный"
+number: распространённое
 habitat: ["лес"]
 wikipedia: "https://ru.wikipedia.org/wiki/%D0%94%D1%80%D0%B8%D0%B0%D0%B4%D1%8B"
 image: null
