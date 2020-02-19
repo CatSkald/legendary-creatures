@@ -2,19 +2,26 @@
 title: Дриада
 plural: Дриады
 names:
-  - { name: "Δρυάς", plural: "Δρυάδες", language: "греческий" }
+- name: Δρυάς
+  plural: Δρυάδες
+  language: греческий
 description: Древесный дух
-folklore: ["Древняя Греция"]
-origin: ["Греция"]
-categories: ["нимфа", "дух"]
+folklore:
+- Древняя Греция
+origin:
+- Греция
+categories:
+- нимфа
+- дух
 related: []
-number: "распространенный"
-habitat: ["лес"]
-wikipedia: "https://ru.wikipedia.org/wiki/%D0%94%D1%80%D0%B8%D0%B0%D0%B4%D1%8B"
-image: null
-date: "2020-02-02 14:50:00"
----
+number: Распространённое
+habitat:
+- лес
+wikipedia: https://ru.wikipedia.org/wiki/%D0%94%D1%80%D0%B8%D0%B0%D0%B4%D1%8B
+image: 
+date: 2020-02-02 14:50:00
 
+---
 ## Этимология
 
 От греческого слова "δρυς" ("дрис") — "дуб".

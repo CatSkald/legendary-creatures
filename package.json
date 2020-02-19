@@ -13,8 +13,10 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "build-serve": "gatsby build && gatsby serve",
     "start": "npm run develop",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "forestry:preview": "gatsby develop -p 8080 -H 0.0.0.0",
     "prettier": "prettier --write src/**/*.{md,css,scss,yaml,yml,ts,js,jsx}",
     "lint": "eslint src/**/*.{js,jsx}"
   },
@@ -28,7 +30,6 @@
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-catch-links": "^2.1.25",
     "gatsby-plugin-manifest": "^2.2.40",
-    "gatsby-plugin-netlify-cms": "^4.1.37",
     "gatsby-plugin-offline": "^3.0.33",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.1.21",
@@ -46,7 +47,6 @@
     "gatsby-transformer-sharp": "^2.3.13",
     "gatsby-transformer-yaml": "^2.2.24",
     "lazysizes": "^5.2.0",
-    "netlify-cms-app": "^2.11.12",
     "node-sass": "^4.13.1",
     "prismjs": "^1.19.0",
     "react": "^16.12.0",

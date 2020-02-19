@@ -47,7 +47,7 @@ module.exports = {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/static/assets/img`,
+        path: `${__dirname}/static/assets/images`,
         name: `uploads`,
       },
     },
@@ -127,7 +127,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-netlify-cms`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,

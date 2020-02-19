@@ -28,6 +28,6 @@ The ultimate goal is to create an extensive archive of articles with rich search
 
 #### Folklore background
 
-Only describe creature originating from folklore, legends and tales.
+Only describe creatures originating from folklore, legends and tales.
 
 Popular culture, fiction literature, modern interpretations - all of that does not count as a good background.
