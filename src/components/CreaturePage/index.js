@@ -6,16 +6,14 @@ import Img from "gatsby-image";
 import LocalizedLink from "../LocalizedLink";
 import { useImages } from "../../hooks/use-images";
 
+const {
+  getImageNameOrDefaultCover,
+} = require("../../utils/image-helpers");
+
 const CreaturePage = props => {
   const imagePath = props.image;
 
-  const imageName = imagePath
-    ? imagePath.slice(
-        imagePath.lastIndexOf("/") + 1,
-        imagePath.length,
-      )
-    : "cover.jpg";
-
+  const imageName = getImageNameOrDefaultCover(imagePath);
   const images = useImages();
   const image = images.find(img => img.originalName === imageName);
 

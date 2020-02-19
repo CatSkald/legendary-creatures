@@ -34,6 +34,10 @@
   }
 }
 
+.CardImage {
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.2);
+}
+
 .Container {
   background: var(--body-bg);
   margin: 0 var(--space) var(--space-sm) 0;
@@ -66,6 +70,10 @@
   height: 100%;
   padding: var(--space-sm);
   box-sizing: border-box;
+
+  table {
+    margin: 0;
+  }
 
   * {
     color: var(--card-text) !important;

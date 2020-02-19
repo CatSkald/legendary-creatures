@@ -1,14 +1,29 @@
 import styles from "./index.module.scss";
 
 import React from "react";
+import Img from "gatsby-image";
 import useTranslations from "../../i18n/useTranslations";
+import { useImages } from "../../hooks/use-images";
+
+const {
+  getImageNameOrDefaultCover,
+} = require("../../utils/image-helpers");
 
 const CreatureCard = ({ frontmatter }) => {
   const translations = useTranslations();
 
+  const imageName = getImageNameOrDefaultCover(frontmatter.image);
+  const images = useImages();
+  const image = images.find(img => img.originalName === imageName);
+
   return (
     <div className={styles.Container}>
       <div className={styles.Card}>
+        <Img
+          className={styles.CardImage}
+          fluid={image}
+          alt={frontmatter.title}
+        />
         <table className={styles.Info}>
           <caption className={styles.Title}>
             <span>{frontmatter.title}</span>
