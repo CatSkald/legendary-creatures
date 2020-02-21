@@ -1,6 +1,6 @@
 import React from "react";
 import SEO from "../components/seo";
-import useTranslations from "../components/useTranslations";
+import useTranslations from "../i18n/useTranslations";
 
 const NotFound = () => {
   const { NotFound404Header, NotFound404Content } = useTranslations();

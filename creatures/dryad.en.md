@@ -6,8 +6,6 @@ names:
   plural: Δρυάδες
   language: Greek
 description: A tree spirit
-folklore:
-- Ancient Greece
 origin:
 - Greece
 categories:

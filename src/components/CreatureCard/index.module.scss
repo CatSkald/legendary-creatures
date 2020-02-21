@@ -3,8 +3,15 @@
   font-weight: bold;
   margin: 0 0 var(--space-sm) 0;
   padding: 0 0 var(--space-sm) 0;
-  -webkit-font-smoothing: antialiased;
   border-bottom: 1px solid var(--card-text);
+}
+
+.Subtitle {
+  font-size: 1.5rem;
+  .SubtitleDescription {
+    font-size: 1.1rem;
+    font-style: italic;
+  }
 }
 
 .InfoHeader {
@@ -18,13 +25,17 @@
 }
 
 .Info {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   width: 100%;
   tr,
   td,
   th {
     border: 0;
   }
+}
+
+.CardImage {
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.2);
 }
 
 .Container {
@@ -34,6 +45,7 @@
   position: relative;
   width: 300px;
   height: 400px;
+  -webkit-font-smoothing: antialiased;
   z-index: 1;
   float: left;
   word-wrap: break-word;
@@ -42,7 +54,7 @@
     float: none;
     clear: both;
     width: 80%;
-    max-width: 300px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -58,6 +70,10 @@
   height: 100%;
   padding: var(--space-sm);
   box-sizing: border-box;
+
+  table {
+    margin: 0;
+  }
 
   * {
     color: var(--card-text) !important;

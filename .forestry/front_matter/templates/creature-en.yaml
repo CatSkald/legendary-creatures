@@ -45,11 +45,6 @@ fields:
     required: true
   label: Short description
   description: One sentence briefly describing the creature.
-- name: folklore
-  type: tag_list
-  default: []
-  label: Folklore
-  description: A folklore the creature belongs to.
 - name: categories
   type: tag_list
   default: []

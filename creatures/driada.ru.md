@@ -6,8 +6,6 @@ names:
   plural: Δρυάδες
   language: греческий
 description: Древесный дух
-folklore:
-- Древняя Греция
 origin:
 - Греция
 categories:
@@ -40,10 +38,10 @@ date: 2020-02-02 14:50:00
 
 ### Типы
 
-- **Daphnaie** - a nymph of a laurel tree.
-- **Epimeliad** (plural **Epimelides**, also **Maliades**, **Meliades**) - a nymph of an apple or other fruit tree.
-- **Hamadryad** - a nymph living inside a tree.
-- **Meliae** - a nymph of an ash tree.
+- **Daphnaie** - нимфа лаврового дерева.
+- **Epimeliad** (мн.ч. **Epimelides**, также **Maliades**, **Meliades**) - нимфа яблочного или другого фруктового дерева.
+- **Hamadryad** - нимфа живущая внутри дерева.
+- **Meliae** - нимфа ясеня.
 
 ### Эволюция
 
@@ -52,7 +50,7 @@ date: 2020-02-02 14:50:00
 
 ### Similar creatures in other cultures
 
-- Кодама (Яония)
+- Кодама (Япония)
 - Querquetulanae (Рим)
 
 ### Интересные факты

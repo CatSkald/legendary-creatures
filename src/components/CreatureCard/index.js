@@ -1,25 +1,55 @@
 import styles from "./index.module.scss";
 
 import React from "react";
-import useTranslations from "../useTranslations";
+import Img from "gatsby-image";
+import useTranslations from "../../i18n/useTranslations";
+import { useImages } from "../../hooks/use-images";
+
+const {
+  getImageNameOrDefaultCover,
+} = require("../../utils/image-helpers");
 
 const CreatureCard = ({ frontmatter }) => {
   const translations = useTranslations();
 
+  const imageName = getImageNameOrDefaultCover(frontmatter.image);
+  const images = useImages();
+  const image = images.find(img => img.originalName === imageName);
+
   return (
     <div className={styles.Container}>
       <div className={styles.Card}>
+        <Img
+          className={styles.CardImage}
+          fluid={image}
+          alt={frontmatter.title}
+        />
         <table className={styles.Info}>
           <caption className={styles.Title}>
-            {frontmatter.title}
+            <span>{frontmatter.title}</span>
+            <br />
+            <span className={styles.Subtitle}>
+              <span className={styles.SubtitleDescription}>
+                {translations.plural}
+              </span>
+              {` ` + frontmatter.plural}
+            </span>
           </caption>
           <tbody>
-            <CardRow header="Plural" data={frontmatter.plural} />
-            <CardRow header="Number" data={frontmatter.number} />
-            <CardRow header="Origin" data={frontmatter.origin} />
-            <CardRow header="Habitat" data={frontmatter.habitat} />
             <CardRow
-              header="Categories"
+              header={translations.Number}
+              data={frontmatter.number}
+            />
+            <CardRow
+              header={translations.Origin}
+              data={frontmatter.origin}
+            />
+            <CardRow
+              header={translations.Habitat}
+              data={frontmatter.habitat}
+            />
+            <CardRow
+              header={translations.Categories}
               data={frontmatter.categories}
             />
           </tbody>

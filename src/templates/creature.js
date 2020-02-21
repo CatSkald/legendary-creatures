@@ -38,7 +38,6 @@ export const query = graphql`
           language
         }
         description
-        folklore
         origin
         categories
         number

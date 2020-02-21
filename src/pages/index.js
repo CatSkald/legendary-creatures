@@ -4,7 +4,7 @@ import SEO from "../components/seo";
 import TitlePage from "../components/TitlePage";
 import PageList from "../components/PageList";
 import LocalizedLink from "../components/LocalizedLink";
-import useTranslations from "../components/useTranslations";
+import useTranslations from "../i18n/useTranslations";
 
 const Index = ({ data: { allMarkdownRemark } }) => {
   const translations = useTranslations();
@@ -47,7 +47,7 @@ export const query = graphql`
           frontmatter {
             title
             description
-            folklore
+            origin
             image
             date(formatString: $dateFormat)
           }
