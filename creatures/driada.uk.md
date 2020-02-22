@@ -17,7 +17,7 @@ habitat:
 - ліс
 wikipedia: https://uk.wikipedia.org/wiki/%D0%94%D1%80%D1%96%D0%B0%D0%B4%D0%B8
 image: "/assets/images/Pan_e_amadriade,_collez._farnese,_27708.jpg"
-date: 2020-02-02 14:50:00
+date: 2020-02-02T14:50:00.000+00:00
 
 ---
 ## Етимологія
@@ -30,7 +30,7 @@ date: 2020-02-02 14:50:00
 
 ### Характер
 
-- Сором’язлива
+* Сором’язлива
 
 ### Атрибути
 
@@ -38,10 +38,10 @@ date: 2020-02-02 14:50:00
 
 ### Типи
 
-- **Daphnaie** - німфа лаврового дерева.
-- **Epimeliad** (мн. **Epimelides**, також **Maliades**, **Meliades**) - німфа яблуневого або іншого фруктового дерева.
-- **Hamadryad** - німфа, що живе всередині дерева.
-- **Meliae** - німфа ясена.
+* **Daphnaie** - німфа лаврового дерева.
+* **Epimeliad** (мн. **Epimelides**, також **Maliades**, **Meliades**) - німфа яблуневого або іншого фруктового дерева.
+* **Hamadryad** - німфа, що живе всередині дерева.
+* **Meliae** - німфа ясена.
 
 ### Еволюція
 
@@ -50,8 +50,8 @@ date: 2020-02-02 14:50:00
 
 ### Схожі істоти в інших культурах
 
-- Кодама (Японія)
-- Querquetulanae (Рим)
+* Кодама (Японія)
+* Querquetulanae (Рим)
 
 ### Цікаві факти
 
@@ -64,5 +64,7 @@ date: 2020-02-02 14:50:00
 ## Згадки
 
 ### Посилання
+
+* Зображення "Pan e amadriade" (Пан і Гамадріада) від [Sailko](https://commons.wikimedia.org/wiki/File:Pan_e_amadriade,_collez._farnese,_27708.jpg) по ліцензії [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0)
 
 ### В культурі
