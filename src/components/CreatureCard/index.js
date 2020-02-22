@@ -2,7 +2,7 @@ import styles from "./index.module.scss";
 
 import React from "react";
 import Img from "gatsby-image";
-import useTranslations from "../../i18n/useTranslations";
+import useTranslations from "../../i18n/translations/useTranslations";
 import { useImages } from "../../hooks/use-images";
 
 const {

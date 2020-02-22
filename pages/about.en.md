@@ -1,14 +1,12 @@
 ---
-title: "About"
+title: "About the project"
 description: "About the project"
 page: true
 ---
 
-## About the project
+This site is an encyclopaedia of creatures originating from the folklore, legends, mythos, tales with rich search and extensive categorisation.
 
-An encyclopaedia of creatures originating from the folklore, legends, mythos, tales with rich search and extensive categorisation.
-
-The information on our website is gathered from different sources and we cannot guarantee its accuracy or correctness. It is up to the reader to verify the information. We do try to mention the sources if possible.
+The information on our site is gathered from different sources and we cannot guarantee its accuracy or correctness. It is up to the reader to verify the information. We do try to mention the sources if possible.
 
 Please contact us if you find any errors in the articles.
 
@@ -26,8 +24,8 @@ The ultimate goal is to create an extensive archive of articles with rich search
 
 #### Quality over quantity
 
-#### Folklore background
+#### Folklore sources
 
-Only describe creatures originating from folklore, legends and tales.
+Only describe creatures originating from folklore, mythos, legends and tales.
 
-Popular culture, fiction literature, modern interpretations - all of that does not count as a good background.
+Popular culture, fiction literature, modern interpretations - we do not count all of that as a good source.

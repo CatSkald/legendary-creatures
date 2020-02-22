@@ -107,6 +107,6 @@ fields:
     max: 
     source:
       type: pages
-      section: creatures-english
+      section: creatures-russian
   label: Родственные существа
   description: Другие существа, которые имеют какое-либо отношение к данному существу.

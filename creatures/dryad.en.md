@@ -46,8 +46,8 @@ From the Greek word "δρυς" ("drys") meaning "oak".
 
 ### Evolution
 
-1. Oak tree nymphs
-2. Tree nymphs in general
+1. Oak tree nymph
+2. Tree nymph in general
 
 ### Similar creatures in other cultures
 

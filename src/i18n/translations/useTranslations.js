@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { LocaleContext } from "../components/Layout";
+import { LocaleContext } from "../../components/Layout";
 
 function useTranslations() {
   const { locale } = React.useContext(LocaleContext);
@@ -29,13 +29,11 @@ const queryTranslations = graphql`
             NotFound404Header
             NotFound404Content
             footerMoto
-            Icon
             by
             for
             fromPerson
             fromPlace
             of
-            using
             Categories
             All
             Home

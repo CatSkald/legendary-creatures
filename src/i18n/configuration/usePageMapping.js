@@ -15,15 +15,19 @@ export default usePageMapping;
 const queryPageMapping = graphql`
   query queryPageMapping {
     rawData: allFile(
-      filter: { sourceInstanceName: { eq: "pageMapping" } }
+      filter: {
+        sourceInstanceName: { eq: "i18n-configuration" }
+        name: { eq: "page-mapping" }
+      }
     ) {
       edges {
         node {
           name
-          translations: childMappingYaml {
+          translations: childConfigurationYaml {
             pageMapping {
               en
               ru
+              uk
             }
           }
         }
