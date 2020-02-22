@@ -17,7 +17,7 @@ habitat:
 - лес
 wikipedia: https://ru.wikipedia.org/wiki/%D0%94%D1%80%D0%B8%D0%B0%D0%B4%D1%8B
 image: "/assets/images/Pan_e_amadriade,_collez._farnese,_27708.jpg"
-date: 2020-02-02 14:50:00
+date: 2020-02-02T14:50:00.000+00:00
 
 ---
 ## Этимология
@@ -30,7 +30,7 @@ date: 2020-02-02 14:50:00
 
 ### Характер
 
-- Стеснительная
+* Стеснительная
 
 ### Атрибуты
 
@@ -38,10 +38,10 @@ date: 2020-02-02 14:50:00
 
 ### Типы
 
-- **Daphnaie** - нимфа лаврового дерева.
-- **Epimeliad** (мн.ч. **Epimelides**, также **Maliades**, **Meliades**) - нимфа яблочного или другого фруктового дерева.
-- **Hamadryad** - нимфа живущая внутри дерева.
-- **Meliae** - нимфа ясеня.
+* **Daphnaie** - нимфа лаврового дерева.
+* **Epimeliad** (мн.ч. **Epimelides**, также **Maliades**, **Meliades**) - нимфа яблочного или другого фруктового дерева.
+* **Hamadryad** - нимфа живущая внутри дерева.
+* **Meliae** - нимфа ясеня.
 
 ### Эволюция
 
@@ -50,8 +50,8 @@ date: 2020-02-02 14:50:00
 
 ### Похожие существа в других культурах
 
-- Кодама (Япония)
-- Querquetulanae (Рим)
+* Кодама (Япония)
+* Querquetulanae (Рим)
 
 ### Интересные факты
 
@@ -64,5 +64,7 @@ date: 2020-02-02 14:50:00
 ## Упоминания
 
 ### Ссылки
+
+* Изображение "Pan e amadriade" (Пан и Гамадриада) от [Sailko](https://commons.wikimedia.org/wiki/File:Pan_e_amadriade,_collez._farnese,_27708.jpg) по лицензии [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0)
 
 ### В культуре
