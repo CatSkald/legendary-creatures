@@ -18,13 +18,12 @@ module.exports = {
     siteLanguage: "ru",
     ogLanguage: "ru_RU",
   },
-  // uk: {
-  //   hidden: true,
-  //   path: "/uk",
-  //   locale: "uk-UA",
-  //   country: "ua",
-  //   dateFormat: "DD.MM.YYYY",
-  //   siteLanguage: "uk",
-  //   ogLanguage: "uk_UA",
-  // },
+  uk: {
+    path: "/uk",
+    locale: "uk-UA",
+    country: "ua",
+    dateFormat: "DD.MM.YYYY",
+    siteLanguage: "uk",
+    ogLanguage: "uk_UA",
+  },
 };

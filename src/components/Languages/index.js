@@ -4,7 +4,7 @@ import styles from "./index.module.scss";
 import React from "react";
 import { navigate, Link } from "gatsby";
 import { LocaleContext } from "../Layout";
-import usePageMapping from "../usePageMapping";
+import usePageMapping from "../../i18n/configuration/usePageMapping";
 
 const locales = require("../../i18n/locales");
 

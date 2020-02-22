@@ -20,6 +20,14 @@ sections:
   new_doc_ext: ru.md
   templates:
   - creature-ru
+- type: directory
+  path: creatures
+  label: Creatures (Ukrainian)
+  create: documents
+  match: "*.uk.md"
+  new_doc_ext: uk.md
+  templates:
+  - creature-uk
 upload_dir: static/assets/images
 public_path: "/static/assets/images"
 front_matter_path: ''

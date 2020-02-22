@@ -16,7 +16,7 @@ number: Распространённое
 habitat:
 - лес
 wikipedia: https://ru.wikipedia.org/wiki/%D0%94%D1%80%D0%B8%D0%B0%D0%B4%D1%8B
-image: 
+image: "/assets/images/Pan_e_amadriade,_collez._farnese,_27708.jpg"
 date: 2020-02-02 14:50:00
 
 ---
@@ -45,10 +45,10 @@ date: 2020-02-02 14:50:00
 
 ### Эволюция
 
-1. Нимфы дубов
-2. Нимфы деревьев в общем смысле
+1. Нимфа дуба
+2. Нимфа дерева в общем смысле
 
-### Similar creatures in other cultures
+### Похожие существа в других культурах
 
 - Кодама (Япония)
 - Querquetulanae (Рим)

@@ -1,0 +1,112 @@
+---
+label: Creature (Ukrainian)
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Назва
+  description: Найбільш поширена назва істоти.
+- name: plural
+  type: text
+  config:
+    required: true
+  label: Множина
+  description: Назва в множині.
+- name: names
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: true
+    label: Назва
+  - name: plural
+    type: text
+    config:
+      required: true
+    label: Множина
+  - name: language
+    type: text
+    config:
+      required: true
+    label: Мова
+  config:
+    min: 
+    max: 
+    labelField: name
+  label: Інші назви
+  description: Назви на мові регіону походження, варіанти або альтернативні
+    назви.
+- name: description
+  type: text
+  config:
+    required: true
+  label: Короткий опис
+  description: Коротке речення, що характеризує істоту
+- name: categories
+  type: tag_list
+  default: []
+  label: Категорії
+  description: Категорії, що описують істоту. Вкажіть усі, що підходять.
+- name: origin
+  type: tag_list
+  default: []
+  label: Походження
+  description: Країни або райони походження істоти.
+- name: number
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Поширене
+    - Рідкісне
+    - Унікальне
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Поширення
+  description: Згідно до вірувань, чи є істота єдиною (унікальною),
+    рідкісною, чи поширеним видом?
+- name: habitat
+  type: tag_list
+  default: []
+  label: Ареал
+  description: Тип середовища в якому зазвичай живе істота.
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Зображення
+  description: Необов’язкове зображення істоти.
+- name: wikipedia
+  type: text
+  config:
+    required: false
+  description: Необов’язкове посилання на статтю з Вікіпедії про істоту.
+  label: Сторінка з Вікіпедії
+- name: date
+  type: datetime
+  label: Дата
+  description: Поточна дата
+  config:
+    date_format: 
+    time_format: 
+    display_utc: false
+  hidden: true
+  default: now
+- name: related
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: pages
+      section: creatures-ukrainian
+  label: Пов’язані істоти
+  description: Інші істоти, які мають яке-небудь відношення до даної істоти.

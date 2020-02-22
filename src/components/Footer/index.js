@@ -2,7 +2,7 @@ import styles from "./index.module.scss";
 
 import React from "react";
 import SocialLinks from "../SocialLinks";
-import useTranslations from "../../i18n/useTranslations";
+import useTranslations from "../../i18n/translations/useTranslations";
 
 const Footer = () => {
   const translations = useTranslations();

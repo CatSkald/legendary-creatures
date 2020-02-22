@@ -61,15 +61,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/i18n/menu`,
-        name: `menu`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/i18n/mapping`,
-        name: `pageMapping`,
+        path: `${__dirname}/src/i18n/configuration`,
+        name: `i18n-configuration`,
       },
     },
     {

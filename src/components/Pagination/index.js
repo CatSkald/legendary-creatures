@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 import React from "react";
 import propTypes from "prop-types";
 import LocalizedLink from "../LocalizedLink";
-import useTranslations from "../../i18n/useTranslations";
+import useTranslations from "../../i18n/translations/useTranslations";
 
 const Pagination = props => {
   const translations = useTranslations();
