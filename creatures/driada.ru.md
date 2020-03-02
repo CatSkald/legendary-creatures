@@ -2,6 +2,9 @@
 title: Дриада
 plural: Дриады
 names:
+- name: Дриа́да
+  plural: Дриа́ды
+  language: русский
 - name: Δρυάς
   plural: Δρυάδες
   language: греческий

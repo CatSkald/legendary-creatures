@@ -112,3 +112,5 @@ fields:
       section: creatures-english
   label: Related creatures
   description: Other creatures that have any relations to the creature.
+pages:
+  - creatures/*.en.md

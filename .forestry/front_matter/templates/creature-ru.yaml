@@ -110,3 +110,5 @@ fields:
       section: creatures-russian
   label: Родственные существа
   description: Другие существа, которые имеют какое-либо отношение к данному существу.
+pages:
+  - creatures/*.ru.md

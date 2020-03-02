@@ -109,3 +109,5 @@ fields:
       section: creatures-ukrainian
   label: Пов’язані істоти
   description: Інші істоти, які мають яке-небудь відношення до даної істоти.
+pages:
+  - creatures/*.uk.md
