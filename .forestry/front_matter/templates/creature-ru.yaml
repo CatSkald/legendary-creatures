@@ -8,12 +8,6 @@ fields:
     required: true
   label: Название
   description: Наиболее распространённое название существа.
-- name: plural
-  type: text
-  config:
-    required: true
-  label: Множественное число
-  description: Название в множественном числе.
 - name: names
   type: field_group_list
   fields:

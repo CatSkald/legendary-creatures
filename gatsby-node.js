@@ -160,7 +160,6 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       name: "Frontmatter",
       fields: {
         title: { type: "String!" },
-        plural: { type: "String!" },
         names: { type: "[Name!]" },
         description: { type: "String!" },
         categories: { type: "[String!]!" },

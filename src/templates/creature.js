@@ -31,7 +31,6 @@ export const query = graphql`
     ) {
       frontmatter {
         title
-        plural
         names {
           name
           plural

@@ -8,12 +8,6 @@ fields:
     required: true
   label: Назва
   description: Найбільш поширена назва істоти.
-- name: plural
-  type: text
-  config:
-    required: true
-  label: Множина
-  description: Назва в множині.
 - name: names
   type: field_group_list
   fields:

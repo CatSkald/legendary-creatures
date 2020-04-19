@@ -8,12 +8,6 @@ fields:
     required: true
   label: Name
   description: The most common name of the creature.
-- name: plural
-  type: text
-  config:
-    required: true
-  label: Plural
-  description: The plural form of the name.
 - name: names
   type: field_group_list
   fields:

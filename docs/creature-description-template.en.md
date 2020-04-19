@@ -8,24 +8,24 @@
 
 ### Attributes
 
-## Etymology
+### Interesting facts
 
-## Taxonomy
+## Classification
 
-### Types
+### Etymology
+
+### Taxonomy
 
 ### Evolution
 
-### Similar creatures in other cultures
+### Analogues in other cultures
 
-## Relationships with humans
+## Anthropology
+
+### Relationships with humans
 
 ### Rituals
 
-## Interesting facts
+### Mentions
 
-## Mentions
-
-### References
-
-### In culture
+## References

@@ -27,13 +27,6 @@ const CreatureCard = ({ frontmatter }) => {
         <table className={styles.Info}>
           <caption className={styles.Title}>
             <span>{frontmatter.title}</span>
-            <br />
-            <span className={styles.Subtitle}>
-              <span className={styles.SubtitleDescription}>
-                {translations.plural}
-              </span>
-              {` ` + frontmatter.plural}
-            </span>
           </caption>
           <tbody>
             <CardRow
