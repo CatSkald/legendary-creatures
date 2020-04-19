@@ -1,10 +1,11 @@
 ---
 title: Dryad
 names:
-- name: Dryad
-  plural: Dryads
+- name: dryad
+  plural: dryads
   language: English
 - name: Δρυάς
+  transliteration: dryás (dryádes)
   plural: Δρυάδες
   language: Greek
 description: A tree spirit
@@ -54,7 +55,7 @@ From the Greek word "δρυς" ("drys") meaning "oak".
 
 ### Analogues in other cultures
 
-* Kodama (Japan)
+* Kodama, 木霊, こだま, 木魂, 谺 (Japan)
 * Querquetulanae (Rome)
 
 ## Anthropology

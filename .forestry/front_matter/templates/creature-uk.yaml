@@ -54,9 +54,9 @@ fields:
   config:
     required: false
     options:
-    - Поширене
-    - Рідкісне
-    - Унікальне
+    - поширене
+    - рідкісне
+    - унікальне
     source:
       type: simple
       section: 

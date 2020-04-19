@@ -16,6 +16,9 @@ fields:
     config:
       required: true
     label: Name
+  - name: transliteration
+    type: text
+    label: Transliteration
   - name: plural
     type: text
     config:

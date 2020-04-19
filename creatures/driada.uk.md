@@ -1,10 +1,11 @@
 ---
 title: Дріада
 names:
-- name: Дріа́да
-  plural: Дріа́ди
+- name: дріа́да
+  plural: дріа́ди
   language: українська
 - name: Δρυάς
+  transliteration: дріа́с (дріа́дес)
   plural: Δρυάδες
   language: грецька
 description: Дух дерева
@@ -15,7 +16,7 @@ categories:
 - дух
 - природа
 related: []
-number: Поширене
+number: поширене
 habitat:
 - ліс
 - сад
@@ -54,7 +55,7 @@ date: 2020-02-02T14:50:00.000+00:00
 
 ### Аналоги в інших культурах
 
-* Кодама (Японія)
+* Кодама, Kodama, 木霊, こだま, 木魂, 谺 (Японія)
 * Querquetulanae (Рим)
 
 ## Антропологія
