@@ -1,4 +1,3 @@
-import "flag-icon-css/css/flag-icon.css";
 import styles from "./index.module.scss";
 
 import React from "react";
@@ -63,9 +62,7 @@ const Languages = () => {
                 handleClickLanguage(e, languageProps.siteLanguage)
               }
             >
-              <span
-                className={`flag-icon flag-icon-${languageProps.country}`}
-              ></span>
+              {languageProps.language}
             </Link>
           </li>
         ))}
