@@ -3,11 +3,11 @@ import { useStaticQuery, graphql } from "gatsby";
 import { LocaleContext } from "../../components/Layout";
 
 function useTranslations() {
-  const { locale } = React.useContext(LocaleContext);
+  const { language } = React.useContext(LocaleContext);
   const { rawData } = useStaticQuery(queryTranslations);
 
   const translationsForCurrentLocale = rawData.edges
-    .filter(item => item.node.name === locale)
+    .filter(item => item.node.name === language.code)
     .map(item => item.node.translations)[0];
 
   return translationsForCurrentLocale;

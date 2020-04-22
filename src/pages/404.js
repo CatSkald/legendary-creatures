@@ -5,7 +5,7 @@ import useTranslations from "../i18n/translations/useTranslations";
 const NotFound = () => {
   const { NotFound404Header, NotFound404Content } = useTranslations();
 
-  // TODO make it work for non-en locale
+  // TODO make it work for non-en language
   return (
     <>
       <SEO title="404: Not found" />

@@ -7,8 +7,8 @@ import Footer from "../Footer";
 
 const LocaleContext = React.createContext();
 
-const Layout = ({ children, pageContext: { locale } }) => (
-  <LocaleContext.Provider value={{ locale }}>
+const Layout = ({ children, pageContext: { language } }) => (
+  <LocaleContext.Provider value={{ language }}>
     <div className={styles.Wrapper}>
       <Header />
       <section className={styles.SiteContent} role="main">

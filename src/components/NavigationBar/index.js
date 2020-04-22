@@ -6,9 +6,9 @@ import LocalizedLink from "../LocalizedLink";
 import { LocaleContext } from "../Layout";
 
 const NavigationBar = ({ isActive, handleToggleMenu }) => {
-  const { locale } = React.useContext(LocaleContext);
+  const { language } = React.useContext(LocaleContext);
   const { rawData } = useStaticQuery(queryMenu);
-  const localeFileExtension = "." + locale;
+  const localeFileExtension = "." + language.code;
   const menuItemsForCurrentLocale = rawData.edges
     .filter(
       item =>

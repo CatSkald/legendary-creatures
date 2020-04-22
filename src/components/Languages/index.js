@@ -5,10 +5,10 @@ import { navigate, Link } from "gatsby";
 import { LocaleContext } from "../Layout";
 import usePageMapping from "../../i18n/configuration/usePageMapping";
 
-const locales = require("../../i18n/locales");
+const languages = require("../../i18n/languages");
 
 const Languages = () => {
-  const { locale } = React.useContext(LocaleContext);
+  const { language } = React.useContext(LocaleContext);
   const pageMapping = usePageMapping();
 
   function handleClickLanguage(e, lang) {
@@ -17,7 +17,7 @@ const Languages = () => {
     if (isBrowser)
       window.localStorage.setItem("preferredLanguage", lang);
 
-    if (locale === lang) {
+    if (language.code === lang) {
       e.preventDefault();
       return;
     }
@@ -39,30 +39,25 @@ const Languages = () => {
 
     e.preventDefault();
 
-    return locales[lang].default
+    return languages[lang].default
       ? navigate(`/${mappedUrl[lang]}`)
       : navigate(`/${lang}/${mappedUrl[lang]}`);
   }
 
   return (
     <ul className={styles.LanguageList}>
-      {Object.entries(locales)
+      {Object.entries(languages)
         .filter(([language, languageProps]) => !languageProps.hidden)
         .map(([language, languageProps]) => (
-          <li
-            className={styles.LanguageItem}
-            key={languageProps.locale}
-          >
+          <li className={styles.LanguageItem} key={language}>
             <Link
               className={styles.LanguageLink}
-              key={languageProps.locale}
+              key={language}
               to={languageProps.default ? "/" : languageProps.path}
-              hrefLang={languageProps.siteLanguage}
-              onClick={e =>
-                handleClickLanguage(e, languageProps.siteLanguage)
-              }
+              hrefLang={language}
+              onClick={e => handleClickLanguage(e, language)}
             >
-              {languageProps.language}
+              {language}
             </Link>
           </li>
         ))}
