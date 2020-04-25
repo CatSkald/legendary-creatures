@@ -110,9 +110,11 @@ html {
   font-size: 62.5%;
 }
 
-body {
+body,
+.body {
   box-sizing: border-box;
   background: var(--body);
+  color: var(--body-text);
   font-weight: 400;
   font-family: "Open Sans", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -145,6 +147,10 @@ table {
   border-spacing: 0;
 }
 
+iframe {
+  background: var(--external-content);
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -153,9 +159,10 @@ img {
 
 a {
   color: var(--link);
-}
-a:hover {
-  color: var(--link-hover);
+
+  &:hover {
+    color: var(--link-hover);
+  }
 }
 
 :root {
@@ -174,23 +181,12 @@ a:hover {
 
   --missing-content: red;
 
-  //color palette
-  --almost-white: #ecf1ef;
-  --black: black;
-  --main: #365359;
-  --extra-light: #7c9aa6;
-  --light: #436073;
-  --dark: #0e261d;
-
-  //theme
-  --body: var(--almost-white);
-  --body-text: var(--black);
-  --link: var(--light);
-  --link-hover: var(--dark);
-  --menu: var(--main);
-  --menu-text: var(--extra-light);
-  --menu-hover: var(--almost-white);
-  --card: var(--light);
-  --card-text: var(--almost-white);
-  --card-hover: var(--extra-light);
+  //overridden by the selected theme
+  --color-background: #ecf1ef;
+  --color-text: black;
+  --color-feature: #365359;
+  --color-feature-secondary: #436073;
+  --color-feature-contrast: #7c9aa6;
+  --color-feature-accent: #0e261d;
+  --external-content: #ecf1ef;
 }

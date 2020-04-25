@@ -1,0 +1,25 @@
+.theme-light {
+  //color palette
+  --color-background: #ecf1ef;
+  --color-text: black;
+  --color-feature: #365359;
+  --color-feature-secondary: #436073;
+  --color-feature-contrast: #7c9aa6;
+  --color-feature-accent: #0e261d;
+  --external-content: #ecf1ef;
+
+  --background-shadow: rgba(0, 0, 0, 0.2);
+  --menu-shadow: rgba(255, 255, 255, 0.2);
+
+  //theme
+  --body: var(--color-background);
+  --body-text: var(--color-text);
+  --link: var(--color-feature-secondary);
+  --link-hover: var(--color-feature-accent);
+  --menu: var(--color-feature);
+  --menu-text: var(--color-feature-contrast);
+  --menu-hover: var(--color-background);
+  --card: var(--color-feature-secondary);
+  --card-text: var(--color-background);
+  --card-hover: var(--color-feature-contrast);
+}

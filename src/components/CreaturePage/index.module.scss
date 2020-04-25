@@ -3,12 +3,12 @@
   display: block;
   margin-bottom: var(--space);
   color: var(--card-text);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px 0 var(--background-shadow);
   transition: 0.3s;
 
   &:hover {
     color: var(--card-hover);
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 8px 0 var(--background-shadow);
   }
 
   @media screen and (min-width: 576px /*--screen-small*/) {

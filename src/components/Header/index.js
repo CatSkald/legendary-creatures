@@ -6,9 +6,8 @@ import Languages from "../Languages";
 import NavigationBarButtons from "../NavigationBarButtons";
 import HamburgerButton from "../HamburgerButton";
 
-const Header = () => {
+const Header = ({ isDarkColorTheme, handleToggleColorTheme }) => {
   const [isMenuActive, toggleMenu] = useState(false);
-  const [isDarkColorTheme, switchColorTheme] = useState(false);
   const [
     isLanguageSelectionActive,
     toggleLanguageSelection,
@@ -17,10 +16,6 @@ const Header = () => {
   function handleToggleMenu() {
     toggleLanguageSelection(false);
     toggleMenu(!isMenuActive);
-  }
-
-  function handleToggleColorTheme() {
-    switchColorTheme(!isDarkColorTheme);
   }
 
   function handleToggleLanguageSelection() {

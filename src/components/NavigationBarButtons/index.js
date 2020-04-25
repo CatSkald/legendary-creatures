@@ -32,7 +32,7 @@ const NavigationBarButtons = ({
           className={styles.ColorTheme}
           onClick={() => handleToggleColorTheme()}
         >
-          {`${isDarkColorTheme ? "🌣" : "☽"}`}
+          {`${isDarkColorTheme ? "☽" : "🌣"}`}
         </span>
       </li>
     </ul>

@@ -35,7 +35,7 @@
 }
 
 .CardImage {
-  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px 1px var(--menu-shadow);
 }
 
 .Container {
@@ -63,7 +63,7 @@
 .Card {
   background: var(--card);
   border-radius: 5px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px 0 var(--background-shadow);
   transition: 0.3s;
   display: block;
   width: 100%;
@@ -81,6 +81,6 @@
   }
 
   &:hover {
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 8px 0 var(--background-shadow);
   }
 }
