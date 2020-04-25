@@ -24,8 +24,16 @@ const Languages = ({ isActive, handleLanguageSelected }) => {
       return;
     }
 
+    var selectedLanguage = languages[lang];
+    if (!selectedLanguage) return;
+
+    e.preventDefault();
+
     const url = window.location.pathname.split("/").pop();
-    if (!url) return;
+    if (!url) {
+      navigate(selectedLanguage.path);
+      return;
+    }
 
     const mappedUrl = pageMapping.find(item => {
       let hasUrl = false;
@@ -37,13 +45,12 @@ const Languages = ({ isActive, handleLanguageSelected }) => {
       return hasUrl;
     });
 
-    if (!mappedUrl) return;
+    if (!mappedUrl) {
+      navigate(selectedLanguage.path);
+      return;
+    }
 
-    e.preventDefault();
-
-    return languages[lang].default
-      ? navigate(`/${mappedUrl[lang]}`)
-      : navigate(`/${lang}/${mappedUrl[lang]}`);
+    return navigate(`${languages[lang].path}/${mappedUrl[lang]}`);
   }
 
   return (
@@ -61,7 +68,7 @@ const Languages = ({ isActive, handleLanguageSelected }) => {
                 language.code === lang ? styles.active : ""
               }`}
               key={lang}
-              to={languageProps.default ? "/" : languageProps.path}
+              to={languageProps.path}
               hrefLang={lang}
               onClick={e => handleClickLanguage(e, lang)}
             >

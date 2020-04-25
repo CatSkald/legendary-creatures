@@ -5,7 +5,7 @@ module.exports = {
     default: true,
     name: "English",
     code: "en",
-    path: "/en",
+    path: "",
     dateFormat: "DD/MM/YYYY",
   },
   ru: {

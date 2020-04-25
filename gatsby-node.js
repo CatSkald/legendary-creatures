@@ -9,9 +9,7 @@ exports.onCreatePage = ({ page, actions }) => {
   deletePage(page);
 
   Object.entries(languages).map(([lang, langProps]) => {
-    const localizedPath = langProps.default
-      ? page.path
-      : langProps.path + page.path;
+    const localizedPath = langProps.path + page.path;
 
     return createPage({
       ...page, // original page
@@ -127,10 +125,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const listSize = countOfCreaturePages[lang] || 0;
     const pageCount = Math.ceil(listSize / itemsPerPage);
 
-    // Use the values defined in "languages" to construct the path
-    const localizedPath = langProps.default
-      ? "/creatures"
-      : langProps.path + "/creatures";
+    const localizedPath = langProps.path + "/creatures";
 
     return Array.from({ length: pageCount }).forEach((_, index) => {
       createPage({
