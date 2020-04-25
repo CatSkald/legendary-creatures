@@ -1,7 +1,9 @@
 import styles from "./index.module.scss";
 
 import React from "react";
+import { navigate, Link } from "gatsby";
 import Img from "gatsby-image";
+import { LocaleContext } from "../Layout";
 import useTranslations from "../../i18n/translations/useTranslations";
 import { useImages } from "../../hooks/use-images";
 
@@ -30,19 +32,19 @@ const CreatureCard = ({ frontmatter }) => {
           </caption>
           <tbody>
             <CardRow
-              header={translations.Number}
+              tag={translations.Number}
               data={frontmatter.number}
             />
             <CardRow
-              header={translations.Origin}
+              tag={translations.Origin}
               data={frontmatter.origin}
             />
             <CardRow
-              header={translations.Habitat}
+              tag={translations.Habitat}
               data={frontmatter.habitat}
             />
             <CardRow
-              header={translations.Categories}
+              tag={translations.Categories}
               data={frontmatter.categories}
             />
           </tbody>
@@ -53,13 +55,50 @@ const CreatureCard = ({ frontmatter }) => {
 };
 
 const CardRow = props => {
+  const { language } = React.useContext(LocaleContext);
+  var data = Array.isArray(props.data) ? props.data : [props.data];
+
+  function getTagSearchUrl() {
+    return `${language.path}/tags/${props.tag}`;
+  }
+
+  function getTagValueSearchUrl(value) {
+    return `${getTagSearchUrl()}/${value}`;
+  }
+
+  function handleClickTag() {
+    return navigate(getTagSearchUrl());
+  }
+
+  function handleClickTagValue(value) {
+    return navigate(getTagValueSearchUrl(value));
+  }
+
   return (
     <tr>
-      <th className={styles.InfoHeader}>{props.header}</th>
+      <th className={styles.InfoHeader}>
+        <Link
+          key={props.tag}
+          to={getTagSearchUrl()}
+          hrefLang={language.code}
+          onClick={handleClickTag}
+        >
+          {props.tag}
+        </Link>
+      </th>
       <td className={styles.InfoRow}>
-        {Array.isArray(props.data)
-          ? props.data.join(", ")
-          : props.data}
+        {data.map((value, index) => (
+          <>
+            <Link
+              key={props.tag + index.toString()}
+              to={getTagValueSearchUrl(value)}
+              hrefLang={language.code}
+              onClick={e => handleClickTagValue(value)}
+            >
+              {value}
+            </Link>
+          </>
+        ))}
       </td>
     </tr>
   );
