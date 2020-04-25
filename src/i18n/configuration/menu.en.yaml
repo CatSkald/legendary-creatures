@@ -1,3 +1,4 @@
+# use non-breaking space in titles: " "
 menuItems:
   - name: Home
     link: /
@@ -5,7 +6,7 @@ menuItems:
     link: /creatures
   - name: About
     link: /about
-  - name: Privacy & Terms
+  - name: Privacy & Terms
     link: /terms
   - name: Contact
     link: /contact

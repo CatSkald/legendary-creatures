@@ -39,14 +39,14 @@
 }
 
 .Container {
+  z-index: 1;
+  position: relative;
   background: var(--body-bg);
   margin: 0 0 var(--space) var(--space-sm);
   padding: 0 0 var(--space) var(--space-sm);
-  position: relative;
   width: 300px;
   height: 400px;
   -webkit-font-smoothing: antialiased;
-  z-index: 1;
   float: right;
   word-wrap: break-word;
 

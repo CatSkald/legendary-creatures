@@ -1,31 +1,43 @@
+.active {
+  /* placeholder to be referenced from styles */
+}
+
 .LanguageList {
-  display: flex;
-  position: absolute;
-  top: 4px;
-  right: var(--space-sm);
+  display: none;
+  flex-direction: column;
+  padding: var(--space-sm);
+  padding-bottom: 0;
+
+  &.active {
+    display: flex;
+  }
 
   @media screen and (min-width: 768px /*--screen-medium*/) {
-    margin-left: 0;
-    position: relative;
-    top: 0;
-    right: 0;
+    position: absolute;
+    z-index: 999; //no one shall be on top of menu dropdown
+    background-color: var(--menu-bg);
+    border-radius: 3px;
+    padding: var(--space-sm);
   }
 }
 
 .LanguageItem {
-  margin-left: var(--space-sm);
+  margin: var(--space-sm);
+  margin-bottom: 0;
 }
 
 .LanguageLink {
-  display: inline-block;
-  margin-right: 0.2rem;
+  position: relative;
   color: var(--menu-text);
   text-decoration: none;
 
-  :hover {
-    color: var(--extra-light);
+  &:hover,
+  &.active:hover {
+    color: var(--menu-highlight);
   }
-}
-.LanguageLink:after {
-  content: " ⤋";
+
+  &.active {
+    font-weight: bold;
+    color: var(--menu-active);
+  }
 }

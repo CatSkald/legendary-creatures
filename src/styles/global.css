@@ -166,9 +166,10 @@ a:hover {
   --dark: #0e261d;
   --extra-dark: #0d0d0d;
 
-  --menu-bg: var(--dark);
+  --menu-bg: var(--main);
   --menu-text: var(--extra-light);
-  --menu-selection: var(--extra-light);
+  --menu-active: var(--almost-white);
+  --menu-highlight: var(--almost-white);
 
   --card-bg: var(--light);
   --card-text: var(--almost-white);

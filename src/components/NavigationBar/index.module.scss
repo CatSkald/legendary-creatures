@@ -5,7 +5,7 @@
 .NavigationBar {
   display: none;
   flex-direction: column;
-  padding: var(--space-sm);
+  padding: 0 var(--space-sm);
 
   &.active {
     display: flex;
@@ -22,13 +22,13 @@
   color: var(--menu-text);
   text-decoration: none;
   position: relative;
-  padding: 0 var(--space-sm);
-  margin-bottom: var(--space-sm);
+  padding: 0;
+  margin: var(--space-sm);
+  margin-bottom: 0;
   text-align: center;
 
   @media screen and (min-width: 768px /*--screen-medium*/) {
-    margin-right: var(--space-sm);
-    margin-bottom: 0;
+    margin-bottom: var(--space-sm);
   }
 
   @media screen and (min-width: 1056px /*--screen-large*/) {
@@ -41,7 +41,7 @@
       display: inline-block;
       width: 0;
       height: 4px;
-      background: var(--menu-selection);
+      background: var(--menu-text);
       position: absolute;
       left: 0;
       bottom: -10px;
@@ -50,14 +50,22 @@
     }
   }
 
-  &:hover,
   &.active {
     font-weight: bold;
+    color: var(--menu-active);
 
     @media screen and (min-width: 768px /*--screen-medium*/) {
-      font-weight: normal;
+      color: var(--menu-text);
     }
+  }
 
+  &:hover,
+  &.active:hover {
+    color: var(--menu-highlight);
+  }
+
+  &:hover,
+  &.active {
     &:after {
       opacity: 1;
       bottom: -10px;

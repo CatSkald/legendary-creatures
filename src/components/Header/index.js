@@ -3,13 +3,34 @@ import styles from "./index.module.scss";
 import React, { useState } from "react";
 import NavigationBar from "../NavigationBar";
 import Languages from "../Languages";
+import NavigationBarButtons from "../NavigationBarButtons";
 import HamburgerButton from "../HamburgerButton";
 
 const Header = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [isMenuActive, toggleMenu] = useState(false);
+  const [isDarkColorTheme, switchColorTheme] = useState(false);
+  const [
+    isLanguageSelectionActive,
+    toggleLanguageSelection,
+  ] = useState(false);
 
   function handleToggleMenu() {
-    setToggleMenu(!toggleMenu);
+    toggleLanguageSelection(false);
+    toggleMenu(!isMenuActive);
+  }
+
+  function handleToggleColorTheme() {
+    switchColorTheme(!isDarkColorTheme);
+  }
+
+  function handleToggleLanguageSelection() {
+    toggleMenu(false);
+    toggleLanguageSelection(!isLanguageSelectionActive);
+  }
+
+  function handleLanguageSelected() {
+    toggleMenu(false);
+    toggleLanguageSelection(false);
   }
 
   return (
@@ -17,16 +38,27 @@ const Header = () => {
       <div className={styles.Container}>
         <HamburgerButton
           handleClick={handleToggleMenu}
-          isActive={toggleMenu}
+          isActive={isMenuActive}
         />
         <div className={styles.NavMenu}>
           <NavigationBar
-            isActive={toggleMenu}
+            isActive={isMenuActive}
             handleToggleMenu={handleToggleMenu}
           />
         </div>
         <div className={styles.NavLanguages}>
-          <Languages />
+          <NavigationBarButtons
+            isDarkColorTheme={isDarkColorTheme}
+            handleToggleColorTheme={handleToggleColorTheme}
+            isLanguageSelectionActive={isLanguageSelectionActive}
+            handleToggleLanguageSelection={
+              handleToggleLanguageSelection
+            }
+          />
+          <Languages
+            isActive={isLanguageSelectionActive}
+            handleLanguageSelected={handleLanguageSelected}
+          />
         </div>
       </div>
     </div>

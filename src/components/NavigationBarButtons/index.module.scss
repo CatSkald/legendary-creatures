@@ -1,0 +1,45 @@
+.active {
+  /* placeholder to be referenced from styles */
+}
+
+.ButtonList {
+  display: flex;
+  right: var(--space-sm);
+
+  @media screen and (min-width: 768px /*--screen-medium*/) {
+    margin-left: 0;
+    position: relative;
+    right: 0;
+  }
+}
+
+.Button {
+  margin-left: var(--space-sm);
+  display: inline-block;
+  color: var(--menu-text);
+  text-decoration: none;
+  min-width: 16px;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--menu-active);
+  }
+
+  @media screen and (max-width: 768px /*--screen-medium*/) {
+    font-size: 18px;
+  }
+}
+
+.Language {
+  &:after {
+    content: " ⤋"; //non-breaking space
+  }
+
+  &.active:after {
+    content: " ⤊"; //non-breaking space
+  }
+}
+
+.ColorTheme {
+  font-weight: bold;
+}

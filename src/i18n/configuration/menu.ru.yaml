@@ -1,11 +1,12 @@
+# use non-breaking space in titles: " "
 menuItems:
   - name: Главная
     link: /
-  - name: Библиотека существ
+  - name: Библиотека существ
     link: /creatures
-  - name: О проекте
+  - name: О проекте
     link: /about
-  - name: Конфиденциальность и условия
+  - name: Конфиденциальность и условия
     link: /terms
-  - name: Обратная связь
+  - name: Обратная связь
     link: /contact

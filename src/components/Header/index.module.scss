@@ -1,5 +1,5 @@
 .HeaderWrapper {
-  background-color: var(--main);
+  background-color: var(--menu-bg);
 
   @media screen and (min-width: 1056px /*--screen-large*/) {
     margin-bottom: var(--space);
@@ -9,15 +9,18 @@
 .Container {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  flex-flow: column-reverse;
+  align-items: flex-end;
+
   max-width: var(--container-width);
   margin: 0 auto;
-  justify-content: flex-start;
-  align-items: center;
-  padding: var(--space);
+  padding: var(--space-sm);
   position: relative;
 
   @media screen and (min-width: 768px /*--screen-medium*/) {
     flex-direction: row;
+    align-items: center;
     padding: 0 var(--space);
   }
 }
