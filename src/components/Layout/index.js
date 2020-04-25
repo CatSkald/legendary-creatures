@@ -1,4 +1,4 @@
-import "../../styles/global.css";
+import "../../styles/global.scss";
 import styles from "./index.module.scss";
 
 import React from "react";

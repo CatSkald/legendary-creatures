@@ -22,7 +22,7 @@
   cursor: pointer;
 
   &:hover {
-    color: var(--menu-active);
+    color: var(--menu-hover);
   }
 
   @media screen and (max-width: 768px /*--screen-medium*/) {

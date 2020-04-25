@@ -18,13 +18,13 @@
   }
 
   a {
-    color: var(--link-color);
+    color: var(--link);
     font-weight: bold;
     text-decoration: none;
     transition: 0.3s;
 
     &:hover {
-      color: var(--link-color-hover);
+      color: var(--link-hover);
     }
 
     &.absent {
@@ -78,18 +78,17 @@
 
   h1 {
     font-size: 2.8rem;
-    color: black;
   }
 
   h2 {
     font-size: 2.4rem;
-    color: black;
   }
 
   h1,
   h2 {
     padding-bottom: var(--space);
-    border-bottom: 1px solid var(--title);
+    border-bottom: 1px solid var(--menu);
+    color: var(--body-text);
   }
 
   h3 {
@@ -105,7 +104,7 @@
   }
 
   h6 {
-    color: var(--text-light);
+    color: var(--card);
     font-size: 1.4rem;
   }
 
@@ -124,7 +123,7 @@
     height: 0.25em;
     padding: 0;
     margin: 24px 0;
-    background-color: var(--separator);
+    background-color: var(--menu);
     border: 0;
   }
 
@@ -233,9 +232,9 @@
   }
 
   blockquote {
-    border-left: 4px solid #dddddd;
+    border-left: 4px solid var(--menu-text);
     padding: 0 15px;
-    color: #777777;
+    color: var(--menu);
 
     &:first-child {
       margin-top: 0;
@@ -243,49 +242,6 @@
 
     &:last-child {
       margin-bottom: 0;
-    }
-  }
-
-  table {
-    padding: 0;
-
-    tr {
-      /* There are no good use cases for tables yet */
-      /* border-top: 1px solid #cccccc;
-      background-color: white; */
-      margin: 0;
-      padding: 0;
-
-      &:nth-child(2n) {
-        background-color: #f8f8f8;
-      }
-
-      th {
-        font-weight: bold;
-        /* There are no good use cases for tables yet */
-        /* border: 1px solid #cccccc; */
-        text-align: left;
-        margin: 0;
-        padding: 6px 13px;
-      }
-
-      td {
-        /* There are no good use cases for tables yet */
-        /* border: 1px solid #cccccc; */
-        text-align: left;
-        margin: 0;
-        padding: 6px 13px;
-      }
-
-      th:first-child,
-      td:first-child {
-        margin-top: 0;
-      }
-
-      th:last-child,
-      td:last-child {
-        margin-bottom: 0;
-      }
     }
   }
 
@@ -313,7 +269,7 @@
 
       span {
         clear: both;
-        color: #333333;
+        color: var(--menu);
         display: block;
         padding: 5px 0 0;
       }
@@ -379,49 +335,5 @@
     overflow: hidden;
     margin: 13px auto 0;
     text-align: right;
-  }
-
-  code,
-  tt {
-    margin: 0 2px;
-    padding: 0 5px;
-    white-space: nowrap;
-    border: 1px solid #eaeaea;
-    background-color: #f8f8f8;
-    border-radius: 3px;
-  }
-
-  pre code {
-    margin: 0;
-    padding: 0;
-    white-space: pre;
-    border: none;
-    background: transparent;
-  }
-
-  .highlight pre {
-    background-color: #f8f8f8;
-    border: 1px solid #cccccc;
-    font-size: 13px;
-    line-height: 19px;
-    overflow: auto;
-    padding: 6px 10px;
-    border-radius: 3px;
-  }
-
-  pre {
-    background-color: #f8f8f8;
-    border: 1px solid #cccccc;
-    font-size: 13px;
-    line-height: 19px;
-    overflow: auto;
-    padding: 6px 10px;
-    border-radius: 3px;
-
-    code,
-    tt {
-      background-color: transparent;
-      border: none;
-    }
   }
 }

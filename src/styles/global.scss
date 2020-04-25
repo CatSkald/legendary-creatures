@@ -112,7 +112,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background: var(--body-bg);
+  background: var(--body);
   font-weight: 400;
   font-family: "Open Sans", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -152,50 +152,45 @@ img {
 }
 
 a {
-  color: var(--link-color);
+  color: var(--link);
 }
 a:hover {
-  color: var(--link-color-hover);
+  color: var(--link-hover);
 }
 
 :root {
-  --almost-white: #ecf1ef;
-  --extra-light: #7c9aa6;
-  --light: #436073;
-  --main: #365359;
-  --dark: #0e261d;
-  --extra-dark: #0d0d0d;
-
-  --menu-bg: var(--main);
-  --menu-text: var(--extra-light);
-  --menu-active: var(--almost-white);
-  --menu-highlight: var(--almost-white);
-
-  --card-bg: var(--light);
-  --card-text: var(--almost-white);
-
-  --preview-bg: var(--light);
-  --preview-text: var(--almost-white);
-  --preview-text-hover: var(--extra-light);
-
-  --separator: var(--main);
-  --title: var(--main);
-  --text-light: var(--light);
-
-  --link-color: var(--light);
-  --link-color-hover: var(--extra-dark);
-
-  --missing-content: red;
-
-  --body-bg: var(--almost-white);
-
+  //todo remove this
   --container-width: 1040px;
 
+  //spasing
   --space: 2rem;
   --space-sm: 1rem;
   --space-lg: 3rem;
 
+  //break points
   --screen-large: 1056px; /* 11" */
   --screen-medium: 768px; /* 8" */
   --screen-small: 576px; /* 6" */
+
+  --missing-content: red;
+
+  //color palette
+  --almost-white: #ecf1ef;
+  --black: black;
+  --main: #365359;
+  --extra-light: #7c9aa6;
+  --light: #436073;
+  --dark: #0e261d;
+
+  //theme
+  --body: var(--almost-white);
+  --body-text: var(--black);
+  --link: var(--light);
+  --link-hover: var(--dark);
+  --menu: var(--main);
+  --menu-text: var(--extra-light);
+  --menu-hover: var(--almost-white);
+  --card: var(--light);
+  --card-text: var(--almost-white);
+  --card-hover: var(--extra-light);
 }

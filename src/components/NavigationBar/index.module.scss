@@ -52,7 +52,7 @@
 
   &.active {
     font-weight: bold;
-    color: var(--menu-active);
+    color: var(--menu-hover);
 
     @media screen and (min-width: 768px /*--screen-medium*/) {
       color: var(--menu-text);
@@ -61,7 +61,7 @@
 
   &:hover,
   &.active:hover {
-    color: var(--menu-highlight);
+    color: var(--menu-hover);
   }
 
   &:hover,
