@@ -9,7 +9,7 @@
   --color-background-top: hsl(210, 6%, 20%);
 
   //on: 87%, 60%, 38%
-  --color-on-background: hsl(0, 0%, 85%);
+  --color-on-background: hsl(0, 0%, 83%);
   --color-on-background-secondary: hsl(0, 0%, 75%);
 
   --background-shadow: rgba(0, 0, 0, 0.7);
@@ -19,12 +19,13 @@
   --body: var(--color-background);
   --body-text: var(--color-on-background);
   --link: var(--color-primary);
-  --link-hover: var(--color-on-background-secondary);
+  --link-hover: var(--color-secondary);
   --menu: var(--color-background-top);
   --menu-text: var(--color-primary);
   --menu-hover: var(--color-secondary);
   --card: var(--color-background-elevated);
-  --card-text: var(--color-primary);
+  --card-text: var(--color-on-background);
+  --card-link: var(--color-primary);
   --card-hover: var(--color-secondary);
   --external-content: var(--color-primary);
 }

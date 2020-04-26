@@ -17,6 +17,10 @@
 .InfoHeader {
   font-weight: bold;
   text-align: left;
+
+  &:after {
+    content: ":";
+  }
 }
 
 .InfoRow {
@@ -84,13 +88,14 @@
   height: 100%;
   padding: var(--space-sm);
   box-sizing: border-box;
+  color: var(--card-text);
 
   table {
     margin: 0;
   }
 
   a {
-    color: var(--card-text);
+    color: var(--card-link);
     background: var(--card);
 
     &:hover {

@@ -7,9 +7,10 @@
 
   --color-background: #ecf1ef;
   --color-on-background: black;
+  --color-on-primary: var(--color-background);
 
   --background-shadow: rgba(0, 0, 0, 0.2);
-  --menu-shadow: rgba(255, 255, 255, 0.2);
+  --menu-shadow: rgba(255, 255, 255, 0.1);
 
   //theme
   --body: var(--color-background);
@@ -20,7 +21,31 @@
   --menu-text: var(--color-secondary);
   --menu-hover: var(--color-background);
   --card: var(--color-primary-variant);
-  --card-text: var(--color-background);
-  --card-hover: var(--color-secondary);
+  --card-text: var(--color-on-primary);
+  --card-link: var(--color-secondary);
+  --card-hover: var(--color-on-primary);
   --external-content: var(--color-background);
+
+  /*
+  --menu-bg: var(--color-);
+  --menu-text: var(--color-);
+  --menu-text-hover: var(--color-);
+  --menu-text-selected: var(--color-);
+  --page-preview-bg: var(--color-);
+  --page-preview-title: var(--color-);
+  --page-preview-text: var(--color-);
+  --page-preview-hover: var(--color-);
+  --content-title: var(--color-);
+  --content-text: var(--color-);
+  --content-separator: var(--color-);
+  --content-link: var(--color-);
+  --content-link-hover: var(--color-);
+  --content-link-visited: var(--color-);
+  --embedded: var(--color-);
+  --card-bg: var(--color-);
+  --card-title: var(--color-);
+  --card-text: var(--color-);
+  --card-link: var(--color-);
+  --card-link-hover: var(--color-);
+  */
 }
