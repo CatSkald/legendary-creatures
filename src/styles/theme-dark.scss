@@ -1,25 +1,30 @@
 .theme-dark {
   //color palette
-  --color-background: #0e261d;
-  --color-text: #ecf1ef;
-  --color-feature: #7c9aa6;
-  --color-feature-secondary: #436073;
-  --color-feature-contrast: #365359;
-  --color-feature-accent: #ecf1ef;
-  --external-content: #7c9aa6;
+  --color-primary: #babf1f;
+  --color-secondary: #667302;
 
-  --background-shadow: rgba(255, 255, 255, 0.1);
-  --menu-shadow: rgba(0, 0, 0, 0.2);
+  //default 7%, elevation: +8%, +12%
+  --color-background: hsl(0, 0%, 8%);
+  --color-background-elevated: hsl(210, 6%, 16%);
+  --color-background-top: hsl(210, 6%, 20%);
+
+  //on: 87%, 60%, 38%
+  --color-on-background: hsl(0, 0%, 85%);
+  --color-on-background-secondary: hsl(0, 0%, 75%);
+
+  --background-shadow: rgba(0, 0, 0, 0.7);
+  --menu-shadow: rgba(0, 0, 0, 0.7);
 
   //theme
   --body: var(--color-background);
-  --body-text: var(--color-text);
-  --link: var(--color-feature-accent);
-  --link-hover: var(--color-feature-secondary);
-  --menu: var(--color-feature);
-  --menu-text: var(--color-feature-contrast);
-  --menu-hover: var(--color-background);
-  --card: var(--color-feature-secondary);
-  --card-text: var(--color-background);
-  --card-hover: var(--color-feature-contrast);
+  --body-text: var(--color-on-background);
+  --link: var(--color-primary);
+  --link-hover: var(--color-on-background-secondary);
+  --menu: var(--color-background-top);
+  --menu-text: var(--color-primary);
+  --menu-hover: var(--color-secondary);
+  --card: var(--color-background-elevated);
+  --card-text: var(--color-primary);
+  --card-hover: var(--color-secondary);
+  --external-content: var(--color-primary);
 }

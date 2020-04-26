@@ -1,25 +1,26 @@
 .theme-light {
   //color palette
+  --color-primary: #365359;
+  --color-primary-variant: #436073;
+  --color-secondary: #7c9aa6;
+  --color-tertiary: #0e261d;
+
   --color-background: #ecf1ef;
-  --color-text: black;
-  --color-feature: #365359;
-  --color-feature-secondary: #436073;
-  --color-feature-contrast: #7c9aa6;
-  --color-feature-accent: #0e261d;
-  --external-content: #ecf1ef;
+  --color-on-background: black;
 
   --background-shadow: rgba(0, 0, 0, 0.2);
   --menu-shadow: rgba(255, 255, 255, 0.2);
 
   //theme
   --body: var(--color-background);
-  --body-text: var(--color-text);
-  --link: var(--color-feature-secondary);
-  --link-hover: var(--color-feature-accent);
-  --menu: var(--color-feature);
-  --menu-text: var(--color-feature-contrast);
+  --body-text: var(--color-on-background);
+  --link: var(--color-primary);
+  --link-hover: var(--color-secondary);
+  --menu: var(--color-primary);
+  --menu-text: var(--color-secondary);
   --menu-hover: var(--color-background);
-  --card: var(--color-feature-secondary);
+  --card: var(--color-primary-variant);
   --card-text: var(--color-background);
-  --card-hover: var(--color-feature-contrast);
+  --card-hover: var(--color-secondary);
+  --external-content: var(--color-background);
 }
