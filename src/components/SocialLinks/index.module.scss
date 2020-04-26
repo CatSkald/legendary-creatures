@@ -10,9 +10,9 @@
 .SocialLinksLink {
   display: block;
   width: 26px;
-  color: var(--link);
+  color: var(--content-link);
 
   &:hover {
-    color: var(--link-hover);
+    color: var(--content-link-hover);
   }
 }

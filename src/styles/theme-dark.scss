@@ -10,22 +10,33 @@
 
   //on: 87%, 60%, 38%
   --color-on-background: hsl(0, 0%, 83%);
-  --color-on-background-secondary: hsl(0, 0%, 75%);
+  --color-on-background-secondary: hsl(0, 0%, 65%);
 
   --background-shadow: rgba(0, 0, 0, 0.7);
   --menu-shadow: rgba(0, 0, 0, 0.7);
 
   //theme
-  --body: var(--color-background);
-  --body-text: var(--color-on-background);
-  --link: var(--color-primary);
-  --link-hover: var(--color-secondary);
-  --menu: var(--color-background-top);
+  --menu-bg: var(--color-background-top);
   --menu-text: var(--color-primary);
-  --menu-hover: var(--color-secondary);
-  --card: var(--color-background-elevated);
+  --menu-text-hover: var(--color-secondary);
+  --menu-text-selected: var(--color-primary);
+  --content-bg: var(--color-background);
+  --content-title: var(--color-on-background);
+  --content-subtitle: var(--color-on-background-secondary);
+  --content-text: var(--color-on-background);
+  --content-separator: var(--color-background-top);
+  --content-link: var(--color-primary);
+  --content-link-hover: var(--color-secondary);
+  --content-link-visited: var(--color-secondary);
+  --card-bg: var(--color-background-elevated);
+  --card-title: var(--color-on-background);
+  --card-separator: var(--color-on-background-secondary);
   --card-text: var(--color-on-background);
   --card-link: var(--color-primary);
-  --card-hover: var(--color-secondary);
-  --external-content: var(--color-primary);
+  --card-link-hover: var(--color-secondary);
+  --page-preview-bg: var(--card-bg);
+  --page-preview-title: var(--card-title);
+  --page-preview-text: var(--card-text);
+  --page-preview-hover: var(--color-primary);
+  --external-content: var(--color-on-background);
 }

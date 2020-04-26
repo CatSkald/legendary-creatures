@@ -3,15 +3,8 @@
   font-weight: bold;
   margin: 0 0 var(--space-sm) 0;
   padding: 0 0 var(--space-sm) 0;
-  border-bottom: 1px solid var(--card-text);
-}
-
-.Subtitle {
-  font-size: 1.5rem;
-  .SubtitleDescription {
-    font-size: 1.1rem;
-    font-style: italic;
-  }
+  color: var(--card-title);
+  border-bottom: 1px solid var(--card-separator);
 }
 
 .InfoHeader {
@@ -59,7 +52,7 @@
 .Container {
   z-index: 1;
   position: relative;
-  background: var(--body);
+  background: var(--content-bg);
   margin: 0 0 var(--space) var(--space-sm);
   padding: 0 0 var(--space) var(--space-sm);
   width: 300px;
@@ -79,7 +72,7 @@
 }
 
 .Card {
-  background: var(--card);
+  background: var(--card-bg);
   border-radius: 5px;
   box-shadow: 0 4px 4px 0 var(--background-shadow);
   transition: 0.3s;
@@ -94,12 +87,12 @@
     margin: 0;
   }
 
-  a {
+  a,
+  a:visited {
     color: var(--card-link);
-    background: var(--card);
 
     &:hover {
-      color: var(--card-hover);
+      color: var(--card-link-hover);
     }
   }
 

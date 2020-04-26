@@ -113,8 +113,8 @@ html {
 body,
 .body {
   box-sizing: border-box;
-  background: var(--body);
-  color: var(--body-text);
+  background: var(--content-bg);
+  color: var(--content-text);
   font-weight: 400;
   font-family: "Open Sans", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -147,10 +147,6 @@ table {
   border-spacing: 0;
 }
 
-iframe {
-  background: var(--external-content);
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -158,10 +154,10 @@ img {
 }
 
 a {
-  color: var(--link);
+  color: var(--content-link);
 
   &:hover {
-    color: var(--link-hover);
+    color: var(--content-link-hover);
   }
 }
 

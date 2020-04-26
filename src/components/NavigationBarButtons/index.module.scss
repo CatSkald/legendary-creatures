@@ -14,19 +14,18 @@
 }
 
 .Button {
-  margin-left: var(--space-sm);
   display: inline-block;
   color: var(--menu-text);
   text-decoration: none;
-  min-width: 16px;
+  min-width: 25px;
   cursor: pointer;
 
   &:hover {
-    color: var(--menu-hover);
+    color: var(--menu-text-hover);
   }
 
   @media screen and (max-width: 768px /*--screen-medium*/) {
-    font-size: 18px;
+    font-size: 105%;
   }
 }
 
@@ -42,4 +41,5 @@
 
 .ColorTheme {
   font-weight: bold;
+  padding: 0 0.3em;
 }

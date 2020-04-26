@@ -5,7 +5,6 @@
 .LanguageList {
   display: none;
   flex-direction: column;
-  padding: var(--space-sm);
   padding-bottom: 0;
 
   &.active {
@@ -15,7 +14,7 @@
   @media screen and (min-width: 768px /*--screen-medium*/) {
     position: absolute;
     z-index: 999; //no one shall be on top of menu dropdown
-    background-color: var(--menu);
+    background-color: var(--menu-bg);
     border-radius: 3px;
     padding: var(--space-sm);
   }
@@ -33,11 +32,11 @@
 
   &:hover,
   &.active:hover {
-    color: var(--menu-hover);
+    color: var(--menu-text-hover);
   }
 
   &.active {
     font-weight: bold;
-    color: var(--menu-hover);
+    color: var(--menu-text-selected);
   }
 }

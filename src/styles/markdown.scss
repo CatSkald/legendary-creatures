@@ -18,13 +18,17 @@
   }
 
   a {
-    color: var(--link);
+    color: var(--content-link);
     font-weight: bold;
     text-decoration: none;
     transition: 0.3s;
 
     &:hover {
-      color: var(--link-hover);
+      color: var(--content-link-hover);
+    }
+
+    &:visited {
+      color: var(--content-link-visited);
     }
 
     &.absent {
@@ -64,11 +68,6 @@
     &:hover a.anchor {
       text-decoration: none;
     }
-
-    tt,
-    code {
-      font-size: inherit;
-    }
   }
 
   h1:first-child + h2 {
@@ -87,12 +86,13 @@
   h1,
   h2 {
     padding-bottom: var(--space);
-    border-bottom: 1px solid var(--menu);
-    color: var(--body-text);
+    border-bottom: 1px solid var(--content-separator);
+    color: var(--content-title);
   }
 
   h3 {
     font-size: 1.8rem;
+    color: var(--content-subtitle);
   }
 
   h4 {
@@ -104,7 +104,7 @@
   }
 
   h6 {
-    color: var(--card);
+    color: var(--content-title);
     font-size: 1.4rem;
   }
 
@@ -123,7 +123,7 @@
     height: 0.25em;
     padding: 0;
     margin: 24px 0;
-    background-color: var(--menu);
+    background-color: var(--content-separator);
     border: 0;
   }
 
@@ -232,9 +232,9 @@
   }
 
   blockquote {
-    border-left: 4px solid var(--menu-text);
+    border-left: 4px solid var(--content-separator);
     padding: 0 15px;
-    color: var(--menu);
+    color: var(--content-title);
 
     &:first-child {
       margin-top: 0;
@@ -269,7 +269,7 @@
 
       span {
         clear: both;
-        color: var(--menu);
+        color: var(--content-link);
         display: block;
         padding: 5px 0 0;
       }
@@ -335,5 +335,9 @@
     overflow: hidden;
     margin: 13px auto 0;
     text-align: right;
+  }
+
+  iframe {
+    background: var(--external-content);
   }
 }
