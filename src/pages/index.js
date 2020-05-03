@@ -8,6 +8,7 @@ import useTranslations from "../i18n/translations/useTranslations";
 
 const Index = ({ data: { allMarkdownRemark } }) => {
   const translations = useTranslations();
+  const { tagsPath, creaturesPath } = require("../utils/url-helpers");
 
   const pages = allMarkdownRemark.edges;
 
@@ -16,7 +17,7 @@ const Index = ({ data: { allMarkdownRemark } }) => {
       <SEO title={translations.Home} />
       <TitlePage text={translations.Title} />
       <p>{translations.Description}</p>
-      <hr style={{ margin: `2rem 0` }} />
+      <hr />
       <h2>
         <strong>{translations.Latest}</strong>
       </h2>
@@ -24,11 +25,9 @@ const Index = ({ data: { allMarkdownRemark } }) => {
       <PageList pages={pages} />
       <br />
       <span>{translations.View} </span>
-      <LocalizedLink to={"/creatures"}>
-        {translations.all}
-      </LocalizedLink>
+      <LocalizedLink to={creaturesPath}>{translations.all}</LocalizedLink>
       <span> {translations.orSearchBy} </span>
-      <LocalizedLink to={"/tags"}>{translations.tags}</LocalizedLink>
+      <LocalizedLink to={tagsPath}>{translations.tags}</LocalizedLink>
     </div>
   );
 };

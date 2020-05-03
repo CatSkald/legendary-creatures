@@ -1,6 +1,10 @@
 const path = require("path");
 const languages = require("./src/i18n/languages");
-const { localizedSlug } = require("./src/utils/gatsby-node-helpers");
+const {
+  tagsPath,
+  getCreaturesUrl,
+  localizedSlug,
+} = require("./src/utils/url-helpers");
 
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions;
@@ -50,13 +54,10 @@ exports.onCreateNode = ({ node, actions }) => {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const creatureTemplate = path.resolve(
-    "./src/templates/creature.js",
-  );
-  const creatureListTemplate = path.resolve(
-    "./src/templates/creatures.js",
-  );
+  const creatureTemplate = path.resolve("./src/templates/creature.js");
+  const creatureListTemplate = path.resolve("./src/templates/creatures.js");
   const pageTemplate = path.resolve("./src/templates/page.js");
+  const tagListTemplate = path.resolve("./src/templates/tags.js");
 
   const result = await graphql(`
     {
@@ -118,25 +119,30 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  // Create list with pagination
-  const itemsPerPage = 4;
+  const creaturesPreviewsPerPage = 4;
 
-  Object.entries(languages).map(([lang, langProps]) => {
+  Object.entries(languages).forEach(([lang, langProps]) => {
+    //create tags list
+    createPage({
+      path: langProps.path + tagsPath,
+      component: tagListTemplate,
+      context: {
+        language: langProps,
+        locale: lang,
+      },
+    });
+
+    //create paginated creatures list
     const listSize = countOfCreaturePages[lang] || 0;
-    const pageCount = Math.ceil(listSize / itemsPerPage);
+    const pageCount = Math.ceil(listSize / creaturesPreviewsPerPage);
 
-    const localizedPath = langProps.path + "/creatures";
-
-    return Array.from({ length: pageCount }).forEach((_, index) => {
+    Array.from({ length: pageCount }).forEach((_, index) => {
       createPage({
-        path:
-          index === 0
-            ? localizedPath
-            : `${localizedPath}/page/${index + 1}`,
+        path: getCreaturesUrl(langProps.path, index),
         component: creatureListTemplate,
         context: {
-          limit: itemsPerPage,
-          skip: index * itemsPerPage,
+          limit: creaturesPreviewsPerPage,
+          skip: index * creaturesPreviewsPerPage,
           numPages: pageCount,
           currentPage: index + 1,
           language: langProps,

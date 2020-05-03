@@ -1,0 +1,36 @@
+.TagList {
+  a {
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    padding: var(--space-sm);
+    display: inline-block;
+  }
+}
+
+.Tag {
+  margin: var(--space) var(--space-sm);
+  padding: var(--space-sm);
+  font-weight: bold;
+
+  background-color: var(--card-bg); /* Green */
+  color: var(--card-link);
+
+  &:hover {
+    color: var(--card-link-hover); /* Green */
+  }
+}
+
+.TagValue {
+  margin: var(--space-sm);
+  margin-left: var(--space);
+  border: solid;
+  border-width: 0.1rem;
+  border-color: var(--card-bg);
+  color: var(--content-link);
+
+  &:hover {
+    color: var(--content-link-hover); /* Green */
+    border-color: var(--content-link-hover);
+  }
+}
