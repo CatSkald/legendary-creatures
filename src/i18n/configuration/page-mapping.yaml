@@ -11,3 +11,6 @@ pageMapping:
   - en: "/contact"
     ru: "/contact"
     uk: "/contact"
+  - en: "/tags"
+    ru: "/tags"
+    uk: "/tags"

@@ -12,6 +12,10 @@ fromPerson: from
 fromPlace: from
 of: of
 Categories: Categories
+View: View
+all: all
+orSearchBy: or search by
+tags: tags
 All: All
 Home: Home
 Latest: Latest

@@ -161,6 +161,14 @@ a {
   }
 }
 
+hr {
+  height: 0.1rem;
+  padding: 0;
+  margin: 24px 0;
+  background-color: var(--content-separator);
+  border: 0;
+}
+
 :root {
   //todo remove this
   --container-width: 1040px;

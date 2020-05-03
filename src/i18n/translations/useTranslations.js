@@ -35,6 +35,10 @@ const queryTranslations = graphql`
             fromPlace
             of
             Categories
+            View
+            all
+            orSearchBy
+            tags
             All
             Home
             Latest

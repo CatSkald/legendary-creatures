@@ -23,9 +23,12 @@ const Index = ({ data: { allMarkdownRemark } }) => {
       <br />
       <PageList pages={pages} />
       <br />
-      <LocalizedLink to={"/creatures/"}>
-        {translations.All}
+      <span>{translations.View} </span>
+      <LocalizedLink to={"/creatures"}>
+        {translations.all}
       </LocalizedLink>
+      <span> {translations.orSearchBy} </span>
+      <LocalizedLink to={"/tags"}>{translations.tags}</LocalizedLink>
     </div>
   );
 };

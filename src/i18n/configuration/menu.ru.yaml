@@ -10,3 +10,5 @@ menuItems:
     link: /terms
   - name: Обратная связь
     link: /contact
+  - name: Метки
+    link: /tags

@@ -1,7 +1,7 @@
 # Legendary Creatures and Fabulous Beasts
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen)](/LICENSE)
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-brightgreen)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-brightgreen?logo=Creative-Commons)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 [![Framework: Gatsby](https://img.shields.io/badge/Framework-Gatsby-663399?logo=Gatsby)](https://www.gatsbyjs.org/)
 [![CMS: Forestry](https://img.shields.io/badge/CMS-Forestry-21e09e)](https://forestry.io/)

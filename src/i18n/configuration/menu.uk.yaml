@@ -10,3 +10,5 @@ menuItems:
     link: /terms
   - name: Зворотній зв’язок
     link: /contact
+  - name: Мітки
+    link: /tags
