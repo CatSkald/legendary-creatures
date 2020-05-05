@@ -11,20 +11,8 @@ const creaturesPath = "/creatures";
 exports.tagsPath = tagsPath;
 exports.creaturesPath = creaturesPath;
 
-function getTagUrl(tag) {
-  return `${tagsPath}/${tag}`;
-}
+exports.getTagUrl = tag => `${tagsPath}#${tag}`;
+exports.getTagValueUrl = (tag, value) => `${creaturesPath}?${tag}=${value}`;
 
-exports.getTagUrl = getTagUrl;
-
-exports.getTagValueUrl = (tag, value) => {
-  const tagUrl = getTagUrl(tag);
-
-  return `${tagUrl}/${value}`;
-};
-
-exports.getCreaturesUrl = pageIndex => {
-  return pageIndex === 0
-    ? creaturesPath
-    : `${creaturesPath}/page/${pageIndex + 1}`;
-};
+exports.getCreaturesUrl = pageIndex =>
+  pageIndex === 0 ? creaturesPath : `${creaturesPath}/page/${pageIndex + 1}`;
