@@ -17,15 +17,14 @@ export default useTranslations;
 
 const queryTranslations = graphql`
   query queryTranslations {
-    rawData: allFile(
-      filter: { sourceInstanceName: { eq: "translations" } }
-    ) {
+    rawData: allFile(filter: { sourceInstanceName: { eq: "translations" } }) {
       edges {
         node {
           name
           translations: childTranslationsYaml {
             Description
             Title
+            ShortTitle
             NotFound404Header
             NotFound404Content
             footerMoto
@@ -49,6 +48,8 @@ const queryTranslations = graphql`
             Number
             Origin
             Habitat
+            CreaturesPageTitle
+            TagsPageTitle
           }
         }
       }

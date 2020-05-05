@@ -3,8 +3,10 @@ import { graphql } from "gatsby";
 import TitlePage from "../components/TitlePage";
 import TagList from "../components/TagList";
 import SEO from "../components/seo";
+import useTranslations from "../i18n/translations/useTranslations";
 
 const Tags = props => {
+  const translations = useTranslations();
   let tags = {};
 
   props.data.allMarkdownRemark.edges.forEach(({ node: { frontmatter } }) => {
@@ -23,8 +25,8 @@ const Tags = props => {
 
   return (
     <>
-      <SEO title="Tags" />
-      <TitlePage text="Tags" />
+      <SEO title={translations.TagsPageTitle} />
+      <TitlePage text={translations.TagsPageTitle} />
       <TagList tags={tags} />
     </>
   );

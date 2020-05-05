@@ -4,6 +4,7 @@ import TitlePage from "../components/TitlePage";
 import PageList from "../components/PageList";
 import Pagination from "../components/Pagination";
 import SEO from "../components/seo";
+import useTranslations from "../i18n/translations/useTranslations";
 
 const Creatures = props => {
   // Logic for Pagination Component
@@ -11,16 +12,15 @@ const Creatures = props => {
   const isFirst = currentPage === 1;
   const isLast = currentPage === numPages;
   const prevPage =
-    currentPage - 1 === 1
-      ? "/creatures"
-      : `/creatures/${currentPage - 1}`;
+    currentPage - 1 === 1 ? "/creatures" : `/creatures/${currentPage - 1}`;
   const nextPage = `/creatures/page/${currentPage + 1}`;
   const pages = props.data.allMarkdownRemark.edges;
+  const translations = useTranslations();
 
   return (
     <>
-      <SEO title="Creatures" />
-      <TitlePage text="Creatures" />
+      <SEO title={translations.CreaturesPageTitle} />
+      <TitlePage text={translations.CreaturesPageTitle} />
       <PageList pages={pages} />
       <Pagination
         isFirst={isFirst}

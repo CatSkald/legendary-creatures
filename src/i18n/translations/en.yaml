@@ -1,5 +1,6 @@
 Description: An encyclopaedia and bestiary of legendary mythical fabulous and magical creatures from folklore from all around the world.
 Title: Legendary creatures and fabulous beasts
+ShortTitle: Legendary Creatures & Beasts
 NotFound404Header: "Oops, it's not found!"
 NotFound404Content:
   "The knowledge you seek is missing - lost, forgotten or not yet
@@ -26,3 +27,5 @@ plural: plural
 Number: Number
 Origin: Origin
 Habitat: Habitat
+CreaturesPageTitle: Creatures
+TagsPageTitle: Tags

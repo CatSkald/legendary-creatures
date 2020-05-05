@@ -1,14 +1,8 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
+import useTranslations from "../i18n/translations/useTranslations";
 
 function SEO({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
@@ -18,7 +12,7 @@ function SEO({ description, lang, meta, title, image }) {
           siteMetadata {
             title
             description
-            author
+            # author
             siteUrl
           }
         }
@@ -26,17 +20,44 @@ function SEO({ description, lang, meta, title, image }) {
     `,
   );
 
-  const metaDescription =
-    description || site.siteMetadata.description;
+  const separators = [
+    "🐲",
+    "🦄",
+    "🐉",
+    "🦚",
+    "🐾",
+    "🐁",
+    "🐈",
+    "🦇",
+    "🦖",
+    "😈",
+    "👹",
+    "👺",
+    "👻",
+    "🧚",
+    "🧙",
+    "🧛",
+    "🧟",
+    "🦉",
+    "🧝",
+    "🎅",
+    "👼",
+    "🍀",
+  ];
+  const randomSeparator =
+    separators[Math.floor(Math.random() * separators.length)];
 
+  const translations = useTranslations();
+  const metaTitle = title || translations.Title;
+  const metaDescription = description || translations.Description;
   const url = site.siteMetadata.siteUrl;
   const ogImage = `${url}${image || "/assets/images/cover.jpg"}`;
 
   return (
     <Helmet
       htmlAttributes={{ lang }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={metaTitle}
+      titleTemplate={`%s ${randomSeparator} ${translations.Title}`}
       meta={[
         {
           name: "description",
@@ -44,7 +65,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: "og:title",
-          content: title,
+          content: metaTitle,
         },
         {
           property: "og:description",

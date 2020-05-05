@@ -2,8 +2,8 @@ import styles from "./index.module.scss";
 
 import React from "react";
 import { navigate, Link } from "gatsby";
-import { LocaleContext } from "../Layout";
 import PropTypes from "prop-types";
+import { LocaleContext } from "../Layout";
 
 const TagList = props => {
   const { language } = React.useContext(LocaleContext);
