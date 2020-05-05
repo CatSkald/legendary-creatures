@@ -11,18 +11,14 @@ const NavigationBar = ({ isActive, handleToggleMenu }) => {
   const localeFileExtension = "." + language.code;
   const menuItemsForCurrentLocale = rawData.edges
     .filter(
-      item =>
-        item.node.name &&
-        item.node.name.endsWith(localeFileExtension),
+      item => item.node.name && item.node.name.endsWith(localeFileExtension),
     )
     .map(item => item.node.translations.menuItems)[0];
 
   return (
     <>
       <nav
-        className={`${styles.NavigationBar} ${
-          isActive ? styles.active : ""
-        }`}
+        className={`${styles.NavigationBar} ${isActive ? styles.active : ""}`}
       >
         {menuItemsForCurrentLocale.map(menu => (
           <LocalizedLink

@@ -6,9 +6,7 @@ import Img from "gatsby-image";
 import LocalizedLink from "../LocalizedLink";
 import { useImages } from "../../hooks/use-images";
 
-const {
-  getImageNameOrDefaultCover,
-} = require("../../utils/image-helpers");
+const { getImageNameOrDefaultCover } = require("../../utils/image-helpers");
 
 const CreaturePage = props => {
   const imagePath = props.image;
@@ -18,10 +16,7 @@ const CreaturePage = props => {
   const image = images.find(img => img.originalName === imageName);
 
   return (
-    <LocalizedLink
-      className={styles.CreaturePageLink}
-      to={props.slug}
-    >
+    <LocalizedLink className={styles.CreaturePageLink} to={props.slug}>
       <section className={styles.CreaturePreviewContainer}>
         <Img
           className={styles.CreaturePageImage}
@@ -30,9 +25,7 @@ const CreaturePage = props => {
         />
         <div className={styles.CreatureInfo}>
           <h1 className={styles.PageTitle}>{props.title}</h1>
-          <p className={styles.PageDescription}>
-            {props.description}
-          </p>
+          <p className={styles.PageDescription}>{props.description}</p>
         </div>
       </section>
     </LocalizedLink>

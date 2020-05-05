@@ -138,7 +138,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     Array.from({ length: pageCount }).forEach((_, index) => {
       createPage({
-        path: getCreaturesUrl(langProps.path, index),
+        path: langProps.path + getCreaturesUrl(index),
         component: creatureListTemplate,
         context: {
           limit: creaturesPreviewsPerPage,

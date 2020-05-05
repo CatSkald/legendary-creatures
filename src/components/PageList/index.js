@@ -5,6 +5,8 @@ import propTypes from "prop-types";
 import CreaturePage from "../CreaturePage";
 
 const PageList = props => {
+  const { creaturesPath } = require("../../utils/url-helpers");
+
   return (
     <section className={styles.PageList}>
       {props.pages.map(
@@ -16,7 +18,7 @@ const PageList = props => {
         }) => (
           <CreaturePage
             key={slug}
-            slug={`/creatures/${slug}`}
+            slug={`${creaturesPath}/${slug}`}
             category={origin}
             date={date}
             title={title}

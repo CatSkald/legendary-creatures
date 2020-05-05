@@ -7,13 +7,14 @@ import SEO from "../components/seo";
 import useTranslations from "../i18n/translations/useTranslations";
 
 const Creatures = props => {
+  const { getCreaturesUrl } = require("../utils/url-helpers");
+
   // Logic for Pagination Component
   const { currentPage, numPages } = props.pageContext;
   const isFirst = currentPage === 1;
   const isLast = currentPage === numPages;
-  const prevPage =
-    currentPage - 1 === 1 ? "/creatures" : `/creatures/${currentPage - 1}`;
-  const nextPage = `/creatures/page/${currentPage + 1}`;
+  const prevPage = getCreaturesUrl(currentPage - 1);
+  const nextPage = getCreaturesUrl(currentPage + 1);
   const pages = props.data.allMarkdownRemark.edges;
   const translations = useTranslations();
 
