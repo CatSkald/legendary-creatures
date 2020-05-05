@@ -13,12 +13,13 @@ const Tags = props => {
     for (const tag in frontmatter) {
       let tagValues = frontmatter[tag];
       tagValues = Array.isArray(tagValues) ? tagValues : [tagValues];
+      const tagName = translations[tag] || tag;
 
-      const existingTags = tags[tag];
+      const existingTags = tags[tagName];
       if (existingTags) {
-        tags[tag] = [...new Set(existingTags.concat(tagValues))];
+        tags[tagName] = [...new Set(existingTags.concat(tagValues))];
       } else {
-        tags[tag] = tagValues;
+        tags[tagName] = tagValues;
       }
     }
   });

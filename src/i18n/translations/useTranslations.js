@@ -50,6 +50,10 @@ const queryTranslations = graphql`
             Habitat
             CreaturesPageTitle
             TagsPageTitle
+            origin
+            categories
+            number
+            habitat
           }
         }
       }

@@ -24,7 +24,6 @@ const TagList = props => {
             >
               {tag}
             </Link>
-            <br />
             {values.map((value, index) => {
               const url = getTagValueUrl(language.path, tag, value);
               return (

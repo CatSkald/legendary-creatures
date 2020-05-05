@@ -29,3 +29,8 @@ Origin: Origin
 Habitat: Habitat
 CreaturesPageTitle: Creatures
 TagsPageTitle: Tags
+#tags
+origin: origin
+categories: categories
+number: number
+habitat: habitat
