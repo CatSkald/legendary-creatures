@@ -1,7 +1,7 @@
 import styles from "./index.module.scss";
 
 import React from "react";
-import propTypes from "prop-types";
+import PropTypes from "prop-types";
 import CreaturePage from "../CreaturePage";
 
 const PageList = props => {
@@ -32,7 +32,7 @@ const PageList = props => {
 };
 
 PageList.propTypes = {
-  pages: propTypes.array.isRequired,
+  pages: PropTypes.array.isRequired,
 };
 
 export default PageList;

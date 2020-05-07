@@ -1,11 +1,12 @@
 import styles from "./index.module.scss";
 
 import React from "react";
+import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import LocalizedLink from "../LocalizedLink";
 import { LocaleContext } from "../Layout";
 
-const NavigationBar = ({ isActive, handleToggleMenu }) => {
+const NavigationBar = props => {
   const { language } = React.useContext(LocaleContext);
   const { rawData } = useStaticQuery(queryMenu);
   const localeFileExtension = "." + language.code;
@@ -18,7 +19,9 @@ const NavigationBar = ({ isActive, handleToggleMenu }) => {
   return (
     <>
       <nav
-        className={`${styles.NavigationBar} ${isActive ? styles.active : ""}`}
+        className={`${styles.NavigationBar} ${
+          props.isActive ? styles.active : ""
+        }`}
       >
         {menuItemsForCurrentLocale.map(menu => (
           <LocalizedLink
@@ -27,7 +30,7 @@ const NavigationBar = ({ isActive, handleToggleMenu }) => {
             to={menu.link}
             aria-label={menu.name}
             activeClassName={styles.active}
-            onClick={() => handleToggleMenu()}
+            onClick={() => props.handleToggleMenu()}
           >
             {menu.name}
           </LocalizedLink>
@@ -35,6 +38,11 @@ const NavigationBar = ({ isActive, handleToggleMenu }) => {
       </nav>
     </>
   );
+};
+
+NavigationBar.propTypes = {
+  handleToggleMenu: PropTypes.func.isRequired,
+  isActive: PropTypes.bool.isRequired,
 };
 
 export default NavigationBar;

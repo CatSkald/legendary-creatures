@@ -1,12 +1,13 @@
 import styles from "./index.module.scss";
 
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import NavigationBar from "../NavigationBar";
 import Languages from "../Languages";
 import NavigationBarButtons from "../NavigationBarButtons";
 import HamburgerButton from "../HamburgerButton";
 
-const Header = ({ isDarkColorTheme, handleToggleColorTheme }) => {
+const Header = props => {
   const [isMenuActive, toggleMenu] = useState(false);
   const [isLanguageSelectionActive, toggleLanguageSelection] = useState(false);
 
@@ -40,8 +41,8 @@ const Header = ({ isDarkColorTheme, handleToggleColorTheme }) => {
         </div>
         <div className={styles.NavLanguages}>
           <NavigationBarButtons
-            isDarkColorTheme={isDarkColorTheme}
-            handleToggleColorTheme={handleToggleColorTheme}
+            isDarkColorTheme={props.isDarkColorTheme}
+            handleToggleColorTheme={props.handleToggleColorTheme}
             isLanguageSelectionActive={isLanguageSelectionActive}
             handleToggleLanguageSelection={handleToggleLanguageSelection}
           />
@@ -53,6 +54,11 @@ const Header = ({ isDarkColorTheme, handleToggleColorTheme }) => {
       </div>
     </div>
   );
+};
+
+Header.propTypes = {
+  handleToggleColorTheme: PropTypes.func.isRequired,
+  isDarkColorTheme: PropTypes.bool.isRequired,
 };
 
 export default Header;

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import SEO from "../components/seo";
 import TitlePage from "../components/TitlePage";
@@ -30,6 +31,10 @@ const Index = ({ data: { allMarkdownRemark } }) => {
       <LocalizedLink to={tagsPath}>{translations.tags}</LocalizedLink>
     </div>
   );
+};
+
+Index.propTypes = {
+  data: PropTypes.object.isRequired,
 };
 
 export default Index;

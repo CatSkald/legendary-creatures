@@ -1,14 +1,10 @@
 import styles from "./index.module.scss";
 
 import React from "react";
+import PropTypes from "prop-types";
 import { LocaleContext } from "../Layout";
 
-const NavigationBarButtons = ({
-  isDarkColorTheme,
-  handleToggleColorTheme,
-  isLanguageSelectionActive,
-  handleToggleLanguageSelection,
-}) => {
+const NavigationBarButtons = props => {
   const { language } = React.useContext(LocaleContext);
 
   return (
@@ -17,9 +13,9 @@ const NavigationBarButtons = ({
         <span
           title="Change language"
           className={`${styles.Language} ${
-            isLanguageSelectionActive ? styles.active : ""
+            props.isLanguageSelectionActive ? styles.active : ""
           }`}
-          onClick={() => handleToggleLanguageSelection()}
+          onClick={() => props.handleToggleLanguageSelection()}
         >
           {language.name}
         </span>
@@ -29,14 +25,21 @@ const NavigationBarButtons = ({
           title="Switch color theme"
           role="img"
           aria-label="Change website color theme"
-          className={styles.ColorTheme}
-          onClick={() => handleToggleColorTheme()}
-        >
-          {`${isDarkColorTheme ? "☽" : "🌣"}`}
-        </span>
+          className={`${styles.ColorTheme} ${
+            props.isDarkColorTheme ? styles.ThemeDark : styles.ThemeLight
+          }`}
+          onClick={() => props.handleToggleColorTheme()}
+        ></span>
       </li>
     </ul>
   );
+};
+
+NavigationBarButtons.propTypes = {
+  handleToggleColorTheme: PropTypes.func.isRequired,
+  isDarkColorTheme: PropTypes.bool.isRequired,
+  handleToggleLanguageSelection: PropTypes.func.isRequired,
+  isLanguageSelectionActive: PropTypes.bool.isRequired,
 };
 
 export default NavigationBarButtons;

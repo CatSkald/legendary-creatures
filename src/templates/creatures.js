@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import TitlePage from "../components/TitlePage";
 import PageList from "../components/PageList";
@@ -35,6 +36,13 @@ const Creatures = props => {
   );
 };
 
+Creatures.propTypes = {
+  pageContext: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired,
+};
+
+export default Creatures;
+
 export const query = graphql`
   query Creatures(
     $locale: String!
@@ -69,5 +77,3 @@ export const query = graphql`
     }
   }
 `;
-
-export default Creatures;

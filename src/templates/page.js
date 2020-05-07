@@ -1,6 +1,7 @@
 import "../styles/markdown.scss";
 
 import React from "react";
+import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import TitlePage from "../components/TitlePage";
 import SEO from "../components/seo";
@@ -23,6 +24,12 @@ const Page = props => {
   );
 };
 
+Page.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+export default Page;
+
 export const query = graphql`
   query Page($locale: String!, $title: String!) {
     markdownRemark(
@@ -38,5 +45,3 @@ export const query = graphql`
     }
   }
 `;
-
-export default Page;

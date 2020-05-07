@@ -2,7 +2,7 @@ import React from "react";
 import SEO from "../components/seo";
 import useTranslations from "../i18n/translations/useTranslations";
 
-const NotFound = () => {
+const NotFound = ({ location }) => {
   const { NotFound404Header, NotFound404Content } = useTranslations();
 
   // TODO make it work for non-en language

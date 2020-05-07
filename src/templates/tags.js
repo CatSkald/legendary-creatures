@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import TitlePage from "../components/TitlePage";
 import TagList from "../components/TagList";
@@ -33,6 +34,12 @@ const Tags = props => {
   );
 };
 
+Tags.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+export default Tags;
+
 export const query = graphql`
   query Tags($locale: String!) {
     allMarkdownRemark(
@@ -54,5 +61,3 @@ export const query = graphql`
     }
   }
 `;
-
-export default Tags;

@@ -1,7 +1,6 @@
 import styles from "./index.module.scss";
 
 import React from "react";
-import { graphql } from "gatsby";
 import PropTypes from "prop-types";
 import LocalizedLink from "../LocalizedLink";
 
@@ -10,48 +9,29 @@ const TagList = props => {
 
   return (
     <section className={styles.TagList}>
-      {Object.entries(props.tags).map(([tag, values], tagIndex) => (
-        <>
-          <LocalizedLink
-            className={styles.Tag}
-            key={tagIndex + tag}
-            to={getTagUrl(tag)}
-            navigateOnClick={true}
-          >
+      {Object.entries(props.tags).map(([tag, values]) => (
+        <div key={tag} className={styles.TagListItem}>
+          <LocalizedLink className={styles.Tag} to={getTagUrl(tag)}>
             {tag}
           </LocalizedLink>
           {values.map((value, index) => (
             <LocalizedLink
               className={styles.TagValue}
-              key={`${tagIndex}${tag}_${index}${value}`}
+              key={`${tag}_${value}${index}`}
               to={getTagValueUrl(tag, value)}
-              navigateOnClick={true}
             >
               {value}
             </LocalizedLink>
           ))}
           <br />
-        </>
+        </div>
       ))}
     </section>
   );
 };
 
 TagList.propTypes = {
-  tags: PropTypes.arrayOf(PropTypes.object).isRequired,
+  tags: PropTypes.object.isRequired,
 };
-
-export const query = graphql`
-  query TagValues($locale: String!, $tag: MarkdownRemarkFieldsEnum!) {
-    allMarkdownRemark(
-      filter: {
-        fields: { locale: { eq: $locale } }
-        frontmatter: { page: { eq: null } }
-      }
-    ) {
-      distinct(field: $tag)
-    }
-  }
-`;
 
 export default TagList;

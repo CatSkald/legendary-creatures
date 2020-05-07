@@ -1,6 +1,7 @@
 import "../styles/markdown.scss";
 
 import React from "react";
+import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import CreatureCard from "../components/CreatureCard";
 import SEO from "../components/seo";
@@ -22,6 +23,12 @@ const Creature = props => {
     </>
   );
 };
+
+Creature.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+export default Creature;
 
 export const query = graphql`
   query Creature($locale: String!, $title: String!) {
@@ -48,5 +55,3 @@ export const query = graphql`
     }
   }
 `;
-
-export default Creature;

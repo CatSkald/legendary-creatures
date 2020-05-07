@@ -39,6 +39,18 @@
   }
 }
 
+.ThemeLight {
+  &:after {
+    content: "🌣";
+  }
+}
+
+.ThemeDark {
+  &:after {
+    content: "☽";
+  }
+}
+
 .ColorTheme {
   font-weight: bold;
   padding: 0 0.3em;

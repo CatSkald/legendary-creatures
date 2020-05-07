@@ -1,23 +1,23 @@
 import styles from "./index.module.scss";
 
 import React from "react";
+import PropTypes from "prop-types";
 import { navigate, Link } from "gatsby";
 import { LocaleContext } from "../Layout";
 import usePageMapping from "../../i18n/configuration/usePageMapping";
 
 const languages = require("../../i18n/languages");
 
-const Languages = ({ isActive, handleLanguageSelected }) => {
+const Languages = props => {
   const { language } = React.useContext(LocaleContext);
   const pageMapping = usePageMapping();
 
   function handleClickLanguage(e, lang) {
-    handleLanguageSelected();
+    props.handleLanguageSelected();
 
     //TODO localStorage.getItem("preferredLanguage");
     const isBrowser = typeof window !== "undefined";
-    if (isBrowser)
-      window.localStorage.setItem("preferredLanguage", lang);
+    if (isBrowser) window.localStorage.setItem("preferredLanguage", lang);
 
     if (language.code === lang) {
       e.preventDefault();
@@ -56,7 +56,7 @@ const Languages = ({ isActive, handleLanguageSelected }) => {
   return (
     <ul
       className={`${styles.LanguageList} ${
-        isActive ? styles.active : ""
+        props.isActive ? styles.active : ""
       }`}
     >
       {Object.entries(languages)
@@ -78,6 +78,11 @@ const Languages = ({ isActive, handleLanguageSelected }) => {
         ))}
     </ul>
   );
+};
+
+Languages.propTypes = {
+  handleLanguageSelected: PropTypes.func.isRequired,
+  isActive: PropTypes.bool.isRequired,
 };
 
 export default Languages;
