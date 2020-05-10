@@ -1,6 +1,6 @@
 import { useStaticQuery, graphql } from "gatsby";
 
-function usePageMapping(url) {
+const usePageMapping = url => {
   const { rawData } = useStaticQuery(queryPageMapping);
 
   const pageMapping = rawData.edges.map(
@@ -8,7 +8,7 @@ function usePageMapping(url) {
   )[0];
 
   return pageMapping;
-}
+};
 
 export default usePageMapping;
 
