@@ -3,8 +3,10 @@ const languages = require("./src/i18n/languages");
 const {
   tagsPath,
   getCreaturesUrl,
+  getTagValueUrl,
   localizedSlug,
 } = require("./src/utils/url-helpers");
+const { parseTags } = require("./src/utils/tags-helpers");
 
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions;
@@ -74,6 +76,10 @@ exports.createPages = async ({ graphql, actions }) => {
             frontmatter {
               title
               page
+              origin
+              categories
+              number
+              habitat
             }
           }
         }
@@ -87,26 +93,18 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   const pageContentFromMarkdown = result.data.files.edges;
-
-  let countOfCreaturePages = {};
+  const tags = parseTags(pageContentFromMarkdown);
 
   pageContentFromMarkdown.forEach(({ node: file }) => {
     const slug = file.fields.slug;
     const title = file.frontmatter.title;
-    // Use the fields created in exports.onCreateNode
+
+    //fields created in exports.onCreateNode
     const locale = file.fields.locale;
     const isDefault = file.fields.isDefault;
 
-    // Only pages should have that field set
-    const isPage = file.frontmatter.page;
-
+    const isPage = file.frontmatter.page; //only pages should have this field set
     const template = isPage ? pageTemplate : creatureTemplate;
-
-    if (!isPage) {
-      countOfCreaturePages[locale] = countOfCreaturePages[locale]
-        ? countOfCreaturePages[locale] + 1
-        : 1;
-    }
 
     createPage({
       path: localizedSlug({ isDefault, locale, slug, isPage }),
@@ -119,7 +117,37 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  const creaturesPreviewsPerPage = 4;
+  function createPaginatedPages(
+    totalItems,
+    language,
+    getUrl,
+    template,
+    context = {},
+  ) {
+    const itemsPerPage = 4;
+    const globAny = "*";
+    const pageCount = Math.ceil(totalItems / itemsPerPage);
+
+    Array.from({ length: pageCount }).forEach((_, index) => {
+      createPage({
+        path: language.path + getUrl(index),
+        component: template,
+        context: {
+          limit: itemsPerPage,
+          skip: index * itemsPerPage,
+          numPages: pageCount,
+          currentPage: index + 1,
+          language: language,
+          locale: language.code,
+          dateFormat: language.dateFormat,
+          origin: context.origin || globAny,
+          categories: context.categories || globAny,
+          number: context.number || globAny,
+          habitat: context.habitat || globAny,
+        },
+      });
+    });
+  }
 
   Object.entries(languages).forEach(([lang, langProps]) => {
     //create tags list
@@ -133,23 +161,42 @@ exports.createPages = async ({ graphql, actions }) => {
     });
 
     //create paginated creatures list
-    const listSize = countOfCreaturePages[lang] || 0;
-    const pageCount = Math.ceil(listSize / creaturesPreviewsPerPage);
+    const creaturePagesCount = pageContentFromMarkdown.filter(
+      page => !page.node.frontmatter.page && page.node.fields.locale === lang,
+    ).length;
 
-    Array.from({ length: pageCount }).forEach((_, index) => {
-      createPage({
-        path: langProps.path + getCreaturesUrl(index),
-        component: creatureListTemplate,
-        context: {
-          limit: creaturesPreviewsPerPage,
-          skip: index * creaturesPreviewsPerPage,
-          numPages: pageCount,
-          currentPage: index + 1,
-          language: langProps,
-          locale: lang,
-          dateFormat: langProps.dateFormat,
-        },
-      });
+    createPaginatedPages(
+      creaturePagesCount,
+      langProps,
+      getCreaturesUrl,
+      creatureListTemplate,
+    );
+
+    //create paginated tag search results
+    Object.entries(tags).forEach(([tag, values]) => {
+      if (values && values.length > 0) {
+        values.forEach(value => {
+          const creaturePagesCount = pageContentFromMarkdown.filter(
+            page =>
+              !page.node.frontmatter.page &&
+              page.node.fields.locale === lang &&
+              page.node.frontmatter[tag] &&
+              (page.node.frontmatter[tag] === value ||
+                page.node.frontmatter[tag].includes(value)),
+          ).length;
+
+          const context = {};
+          context[tag] = value;
+
+          createPaginatedPages(
+            creaturePagesCount,
+            langProps,
+            pageIndex => getTagValueUrl(tag, value, pageIndex),
+            creatureListTemplate,
+            context,
+          );
+        });
+      }
     });
   });
 };
@@ -168,8 +215,8 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       fields: {
         title: { type: "String!" },
         names: { type: "[Name!]" },
-        description: { type: "String!" },
-        categories: { type: "[String!]!" },
+        description: { type: "String" },
+        categories: { type: "[String!]" },
         origin: { type: "[String!]" },
         map: { type: "String" },
         related: { type: "[Frontmatter!]" },

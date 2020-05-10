@@ -38,7 +38,17 @@ const Creatures = props => {
 
 Creatures.propTypes = {
   pageContext: PropTypes.object.isRequired,
-  data: PropTypes.object.isRequired,
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.arrayOf(
+        PropTypes.shape({
+          node: PropTypes.shape({
+            frontmatter: PropTypes.object.isRequired,
+          }),
+        }).isRequired,
+      ),
+    }),
+  }),
 };
 
 export default Creatures;
@@ -49,11 +59,21 @@ export const query = graphql`
     $dateFormat: String!
     $skip: Int!
     $limit: Int!
+    $origin: String!
+    $categories: String!
+    $number: String!
+    $habitat: String!
   ) {
     allMarkdownRemark(
       filter: {
         fields: { locale: { eq: $locale } }
-        frontmatter: { page: { eq: null } }
+        frontmatter: {
+          page: { eq: null }
+          origin: { glob: $origin }
+          categories: { glob: $categories }
+          number: { glob: $number }
+          habitat: { glob: $habitat }
+        }
       }
       sort: { fields: frontmatter___date, order: DESC }
       limit: $limit
@@ -64,7 +84,6 @@ export const query = graphql`
           frontmatter {
             title
             description
-            origin
             image
             date(formatString: $dateFormat)
           }

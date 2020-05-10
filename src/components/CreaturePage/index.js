@@ -34,7 +34,6 @@ const CreaturePage = props => {
 
 CreaturePage.propTypes = {
   slug: PropTypes.string.isRequired,
-  category: PropTypes.array.isRequired,
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

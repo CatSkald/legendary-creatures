@@ -8,22 +8,8 @@ import useTranslations from "../i18n/translations/useTranslations";
 
 const Tags = props => {
   const translations = useTranslations();
-  let tags = {};
-
-  props.data.allMarkdownRemark.edges.forEach(({ node: { frontmatter } }) => {
-    for (const tag in frontmatter) {
-      let tagValues = frontmatter[tag];
-      tagValues = Array.isArray(tagValues) ? tagValues : [tagValues];
-      const tagName = translations[tag] || tag;
-
-      const existingTags = tags[tagName];
-      if (existingTags) {
-        tags[tagName] = [...new Set(existingTags.concat(tagValues))];
-      } else {
-        tags[tagName] = tagValues;
-      }
-    }
-  });
+  const { parseTags } = require("../utils/tags-helpers");
+  const tags = parseTags(props.data.allMarkdownRemark.edges);
 
   return (
     <>
@@ -35,7 +21,17 @@ const Tags = props => {
 };
 
 Tags.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.arrayOf(
+        PropTypes.shape({
+          node: PropTypes.shape({
+            frontmatter: PropTypes.object.isRequired,
+          }),
+        }).isRequired,
+      ),
+    }),
+  }),
 };
 
 export default Tags;

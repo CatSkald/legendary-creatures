@@ -25,7 +25,17 @@ const Creature = props => {
 };
 
 Creature.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.arrayOf(
+        PropTypes.shape({
+          node: PropTypes.shape({
+            frontmatter: PropTypes.object.isRequired,
+          }),
+        }).isRequired,
+      ),
+    }),
+  }),
 };
 
 export default Creature;
