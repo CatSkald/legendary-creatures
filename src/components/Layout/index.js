@@ -9,7 +9,7 @@ import Footer from "../Footer";
 
 const LocaleContext = React.createContext();
 
-const Layout = ({ children, pageContext: { language } }) => {
+const Layout = props => {
   const [isDarkColorTheme, switchColorTheme] = useState(false);
 
   function handleToggleColorTheme() {
@@ -17,7 +17,7 @@ const Layout = ({ children, pageContext: { language } }) => {
   }
 
   return (
-    <LocaleContext.Provider value={{ language }}>
+    <LocaleContext.Provider value={{ language: props.pageContext.language }}>
       <div
         className={`body ${styles.Wrapper} ${
           isDarkColorTheme ? "theme-dark" : "theme-light"
@@ -26,9 +26,10 @@ const Layout = ({ children, pageContext: { language } }) => {
         <Header
           isDarkColorTheme={isDarkColorTheme}
           handleToggleColorTheme={handleToggleColorTheme}
+          localizedLinks={props.pageContext.localizedLinks}
         />
         <section className={styles.SiteContent} role="main">
-          <div className={styles.Container}>{children}</div>
+          <div className={styles.Container}>{props.children}</div>
         </section>
         <Footer />
       </div>

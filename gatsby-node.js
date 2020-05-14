@@ -2,6 +2,7 @@ const path = require("path");
 const languages = require("./src/i18n/languages");
 const {
   tagsPath,
+  getCreatureUrl,
   getCreaturesUrl,
   getTagValueUrl,
   localizedSlug,
@@ -97,6 +98,16 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const pageContentFromMarkdown = result.data.files.edges;
   const tags = parseTags(pageContentFromMarkdown);
+  const getLocalizedLinks = (id, isPage) => {
+    let result = {};
+    pageContentFromMarkdown
+      .filter(({ node: page }) => page.frontmatter.id === id)
+      .forEach(({ node: page }) => {
+        const path = page.frontmatter.path || page.fields.slug;
+        result[page.fields.locale] = isPage ? path : getCreatureUrl(path);
+      });
+    return result;
+  };
 
   pageContentFromMarkdown.forEach(({ node: file }) => {
     const slug = file.fields.slug;
@@ -116,6 +127,7 @@ exports.createPages = async ({ graphql, actions }) => {
         language: languages[locale],
         locale: locale,
         id: id,
+        localizedLinks: getLocalizedLinks(id, isPage),
       },
     });
   });

@@ -4,13 +4,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { navigate, Link } from "gatsby";
 import { LocaleContext } from "../Layout";
-import usePageMapping from "../../i18n/configuration/usePageMapping";
 
 const languages = require("../../i18n/languages");
 
 const Languages = props => {
   const { language } = React.useContext(LocaleContext);
-  const pageMapping = usePageMapping();
 
   function handleClickLanguage(e, lang) {
     props.handleLanguageSelected();
@@ -29,28 +27,13 @@ const Languages = props => {
 
     e.preventDefault();
 
-    const url = window.location.pathname.split("/").pop();
-    if (!url) {
-      navigate(selectedLanguage.path);
-      return;
-    }
+    const mappedUrl = props.localizedLinks && props.localizedLinks[lang];
 
-    const mappedUrl = pageMapping.find(item => {
-      let hasUrl = false;
-
-      Object.entries(item).forEach(([key, value]) => {
-        if (value.split("/").pop() === url) return (hasUrl = true);
-      });
-
-      return hasUrl;
-    });
-
-    if (!mappedUrl) {
-      navigate(selectedLanguage.path);
-      return;
-    }
-
-    return navigate(`${languages[lang].path}/${mappedUrl[lang]}`);
+    return navigate(
+      mappedUrl
+        ? `${languages[lang].path}/${mappedUrl}`
+        : selectedLanguage.path,
+    );
   }
 
   return (

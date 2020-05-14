@@ -49,6 +49,7 @@ const Header = props => {
           <Languages
             isActive={isLanguageSelectionActive}
             handleLanguageSelected={handleLanguageSelected}
+            localizedLinks={props.localizedLinks}
           />
         </div>
       </div>

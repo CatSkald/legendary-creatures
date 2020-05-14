@@ -19,6 +19,10 @@ exports.getTagValueUrl = (tag, value, pageIndex) => {
   return url + paginationPath;
 };
 
+exports.getCreatureUrl = creatureName => {
+  return `${creaturesPath}/${creatureName}`;
+};
+
 exports.getCreaturesUrl = pageIndex => {
   const paginationPath = pageIndex ? `/page/${pageIndex + 1}` : "";
   return creaturesPath + paginationPath;
