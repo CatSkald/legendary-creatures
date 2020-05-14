@@ -41,9 +41,9 @@ Creature.propTypes = {
 export default Creature;
 
 export const query = graphql`
-  query Creature($locale: String!, $title: String!) {
+  query Creature($locale: String!, $id: String!) {
     markdownRemark(
-      frontmatter: { title: { eq: $title } }
+      frontmatter: { id: { eq: $id } }
       fields: { locale: { eq: $locale } }
     ) {
       frontmatter {

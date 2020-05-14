@@ -23,6 +23,7 @@ habitat:
 wikipedia: https://uk.wikipedia.org/wiki/%D0%94%D1%80%D1%96%D0%B0%D0%B4%D0%B8
 image: "/assets/images/Pan_e_amadriade,_collez._farnese,_27708.jpg"
 date: 2020-02-02T14:50:00.000+00:00
+id: 8795ec7144bd4a708bb9732e96a27840
 
 ---
 ## Опис

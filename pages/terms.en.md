@@ -1,12 +1,14 @@
 ---
-title: "Privacy Policy and Terms of Service/Use"
-description: "Privacy policy, terms of service/use, license information"
+title: Privacy Policy and Terms of Service/Use
+description: Privacy policy, terms of service/use, license information
+path: /terms
+id: 360c8124bba842869dbb027c1015afc6
 page: true
 ---
 
 By using our website you agree to this terms.
 
-This page was last modified on February 22, 2020.
+This page was last modified on May 22, 2020.
 
 ### In this article
 

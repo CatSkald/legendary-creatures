@@ -1,6 +1,8 @@
 ---
-title: "Обратная связь"
-description: "Напишите нам"
+title: Обратная связь
+description: Напишите нам
+path: /contact
+id: 8b6cbd5ef12a4790ae0d6559c14be131
 page: true
 ---
 

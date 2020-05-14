@@ -75,6 +75,9 @@ exports.createPages = async ({ graphql, actions }) => {
             }
             frontmatter {
               title
+              description
+              path
+              id
               page
               origin
               categories
@@ -97,7 +100,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   pageContentFromMarkdown.forEach(({ node: file }) => {
     const slug = file.fields.slug;
-    const title = file.frontmatter.title;
+    const id = file.frontmatter.id;
 
     //fields created in exports.onCreateNode
     const locale = file.fields.locale;
@@ -111,8 +114,8 @@ exports.createPages = async ({ graphql, actions }) => {
       component: template,
       context: {
         language: languages[locale],
-        locale,
-        title,
+        locale: locale,
+        id: id,
       },
     });
   });
@@ -213,9 +216,15 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
     schema.buildObjectType({
       name: "Frontmatter",
       fields: {
+        //all
         title: { type: "String!" },
+        description: { type: "String!" },
+        id: "String!",
+        //pages
+        path: "String",
+        page: "Boolean",
+        //creatures
         names: { type: "[Name!]" },
-        description: { type: "String" },
         categories: { type: "[String!]" },
         origin: { type: "[String!]" },
         map: { type: "String" },
@@ -227,7 +236,6 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
           type: "Date!",
           extensions: { dateformat: {} },
         },
-        page: "Boolean",
       },
     }),
     schema.buildObjectType({

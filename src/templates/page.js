@@ -16,7 +16,7 @@ const Page = props => {
         description={content.frontmatter.description}
         image={content.frontmatter.image}
       />
-      <TitlePage text={content.frontmatter.title} />
+      <TitlePage text={content.frontmatter.description} />
       <section className="markdown">
         <div dangerouslySetInnerHTML={{ __html: content.html }}></div>
       </section>
@@ -41,9 +41,9 @@ Page.propTypes = {
 export default Page;
 
 export const query = graphql`
-  query Page($locale: String!, $title: String!) {
+  query Page($locale: String!, $id: String!) {
     markdownRemark(
-      frontmatter: { title: { eq: $title } }
+      frontmatter: { id: { eq: $id } }
       fields: { locale: { eq: $locale } }
     ) {
       frontmatter {

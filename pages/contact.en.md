@@ -1,6 +1,8 @@
 ---
-title: "Contact"
-description: "Contact form"
+title: Contact
+description: Contact form
+path: /contact
+id: 8b6cbd5ef12a4790ae0d6559c14be131
 page: true
 ---
 

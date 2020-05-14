@@ -5,9 +5,7 @@ export const useImages = () => {
     graphql`
       query {
         listImages: allFile(
-          filter: {
-            childImageSharp: { fluid: { originalName: { ne: null } } }
-          }
+          filter: { childImageSharp: { fluid: { originalName: { ne: null } } } }
         ) {
           edges {
             node {
@@ -24,7 +22,5 @@ export const useImages = () => {
       }
     `,
   );
-  return listImages.edges.map(
-    edge => edge.node.childImageSharp.fluid,
-  );
+  return listImages.edges.map(edge => edge.node.childImageSharp.fluid);
 };
