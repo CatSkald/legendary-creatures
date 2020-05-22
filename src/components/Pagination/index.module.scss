@@ -4,8 +4,12 @@
   color: var(--texts);
   display: flex;
   padding: 1.5rem 3rem;
-  justify-content: space-between;
+  justify-content: center;
   list-style: none;
+
+  p {
+    padding: var(--space);
+  }
 
   @media screen and (max-width: 1056px /*--screen-large*/) {
     padding: 1rem;

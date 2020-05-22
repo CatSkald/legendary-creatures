@@ -12,8 +12,6 @@ const Creatures = props => {
 
   // Logic for Pagination Component
   const { currentPage, numPages } = props.pageContext;
-  const isFirst = currentPage === 1;
-  const isLast = currentPage === numPages;
   const prevPage = getCreaturesUrl(currentPage - 1);
   const nextPage = getCreaturesUrl(currentPage + 1);
   const pages = props.data.allMarkdownRemark.edges;
@@ -25,8 +23,6 @@ const Creatures = props => {
       <TitlePage text={translations.CreaturesPageTitle} />
       <PageList pages={pages} />
       <Pagination
-        isFirst={isFirst}
-        isLast={isLast}
         currentPage={currentPage}
         numPages={numPages}
         prevPage={prevPage}

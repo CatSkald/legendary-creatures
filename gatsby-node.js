@@ -1,5 +1,6 @@
 const path = require("path");
 const languages = require("./src/i18n/languages");
+const localizedNavigation = require("./src/i18n/navigation");
 const {
   tagsPath,
   getCreatureUrl,
@@ -137,6 +138,7 @@ exports.createPages = async ({ graphql, actions }) => {
     language,
     getUrl,
     template,
+    localizedLinks,
     context = {},
   ) {
     const itemsPerPage = 4;
@@ -159,6 +161,7 @@ exports.createPages = async ({ graphql, actions }) => {
           categories: context.categories || globAny,
           number: context.number || globAny,
           habitat: context.habitat || globAny,
+          localizedLinks: localizedLinks,
         },
       });
     });
@@ -172,6 +175,7 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         language: langProps,
         locale: lang,
+        localizedLinks: localizedNavigation.paths.tags,
       },
     });
 
@@ -185,6 +189,7 @@ exports.createPages = async ({ graphql, actions }) => {
       langProps,
       getCreaturesUrl,
       creatureListTemplate,
+      localizedNavigation.paths.creatures,
     );
 
     //create paginated tag search results
@@ -193,21 +198,22 @@ exports.createPages = async ({ graphql, actions }) => {
         values.forEach(value => {
           const creaturePagesCount = pageContentFromMarkdown.filter(
             page =>
-              !page.node.frontmatter.page &&
               page.node.fields.locale === lang &&
               page.node.frontmatter[tag] &&
               (page.node.frontmatter[tag] === value ||
                 page.node.frontmatter[tag].includes(value)),
           ).length;
 
+          const tagName = localizedNavigation.tags[tag][lang];
           const context = {};
           context[tag] = value;
 
           createPaginatedPages(
             creaturePagesCount,
             langProps,
-            pageIndex => getTagValueUrl(tag, value, pageIndex),
+            pageIndex => getTagValueUrl(tagName, value, pageIndex),
             creatureListTemplate,
+            localizedNavigation.paths.tags,
             context,
           );
         });
