@@ -61,13 +61,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/i18n/configuration`,
-        name: `i18n-configuration`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         path: `${__dirname}/src/images`,
         name: `images`,
       },

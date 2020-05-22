@@ -27,7 +27,10 @@ const Languages = props => {
 
     e.preventDefault();
 
-    const mappedUrl = props.localizedLinks && props.localizedLinks[lang];
+    const mappedUrl =
+      props.localizedLinks &&
+      props.localizedLinks[lang] &&
+      props.localizedLinks[lang].path;
 
     return navigate(
       mappedUrl

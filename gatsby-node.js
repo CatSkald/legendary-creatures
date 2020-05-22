@@ -105,7 +105,9 @@ exports.createPages = async ({ graphql, actions }) => {
       .filter(({ node: page }) => page.frontmatter.id === id)
       .forEach(({ node: page }) => {
         const path = page.frontmatter.path || page.fields.slug;
-        result[page.fields.locale] = isPage ? path : getCreatureUrl(path);
+        result[page.fields.locale] = {
+          path: isPage ? path : getCreatureUrl(path),
+        };
       });
     return result;
   };
@@ -175,7 +177,7 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         language: langProps,
         locale: lang,
-        localizedLinks: localizedNavigation.paths.tags,
+        localizedLinks: localizedNavigation.pages.tags,
       },
     });
 
@@ -189,7 +191,7 @@ exports.createPages = async ({ graphql, actions }) => {
       langProps,
       getCreaturesUrl,
       creatureListTemplate,
-      localizedNavigation.paths.creatures,
+      localizedNavigation.pages.creatures,
     );
 
     //create paginated tag search results
@@ -213,7 +215,7 @@ exports.createPages = async ({ graphql, actions }) => {
             langProps,
             pageIndex => getTagValueUrl(tagName, value, pageIndex),
             creatureListTemplate,
-            localizedNavigation.paths.tags,
+            localizedNavigation.pages.tags,
             context,
           );
         });

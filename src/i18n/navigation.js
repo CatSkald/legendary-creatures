@@ -1,19 +1,46 @@
 module.exports = {
-  paths: {
+  // use non-breaking space in titles: " "
+  pages: {
+    home: {
+      en: { title: "Home", path: "/" },
+      ru: { title: "Главная", path: "/" },
+      uk: { title: "Головна", path: "/" },
+      type: "menu",
+    },
     creatures: {
-      en: "/creatures",
-      ru: "/creatures",
-      uk: "/creatures",
+      en: { title: "Creatures", path: "/creatures" },
+      ru: { title: "Библиотека существ", path: "/creatures" },
+      uk: { title: "Бібліотека істот", path: "/creatures" },
+      type: "menu",
     },
     tags: {
-      en: "/tags",
-      ru: "/tags",
-      uk: "/tags",
+      en: { title: "Tags", path: "/tags" },
+      ru: { title: "Метки", path: "/tags" },
+      uk: { title: "Мітки", path: "/tags" },
+      type: "menu",
     },
     search: {
-      en: "/search",
-      ru: "/search",
-      uk: "/search",
+      en: { title: "", path: "/search" },
+      ru: { title: "", path: "/search" },
+      uk: { title: "", path: "/search" },
+    },
+    about: {
+      en: { title: "About", path: "/about" },
+      ru: { title: "О проекте", path: "/about" },
+      uk: { title: "Про проект", path: "/about" },
+      type: "menu",
+    },
+    terms: {
+      en: { title: "Privacy & Terms", path: "/terms" },
+      ru: { title: "Конфиденциальность и условия", path: "/terms" },
+      uk: { title: "Конфіденційність та умови", path: "/terms" },
+      type: "footer",
+    },
+    contact: {
+      en: { title: "Contact", path: "/contact" },
+      ru: { title: "Обратная связь", path: "/contact" },
+      uk: { title: "Зворотній зв’язок", path: "/contact" },
+      type: "footer",
     },
   },
   tags: {

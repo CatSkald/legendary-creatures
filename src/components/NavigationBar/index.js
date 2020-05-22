@@ -2,19 +2,16 @@ import styles from "./index.module.scss";
 
 import React from "react";
 import PropTypes from "prop-types";
-import { useStaticQuery, graphql } from "gatsby";
 import LocalizedLink from "../LocalizedLink";
 import { LocaleContext } from "../Layout";
 
+const localizedNavigation = require("../../i18n/navigation");
+
 const NavigationBar = props => {
   const { language } = React.useContext(LocaleContext);
-  const { rawData } = useStaticQuery(queryMenu);
-  const localeFileExtension = "." + language.code;
-  const menuItemsForCurrentLocale = rawData.edges
-    .filter(
-      item => item.node.name && item.node.name.endsWith(localeFileExtension),
-    )
-    .map(item => item.node.translations.menuItems)[0];
+  var menuItems = Object.entries(localizedNavigation.pages)
+    .filter(([page, data]) => data.type === "menu")
+    .map(([page, data]) => data[language.code]);
 
   return (
     <>
@@ -23,16 +20,16 @@ const NavigationBar = props => {
           props.isActive ? styles.active : ""
         }`}
       >
-        {menuItemsForCurrentLocale.map(menu => (
+        {menuItems.map(menu => (
           <LocalizedLink
             className={styles.NavigationLink}
-            key={menu.name}
-            to={menu.link}
-            aria-label={menu.name}
+            key={menu.path}
+            to={menu.path}
+            aria-label={menu.title}
             activeClassName={styles.active}
             onClick={() => props.handleToggleMenu()}
           >
-            {menu.name}
+            {menu.title}
           </LocalizedLink>
         ))}
       </nav>
@@ -46,26 +43,3 @@ NavigationBar.propTypes = {
 };
 
 export default NavigationBar;
-
-const queryMenu = graphql`
-  query queryMenu {
-    rawData: allFile(
-      filter: {
-        sourceInstanceName: { eq: "i18n-configuration" }
-        name: { glob: "menu.*" }
-      }
-    ) {
-      edges {
-        node {
-          name
-          translations: childConfigurationYaml {
-            menuItems {
-              link
-              name
-            }
-          }
-        }
-      }
-    }
-  }
-`;
