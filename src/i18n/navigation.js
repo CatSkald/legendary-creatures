@@ -32,8 +32,8 @@ module.exports = {
     },
     terms: {
       en: { title: "Privacy & Terms", path: "/terms" },
-      ru: { title: "Конфиденциальность и условия", path: "/terms" },
-      uk: { title: "Конфіденційність та умови", path: "/terms" },
+      ru: { title: "Конфиденциальность и условия пользования", path: "/terms" },
+      uk: { title: "Конфіденційність та умови користування", path: "/terms" },
       type: "footer",
     },
     contact: {
