@@ -5,7 +5,7 @@ export const useImages = () => {
     graphql`
       query {
         listImages: allFile(
-          filter: { childImageSharp: { fluid: { originalName: { ne: null } } } }
+          filter: { sourceInstanceName: { eq: "image-assets" } }
         ) {
           edges {
             node {
