@@ -6,19 +6,19 @@ id: e07af505cd7c4747aaf1310a68d1801b
 page: true
 ---
 
-This site is an encyclopaedia of creatures originating from the folklore, legends, mythos, tales with rich search and extensive categorisation.
+This website is an encyclopaedia of creatures originating from folklore, legends, mythos and tales.
 
-The information on our site is gathered from different sources and we cannot guarantee its accuracy or correctness. It is up to the reader to verify the information. We do try to mention the sources if possible.
+The information here is gathered from different sources and we cannot guarantee its accuracy or correctness. We try to mention the sources where possible.
 
-Please contact us if you find any errors in the articles.
+Please let us know in case you spot any mistakes anywhere on our website.
 
 ---
 
-### Why this project was created?
+### Goal of the project
 
-The initial goal is to gather information about various legendary creatures; categorise, tag and share it with our readers. We start with the less known creatures from the Slavic and Scandinavian folklore.
+Our goal is to gather information about various legendary creatures; categorise and convert it in a useful format; add a functional search; and share it with our readers.
 
-The ultimate goal is to create an extensive archive of articles with rich search and filtering capabilities.
+We started with the less known creatures from the Slavic and Scandinavian folklore.
 
 ---
 
@@ -30,4 +30,4 @@ The ultimate goal is to create an extensive archive of articles with rich search
 
 Only describe creatures originating from folklore, mythos, legends and tales.
 
-Popular culture, fiction literature, modern interpretations - we do not count all of that as a good source.
+Popular culture, fiction literature, modern interpretations - those are are not suitable sources for this website.

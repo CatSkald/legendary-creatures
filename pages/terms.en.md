@@ -8,7 +8,7 @@ page: true
 
 By using our website you agree to this terms.
 
-This page was last modified on May 22, 2020.
+This page was last modified on June 1, 2020.
 
 ### In this article
 
