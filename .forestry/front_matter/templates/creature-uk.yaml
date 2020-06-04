@@ -18,16 +18,17 @@ fields:
     label: Назва
   - name: plural
     type: text
-    config:
-      required: true
     label: Множина
   - name: language
     type: text
     config:
       required: true
     label: Мова
+  - name: origin
+    type: text
+    label: Район походження назви
   config:
-    min: 
+    min: 1
     max: 
     labelField: name
   label: Інші назви

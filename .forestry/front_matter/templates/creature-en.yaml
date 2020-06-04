@@ -21,16 +21,17 @@ fields:
     label: Transliteration
   - name: plural
     type: text
-    config:
-      required: true
     label: Plural
   - name: language
     type: text
     config:
       required: true
     label: Language
+  - name: origin
+    type: text
+    label: Origin of the name
   config:
-    min: 
+    min: 1
     max: 
     labelField: name
   label: Other names

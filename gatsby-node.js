@@ -262,8 +262,9 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       name: "Name",
       fields: {
         name: { type: "String!" },
-        plural: { type: "String!" },
+        plural: { type: "String" },
         language: { type: "String!" },
+        origin: { type: "String" },
       },
     }),
   ];
