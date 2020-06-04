@@ -143,7 +143,7 @@ exports.createPages = async ({ graphql, actions }) => {
     localizedLinks,
     context = {},
   ) {
-    const itemsPerPage = 4;
+    const itemsPerPage = 6;
     const globAny = "*";
     const pageCount = Math.ceil(totalItems / itemsPerPage);
 
@@ -155,7 +155,7 @@ exports.createPages = async ({ graphql, actions }) => {
           limit: itemsPerPage,
           skip: index * itemsPerPage,
           numPages: pageCount,
-          currentPage: index + 1,
+          currentPage: index,
           language: language,
           locale: language.code,
           dateFormat: language.dateFormat,

@@ -8,8 +8,9 @@ import useTranslations from "../../i18n/translations/useTranslations";
 const Pagination = props => {
   const translations = useTranslations();
 
-  const isFirst = props.currentPage === 1;
-  const isLast = props.currentPage === props.numPages;
+  const current = props.currentPage + 1;
+  const isFirst = current === 1;
+  const isLast = current === props.numPages;
 
   return (
     <div className={styles.PaginationContainer}>
@@ -21,7 +22,7 @@ const Pagination = props => {
         )}
       </p>
       <p>
-        {props.currentPage} {translations.of} {props.numPages}
+        {current} {translations.of} {props.numPages}
       </p>
       <p>
         {!isLast && (
