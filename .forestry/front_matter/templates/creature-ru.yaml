@@ -72,6 +72,28 @@ fields:
   default: []
   label: Ареал
   description: Тип среды в которой проживает существо.
+- name: activity-time
+  type: select
+  default: неизвестно
+  config:
+    required: true
+    options:
+    - день
+    - ночь
+    - сумерки
+    - вечер
+    - утро
+    - нерегулярный
+    - полночь
+    - полдень
+    - неизвестно
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Образ жизни (время активности)
+  description: Когда существо активно
 - name: image
   type: file
   config:

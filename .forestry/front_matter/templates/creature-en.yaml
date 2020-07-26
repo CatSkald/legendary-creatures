@@ -77,6 +77,28 @@ fields:
   default: []
   label: Habitat
   description: The type of environment in which the creature usually lives.
+- name: activity-time
+  type: select
+  default: unknown
+  config:
+    required: true
+    options:
+    - diurnal
+    - nocturnal
+    - crepuscular (twilight)
+    - vespertine (evening)
+    - matutinal (morning)
+    - cathemeral (irregular)
+    - midnight
+    - noon
+    - unknown
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Activity time
+  description: When the creature is active
 - name: image
   type: file
   config:
