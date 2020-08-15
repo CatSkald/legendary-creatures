@@ -48,7 +48,10 @@ export const query = graphql`
         node {
           frontmatter {
             origin
-            categories
+            taxonomy
+            activityTime
+            appearance
+            clothes
             number
             habitat
           }

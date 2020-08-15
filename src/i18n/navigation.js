@@ -49,10 +49,25 @@ module.exports = {
       ru: "происхождение",
       uk: "походження",
     },
-    categories: {
-      en: "categories",
-      ru: "категории",
-      uk: "категорії",
+    taxonomy: {
+      en: "taxonomy",
+      ru: "таксономия",
+      uk: "таксономія",
+    },
+    activityTime: {
+      en: "activity time",
+      ru: "время активности",
+      uk: "час активності",
+    },
+    appearance: {
+      en: "appearance",
+      ru: "внешность",
+      uk: "зовнішність",
+    },
+    clothes: {
+      en: "clothes",
+      ru: "одежда",
+      uk: "одяг",
     },
     number: {
       en: "number",

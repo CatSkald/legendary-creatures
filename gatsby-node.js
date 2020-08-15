@@ -82,7 +82,10 @@ exports.createPages = async ({ graphql, actions }) => {
               id
               page
               origin
-              categories
+              taxonomy
+              activityTime
+              appearance
+              clothes
               number
               habitat
             }
@@ -160,7 +163,10 @@ exports.createPages = async ({ graphql, actions }) => {
           locale: language.code,
           dateFormat: language.dateFormat,
           origin: context.origin || globAny,
-          categories: context.categories || globAny,
+          taxonomy: context.taxonomy || globAny,
+          activityTime: context.activityTime || globAny,
+          appearance: context.appearance || globAny,
+          clothes: context.clothes || globAny,
           number: context.number || globAny,
           habitat: context.habitat || globAny,
           localizedLinks: localizedLinks,
@@ -198,6 +204,8 @@ exports.createPages = async ({ graphql, actions }) => {
     Object.entries(tags).forEach(([tag, values]) => {
       if (values && values.length > 0) {
         values.forEach(value => {
+          if (!value) return;
+
           const creaturePagesCount = pageContentFromMarkdown.filter(
             page =>
               page.node.fields.locale === lang &&
@@ -245,7 +253,10 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         page: "Boolean",
         //creatures
         names: { type: "[Name!]" },
-        categories: { type: "[String!]" },
+        taxonomy: { type: "[String!]" },
+        activityTime: { type: "[String!]" },
+        appearance: { type: "[String!]" },
+        clothes: { type: "[String!]" },
         origin: { type: "[String!]" },
         map: { type: "String" },
         related: { type: "[Frontmatter!]" },

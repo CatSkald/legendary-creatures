@@ -12,7 +12,6 @@ for: for
 fromPerson: from
 fromPlace: from
 of: of
-Categories: Categories
 View: View
 all: all
 orSearchBy: or search by
@@ -29,8 +28,15 @@ Origin: Origin
 Habitat: Habitat
 CreaturesPageTitle: Creatures
 TagsPageTitle: Tags
+Taxonomy: Taxonomy
+ActivityTime: Activity Time
+Appearance: Appearance
+Clothes: Clothes
 #tags
 origin: origin
-categories: categories
+taxonomy: taxonomy
+activityTime: activity time
+appearance: appearance
+clothes: clothes
 number: number
 habitat: habitat

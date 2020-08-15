@@ -11,10 +11,13 @@ names:
 description: A tree spirit
 origin:
 - Greece
-categories:
+taxonomy:
 - nymph
 - spirit
 - nature
+activityTime:
+appearance:
+clothes:
 related: []
 number: common
 habitat:

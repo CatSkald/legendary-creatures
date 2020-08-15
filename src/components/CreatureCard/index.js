@@ -42,8 +42,20 @@ const CreatureCard = props => {
               data={props.frontmatter.habitat}
             />
             <CardRow
-              tag={translations.Categories}
-              data={props.frontmatter.categories}
+              tag={translations.Taxonomy}
+              data={props.frontmatter.taxonomy}
+            />
+            <CardRow
+              tag={translations.ActivityTime}
+              data={props.frontmatter.activityTime}
+            />
+            <CardRow
+              tag={translations.Appearance}
+              data={props.frontmatter.appearance}
+            />
+            <CardRow
+              tag={translations.Clothes}
+              data={props.frontmatter.clothes}
             />
           </tbody>
         </table>

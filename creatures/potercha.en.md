@@ -1,8 +1,11 @@
 ---
-categories:
+taxonomy:
 - demon
 - spirit
 - undead
+activityTime:
+appearance:
+clothes:
 origin:
 - Ukraine
 number: common

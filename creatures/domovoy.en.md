@@ -1,7 +1,10 @@
 ---
-categories:
+taxonomy:
 - deity
 - tutelar
+activityTime:
+appearance:
+clothes:
 origin:
 - Ukraine
 number: common

@@ -1,8 +1,21 @@
 ---
-categories:
+taxonomy:
 - spirit
 - deity
 - tutelar
+activityTime:
+- nocturnal
+appearance:
+- high
+- long hair
+- long beard
+- gray-haired
+- toothless
+- blue eyes
+- toad eyes
+clothes:
+- white
+- naked
 origin:
 - Ukraine
 number: unique

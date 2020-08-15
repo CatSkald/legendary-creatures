@@ -1,6 +1,7 @@
 ---
 title: О проекте
 description: О проекте
+path: /about
 id: e07af505cd7c4747aaf1310a68d1801b
 page: true
 ---

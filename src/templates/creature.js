@@ -55,7 +55,10 @@ export const query = graphql`
         }
         description
         origin
-        categories
+        taxonomy
+        activityTime
+        appearance
+        clothes
         number
         habitat
         wikipedia

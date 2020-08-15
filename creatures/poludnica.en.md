@@ -1,12 +1,4 @@
 ---
-categories:
-- demon
-- spirit
-- undead
-- grain spirit
-- noon
-- wind
-- whirlwind
 taxonomy:
 - demon
 - spirit
@@ -15,7 +7,7 @@ taxonomy:
 - noon
 - wind
 - whirlwind
-activity-time:
+activityTime:
 - noon
 appearance:
 - loose hair

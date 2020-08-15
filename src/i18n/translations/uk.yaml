@@ -11,7 +11,6 @@ for: для
 fromPerson: від
 fromPlace: з
 of: з
-Categories: Категорії
 View: Переглянути
 all: всі
 orSearchBy: або шукати за
@@ -28,8 +27,15 @@ Origin: Походження
 Habitat: Ареал
 CreaturesPageTitle: Бібліотека істот
 TagsPageTitle: Мітки
+Taxonomy: Таксономія
+ActivityTime: Час активності
+Appearance: Зовнішність
+Clothes: Одяг
 #tags
 origin: походження
-categories: категорії
+taxonomy: таксономія
+activityTime: час активності
+appearance: зовнішність
+clothes: одяг
 number: чисельність
 habitat: ареал

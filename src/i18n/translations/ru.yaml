@@ -11,7 +11,6 @@ for: для
 fromPerson: от
 fromPlace: из
 of: из
-Categories: Категории
 View: Просмотреть
 all: все
 orSearchBy: или искать по
@@ -28,8 +27,15 @@ Origin: Происхождение
 Habitat: Ареал
 CreaturesPageTitle: Библиотека существ
 TagsPageTitle: Метки
+Taxonomy: Таксономия
+ActivityTime: Время активности
+Appearance: Внешность
+Clothes: Одежда
 #tags
 origin: происхождение
-categories: категории
+taxonomy: таксономия
+activityTime: время активности
+appearance: внешность
+clothes: одежда
 number: численность
 habitat: ареал

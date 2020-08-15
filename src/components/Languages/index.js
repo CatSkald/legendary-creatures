@@ -32,11 +32,7 @@ const Languages = props => {
       props.localizedLinks[lang] &&
       props.localizedLinks[lang].path;
 
-    return navigate(
-      mappedUrl
-        ? `${languages[lang].path}/${mappedUrl}`
-        : selectedLanguage.path,
-    );
+    return navigate(`${selectedLanguage.path}${mappedUrl || ""}` || "/");
   }
 
   return (
@@ -54,7 +50,7 @@ const Languages = props => {
                 language.code === lang ? styles.active : ""
               }`}
               key={lang}
-              to={languageProps.path}
+              to={languageProps.path || "/"}
               hrefLang={lang}
               onClick={e => handleClickLanguage(e, lang)}
             >

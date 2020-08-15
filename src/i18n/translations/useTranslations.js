@@ -33,7 +33,10 @@ const queryTranslations = graphql`
             fromPerson
             fromPlace
             of
-            Categories
+            Taxonomy
+            ActivityTime
+            Appearance
+            Clothes
             View
             all
             orSearchBy
@@ -51,7 +54,10 @@ const queryTranslations = graphql`
             CreaturesPageTitle
             TagsPageTitle
             origin
-            categories
+            taxonomy
+            activityTime
+            appearance
+            clothes
             number
             habitat
           }

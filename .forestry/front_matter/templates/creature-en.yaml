@@ -43,12 +43,26 @@ fields:
     required: true
   label: Short description
   description: One sentence briefly describing the creature.
-- name: categories
+- name: taxonomy
   type: tag_list
   default: []
-  label: Categories
-  description: Categories that describe the creature. Please enter as many as you
-    see fit.
+  label: Таксономия
+  description: Таксономия
+- name: activityTime
+  type: tag_list
+  default: []
+  label: Час активності
+  description: Час активності
+- name: appearance
+  type: tag_list
+  default: []
+  label: Зовнішність
+  description: Зовнішність
+- name: clothes
+  type: tag_list
+  default: []
+  label: Одяг
+  description: Одяг
 - name: origin
   type: tag_list
   default: []
@@ -77,7 +91,7 @@ fields:
   default: []
   label: Habitat
   description: The type of environment in which the creature usually lives.
-- name: activity-time
+- name: activityTime
   type: select
   default: unknown
   config:

@@ -39,11 +39,26 @@ fields:
     required: true
   label: Короткий опис
   description: Коротке речення, що характеризує істоту
-- name: categories
+- name: taxonomy
   type: tag_list
   default: []
-  label: Категорії
-  description: Категорії, що описують істоту. Вкажіть усі, що підходять.
+  label: Таксономия
+  description: Таксономия
+- name: activityTime
+  type: tag_list
+  default: []
+  label: Час активності
+  description: Час активності
+- name: appearance
+  type: tag_list
+  default: []
+  label: Зовнішність
+  description: Зовнішність
+- name: clothes
+  type: tag_list
+  default: []
+  label: Одяг
+  description: Одяг
 - name: origin
   type: tag_list
   default: []
@@ -71,7 +86,7 @@ fields:
   default: []
   label: Ареал
   description: Тип середовища в якому зазвичай живе істота.
-- name: activity-time
+- name: activityTime
   type: select
   default: невідомо
   config:

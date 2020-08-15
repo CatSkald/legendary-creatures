@@ -20,6 +20,7 @@ exports.localizedSlug = ({ isDefault, locale, slug, isPage }) => {
 exports.getTagUrl = tag => `${tagsPath}#${tag}`;
 
 exports.getTagValueUrl = (tag, value, pageIndex) => {
+  if (!tag || !value) return null;
   const url = `${searchPath}/${tag.toLowerCase()}/${value.toLowerCase()}`;
   return url + pagePath(pageIndex);
 };

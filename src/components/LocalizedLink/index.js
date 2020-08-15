@@ -8,7 +8,7 @@ const LocalizedLink = ({ to, ...props }) => {
   const isHomepage = to === "/";
   const path = language.path + (isHomepage ? "" : to);
 
-  return <Link {...props} to={path} hrefLang={language.code} />;
+  return <Link {...props} to={path || "/"} hrefLang={language.code} />;
 };
 
 export default LocalizedLink;

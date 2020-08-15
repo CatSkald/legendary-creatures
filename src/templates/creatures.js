@@ -56,7 +56,10 @@ export const query = graphql`
     $skip: Int!
     $limit: Int!
     $origin: String!
-    $categories: String!
+    $taxonomy: String!
+    $activityTime: String!
+    $appearance: String!
+    $clothes: String!
     $number: String!
     $habitat: String!
   ) {
@@ -66,7 +69,10 @@ export const query = graphql`
         frontmatter: {
           page: { eq: null }
           origin: { glob: $origin }
-          categories: { glob: $categories }
+          taxonomy: { glob: $taxonomy }
+          activityTime: { glob: $activityTime }
+          appearance: { glob: $appearance }
+          clothes: { glob: $clothes }
           number: { glob: $number }
           habitat: { glob: $habitat }
         }
