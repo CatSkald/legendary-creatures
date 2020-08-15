@@ -9,6 +9,7 @@ taxonomy:
 - whirlwind
 activityTime:
 - noon
+voice:
 appearance:
 - loose hair
 - gray hair

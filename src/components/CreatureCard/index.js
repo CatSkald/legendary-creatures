@@ -49,6 +49,7 @@ const CreatureCard = props => {
               tag={translations.ActivityTime}
               data={props.frontmatter.activityTime}
             />
+            <CardRow tag={translations.Voice} data={props.frontmatter.voice} />
             <CardRow
               tag={translations.Appearance}
               data={props.frontmatter.appearance}

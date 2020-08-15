@@ -4,6 +4,7 @@ taxonomy:
 - spirit
 - undead
 activityTime:
+voice:
 appearance:
 clothes:
 origin:

@@ -3,8 +3,14 @@ taxonomy:
 - spirit
 - deity
 - tutelar
+- wind
+- whirlwind
 activityTime:
 - nocturnal
+voice:
+- lisping
+- loud
+- thundering
 appearance:
 - high
 - long hair

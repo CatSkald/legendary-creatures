@@ -29,12 +29,14 @@ CreaturesPageTitle: Библиотека существ
 TagsPageTitle: Метки
 Taxonomy: Таксономия
 ActivityTime: Время активности
+Voice: Голос
 Appearance: Внешность
 Clothes: Одежда
 #tags
 origin: происхождение
 taxonomy: таксономия
 activityTime: время активности
+voice: внешность
 appearance: внешность
 clothes: одежда
 number: численность

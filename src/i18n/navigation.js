@@ -59,6 +59,11 @@ module.exports = {
       ru: "время активности",
       uk: "час активності",
     },
+    voice: {
+      en: "voice",
+      ru: "голос",
+      uk: "голос",
+    },
     appearance: {
       en: "appearance",
       ru: "внешность",

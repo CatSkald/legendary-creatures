@@ -29,12 +29,14 @@ CreaturesPageTitle: Бібліотека істот
 TagsPageTitle: Мітки
 Taxonomy: Таксономія
 ActivityTime: Час активності
+Voice: Голос
 Appearance: Зовнішність
 Clothes: Одяг
 #tags
 origin: походження
 taxonomy: таксономія
 activityTime: час активності
+voice: голос
 appearance: зовнішність
 clothes: одяг
 number: чисельність

@@ -58,6 +58,7 @@ export const query = graphql`
     $origin: String!
     $taxonomy: String!
     $activityTime: String!
+    $voice: String!
     $appearance: String!
     $clothes: String!
     $number: String!
@@ -71,6 +72,7 @@ export const query = graphql`
           origin: { glob: $origin }
           taxonomy: { glob: $taxonomy }
           activityTime: { glob: $activityTime }
+          voice: { glob: $voice }
           appearance: { glob: $appearance }
           clothes: { glob: $clothes }
           number: { glob: $number }

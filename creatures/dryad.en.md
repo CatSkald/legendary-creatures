@@ -16,6 +16,7 @@ taxonomy:
 - spirit
 - nature
 activityTime:
+voice:
 appearance:
 clothes:
 related: []

@@ -2,6 +2,7 @@
 taxonomy:
 - deity
 - tutelar
+voice:
 activityTime:
 appearance:
 clothes:

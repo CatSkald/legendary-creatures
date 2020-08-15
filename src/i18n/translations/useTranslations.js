@@ -35,6 +35,7 @@ const queryTranslations = graphql`
             of
             Taxonomy
             ActivityTime
+            Voice
             Appearance
             Clothes
             View
@@ -56,6 +57,7 @@ const queryTranslations = graphql`
             origin
             taxonomy
             activityTime
+            voice
             appearance
             clothes
             number

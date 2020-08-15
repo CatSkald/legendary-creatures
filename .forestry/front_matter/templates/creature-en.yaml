@@ -53,6 +53,11 @@ fields:
   default: []
   label: Час активності
   description: Час активності
+- name: voice
+  type: tag_list
+  default: []
+  label: Голос
+  description: Голос
 - name: appearance
   type: tag_list
   default: []

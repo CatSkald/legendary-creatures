@@ -4,6 +4,7 @@ taxonomy:
 - spirit
 - undead
 activityTime:
+voice:
 appearance:
 - long hair
 - loose hair

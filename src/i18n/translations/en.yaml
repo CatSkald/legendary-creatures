@@ -30,12 +30,14 @@ CreaturesPageTitle: Creatures
 TagsPageTitle: Tags
 Taxonomy: Taxonomy
 ActivityTime: Activity Time
+Voice: Voice
 Appearance: Appearance
 Clothes: Clothes
 #tags
 origin: origin
 taxonomy: taxonomy
 activityTime: activity time
+voice: voice
 appearance: appearance
 clothes: clothes
 number: number

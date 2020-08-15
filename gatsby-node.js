@@ -84,6 +84,7 @@ exports.createPages = async ({ graphql, actions }) => {
               origin
               taxonomy
               activityTime
+              voice
               appearance
               clothes
               number
@@ -165,6 +166,7 @@ exports.createPages = async ({ graphql, actions }) => {
           origin: context.origin || globAny,
           taxonomy: context.taxonomy || globAny,
           activityTime: context.activityTime || globAny,
+          voice: context.voice || globAny,
           appearance: context.appearance || globAny,
           clothes: context.clothes || globAny,
           number: context.number || globAny,
@@ -255,6 +257,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         names: { type: "[Name!]" },
         taxonomy: { type: "[String!]" },
         activityTime: { type: "[String!]" },
+        voice: { type: "[String!]" },
         appearance: { type: "[String!]" },
         clothes: { type: "[String!]" },
         origin: { type: "[String!]" },

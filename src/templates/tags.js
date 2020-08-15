@@ -50,6 +50,7 @@ export const query = graphql`
             origin
             taxonomy
             activityTime
+            voice
             appearance
             clothes
             number
