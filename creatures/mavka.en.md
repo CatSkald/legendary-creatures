@@ -5,7 +5,11 @@ taxonomy:
 - undead
 activityTime:
 appearance:
+- long hair
+- loose hair
+- green hair
 clothes:
+- naked
 origin:
 - Ukraine
 number: common
