@@ -28,14 +28,14 @@ Habitat: Ареал
 CreaturesPageTitle: Библиотека существ
 TagsPageTitle: Метки
 Taxonomy: Таксономия
-ActivityTime: Время активности
+ActivityTime: Время активности #non-breaking space
 Voice: Голос
 Appearance: Внешность
 Clothes: Одежда
 #tags
 origin: происхождение
 taxonomy: таксономия
-activityTime: время активности
+activityTime: время активности #non-breaking space
 voice: внешность
 appearance: внешность
 clothes: одежда

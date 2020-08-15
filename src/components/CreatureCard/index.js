@@ -66,6 +66,8 @@ const CreatureCard = props => {
 };
 
 const CardRow = props => {
+  if (!props.data) return null;
+
   var data = Array.isArray(props.data) ? props.data : [props.data];
   const { getTagUrl, getTagValueUrl } = require("../../utils/url-helpers");
   const tagUrl = getTagUrl(props.tag);

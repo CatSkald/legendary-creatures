@@ -29,14 +29,14 @@ Habitat: Habitat
 CreaturesPageTitle: Creatures
 TagsPageTitle: Tags
 Taxonomy: Taxonomy
-ActivityTime: Activity Time
+ActivityTime: Activity Time #non-breaking space
 Voice: Voice
 Appearance: Appearance
 Clothes: Clothes
 #tags
 origin: origin
 taxonomy: taxonomy
-activityTime: activity time
+activityTime: activity time #non-breaking space
 voice: voice
 appearance: appearance
 clothes: clothes

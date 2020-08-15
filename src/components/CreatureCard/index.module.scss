@@ -12,7 +12,7 @@
   text-align: left;
 
   &:after {
-    content: ":";
+    content: ": "; //non-breaking space
   }
 }
 
@@ -21,7 +21,7 @@
   text-align: left;
 
   a {
-    margin-right: var(--space-sm);
+    font-weight: normal;
 
     &:after {
       content: ", ";
@@ -38,6 +38,7 @@
 .Info {
   font-size: 1.3rem;
   width: 100%;
+  margin: 0 var(--space-sm);
   tr,
   td,
   th {
@@ -55,8 +56,8 @@
   background: var(--content-bg);
   margin: 0 0 var(--space) var(--space-sm);
   padding: 0 0 var(--space) var(--space-sm);
-  width: 400px;
-  height: 600px;
+  min-width: 400px;
+  width: 50%;
   -webkit-font-smoothing: antialiased;
   float: right;
   word-wrap: break-word;
@@ -82,10 +83,6 @@
   padding: var(--space-sm);
   box-sizing: border-box;
   color: var(--card-text);
-
-  table {
-    margin: 0;
-  }
 
   a,
   a:visited {
