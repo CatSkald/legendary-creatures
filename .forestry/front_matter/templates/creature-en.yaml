@@ -46,13 +46,18 @@ fields:
 - name: taxonomy
   type: tag_list
   default: []
-  label: Таксономия
-  description: Таксономия
+  label: Taxonomy
+  description: Kinds and types of the creature
+- name: shapeshifting
+  type: tag_list
+  default: []
+  label: Shapeshifting
+  description: Forms to which the creature can transform
 - name: voice
   type: tag_list
   default: []
-  label: Голос
-  description: Голос
+  label: Voice
+  description: Voice
 - name: appearance
   type: tag_list
   default: []
@@ -66,8 +71,8 @@ fields:
 - name: paraphernalia
   type: tag_list
   default: []
-  label: Атрибутика
-  description: Атрибутика
+  label: Paraphernalia
+  description: Equipment and things belonging to or associated with the creature
 - name: origin
   type: tag_list
   default: []

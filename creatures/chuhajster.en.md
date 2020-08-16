@@ -3,6 +3,7 @@ taxonomy:
 - spirit
 - deity
 - tutelar
+shapeshifting:
 - wind
 - whirlwind
 activityTime:

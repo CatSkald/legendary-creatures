@@ -4,7 +4,8 @@ taxonomy:
 - spirit
 - undead
 - grain spirit
-- noon
+- tutelar
+shapeshifting:
 - wind
 - whirlwind
 activityTime:

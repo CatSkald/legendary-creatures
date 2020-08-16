@@ -54,6 +54,11 @@ module.exports = {
       ru: "таксономия",
       uk: "таксономія",
     },
+    shapeshifting: {
+      en: "shapeshifting",
+      ru: "ипостаси",
+      uk: "іпостасі",
+    },
     activityTime: {
       en: "activity time",
       ru: "время активности",

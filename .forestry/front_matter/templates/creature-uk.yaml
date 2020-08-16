@@ -42,8 +42,13 @@ fields:
 - name: taxonomy
   type: tag_list
   default: []
-  label: Таксономия
-  description: Таксономия
+  label: Таксономія
+  description: Типи та різновиди істоти
+- name: shapeshifting
+  type: tag_list
+  default: []
+  label: Іпостасі та форми
+  description: Здатність змінювати подобу
 - name: activityTime
   type: tag_list
   default: []

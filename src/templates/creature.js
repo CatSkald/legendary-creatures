@@ -56,6 +56,7 @@ export const query = graphql`
         description
         origin
         taxonomy
+        shapeshifting
         activityTime
         voice
         appearance

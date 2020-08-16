@@ -29,6 +29,7 @@ Habitat: Habitat
 CreaturesPageTitle: Creatures
 TagsPageTitle: Tags
 Taxonomy: Taxonomy
+Shapeshifting: Shapeshifting
 ActivityTime: Activity Time #non-breaking space
 Voice: Voice
 Appearance: Appearance
@@ -37,6 +38,7 @@ Paraphernalia: Paraphernalia
 #tags
 origin: origin
 taxonomy: taxonomy
+shapeshifting: shapeshifting
 activityTime: activity time #non-breaking space
 voice: voice
 appearance: appearance

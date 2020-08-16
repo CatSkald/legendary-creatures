@@ -45,6 +45,11 @@ fields:
   default: []
   label: Таксономия
   description: Таксономия
+- name: shapeshifting
+  type: tag_list
+  default: []
+  label: Ипостаси и формы
+  description: Способность менять облик
 - name: voice
   type: tag_list
   default: []

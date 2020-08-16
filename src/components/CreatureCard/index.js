@@ -47,6 +47,10 @@ const CreatureCard = props => {
               data={props.frontmatter.taxonomy}
             />
             <CardRow
+              tag={translations.Shapeshifting}
+              data={props.frontmatter.shapeshifting}
+            />
+            <CardRow
               tag={translations.ActivityTime}
               data={props.frontmatter.activityTime}
             />

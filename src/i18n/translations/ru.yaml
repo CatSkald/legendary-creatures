@@ -28,6 +28,7 @@ Habitat: Ареал
 CreaturesPageTitle: Библиотека существ
 TagsPageTitle: Метки
 Taxonomy: Таксономия
+Shapeshifting: Ипостаси
 ActivityTime: Время активности #non-breaking space
 Voice: Голос
 Appearance: Внешность
@@ -36,6 +37,7 @@ Paraphernalia: Атрибутика
 #tags
 origin: происхождение
 taxonomy: таксономия
+shapeshifting: ипостаси
 activityTime: время активности #non-breaking space
 voice: внешность
 appearance: внешность

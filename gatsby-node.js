@@ -83,6 +83,7 @@ exports.createPages = async ({ graphql, actions }) => {
               page
               origin
               taxonomy
+              shapeshifting
               activityTime
               voice
               appearance
@@ -167,6 +168,7 @@ exports.createPages = async ({ graphql, actions }) => {
           dateFormat: language.dateFormat,
           origin: context.origin || globAny,
           taxonomy: context.taxonomy || globAny,
+          shapeshifting: context.shapeshifting || globAny,
           activityTime: context.activityTime || globAny,
           voice: context.voice || globAny,
           appearance: context.appearance || globAny,
@@ -259,6 +261,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         //creatures
         names: { type: "[Name!]" },
         taxonomy: { type: "[String!]" },
+        shapeshifting: { type: "[String!]" },
         activityTime: { type: "[String!]" },
         voice: { type: "[String!]" },
         appearance: { type: "[String!]" },

@@ -34,6 +34,7 @@ const queryTranslations = graphql`
             fromPlace
             of
             Taxonomy
+            Shapeshifting
             ActivityTime
             Voice
             Appearance
@@ -57,6 +58,7 @@ const queryTranslations = graphql`
             TagsPageTitle
             origin
             taxonomy
+            shapeshifting
             activityTime
             voice
             appearance

@@ -49,6 +49,7 @@ export const query = graphql`
           frontmatter {
             origin
             taxonomy
+            shapeshifting
             activityTime
             voice
             appearance
