@@ -35,6 +35,18 @@
   }
 }
 
+.InfoButtons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 26px;
+  color: var(--content-link);
+
+  &:hover {
+    color: var(--content-link-hover);
+  }
+}
+
 .Info {
   font-size: 1.3rem;
   width: 100%;

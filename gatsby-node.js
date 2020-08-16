@@ -90,6 +90,7 @@ exports.createPages = async ({ graphql, actions }) => {
               paraphernalia
               number
               habitat
+              wikipedia
             }
           }
         }
@@ -285,7 +286,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       },
     }),
     schema.buildObjectType({
-      name: "Tag",
+      name: "Category",
       fields: {
         value: { type: "String!" },
         comment: { type: "String" },

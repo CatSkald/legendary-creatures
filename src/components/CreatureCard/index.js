@@ -6,6 +6,7 @@ import Img from "gatsby-image";
 import useTranslations from "../../i18n/translations/useTranslations";
 import { useImages } from "../../hooks/use-images";
 import LocalizedLink from "../LocalizedLink";
+import { Wikipedia } from "styled-icons/boxicons-logos/Wikipedia";
 
 const { getImageNameOrDefaultCover } = require("../../utils/image-helpers");
 
@@ -64,6 +65,7 @@ const CreatureCard = props => {
             />
           </tbody>
         </table>
+        <CardButtons data={props.frontmatter} />
       </div>
     </div>
   );
@@ -97,6 +99,23 @@ const CardRow = props => {
   );
 };
 
+const CardButtons = props => {
+  return (
+    <div className={styles.InfoButtons}>
+      {props.data.wikipedia && (
+        <a
+          href={props.data.wikipedia}
+          title="Wikipedia"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Wikipedia />
+        </a>
+      )}
+    </div>
+  );
+};
+
 CreatureCard.propTypes = {
   frontmatter: PropTypes.object.isRequired,
 };
@@ -106,7 +125,11 @@ CardRow.propTypes = {
   data: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string),
-  ]).isRequired,
+  ]),
+};
+
+CardButtons.propTypes = {
+  data: PropTypes.object.isRequired,
 };
 
 export default CreatureCard;

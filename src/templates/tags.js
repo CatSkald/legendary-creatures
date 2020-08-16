@@ -56,6 +56,7 @@ export const query = graphql`
             paraphernalia
             number
             habitat
+            wikipedia
           }
         }
       }
