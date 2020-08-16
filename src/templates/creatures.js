@@ -61,6 +61,7 @@ export const query = graphql`
     $voice: String!
     $appearance: String!
     $clothes: String!
+    $paraphernalia: String!
     $number: String!
     $habitat: String!
   ) {
@@ -75,6 +76,7 @@ export const query = graphql`
           voice: { glob: $voice }
           appearance: { glob: $appearance }
           clothes: { glob: $clothes }
+          paraphernalia: { glob: $paraphernalia }
           number: { glob: $number }
           habitat: { glob: $habitat }
         }

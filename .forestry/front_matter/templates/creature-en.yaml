@@ -48,11 +48,6 @@ fields:
   default: []
   label: Таксономия
   description: Таксономия
-- name: activityTime
-  type: tag_list
-  default: []
-  label: Час активності
-  description: Час активності
 - name: voice
   type: tag_list
   default: []
@@ -61,13 +56,18 @@ fields:
 - name: appearance
   type: tag_list
   default: []
-  label: Зовнішність
-  description: Зовнішність
+  label: Appearance
+  description: Appearance
 - name: clothes
   type: tag_list
   default: []
-  label: Одяг
-  description: Одяг
+  label: Clothes
+  description: Clothes
+- name: paraphernalia
+  type: tag_list
+  default: []
+  label: Атрибутика
+  description: Атрибутика
 - name: origin
   type: tag_list
   default: []

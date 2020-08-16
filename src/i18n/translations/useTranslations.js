@@ -38,6 +38,7 @@ const queryTranslations = graphql`
             Voice
             Appearance
             Clothes
+            Paraphernalia
             View
             all
             orSearchBy
@@ -60,6 +61,7 @@ const queryTranslations = graphql`
             voice
             appearance
             clothes
+            paraphernalia
             number
             habitat
           }

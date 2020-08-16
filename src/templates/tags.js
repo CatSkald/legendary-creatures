@@ -53,6 +53,7 @@ export const query = graphql`
             voice
             appearance
             clothes
+            paraphernalia
             number
             habitat
           }

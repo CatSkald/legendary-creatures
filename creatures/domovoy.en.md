@@ -6,6 +6,7 @@ voice:
 activityTime:
 appearance:
 clothes:
+paraphernalia:
 origin:
 - Ukraine
 number: common

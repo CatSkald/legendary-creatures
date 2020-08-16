@@ -25,7 +25,7 @@ clothes:
 - shiny
 - naked
 - shawl
-attributes:
+paraphernalia:
 - scythe
 - sickle
 - pan

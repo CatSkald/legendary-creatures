@@ -58,6 +58,10 @@ const CreatureCard = props => {
               tag={translations.Clothes}
               data={props.frontmatter.clothes}
             />
+            <CardRow
+              tag={translations.Paraphernalia}
+              data={props.frontmatter.paraphernalia}
+            />
           </tbody>
         </table>
       </div>

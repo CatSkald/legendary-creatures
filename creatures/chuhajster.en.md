@@ -22,6 +22,7 @@ appearance:
 clothes:
 - white
 - naked
+paraphernalia:
 origin:
 - Ukraine
 number: unique

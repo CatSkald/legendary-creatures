@@ -74,6 +74,11 @@ module.exports = {
       ru: "одежда",
       uk: "одяг",
     },
+    paraphernalia: {
+      en: "paraphernalia",
+      ru: "атрибутика",
+      uk: "атрибутика",
+    },
     number: {
       en: "number",
       ru: "численность",

@@ -87,6 +87,7 @@ exports.createPages = async ({ graphql, actions }) => {
               voice
               appearance
               clothes
+              paraphernalia
               number
               habitat
             }
@@ -169,6 +170,7 @@ exports.createPages = async ({ graphql, actions }) => {
           voice: context.voice || globAny,
           appearance: context.appearance || globAny,
           clothes: context.clothes || globAny,
+          paraphernalia: context.paraphernalia || globAny,
           number: context.number || globAny,
           habitat: context.habitat || globAny,
           localizedLinks: localizedLinks,
@@ -260,6 +262,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         voice: { type: "[String!]" },
         appearance: { type: "[String!]" },
         clothes: { type: "[String!]" },
+        paraphernalia: { type: "[String!]" },
         origin: { type: "[String!]" },
         map: { type: "String" },
         related: { type: "[Frontmatter!]" },
@@ -279,6 +282,22 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         plural: { type: "String" },
         language: { type: "String!" },
         origin: { type: "String" },
+      },
+    }),
+    schema.buildObjectType({
+      name: "Tag",
+      fields: {
+        value: { type: "String!" },
+        comment: { type: "String" },
+        origin: { type: "String" },
+        resembling: {
+          type: "Boolean",
+          resolve: source => source.resembling || false,
+        },
+        questionable: {
+          type: "Boolean",
+          resolve: source => source.resembling || false,
+        },
       },
     }),
   ];

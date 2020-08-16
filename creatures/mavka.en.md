@@ -11,6 +11,7 @@ appearance:
 - green hair
 clothes:
 - naked
+paraphernalia:
 origin:
 - Ukraine
 number: common

@@ -64,6 +64,11 @@ fields:
   default: []
   label: Одяг
   description: Одяг
+- name: paraphernalia
+  type: tag_list
+  default: []
+  label: Атрибутика
+  description: Атрибутика
 - name: origin
   type: tag_list
   default: []

@@ -33,6 +33,7 @@ ActivityTime: Activity Time #non-breaking space
 Voice: Voice
 Appearance: Appearance
 Clothes: Clothes
+Paraphernalia: Paraphernalia
 #tags
 origin: origin
 taxonomy: taxonomy
@@ -40,5 +41,6 @@ activityTime: activity time #non-breaking space
 voice: voice
 appearance: appearance
 clothes: clothes
+paraphernalia: paraphernalia
 number: number
 habitat: habitat

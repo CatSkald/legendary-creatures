@@ -5,8 +5,13 @@ taxonomy:
 - undead
 activityTime:
 voice:
+- frog-like croaking
 appearance:
+- childlike
 clothes:
+paraphernalia:
+- oil lamp
+- nightlight
 origin:
 - Ukraine
 number: common
@@ -38,18 +43,6 @@ id: 4ef8e1739cf344109bdbf04efbce101a
 ## Description
 
 Potercha is formed from a stillborn, aborted child or a child deceased unbaptized. It exists during 7 years. If no one performs a ritual (see Rituals below) over the potercha, then it would be transformed into a different demon forever.
-
-### Appearance
-
-They look like small children
-
-### Voice
-
-Frog-like croaking
-
-### Attributes
-
-* Oil lamp to lure people
 
 ## Classification
 

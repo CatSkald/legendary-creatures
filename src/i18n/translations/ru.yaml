@@ -32,6 +32,7 @@ ActivityTime: Время активности #non-breaking space
 Voice: Голос
 Appearance: Внешность
 Clothes: Одежда
+Paraphernalia: Атрибутика
 #tags
 origin: происхождение
 taxonomy: таксономия
@@ -39,5 +40,6 @@ activityTime: время активности #non-breaking space
 voice: внешность
 appearance: внешность
 clothes: одежда
+paraphernalia: атрибутика
 number: численность
 habitat: ареал
