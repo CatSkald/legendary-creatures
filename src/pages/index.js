@@ -64,7 +64,6 @@ export const query = graphql`
           frontmatter {
             title
             description
-            origin
             image
             date(formatString: $dateFormat)
           }
