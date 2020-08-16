@@ -2,6 +2,7 @@
 taxonomy:
 - deity
 - tutelar
+- household
 voice:
 activityTime:
 appearance:
@@ -27,3 +28,4 @@ id: 7c8a6f12e2764a43bddd1915f0fdb897
 
 ---
 ## Description
+Slavic household deity that protects and looks after the home

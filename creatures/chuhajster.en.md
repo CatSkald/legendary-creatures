@@ -77,4 +77,4 @@ id: f183362605a846b2b09e1f0c93316262
 ---
 ## Description
 
-Forest tutelary deity from the folklore of the Ukrainian Carpathians mountains (located on the West of Ukraine), unknown in other folklores. Most commonly found in the folklore of Hutsulshchyna.
+Forest tutelary deity from the folklore of the Ukrainian Carpathians (mountains located on the West of Ukraine), unknown in other folklores. Most commonly found in the folklore of Hutsulshchyna.

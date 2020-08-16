@@ -55,4 +55,4 @@ id: 45c42e70adad4ed6ae5b22274d7639cf
 
 ---
 ## Description
-Personification of sunstroke.
+Field spirit that appears at noon. Personification of sunstroke.
