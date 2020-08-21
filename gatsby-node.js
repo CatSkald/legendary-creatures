@@ -9,6 +9,8 @@ const {
   localizedSlug,
 } = require("./src/utils/url-helpers");
 const { parseTags } = require("./src/utils/tags-helpers");
+const { creaturesPerPage } = require("./src/configuration");
+const { tags: creatureTags } = require("./src/i18n/navigation");
 
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions;
@@ -107,16 +109,16 @@ exports.createPages = async ({ graphql, actions }) => {
   const pageContentFromMarkdown = result.data.files.edges;
   const tags = parseTags(pageContentFromMarkdown);
   const getLocalizedLinks = (id, isPage) => {
-    let result = {};
+    let localizedLinks = {};
     pageContentFromMarkdown
       .filter(({ node: page }) => page.frontmatter.id === id)
       .forEach(({ node: page }) => {
         const path = page.frontmatter.path || page.fields.slug;
-        result[page.fields.locale] = {
+        localizedLinks[page.fields.locale] = {
           path: isPage ? path : getCreatureUrl(path),
         };
       });
-    return result;
+    return localizedLinks;
   };
 
   pageContentFromMarkdown.forEach(({ node: file }) => {
@@ -150,34 +152,29 @@ exports.createPages = async ({ graphql, actions }) => {
     localizedLinks,
     context = {},
   ) {
-    const itemsPerPage = 6;
     const globAny = "*";
-    const pageCount = Math.ceil(totalItems / itemsPerPage);
+    const pageCount = Math.ceil(totalItems / creaturesPerPage);
 
     Array.from({ length: pageCount }).forEach((_, index) => {
+      const pageContext = {
+        limit: creaturesPerPage,
+        skip: index * creaturesPerPage,
+        numPages: pageCount,
+        currentPage: index,
+        language: language,
+        locale: language.code,
+        dateFormat: language.dateFormat,
+        localizedLinks: localizedLinks,
+      };
+
+      Object.entries(creatureTags).forEach(
+        ([tagName]) => (pageContext[tagName] = context[tagName] || globAny),
+      );
+
       createPage({
         path: language.path + getUrl(index),
         component: template,
-        context: {
-          limit: itemsPerPage,
-          skip: index * itemsPerPage,
-          numPages: pageCount,
-          currentPage: index,
-          language: language,
-          locale: language.code,
-          dateFormat: language.dateFormat,
-          origin: context.origin || globAny,
-          taxonomy: context.taxonomy || globAny,
-          shapeshifting: context.shapeshifting || globAny,
-          activityTime: context.activityTime || globAny,
-          voice: context.voice || globAny,
-          appearance: context.appearance || globAny,
-          clothes: context.clothes || globAny,
-          paraphernalia: context.paraphernalia || globAny,
-          number: context.number || globAny,
-          habitat: context.habitat || globAny,
-          localizedLinks: localizedLinks,
-        },
+        context: pageContext,
       });
     });
   }
@@ -294,13 +291,9 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         value: { type: "String!" },
         comment: { type: "String" },
         origin: { type: "String" },
-        resembling: {
+        sometimes: {
           type: "Boolean",
-          resolve: source => source.resembling || false,
-        },
-        questionable: {
-          type: "Boolean",
-          resolve: source => source.resembling || false,
+          resolve: source => source.sometimes || false,
         },
       },
     }),
