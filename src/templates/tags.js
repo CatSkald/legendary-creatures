@@ -47,16 +47,36 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
-            origin
-            taxonomy
-            shapeshifting
-            activityTime
-            voice
-            appearance
-            clothes
-            paraphernalia
-            number
-            habitat
+            origin {
+              value
+            }
+            taxonomy {
+              value
+            }
+            shapeshifting {
+              value
+            }
+            activityTime {
+              value
+            }
+            voice {
+              value
+            }
+            appearance {
+              value
+            }
+            clothes {
+              value
+            }
+            paraphernalia {
+              value
+            }
+            number {
+              value
+            }
+            habitat {
+              value
+            }
             wikipedia
           }
         }

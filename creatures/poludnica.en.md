@@ -1,47 +1,47 @@
 ---
 taxonomy:
-- demon
-- spirit
-- undead
-- grain spirit
-- tutelar
+- value: demon
+- value: spirit
+- value: undead
+- value: grain spirit
+- value: tutelar
 shapeshifting:
-- wind
-- whirlwind
+- value: wind
+- value: whirlwind
 activityTime:
-- noon
+- value: noon
 voice:
 appearance:
-- loose hair
-- gray hair
-- beautiful girl
-- ugly old woman
-- hooves
-- high
-- small
+- value: loose hair
+- value: gray hair
+- value: beautiful girl
+- value: ugly old woman
+- value: hooves
+- value: high
+- value: small
 clothes:
-- white
-- red
-- rags
-- shiny
-- naked
-- shawl
+- value: white
+- value: red
+- value: rags
+- value: shiny
+- value: naked
+- value: shawl
 paraphernalia:
-- scythe
-- sickle
-- pan
+- value: scythe
+- value: sickle
+- value: pan
 origin:
-- Lusatia
-- Poland
-- Russia
-- Slovakia
-- Ukraine
-- Czech Republic
+- value: Lusatia
+- value: Poland
+- value: Russia
+- value: Slovakia
+- value: Ukraine
+- value: Czech Republic
 number:
-- spread
+- value: common
 habitat:
-- field
-- garden
+- value: field
+- value: garden
 date: 2020-06-04T00:00:00Z
 title: Poludnitsa
 names:

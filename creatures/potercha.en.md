@@ -1,24 +1,24 @@
 ---
 taxonomy:
-- demon
-- spirit
-- undead
+- value: demon
+- value: spirit
+- value: undead
 activityTime:
 voice:
-- frog-like croaking
+- value: frog-like croaking
 appearance:
-- childlike
+- value: childlike
 clothes:
 paraphernalia:
-- oil lamp
-- nightlight
+- value: nightlight
+  comment: A small oil lamp used to lure people into a trap
 origin:
-- Ukraine
+- value: Ukraine
 number:
-- common
+- value: common
 habitat:
-- lake
-- swamp
+- value: lake
+- value: swamp
 date: 2020-02-22T10:54:12Z
 title: Potercha
 names:

@@ -1,19 +1,19 @@
 ---
 taxonomy:
-- deity
-- tutelar
-- household
+- value: deity
+- value: tutelar
+- value: household
 voice:
 activityTime:
 appearance:
 clothes:
 paraphernalia:
 origin:
-- Ukraine
+- value: Ukraine
 number:
-- common
+- value: common
 habitat:
-- household
+- value: household
 date: 2020-06-04T00:00:00Z
 title: Domovoy
 names:

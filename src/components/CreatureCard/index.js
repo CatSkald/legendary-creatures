@@ -47,7 +47,7 @@ const CardRow = props => {
   if (!props.data) return null;
 
   let data = Array.isArray(props.data) ? props.data : [props.data];
-  data = data.filter(value => value && value !== noTag);
+  data = data.filter(x => x && x.value !== noTag);
   if (data.length === 0) return null;
 
   const { getTagUrl, getTagValueUrl } = require("../../utils/url-helpers");
@@ -61,11 +61,11 @@ const CardRow = props => {
         </LocalizedLink>
       </th>
       <td className={styles.InfoRow}>
-        {data.map((value, index) => {
-          const tagValueUrl = getTagValueUrl(props.tag, value);
+        {data.map((category, index) => {
+          const tagValueUrl = getTagValueUrl(props.tag, category.value);
           return (
             <LocalizedLink key={props.tag + index} to={tagValueUrl}>
-              {value}
+              {category.value}
             </LocalizedLink>
           );
         })}
@@ -95,11 +95,16 @@ CreatureCard.propTypes = {
   frontmatter: PropTypes.object.isRequired,
 };
 
+const categoryShape = {
+  value: PropTypes.string.isRequired,
+  comment: PropTypes.string,
+  sometimes: PropTypes.bool,
+};
 CardRow.propTypes = {
   tag: PropTypes.string.isRequired,
   data: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.shape(categoryShape),
+    PropTypes.arrayOf(PropTypes.shape(categoryShape)),
   ]),
 };
 

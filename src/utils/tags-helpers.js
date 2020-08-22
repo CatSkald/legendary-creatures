@@ -9,15 +9,17 @@ exports.parseTags = edges => {
       if (!localizedNavigation.tags[tag]) continue;
 
       let tagValues = frontmatter[tag];
-      tagValues = Array.isArray(tagValues) ? tagValues : [tagValues];
+      if (!tagValues) continue;
+
+      tagValues = Array.isArray(tagValues)
+        ? tagValues.map(v => v.value)
+        : [tagValues.value];
+      tagValues = tagValues.filter(value => value !== noTag);
+      if (tagValues.length === 0) continue;
 
       const existingTags = tags[tag];
       if (existingTags) {
-        tags[tag] = [
-          ...new Set(
-            existingTags.concat(tagValues).filter(x => x && x !== noTag),
-          ),
-        ];
+        tags[tag] = [...new Set(existingTags.concat(tagValues))];
       } else {
         tags[tag] = tagValues;
       }

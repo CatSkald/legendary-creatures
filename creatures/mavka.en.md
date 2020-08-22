@@ -1,23 +1,23 @@
 ---
 taxonomy:
-- demon
-- spirit
-- undead
+- value: demon
+- value: spirit
+- value: undead
 activityTime:
 voice:
 appearance:
-- long hair
-- loose hair
-- green hair
+- value: long hair
+- value: loose hair
+- value: green hair
 clothes:
-- naked
+- value: naked
 paraphernalia:
 origin:
-- Ukraine
+- value: Ukraine
 number:
-- common
+- value: common
 habitat:
-- forest
+- value: forest
 date: 2020-06-04T00:00:00Z
 title: Mavka
 names:

@@ -83,16 +83,56 @@ exports.createPages = async ({ graphql, actions }) => {
               path
               id
               page
-              origin
-              taxonomy
-              shapeshifting
-              activityTime
-              voice
-              appearance
-              clothes
-              paraphernalia
-              number
-              habitat
+              origin {
+                value
+                comment
+                sometimes
+              }
+              taxonomy {
+                value
+                comment
+                sometimes
+              }
+              shapeshifting {
+                value
+                comment
+                sometimes
+              }
+              activityTime {
+                value
+                comment
+                sometimes
+              }
+              voice {
+                value
+                comment
+                sometimes
+              }
+              appearance {
+                value
+                comment
+                sometimes
+              }
+              clothes {
+                value
+                comment
+                sometimes
+              }
+              paraphernalia {
+                value
+                comment
+                sometimes
+              }
+              number {
+                value
+                comment
+                sometimes
+              }
+              habitat {
+                value
+                comment
+                sometimes
+              }
               wikipedia
             }
           }
@@ -209,13 +249,19 @@ exports.createPages = async ({ graphql, actions }) => {
         values.forEach(value => {
           if (!value) return;
 
-          const creaturePagesCount = pageContentFromMarkdown.filter(
-            page =>
+          const creaturePagesCount = pageContentFromMarkdown.filter(page => {
+            if (
               page.node.fields.locale === lang &&
-              page.node.frontmatter[tag] &&
-              (page.node.frontmatter[tag] === value ||
-                page.node.frontmatter[tag].includes(value)),
-          ).length;
+              page.node.frontmatter[tag]
+            ) {
+              const tagValue = page.node.frontmatter[tag];
+              return Array.isArray(tagValue)
+                ? tagValue.some(x => x.value === value)
+                : tagValue.value === value;
+            }
+
+            return false;
+          }).length;
 
           const tagName = localizedNavigation.tags[tag][lang];
           const context = {};
@@ -238,8 +284,8 @@ exports.createPages = async ({ graphql, actions }) => {
 exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes } = actions;
   const categoryType = name => ({
-    type: "[String!]",
-    resolve: source => source[name] || [noTag],
+    type: "[Category!]",
+    resolve: source => source[name] || [{ value: noTag }],
   });
   const pageFields = {
     //all
@@ -288,7 +334,6 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       fields: {
         value: { type: "String!" },
         comment: { type: "String" },
-        origin: { type: "String" },
         sometimes: {
           type: "Boolean",
           resolve: source => source.sometimes || false,

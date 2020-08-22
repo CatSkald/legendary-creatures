@@ -54,16 +54,56 @@ export const query = graphql`
           language
         }
         description
-        origin
-        taxonomy
-        shapeshifting
-        activityTime
-        voice
-        appearance
-        clothes
-        paraphernalia
-        number
-        habitat
+        origin {
+          value
+          comment
+          sometimes
+        }
+        taxonomy {
+          value
+          comment
+          sometimes
+        }
+        shapeshifting {
+          value
+          comment
+          sometimes
+        }
+        activityTime {
+          value
+          comment
+          sometimes
+        }
+        voice {
+          value
+          comment
+          sometimes
+        }
+        appearance {
+          value
+          comment
+          sometimes
+        }
+        clothes {
+          value
+          comment
+          sometimes
+        }
+        paraphernalia {
+          value
+          comment
+          sometimes
+        }
+        number {
+          value
+          comment
+          sometimes
+        }
+        habitat {
+          value
+          comment
+          sometimes
+        }
         wikipedia
         image
       }

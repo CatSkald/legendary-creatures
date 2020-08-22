@@ -1,35 +1,34 @@
 ---
 taxonomy:
-- spirit
-- deity
-- tutelar
+- value: spirit
+- value: deity
+- value: tutelar
 shapeshifting:
-- wind
-- whirlwind
+- value: wind
+- value: whirlwind
 activityTime:
-- nocturnal
+- value: nocturnal
 voice:
-- lisping
-- loud
-- thundering
+- value: lisping
+- value: loud
+- value: thundering
 appearance:
-- high
-- long hair
-- long beard
-- gray-haired
-- toothless
-- blue eyes
-- toad eyes
+- value: high
+- value: long hair
+- value: long beard
+- value: gray-haired
+- value: toothless
+- value: blue eyes
+- value: toad eyes
 clothes:
-- white
-- naked
-paraphernalia:
+- value: white
+- value: naked
 origin:
-- Ukraine
-number:
-- unique
+- value: Ukraine
+number: 
+- value: unique
 habitat:
-- forest
+- value: forest
 date: 2020-05-22T10:54:12Z
 title: Chuhaister
 names:

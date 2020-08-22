@@ -71,16 +71,16 @@ export const query = graphql`
         fields: { locale: { eq: $locale } }
         frontmatter: {
           page: { eq: null }
-          origin: { glob: $origin }
-          taxonomy: { glob: $taxonomy }
-          shapeshifting: { glob: $shapeshifting }
-          activityTime: { glob: $activityTime }
-          voice: { glob: $voice }
-          appearance: { glob: $appearance }
-          clothes: { glob: $clothes }
-          paraphernalia: { glob: $paraphernalia }
-          number: { glob: $number }
-          habitat: { glob: $habitat }
+          origin: { elemMatch: { value: { glob: $origin } } }
+          taxonomy: { elemMatch: { value: { glob: $taxonomy } } }
+          shapeshifting: { elemMatch: { value: { glob: $shapeshifting } } }
+          activityTime: { elemMatch: { value: { glob: $activityTime } } }
+          voice: { elemMatch: { value: { glob: $voice } } }
+          appearance: { elemMatch: { value: { glob: $appearance } } }
+          clothes: { elemMatch: { value: { glob: $clothes } } }
+          paraphernalia: { elemMatch: { value: { glob: $paraphernalia } } }
+          number: { elemMatch: { value: { glob: $number } } }
+          habitat: { elemMatch: { value: { glob: $habitat } } }
         }
       }
       sort: { fields: frontmatter___date, order: DESC }

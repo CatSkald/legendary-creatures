@@ -10,11 +10,11 @@ names:
   language: Greek
 description: A tree spirit
 origin:
-- Greece
+- value: Greece
 taxonomy:
-- nymph
-- spirit
-- nature
+- value: nymph
+- value: spirit
+- value: nature
 activityTime:
 voice:
 appearance:
@@ -22,10 +22,10 @@ clothes:
 paraphernalia:
 related: []
 number:
-- common
+- value: common
 habitat:
-- forest
-- garden
+- value: forest
+- value: garden
 wikipedia: https://en.wikipedia.org/wiki/Dryad
 image: "/assets/images/Pan_e_amadriade,_collez._farnese,_27708.jpg"
 date: 2020-02-02 14:50:00
