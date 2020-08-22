@@ -1,11 +1,8 @@
-- Add to the `src/configurfation.js`
-- Add to `gatsby-node.js`:
-    - `graphql`
-    - `createSchemaCustomization`
+- Add to `gatsby-node.js` `graphql`
 - Add to forestry definitions in `.forestry\front_matter\templates\creature-*.yaml`
-- Add to `src\components\CreatureCard\index.js` TODO remove
+- Add to `src\i18n\navigation.js`
 - Add to `src\i18n\translations\*.yaml` TODO improve
 - Add to `src\i18n\translations\useTranslations.js`
+- Add to `src\templates\creatures.js`
 - Add to `src\templates\creature.js`
 - Add to `src\templates\tags.js`
-- Add to `\creatures`

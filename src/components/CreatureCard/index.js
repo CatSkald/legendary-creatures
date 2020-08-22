@@ -8,6 +8,7 @@ import { useImages } from "../../hooks/use-images";
 import LocalizedLink from "../LocalizedLink";
 import { Wikipedia } from "styled-icons/boxicons-logos/Wikipedia";
 const { noTag } = require("../../configuration");
+const { forEachCreatureTag } = require("../../i18n/navigation");
 
 const { getImageNameOrDefaultCover } = require("../../utils/image-helpers");
 
@@ -31,43 +32,9 @@ const CreatureCard = props => {
             <span>{props.frontmatter.title}</span>
           </caption>
           <tbody>
-            <CardRow
-              tag={translations.Number}
-              data={props.frontmatter.number}
-            />
-            <CardRow
-              tag={translations.Origin}
-              data={props.frontmatter.origin}
-            />
-            <CardRow
-              tag={translations.Habitat}
-              data={props.frontmatter.habitat}
-            />
-            <CardRow
-              tag={translations.Taxonomy}
-              data={props.frontmatter.taxonomy}
-            />
-            <CardRow
-              tag={translations.Shapeshifting}
-              data={props.frontmatter.shapeshifting}
-            />
-            <CardRow
-              tag={translations.ActivityTime}
-              data={props.frontmatter.activityTime}
-            />
-            <CardRow tag={translations.Voice} data={props.frontmatter.voice} />
-            <CardRow
-              tag={translations.Appearance}
-              data={props.frontmatter.appearance}
-            />
-            <CardRow
-              tag={translations.Clothes}
-              data={props.frontmatter.clothes}
-            />
-            <CardRow
-              tag={translations.Paraphernalia}
-              data={props.frontmatter.paraphernalia}
-            />
+            {forEachCreatureTag(tag => (
+              <CardRow tag={translations[tag]} data={props.frontmatter[tag]} />
+            ))}
           </tbody>
         </table>
         <CardButtons data={props.frontmatter} />

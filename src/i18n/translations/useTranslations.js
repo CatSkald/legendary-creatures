@@ -33,13 +33,6 @@ const queryTranslations = graphql`
             fromPerson
             fromPlace
             of
-            Taxonomy
-            Shapeshifting
-            ActivityTime
-            Voice
-            Appearance
-            Clothes
-            Paraphernalia
             View
             all
             orSearchBy
@@ -51,9 +44,6 @@ const queryTranslations = graphql`
             Prev
             Tags
             plural
-            Number
-            Origin
-            Habitat
             CreaturesPageTitle
             TagsPageTitle
             origin
