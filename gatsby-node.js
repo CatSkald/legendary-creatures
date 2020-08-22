@@ -9,7 +9,7 @@ const {
   localizedSlug,
 } = require("./src/utils/url-helpers");
 const { parseTags } = require("./src/utils/tags-helpers");
-const { creaturesPerPage } = require("./src/configuration");
+const { creaturesPerPage, noTag } = require("./src/configuration");
 const { tags: creatureTags } = require("./src/i18n/navigation");
 
 exports.onCreatePage = ({ page, actions }) => {
@@ -152,7 +152,6 @@ exports.createPages = async ({ graphql, actions }) => {
     localizedLinks,
     context = {},
   ) {
-    const globAny = "*";
     const pageCount = Math.ceil(totalItems / creaturesPerPage);
 
     Array.from({ length: pageCount }).forEach((_, index) => {
@@ -167,9 +166,9 @@ exports.createPages = async ({ graphql, actions }) => {
         localizedLinks: localizedLinks,
       };
 
-      Object.entries(creatureTags).forEach(
-        ([tagName]) => (pageContext[tagName] = context[tagName] || globAny),
-      );
+      Object.entries(creatureTags).forEach(([tagName]) => {
+        if (context[tagName]) pageContext[tagName] = context[tagName];
+      });
 
       createPage({
         path: language.path + getUrl(index),
@@ -257,22 +256,52 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         page: "Boolean",
         //creatures
         names: { type: "[Name!]" },
-        taxonomy: { type: "[String!]" },
-        shapeshifting: { type: "[String!]" },
-        activityTime: { type: "[String!]" },
-        voice: { type: "[String!]" },
-        appearance: { type: "[String!]" },
-        clothes: { type: "[String!]" },
-        paraphernalia: { type: "[String!]" },
-        origin: { type: "[String!]" },
         map: { type: "String" },
         related: { type: "[Frontmatter!]" },
-        number: { type: "String" },
-        habitat: { type: "[String!]" },
         wikipedia: { type: "String" },
         date: {
           type: "Date!",
           extensions: { dateformat: {} },
+        },
+        number: {
+          type: "String",
+          resolve: source => source.number || noTag,
+        },
+        taxonomy: {
+          type: "[String!]",
+          resolve: source => source.taxonomy || [noTag],
+        },
+        shapeshifting: {
+          type: "[String!]",
+          resolve: source => source.shapeshifting || [noTag],
+        },
+        activityTime: {
+          type: "[String!]",
+          resolve: source => source.activityTime || [noTag],
+        },
+        voice: {
+          type: "[String!]",
+          resolve: source => source.voice || [noTag],
+        },
+        appearance: {
+          type: "[String!]",
+          resolve: source => source.appearance || [noTag],
+        },
+        clothes: {
+          type: "[String!]",
+          resolve: source => source.clothes || [noTag],
+        },
+        paraphernalia: {
+          type: "[String!]",
+          resolve: source => source.paraphernalia || [noTag],
+        },
+        origin: {
+          type: "[String!]",
+          resolve: source => source.origin || [noTag],
+        },
+        habitat: {
+          type: "[String!]",
+          resolve: source => source.habitat || [noTag],
         },
       },
     }),

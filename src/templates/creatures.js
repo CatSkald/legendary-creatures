@@ -55,16 +55,16 @@ export const query = graphql`
     $dateFormat: String!
     $skip: Int!
     $limit: Int!
-    $origin: String!
-    $taxonomy: String!
-    $shapeshifting: String!
-    $activityTime: String!
-    $voice: String!
-    $appearance: String!
-    $clothes: String!
-    $paraphernalia: String!
-    $number: String!
-    $habitat: String!
+    $origin: String = "*"
+    $taxonomy: String = "*"
+    $shapeshifting: String = "*"
+    $activityTime: String = "*"
+    $voice: String = "*"
+    $appearance: String = "*"
+    $clothes: String = "*"
+    $paraphernalia: String = "*"
+    $number: String = "*"
+    $habitat: String = "*"
   ) {
     allMarkdownRemark(
       filter: {

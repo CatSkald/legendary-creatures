@@ -7,6 +7,7 @@ import useTranslations from "../../i18n/translations/useTranslations";
 import { useImages } from "../../hooks/use-images";
 import LocalizedLink from "../LocalizedLink";
 import { Wikipedia } from "styled-icons/boxicons-logos/Wikipedia";
+const { noTag } = require("../../configuration");
 
 const { getImageNameOrDefaultCover } = require("../../utils/image-helpers");
 
@@ -78,7 +79,10 @@ const CreatureCard = props => {
 const CardRow = props => {
   if (!props.data) return null;
 
-  var data = Array.isArray(props.data) ? props.data : [props.data];
+  let data = Array.isArray(props.data) ? props.data : [props.data];
+  data = data.filter(value => value && value !== noTag);
+  if (data.length === 0) return null;
+
   const { getTagUrl, getTagValueUrl } = require("../../utils/url-helpers");
   const tagUrl = getTagUrl(props.tag);
 

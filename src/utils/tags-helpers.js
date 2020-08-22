@@ -1,4 +1,5 @@
 const localizedNavigation = require("../i18n/navigation");
+const { noTag } = require("../configuration");
 
 exports.parseTags = edges => {
   let tags = {};
@@ -12,7 +13,11 @@ exports.parseTags = edges => {
 
       const existingTags = tags[tag];
       if (existingTags) {
-        tags[tag] = [...new Set(existingTags.concat(tagValues).filter(x => x))];
+        tags[tag] = [
+          ...new Set(
+            existingTags.concat(tagValues).filter(x => x && x !== noTag),
+          ),
+        ];
       } else {
         tags[tag] = tagValues;
       }
