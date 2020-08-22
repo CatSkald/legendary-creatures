@@ -10,7 +10,7 @@ const {
 } = require("./src/utils/url-helpers");
 const { parseTags } = require("./src/utils/tags-helpers");
 const { creaturesPerPage, noTag } = require("./src/configuration");
-const { tags: creatureTags } = require("./src/i18n/navigation");
+const { forEachCreatureTag } = require("./src/i18n/navigation");
 
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions;
@@ -166,7 +166,7 @@ exports.createPages = async ({ graphql, actions }) => {
         localizedLinks: localizedLinks,
       };
 
-      Object.entries(creatureTags).forEach(([tagName]) => {
+      forEachCreatureTag(tagName => {
         if (context[tagName]) pageContext[tagName] = context[tagName];
       });
 
@@ -237,6 +237,32 @@ exports.createPages = async ({ graphql, actions }) => {
 
 exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes } = actions;
+  const categoryType = name => ({
+    type: "[String!]",
+    resolve: source => source[name] || [noTag],
+  });
+  const pageFields = {
+    //all
+    title: { type: "String!" },
+    description: { type: "String!" },
+    id: "String!",
+    //pages
+    path: "String",
+    page: "Boolean",
+    //creatures
+    names: { type: "[Name!]" },
+    map: { type: "String" },
+    related: { type: "[Frontmatter!]" },
+    wikipedia: { type: "String" },
+    date: {
+      type: "Date!",
+      extensions: { dateformat: {} },
+    },
+  };
+
+  //add tags to the fields
+  forEachCreatureTag(tagName => (pageFields[tagName] = categoryType(tagName)));
+
   const typeDefs = [
     schema.buildObjectType({
       name: "MarkdownRemark",
@@ -246,64 +272,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
     }),
     schema.buildObjectType({
       name: "Frontmatter",
-      fields: {
-        //all
-        title: { type: "String!" },
-        description: { type: "String!" },
-        id: "String!",
-        //pages
-        path: "String",
-        page: "Boolean",
-        //creatures
-        names: { type: "[Name!]" },
-        map: { type: "String" },
-        related: { type: "[Frontmatter!]" },
-        wikipedia: { type: "String" },
-        date: {
-          type: "Date!",
-          extensions: { dateformat: {} },
-        },
-        number: {
-          type: "String",
-          resolve: source => source.number || noTag,
-        },
-        taxonomy: {
-          type: "[String!]",
-          resolve: source => source.taxonomy || [noTag],
-        },
-        shapeshifting: {
-          type: "[String!]",
-          resolve: source => source.shapeshifting || [noTag],
-        },
-        activityTime: {
-          type: "[String!]",
-          resolve: source => source.activityTime || [noTag],
-        },
-        voice: {
-          type: "[String!]",
-          resolve: source => source.voice || [noTag],
-        },
-        appearance: {
-          type: "[String!]",
-          resolve: source => source.appearance || [noTag],
-        },
-        clothes: {
-          type: "[String!]",
-          resolve: source => source.clothes || [noTag],
-        },
-        paraphernalia: {
-          type: "[String!]",
-          resolve: source => source.paraphernalia || [noTag],
-        },
-        origin: {
-          type: "[String!]",
-          resolve: source => source.origin || [noTag],
-        },
-        habitat: {
-          type: "[String!]",
-          resolve: source => source.habitat || [noTag],
-        },
-      },
+      fields: pageFields,
     }),
     schema.buildObjectType({
       name: "Name",

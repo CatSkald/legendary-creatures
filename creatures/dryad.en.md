@@ -21,7 +21,8 @@ appearance:
 clothes:
 paraphernalia:
 related: []
-number: common
+number:
+- common
 habitat:
 - forest
 - garden

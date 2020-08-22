@@ -1,3 +1,56 @@
+const tags = {
+  origin: {
+    en: "origin",
+    ru: "происхождение",
+    uk: "походження",
+  },
+  taxonomy: {
+    en: "taxonomy",
+    ru: "таксономия",
+    uk: "таксономія",
+  },
+  shapeshifting: {
+    en: "shapeshifting",
+    ru: "ипостаси",
+    uk: "іпостасі",
+  },
+  activityTime: {
+    en: "activity time",
+    ru: "время активности",
+    uk: "час активності",
+  },
+  voice: {
+    en: "voice",
+    ru: "голос",
+    uk: "голос",
+  },
+  appearance: {
+    en: "appearance",
+    ru: "внешность",
+    uk: "зовнішність",
+  },
+  clothes: {
+    en: "clothes",
+    ru: "одежда",
+    uk: "одяг",
+  },
+  paraphernalia: {
+    en: "paraphernalia",
+    ru: "атрибутика",
+    uk: "атрибутика",
+  },
+  number: {
+    en: "number",
+    ru: "численность",
+    uk: "чисельність",
+  },
+  habitat: {
+    en: "habitat",
+    ru: "ареал",
+    uk: "ареал",
+  },
+};
+
 module.exports = {
   // use non-breaking space in titles: " "
   pages: {
@@ -43,56 +96,8 @@ module.exports = {
       type: "footer",
     },
   },
-  tags: {
-    origin: {
-      en: "origin",
-      ru: "происхождение",
-      uk: "походження",
-    },
-    taxonomy: {
-      en: "taxonomy",
-      ru: "таксономия",
-      uk: "таксономія",
-    },
-    shapeshifting: {
-      en: "shapeshifting",
-      ru: "ипостаси",
-      uk: "іпостасі",
-    },
-    activityTime: {
-      en: "activity time",
-      ru: "время активности",
-      uk: "час активності",
-    },
-    voice: {
-      en: "voice",
-      ru: "голос",
-      uk: "голос",
-    },
-    appearance: {
-      en: "appearance",
-      ru: "внешность",
-      uk: "зовнішність",
-    },
-    clothes: {
-      en: "clothes",
-      ru: "одежда",
-      uk: "одяг",
-    },
-    paraphernalia: {
-      en: "paraphernalia",
-      ru: "атрибутика",
-      uk: "атрибутика",
-    },
-    number: {
-      en: "number",
-      ru: "численность",
-      uk: "чисельність",
-    },
-    habitat: {
-      en: "habitat",
-      ru: "ареал",
-      uk: "ареал",
-    },
+  tags: tags,
+  forEachCreatureTag: action => {
+    Object.keys(tags).forEach(tag => action(tag));
   },
 };

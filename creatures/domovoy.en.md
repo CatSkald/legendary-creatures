@@ -10,7 +10,8 @@ clothes:
 paraphernalia:
 origin:
 - Ukraine
-number: common
+number:
+- common
 habitat:
 - household
 date: 2020-06-04T00:00:00Z
