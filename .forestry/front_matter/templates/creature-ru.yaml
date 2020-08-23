@@ -44,8 +44,6 @@ fields:
   description: Краткое предложение описывающее существо.
 - name: image
   type: file
-  config:
-    maxSize: 250
   label: Изображение
   description: Необязательное изображение существа.
 - name: wikipedia

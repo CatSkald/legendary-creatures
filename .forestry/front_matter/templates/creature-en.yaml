@@ -47,8 +47,6 @@ fields:
   description: One sentence briefly describing the creature.
 - name: image
   type: file
-  config:
-    maxSize: 250
   label: Image
   description: An optional image of the creature.
 - name: wikipedia

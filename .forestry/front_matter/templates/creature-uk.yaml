@@ -43,8 +43,6 @@ fields:
   description: Коротке речення, що характеризує істоту
 - name: image
   type: file
-  config:
-    maxSize: 250
   label: Зображення
   description: Необов’язкове зображення істоти.
 - name: wikipedia
