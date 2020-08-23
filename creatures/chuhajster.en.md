@@ -6,29 +6,47 @@ taxonomy:
 shapeshifting:
 - value: wind
 - value: whirlwind
+- value: wolf
 activityTime:
 - value: nocturnal
 voice:
 - value: lisping
+  comment: because has no teeth
 - value: loud
+  comment: when angry
 - value: thundering
+  comment: when angry
 appearance:
 - value: high
+  comment: 2-7 meters, «high as a fir»
 - value: long hair
 - value: long beard
+- value: white beard
 - value: gray-haired
 - value: toothless
 - value: blue eyes
 - value: toad eyes
+  comment: "toad-like eyes"
+- value: shaggy
+  comment: body covered with black or white hair
+- value: one leg
+  sometimes: true
+- value: claws
+  sometimes: true
+- value: hooves
+  sometimes: true
 clothes:
 - value: white
 - value: naked
+paraphernalia:
 origin:
 - value: Ukraine
 number: 
 - value: unique
+  comment: according to different sources there is only one, seven (7 brothers) or several (3-4) individuals
 habitat:
 - value: forest
+  comment: lives only in forests as outside of them "the air is not sweet for him»
 date: 2020-05-22T10:54:12Z
 title: Chuhaister
 names:

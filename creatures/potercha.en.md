@@ -11,7 +11,7 @@ appearance:
 clothes:
 paraphernalia:
 - value: nightlight
-  comment: A small oil lamp used to lure people into a trap
+  comment: a small oil lamp used to lure people into a trap
 origin:
 - value: Ukraine
 number:
@@ -45,13 +45,11 @@ id: 4ef8e1739cf344109bdbf04efbce101a
 
 Potercha is formed from a stillborn, aborted child or a child deceased unbaptized. It exists during 7 years. If no one performs a ritual (see Rituals below) over the potercha, then it would be transformed into a different demon forever.
 
-## Classification
-
 ## Etymology
 
 From Ukrainian «потеряти» (poteriaty) or «потирати» (potyraty) - to loose, spoil, harm, destroy. There is also a phrase «потеряти дитя» (poteraty dytia - to loose a child) - to have a miscarriage.
 
-### Analogues in other cultures
+## Analogues in other cultures
 
 * Poroniec (Poland)
 * Myling (Sweden)
