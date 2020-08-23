@@ -56,6 +56,7 @@ const queryTranslations = graphql`
             paraphernalia
             number
             habitat
+            sometimes
           }
         }
       }

@@ -43,7 +43,13 @@ const CreatureCard = props => {
               language.code,
               x => x.tag,
             ).map(({ tag, values }) => (
-              <CardRow tag={tag} data={values} language={language} key={tag} />
+              <CardRow
+                tag={tag}
+                data={values}
+                language={language}
+                sometimesText={translations["sometimes"]}
+                key={tag}
+              />
             ))}
           </tbody>
         </table>
@@ -72,11 +78,18 @@ const CardRow = props => {
       <td className={styles.InfoRow}>
         {data.map((category, index) => {
           const tagValueUrl = getTagValueUrl(props.tag, category.value);
+
+          let comment = "";
+          if (category.comment && category.sometimes)
+            comment = `${props.sometimesText}, ${category.comment}`;
+          else if (category.comment) comment = category.comment;
+          else if (category.sometimes) comment = props.sometimesText;
+
           return (
             <span key={props.tag + index} className={styles.InfoRowEntry}>
               <LocalizedLink to={tagValueUrl}>{category.value}</LocalizedLink>
               <span className={styles.Hint}>
-                {category.comment ? ` (${category.comment})` : ""}
+                {comment ? ` (${comment})` : ""}
               </span>
             </span>
           );
@@ -119,6 +132,7 @@ CardRow.propTypes = {
     PropTypes.arrayOf(PropTypes.shape(categoryShape)),
   ]),
   language: PropTypes.object.isRequired,
+  sometimesText: PropTypes.string.isRequired,
 };
 
 CardButtons.propTypes = {
