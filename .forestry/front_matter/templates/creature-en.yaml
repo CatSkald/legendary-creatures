@@ -1,6 +1,8 @@
 ---
 label: Creature (English)
 hide_body: false
+pages:
+  - creatures/*.en.md
 fields:
 - name: title
   type: text
@@ -43,86 +45,6 @@ fields:
     required: true
   label: Short description
   description: One sentence briefly describing the creature.
-- name: taxonomy
-  type: tag_list
-  default: []
-  label: Taxonomy
-  description: Kinds and types of the creature
-- name: shapeshifting
-  type: tag_list
-  default: []
-  label: Shapeshifting
-  description: Forms to which the creature can transform
-- name: voice
-  type: tag_list
-  default: []
-  label: Voice
-  description: Voice
-- name: appearance
-  type: tag_list
-  default: []
-  label: Appearance
-  description: Appearance
-- name: clothes
-  type: tag_list
-  default: []
-  label: Clothes
-  description: Clothes
-- name: paraphernalia
-  type: tag_list
-  default: []
-  label: Paraphernalia
-  description: Equipment and things belonging to or associated with the creature
-- name: origin
-  type: tag_list
-  default: []
-  label: Origin
-  description: One or more countries or regions where the creature is originating
-    from.
-- name: number
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - common
-    - rare
-    - unique
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Distribution
-  description: According to beliefs was it a single unique creature, a rare species
-    or a common wide-spread kind?
-- name: habitat
-  type: tag_list
-  default: []
-  label: Habitat
-  description: The type of environment in which the creature usually lives.
-- name: activityTime
-  type: select
-  default: unknown
-  config:
-    required: true
-    options:
-    - diurnal
-    - nocturnal
-    - crepuscular (twilight)
-    - vespertine (evening)
-    - matutinal (morning)
-    - cathemeral (irregular)
-    - midnight
-    - noon
-    - unknown
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Activity time
-  description: When the creature is active
 - name: image
   type: file
   config:
@@ -156,5 +78,218 @@ fields:
       section: creatures-english
   label: Related creatures
   description: Other creatures that have any relations to the creature.
-pages:
-  - creatures/*.en.md
+# tags
+- name: taxonomy
+  type: field_group_list
+  fields:
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Value
+  - name: comment
+    type: text
+    label: Optional comment
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Contradictory, unusual or appears rarely
+    description: Check it if the characteristic appears rarely or deviates from the common sources
+  default: []
+  label: Taxonomy
+  description: Kinds and types of the creature
+- name: shapeshifting
+  type: field_group_list
+  fields:
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Value
+  - name: comment
+    type: text
+    label: Optional comment
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Contradictory, unusual or appears rarely
+    description: Check it if the characteristic appears rarely or deviates from the common sources
+  default: []
+  label: Shapeshifting
+  description: Forms to which the creature can transform
+- name: voice
+  type: field_group_list
+  fields:
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Value
+  - name: comment
+    type: text
+    label: Optional comment
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Contradictory, unusual or appears rarely
+    description: Check it if the characteristic appears rarely or deviates from the common sources
+  default: []
+  label: Voice
+  description: Voice
+- name: appearance
+  type: field_group_list
+  fields:
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Value
+  - name: comment
+    type: text
+    label: Optional comment
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Contradictory, unusual or appears rarely
+    description: Check it if the characteristic appears rarely or deviates from the common sources
+  default: []
+  label: Appearance
+  description: Appearance
+- name: clothes
+  type: field_group_list
+  fields:
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Value
+  - name: comment
+    type: text
+    label: Optional comment
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Contradictory, unusual or appears rarely
+    description: Check it if the characteristic appears rarely or deviates from the common sources
+  default: []
+  label: Clothes
+  description: Clothes
+- name: paraphernalia
+  type: field_group_list
+  fields:
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Value
+  - name: comment
+    type: text
+    label: Optional comment
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Contradictory, unusual or appears rarely
+    description: Check it if the characteristic appears rarely or deviates from the common sources
+  default: []
+  label: Paraphernalia
+  description: Equipment and things belonging to or associated with the creature
+- name: origin
+  type: field_group_list
+  fields:
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Value
+  - name: comment
+    type: text
+    label: Optional comment
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Contradictory, unusual or appears rarely
+    description: Check it if the characteristic appears rarely or deviates from the common sources
+  default: []
+  label: Origin
+  description: One or more countries or regions where the creature is originating
+    from.
+- name: number
+  type: field_group_list
+  fields:
+  - name: value
+    type: select
+    config:
+      required: true
+      options:
+      - common
+      - rare
+      - unique
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Value
+  - name: comment
+    type: text
+    label: Optional comment
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Contradictory, unusual or appears rarely
+    description: Check it if the characteristic appears rarely or deviates from the common sources
+  default: []
+  label: Distribution
+  description: According to beliefs was it a single unique creature, a rare species
+    or a common wide-spread kind?
+- name: habitat
+  type: field_group_list
+  fields:
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Value
+  - name: comment
+    type: text
+    label: Optional comment
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Contradictory, unusual or appears rarely
+    description: Check it if the characteristic appears rarely or deviates from the common sources
+  default: []
+  label: Habitat
+  description: The type of environment in which the creature usually lives.
+- name: activityTime
+  type: field_group_list
+  fields:
+  - name: value
+    type: select
+    config:
+      required: true
+      options:
+      - diurnal
+      - nocturnal
+      - crepuscular (twilight)
+      - vespertine (evening)
+      - matutinal (morning)
+      - cathemeral (irregular)
+      - midnight
+      - noon
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Value
+  - name: comment
+    type: text
+    label: Optional comment
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Contradictory, unusual or appears rarely
+    description: Check it if the characteristic appears rarely or deviates from the common sources
+  label: Activity time
+  description: When the creature is active

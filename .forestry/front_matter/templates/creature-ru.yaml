@@ -1,6 +1,8 @@
 ---
 label: Creature (Russian)
 hide_body: false
+pages:
+  - creatures/*.ru.md
 fields:
 - name: title
   type: text
@@ -40,85 +42,6 @@ fields:
     required: true
   label: Краткое описание
   description: Краткое предложение описывающее существо.
-- name: taxonomy
-  type: tag_list
-  default: []
-  label: Таксономия
-  description: Таксономия
-- name: shapeshifting
-  type: tag_list
-  default: []
-  label: Ипостаси и формы
-  description: Способность менять облик
-- name: voice
-  type: tag_list
-  default: []
-  label: Голос
-  description: Голос
-- name: appearance
-  type: tag_list
-  default: []
-  label: Внешность
-  description: Внешность
-- name: clothes
-  type: tag_list
-  default: []
-  label: Одежда
-  description: Одежда существа или её отсутствие
-- name: paraphernalia
-  type: tag_list
-  default: []
-  label: Атрибутика
-  description: Вещи существа
-- name: origin
-  type: tag_list
-  default: []
-  label: Происхождение
-  description: Страны или регионы откуда происходит существо.
-- name: number
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - распространённое
-    - редкое
-    - уникальное
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Распространение
-  description: Согласно верованиям, является ли существо единственным (уникальным),
-    редко встречающимся или широко распространённым видом?
-- name: habitat
-  type: tag_list
-  default: []
-  label: Ареал
-  description: Тип среды в которой проживает существо.
-- name: activityTime
-  type: select
-  default: неизвестно
-  config:
-    required: true
-    options:
-    - день
-    - ночь
-    - сумерки
-    - вечер
-    - утро
-    - нерегулярный
-    - полночь
-    - полдень
-    - неизвестно
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Образ жизни (время активности)
-  description: Когда существо активно
 - name: image
   type: file
   config:
@@ -152,5 +75,207 @@ fields:
       section: creatures-russian
   label: Родственные существа
   description: Другие существа, которые имеют какое-либо отношение к данному существу.
-pages:
-  - creatures/*.ru.md
+# tags
+- name: taxonomy
+  type: field_group_list
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значение
+  - name: comment
+    type: text
+    label: Необязательный комментарий
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Противоречивые или редкое
+    description: Отметьте это поле, если значение встречается редко, противоречит или отклоняется от общих источников
+  default: []
+  label: Таксономия
+  description: Таксономия
+- name: shapeshifting
+  type: field_group_list
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значение
+  - name: comment
+    type: text
+    label: Необязательный комментарий
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Противоречивые или редкое
+    description: Отметьте это поле, если значение встречается редко, противоречит или отклоняется от общих источников
+  default: []
+  label: Ипостаси и формы
+  description: Способность менять облик
+- name: voice
+  type: field_group_list
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значение
+  - name: comment
+    type: text
+    label: Необязательный комментарий
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Противоречивые или редкое
+    description: Отметьте это поле, если значение встречается редко, противоречит или отклоняется от общих источников
+  default: []
+  label: Голос
+  description: Голос
+- name: appearance
+  type: field_group_list
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значение
+  - name: comment
+    type: text
+    label: Необязательный комментарий
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Противоречивые или редкое
+    description: Отметьте это поле, если значение встречается редко, противоречит или отклоняется от общих источников
+  default: []
+  label: Внешность
+  description: Внешность
+- name: clothes
+  type: field_group_list
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значение
+  - name: comment
+    type: text
+    label: Необязательный комментарий
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Противоречивые или редкое
+    description: Отметьте это поле, если значение встречается редко, противоречит или отклоняется от общих источников
+  default: []
+  label: Одежда
+  description: Одежда существа или её отсутствие
+- name: paraphernalia
+  type: field_group_list
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значение
+  - name: comment
+    type: text
+    label: Необязательный комментарий
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Противоречивые или редкое
+    description: Отметьте это поле, если значение встречается редко, противоречит или отклоняется от общих источников
+  default: []
+  label: Атрибутика
+  description: Вещи существа
+- name: origin
+  type: field_group_list
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значение
+  - name: comment
+    type: text
+    label: Необязательный комментарий
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Противоречивые или редкое
+    description: Отметьте это поле, если значение встречается редко, противоречит или отклоняется от общих источников
+  default: []
+  label: Происхождение
+  description: Страны или регионы откуда происходит существо.
+- name: number
+  type: field_group_list
+  - name: value
+    type: select
+    config:
+      required: true
+      options:
+      - распространённое
+      - редкое
+      - уникальное
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Значение
+  - name: comment
+    type: text
+    label: Необязательный комментарий
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Противоречивые или редкое
+    description: Отметьте это поле, если значение встречается редко, противоречит или отклоняется от общих источников
+  default: []
+  label: Распространение
+  description: Согласно верованиям, является ли существо единственным (уникальным),
+    редко встречающимся или широко распространённым видом?
+- name: habitat
+  type: field_group_list
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значение
+  - name: comment
+    type: text
+    label: Необязательный комментарий
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Противоречивые или редкое
+    description: Отметьте это поле, если значение встречается редко, противоречит или отклоняется от общих источников
+  default: []
+  label: Ареал
+  description: Тип среды в которой проживает существо.
+- name: activityTime
+  type: field_group_list
+  - name: value
+    type: select
+    config:
+      required: true
+      options:
+      - день
+      - ночь
+      - сумерки
+      - вечер
+      - утро
+      - нерегулярный
+      - полночь
+      - полдень
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Значение
+  - name: comment
+    type: text
+    label: Необязательный комментарий
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Противоречивые или редкое
+    description: Отметьте это поле, если значение встречается редко, противоречит или отклоняется от общих источников
+  label: Образ жизни (время активности)
+  description: Когда существо активно

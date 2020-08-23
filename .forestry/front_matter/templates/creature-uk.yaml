@@ -1,6 +1,8 @@
 ---
 label: Creature (Ukrainian)
 hide_body: false
+pages:
+  - creatures/*.uk.md
 fields:
 - name: title
   type: text
@@ -39,90 +41,6 @@ fields:
     required: true
   label: Короткий опис
   description: Коротке речення, що характеризує істоту
-- name: taxonomy
-  type: tag_list
-  default: []
-  label: Таксономія
-  description: Типи та різновиди істоти
-- name: shapeshifting
-  type: tag_list
-  default: []
-  label: Іпостасі та форми
-  description: Здатність змінювати подобу
-- name: activityTime
-  type: tag_list
-  default: []
-  label: Час активності
-  description: Час активності
-- name: voice
-  type: tag_list
-  default: []
-  label: Голос
-  description: Голос
-- name: appearance
-  type: tag_list
-  default: []
-  label: Зовнішність
-  description: Зовнішність
-- name: clothes
-  type: tag_list
-  default: []
-  label: Одяг
-  description: Одяг
-- name: paraphernalia
-  type: tag_list
-  default: []
-  label: Атрибутика
-  description: Атрибутика
-- name: origin
-  type: tag_list
-  default: []
-  label: Походження
-  description: Країни або райони походження істоти.
-- name: number
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - поширене
-    - рідкісне
-    - унікальне
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Поширення
-  description: Згідно до вірувань, чи є істота єдиною (унікальною), рідкісною, чи
-    поширеним видом?
-- name: habitat
-  type: tag_list
-  default: []
-  label: Ареал
-  description: Тип середовища в якому зазвичай живе істота.
-- name: activityTime
-  type: select
-  default: невідомо
-  config:
-    required: true
-    options:
-    - день
-    - ніч
-    - сутінки
-    - вечір
-    - ранок
-    - нерегулярний
-    - північ
-    - полудень
-    - невідомо
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Спосіб життя (час активності)
-  description: Коли істота активна
 - name: image
   type: file
   config:
@@ -156,5 +74,225 @@ fields:
       section: creatures-ukrainian
   label: Пов’язані істоти
   description: Інші істоти, які мають яке-небудь відношення до даної істоти.
-pages:
-  - creatures/*.uk.md
+# tags
+- name: taxonomy
+  type: field_group_list
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значення
+  - name: comment
+    type: text
+    label: Необов’язковий коментар
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Суперечливе або рідкісне
+    description: Відмітьте це поле, якщо значення зустрічається рідко, суперечить або відхиляється від більшості джерел
+  default: []
+  label: Таксономія
+  description: Типи та різновиди істоти
+- name: shapeshifting
+  type: field_group_list
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значення
+  - name: comment
+    type: text
+    label: Необов’язковий коментар
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Суперечливе або рідкісне
+    description: Відмітьте це поле, якщо значення зустрічається рідко, суперечить або відхиляється від більшості джерел
+  default: []
+  label: Іпостасі та форми
+  description: Здатність змінювати подобу
+- name: activityTime
+  type: field_group_list
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значення
+  - name: comment
+    type: text
+    label: Необов’язковий коментар
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Суперечливе або рідкісне
+    description: Відмітьте це поле, якщо значення зустрічається рідко, суперечить або відхиляється від більшості джерел
+  default: []
+  label: Час активності
+  description: Час активності
+- name: voice
+  type: field_group_list
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значення
+  - name: comment
+    type: text
+    label: Необов’язковий коментар
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Суперечливе або рідкісне
+    description: Відмітьте це поле, якщо значення зустрічається рідко, суперечить або відхиляється від більшості джерел
+  default: []
+  label: Голос
+  description: Голос
+- name: appearance
+  type: field_group_list
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значення
+  - name: comment
+    type: text
+    label: Необов’язковий коментар
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Суперечливе або рідкісне
+    description: Відмітьте це поле, якщо значення зустрічається рідко, суперечить або відхиляється від більшості джерел
+  default: []
+  label: Зовнішність
+  description: Зовнішність
+- name: clothes
+  type: field_group_list
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значення
+  - name: comment
+    type: text
+    label: Необов’язковий коментар
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Суперечливе або рідкісне
+    description: Відмітьте це поле, якщо значення зустрічається рідко, суперечить або відхиляється від більшості джерел
+  default: []
+  label: Одяг
+  description: Одяг
+- name: paraphernalia
+  type: field_group_list
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значення
+  - name: comment
+    type: text
+    label: Необов’язковий коментар
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Суперечливе або рідкісне
+    description: Відмітьте це поле, якщо значення зустрічається рідко, суперечить або відхиляється від більшості джерел
+  default: []
+  label: Атрибутика
+  description: Атрибутика
+- name: origin
+  type: field_group_list
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значення
+  - name: comment
+    type: text
+    label: Необов’язковий коментар
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Суперечливе або рідкісне
+    description: Відмітьте це поле, якщо значення зустрічається рідко, суперечить або відхиляється від більшості джерел
+  default: []
+  label: Походження
+  description: Країни або райони походження істоти.
+- name: number
+  type: field_group_list
+  - name: value
+    type: select
+    config:
+      required: true
+      options:
+      - поширене
+      - рідкісне
+      - унікальне
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Значення
+  - name: comment
+    type: text
+    label: Необов’язковий коментар
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Суперечливе або рідкісне
+    description: Відмітьте це поле, якщо значення зустрічається рідко, суперечить або відхиляється від більшості джерел
+  default: []
+  label: Поширення
+  description: Згідно до вірувань, чи є істота єдиною (унікальною), рідкісною, чи
+    поширеним видом?
+- name: habitat
+  type: field_group_list
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значення
+  - name: comment
+    type: text
+    label: Необов’язковий коментар
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Суперечливе або рідкісне
+    description: Відмітьте це поле, якщо значення зустрічається рідко, суперечить або відхиляється від більшості джерел
+  default: []
+  label: Ареал
+  description: Тип середовища в якому зазвичай живе істота.
+- name: activityTime
+  type: field_group_list
+  - name: value
+    type: select
+    config:
+      required: true
+      options:
+      - день
+      - ніч
+      - сутінки
+      - вечір
+      - ранок
+      - нерегулярний
+      - північ
+      - полудень
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Значення
+  - name: comment
+    type: text
+    label: Необов’язковий коментар
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Суперечливе або рідкісне
+    description: Відмітьте це поле, якщо значення зустрічається рідко, суперечить або відхиляється від більшості джерел
+  label: Спосіб життя (час активності)
+  description: Коли істота активна
