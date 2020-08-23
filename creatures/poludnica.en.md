@@ -20,8 +20,10 @@ voice:
 appearance:
 - value: loose hair
 - value: gray hair
-- value: beautiful girl
-- value: ugly old woman
+- value: beautiful
+- value: ugly
+- value: old
+- value: young
 - value: hooves
 - value: high
 - value: small

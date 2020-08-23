@@ -20,6 +20,8 @@ voice:
 character:
 - value: shy
 appearance:
+- value: beautiful
+- value: young
 clothes:
 paraphernalia:
 related: []

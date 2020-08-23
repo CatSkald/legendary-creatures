@@ -9,6 +9,8 @@ appearance:
 - value: long hair
 - value: loose hair
 - value: green hair
+- value: beautiful
+- value: young
 clothes:
 - value: naked
 paraphernalia:
