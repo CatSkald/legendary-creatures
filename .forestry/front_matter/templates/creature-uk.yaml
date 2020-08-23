@@ -18,6 +18,9 @@ fields:
     config:
       required: true
     label: Назва
+  - name: transliteration
+    type: text
+    label: Транслітерація
   - name: plural
     type: text
     label: Множина
@@ -75,6 +78,7 @@ fields:
 # tags
 - name: taxonomy
   type: field_group_list
+  fields:
   - name: value
     type: text
     config:
@@ -93,6 +97,7 @@ fields:
   description: Типи та різновиди істоти
 - name: shapeshifting
   type: field_group_list
+  fields:
   - name: value
     type: text
     config:
@@ -109,26 +114,9 @@ fields:
   default: []
   label: Іпостасі та форми
   description: Здатність змінювати подобу
-- name: activityTime
-  type: field_group_list
-  - name: value
-    type: text
-    config:
-      required: true
-    label: Значення
-  - name: comment
-    type: text
-    label: Необов’язковий коментар
-  - name: sometimes
-    type: boolean
-    default: false
-    label: Суперечливе або рідкісне
-    description: Відмітьте це поле, якщо значення зустрічається рідко, суперечить або відхиляється від більшості джерел
-  default: []
-  label: Час активності
-  description: Час активності
 - name: voice
   type: field_group_list
+  fields:
   - name: value
     type: text
     config:
@@ -147,6 +135,7 @@ fields:
   description: Голос
 - name: appearance
   type: field_group_list
+  fields:
   - name: value
     type: text
     config:
@@ -165,6 +154,7 @@ fields:
   description: Зовнішність
 - name: clothes
   type: field_group_list
+  fields:
   - name: value
     type: text
     config:
@@ -183,6 +173,7 @@ fields:
   description: Одяг
 - name: paraphernalia
   type: field_group_list
+  fields:
   - name: value
     type: text
     config:
@@ -201,6 +192,7 @@ fields:
   description: Атрибутика
 - name: origin
   type: field_group_list
+  fields:
   - name: value
     type: text
     config:
@@ -219,6 +211,7 @@ fields:
   description: Країни або райони походження істоти.
 - name: number
   type: field_group_list
+  fields:
   - name: value
     type: select
     config:
@@ -247,6 +240,7 @@ fields:
     поширеним видом?
 - name: habitat
   type: field_group_list
+  fields:
   - name: value
     type: text
     config:
@@ -265,6 +259,7 @@ fields:
   description: Тип середовища в якому зазвичай живе істота.
 - name: activityTime
   type: field_group_list
+  fields:
   - name: value
     type: select
     config:
