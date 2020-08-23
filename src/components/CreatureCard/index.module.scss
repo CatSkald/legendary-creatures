@@ -22,16 +22,6 @@
 
   a {
     font-weight: normal;
-
-    &:after {
-      content: ", ";
-    }
-
-    &:last-child {
-      &:after {
-        content: "";
-      }
-    }
   }
 }
 
@@ -55,6 +45,18 @@
   td,
   th {
     border: 0;
+  }
+}
+
+.Hint {
+  &:after {
+    content: ", ";
+  }
+
+  &:last-child {
+    &:after {
+      content: "";
+    }
   }
 }
 

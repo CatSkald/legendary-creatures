@@ -64,9 +64,14 @@ const CardRow = props => {
         {data.map((category, index) => {
           const tagValueUrl = getTagValueUrl(props.tag, category.value);
           return (
-            <LocalizedLink key={props.tag + index} to={tagValueUrl}>
-              {category.value}
-            </LocalizedLink>
+            <>
+              <LocalizedLink key={props.tag + index} to={tagValueUrl}>
+                {category.value}
+              </LocalizedLink>
+              <span className={styles.Hint}>
+                {category.comment ? ` (${category.comment})` : ""}
+              </span>
+            </>
           );
         })}
       </td>
