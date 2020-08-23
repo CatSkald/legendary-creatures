@@ -24,6 +24,11 @@ const tags = {
     ru: "голос",
     uk: "голос",
   },
+  character: {
+    en: "character",
+    ru: "характер",
+    uk: "характер",
+  },
   appearance: {
     en: "appearance",
     ru: "внешность",

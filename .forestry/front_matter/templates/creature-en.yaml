@@ -134,6 +134,25 @@ fields:
   default: []
   label: Voice
   description: Voice
+- name: character
+  type: field_group_list
+  fields:
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Value
+  - name: comment
+    type: text
+    label: Optional comment
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Contradictory, unusual or appears rarely
+    description: Check it if the characteristic appears rarely or deviates from the common sources
+  default: []
+  label: Character
+  description: Character
 - name: appearance
   type: field_group_list
   fields:

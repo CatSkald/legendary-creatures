@@ -79,6 +79,11 @@ export const query = graphql`
           comment
           sometimes
         }
+        character {
+          value
+          comment
+          sometimes
+        }
         appearance {
           value
           comment

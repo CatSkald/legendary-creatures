@@ -16,6 +16,10 @@ voice:
   comment: when angry
 - value: thundering
   comment: when angry
+character:
+- value: merry
+- value: cheerful
+  comment: often dances, sings, plays the flute
 appearance:
 - value: high
   comment: 2-7 meters, «high as a fir»

@@ -133,6 +133,25 @@ fields:
   default: []
   label: Голос
   description: Голос
+- name: character
+  type: field_group_list
+  fields:
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значення
+  - name: comment
+    type: text
+    label: Необов’язковий коментар
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Суперечливе або рідкісне
+    description: Відмітьте це поле, якщо значення зустрічається рідко, суперечить або відхиляється від більшості джерел
+  default: []
+  label: Характер
+  description: Характер
 - name: appearance
   type: field_group_list
   fields:

@@ -51,6 +51,7 @@ const queryTranslations = graphql`
             shapeshifting
             activityTime
             voice
+            character
             appearance
             clothes
             paraphernalia

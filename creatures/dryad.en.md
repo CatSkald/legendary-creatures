@@ -17,6 +17,8 @@ taxonomy:
 - value: nature
 activityTime:
 voice:
+character:
+- value: shy
 appearance:
 clothes:
 paraphernalia:
@@ -34,13 +36,7 @@ id: 8795ec7144bd4a708bb9732e96a27840
 ---
 ## Description
 
-### Appearance
-
 A beautiful graceful young woman (always female).
-
-### Character
-
-Shy
 
 ## Classification
 

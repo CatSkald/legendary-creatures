@@ -60,6 +60,7 @@ export const query = graphql`
     $shapeshifting: String = "*"
     $activityTime: String = "*"
     $voice: String = "*"
+    $character: String = "*"
     $appearance: String = "*"
     $clothes: String = "*"
     $paraphernalia: String = "*"
@@ -76,6 +77,7 @@ export const query = graphql`
           shapeshifting: { elemMatch: { value: { glob: $shapeshifting } } }
           activityTime: { elemMatch: { value: { glob: $activityTime } } }
           voice: { elemMatch: { value: { glob: $voice } } }
+          character: { elemMatch: { value: { glob: $character } } }
           appearance: { elemMatch: { value: { glob: $appearance } } }
           clothes: { elemMatch: { value: { glob: $clothes } } }
           paraphernalia: { elemMatch: { value: { glob: $paraphernalia } } }

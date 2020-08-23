@@ -65,6 +65,9 @@ export const query = graphql`
             appearance {
               value
             }
+            character {
+              value
+            }
             clothes {
               value
             }

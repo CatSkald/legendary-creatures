@@ -108,6 +108,11 @@ exports.createPages = async ({ graphql, actions }) => {
                 comment
                 sometimes
               }
+              character {
+                value
+                comment
+                sometimes
+              }
               appearance {
                 value
                 comment

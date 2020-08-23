@@ -134,6 +134,25 @@ fields:
   default: []
   label: Голос
   description: Голос
+- name: character
+  type: field_group_list
+  fields:
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Значение
+  - name: comment
+    type: text
+    label: Необязательный комментарий
+  - name: sometimes
+    type: boolean
+    default: false
+    label: Противоречивые или редкое
+    description: Отметьте это поле, если значение встречается редко, противоречит или отклоняется от общих источников
+  default: []
+  label: Характер
+  description: Характер
 - name: appearance
   type: field_group_list
   fields:
