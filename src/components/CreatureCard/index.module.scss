@@ -17,7 +17,6 @@
 }
 
 .InfoRow {
-  font-style: italic;
   text-align: left;
 
   a {
@@ -48,7 +47,7 @@
   }
 }
 
-.Hint {
+.InfoRowEntry {
   &:after {
     content: ", ";
   }
@@ -58,6 +57,10 @@
       content: "";
     }
   }
+}
+
+.Hint {
+  font-style: italic;
 }
 
 .CardImage {

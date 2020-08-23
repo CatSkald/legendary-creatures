@@ -97,5 +97,5 @@ module.exports = {
     },
   },
   tags: tags,
-  forEachCreatureTag: action => Object.keys(tags).map(tag => action(tag)),
+  supportedTags: Object.keys(tags),
 };

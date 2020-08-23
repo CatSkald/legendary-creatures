@@ -10,7 +10,7 @@ const {
 } = require("./src/utils/url-helpers");
 const { parseTags } = require("./src/utils/tags-helpers");
 const { creaturesPerPage, noTag } = require("./src/configuration");
-const { forEachCreatureTag } = require("./src/i18n/navigation");
+const { supportedTags } = require("./src/i18n/navigation");
 
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions;
@@ -206,7 +206,7 @@ exports.createPages = async ({ graphql, actions }) => {
         localizedLinks: localizedLinks,
       };
 
-      forEachCreatureTag(tagName => {
+      supportedTags.forEach(tagName => {
         if (context[tagName]) pageContext[tagName] = context[tagName];
       });
 
@@ -307,7 +307,9 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
   };
 
   //add tags to the fields
-  forEachCreatureTag(tagName => (pageFields[tagName] = categoryType(tagName)));
+  supportedTags.forEach(
+    tagName => (pageFields[tagName] = categoryType(tagName)),
+  );
 
   const typeDefs = [
     schema.buildObjectType({
