@@ -9,7 +9,7 @@ const {
   localizedSlug,
 } = require("./src/utils/url-helpers");
 const { parseTags } = require("./src/utils/tags-helpers");
-const { creaturesPerPage, noTag } = require("./src/configuration");
+const configuration = require("./src/configuration");
 const { supportedTags } = require("./src/i18n/navigation");
 
 exports.onCreatePage = ({ page, actions }) => {
@@ -49,7 +49,10 @@ exports.onCreateNode = ({ node, actions }) => {
     const name = path.basename(node.fileAbsolutePath, ".md");
     const slug = name.slice(0, -3); //".en".length = 3
     const language = name.slice(-2); //"en".length = 2
-    const isDefault = language && languages[language].default;
+    const isDefault =
+      language &&
+      languages[language] &&
+      languages[language].code === configuration.defaultLanguage;
 
     createNodeField({ node, name: "slug", value: slug });
     createNodeField({ node, name: "locale", value: language });
@@ -197,12 +200,12 @@ exports.createPages = async ({ graphql, actions }) => {
     localizedLinks,
     context = {},
   ) {
-    const pageCount = Math.ceil(totalItems / creaturesPerPage);
+    const pageCount = Math.ceil(totalItems / configuration.creaturesPerPage);
 
     Array.from({ length: pageCount }).forEach((_, index) => {
       const pageContext = {
-        limit: creaturesPerPage,
-        skip: index * creaturesPerPage,
+        limit: configuration.creaturesPerPage,
+        skip: index * configuration.creaturesPerPage,
         numPages: pageCount,
         currentPage: index,
         language: language,
@@ -290,7 +293,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes } = actions;
   const categoryType = name => ({
     type: "[Category!]",
-    resolve: source => source[name] || [{ value: noTag }],
+    resolve: source => source[name] || [{ value: configuration.noTag }],
   });
   const pageFields = {
     //all

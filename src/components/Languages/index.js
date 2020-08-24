@@ -13,10 +13,6 @@ const Languages = props => {
   function handleClickLanguage(e, lang) {
     props.handleLanguageSelected();
 
-    //TODO localStorage.getItem("preferredLanguage");
-    const isBrowser = typeof window !== "undefined";
-    if (isBrowser) window.localStorage.setItem("preferredLanguage", lang);
-
     if (language.code === lang) {
       e.preventDefault();
       return;

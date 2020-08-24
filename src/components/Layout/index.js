@@ -6,14 +6,22 @@ import styles from "./index.module.scss";
 import React, { useState } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
+import storage from "../../utils/local-storage-helpers";
 
 const LocaleContext = React.createContext();
 
 const Layout = props => {
-  const [isDarkColorTheme, switchColorTheme] = useState(false);
+  var userSettings = storage.getUserSettings();
+  const [isDarkColorTheme, switchColorTheme] = useState(
+    userSettings.isDarkColorTheme,
+  );
 
   function handleToggleColorTheme() {
     switchColorTheme(!isDarkColorTheme);
+    storage.store(
+      storage.keys.theme,
+      !isDarkColorTheme ? storage.keys.themes.dark : storage.keys.themes.light,
+    );
   }
 
   return (
