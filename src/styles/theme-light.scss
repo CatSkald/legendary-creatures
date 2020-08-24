@@ -1,12 +1,12 @@
 .theme-light {
   //color palette
-  --color-primary: #365359;
-  --color-primary-variant: #436073;
-  --color-secondary: #7c9aa6;
-  --color-tertiary: #0e261d;
+  --color-primary: #1b4859;
+  --color-secondary: #f1f2d0;
+  --color-tertiary: #8fbfb2;
+  --color-quaternary: #247329;
 
-  --color-background: #ecf1ef;
-  --color-on-background: black;
+  --color-background: #fffafa;
+  --color-on-background: #1b1b1b;
   --color-on-primary: var(--color-secondary);
 
   --background-shadow: rgba(0, 0, 0, 0.2);
@@ -20,21 +20,21 @@
   --menu-text-selected: var(--color-background);
   --content-bg: var(--color-background);
   --content-title: var(--color-on-background);
-  --content-subtitle: var(--color-tertiary);
+  --content-subtitle: var(--color-primary);
   --content-text: var(--color-on-background);
   --content-separator: var(--color-primary);
-  --content-link: var(--color-primary);
-  --content-link-hover: var(--color-secondary);
-  --content-link-visited: var(--color-primary-variant);
-  --card-bg: var(--color-primary-variant);
+  --content-link: var(--color-quaternary);
+  --content-link-hover: var(--color-primary);
+  --content-link-visited: var(--color-primary);
+  --card-bg: var(--color-quaternary);
   --card-title: var(--color-background);
-  --card-separator: var(--color-on-primary);
-  --card-text: var(--color-on-primary);
+  --card-separator: var(--color-tertiary);
+  --card-text: var(--color-background);
   --card-link: var(--color-secondary);
-  --card-link-hover: var(--color-background);
+  --card-link-hover: var(--color-tertiary);
   --page-preview-bg: var(--card-bg);
   --page-preview-title: var(--card-title);
   --page-preview-text: var(--card-text);
-  --page-preview-hover: var(--color-background);
+  --page-preview-hover: var(--card-link);
   --external-content: var(--color-background);
 }

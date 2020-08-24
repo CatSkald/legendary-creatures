@@ -17,11 +17,11 @@
   padding: var(--space-sm);
   font-weight: bold;
 
-  background-color: var(--card-bg); /* Green */
+  background-color: var(--card-bg);
   color: var(--card-link);
 
   &:hover {
-    color: var(--card-link-hover); /* Green */
+    color: var(--card-link-hover);
   }
 }
 
@@ -34,7 +34,7 @@
   color: var(--content-link);
 
   &:hover {
-    color: var(--content-link-hover); /* Green */
+    color: var(--content-link-hover);
     border-color: var(--content-link-hover);
   }
 }
