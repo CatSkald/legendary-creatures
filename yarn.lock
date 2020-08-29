@@ -1925,7 +1925,7 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@turist/fetch@^7.1.6":
+"@turist/fetch@^7.1.6", "@turist/fetch@^7.1.7":
   version "7.1.7"
   resolved "https://registry.yarnpkg.com/@turist/fetch/-/fetch-7.1.7.tgz#a2b1f7ec0265e6fe0946c51eef34bad9b9efc865"
   integrity sha512-XP20kvfyMNlWdPVQXyuzA40LoCHbbJptikt7W+TlZ5sS+NNjk70xjXCtHBLEudp7li3JldXEFSIUzpW1a0WEhA==
@@ -3828,7 +3828,7 @@ chokidar@^2.0.4, chokidar@^2.1.8:
   optionalDependencies:
     fsevents "^1.2.7"
 
-chokidar@^3.4.1:
+chokidar@^3.4.1, chokidar@^3.4.2:
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.4.2.tgz#38dc8e658dec3809741eb3ef7bb0a47fe424232d"
   integrity sha512-IZHaDeBeI+sZJRX7lGcXsdzgvZqKv6sECqsbErJA4mHWfpRrD8B97kSFN4cQz6nGBGiuFia1MKR4d6c1o8Cv7A==
@@ -5435,6 +5435,11 @@ envinfo@^7.5.1:
   resolved "https://registry.yarnpkg.com/envinfo/-/envinfo-7.7.2.tgz#098f97a0e902f8141f9150553c92dbb282c4cabe"
   integrity sha512-k3Eh5bKuQnZjm49/L7H4cHzs2FlL5QjbTB3JrPxoTI8aJG7hVMe4uKyJxSYH4ahseby2waUwk5OaKX/nAsaYgg==
 
+envinfo@^7.7.3:
+  version "7.7.3"
+  resolved "https://registry.yarnpkg.com/envinfo/-/envinfo-7.7.3.tgz#4b2d8622e3e7366afb8091b23ed95569ea0208cc"
+  integrity sha512-46+j5QxbPWza0PB1i15nZx0xQ4I/EfQxg9J8Had3b408SV63nEtor2e+oiY63amTo9KTuh2a3XLObNwduxYwwA==
+
 eol@^0.9.1:
   version "0.9.1"
   resolved "https://registry.yarnpkg.com/eol/-/eol-0.9.1.tgz#f701912f504074be35c6117a5c4ade49cd547acd"
@@ -6631,10 +6636,10 @@ gatsby-cli@^2.12.87:
     yargs "^15.3.1"
     yurnalist "^1.1.2"
 
-gatsby-cli@^2.12.88:
-  version "2.12.88"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.12.88.tgz#a6d6f5b101f946d1fa89fdc16aab114da4e87b01"
-  integrity sha512-LBV6j9FFwGMCmbjvutTInwJV+fSrIhqHTYw6TZjVcXzUuk5jj/llj4CDUep5iPLjCZJvvzwtG2kDpkFPOPfsoA==
+gatsby-cli@^2.12.90:
+  version "2.12.90"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.12.90.tgz#bc8052d5d7d0f73d3a336f0d8371120752297865"
+  integrity sha512-LK6pqXnQEXdPjXyYHVHa2dYL2PwZ4Ry9/0w8gcRMMgompynxa8Hh5ptTfIyBq4H19gU7a6j+NraavrOcKKaM0g==
   dependencies:
     "@babel/code-frame" "^7.10.3"
     "@hapi/joi" "^15.1.1"
@@ -6649,9 +6654,9 @@ gatsby-cli@^2.12.88:
     execa "^3.4.0"
     fs-exists-cached "^1.0.0"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.3.16"
-    gatsby-recipes "^0.2.17"
-    gatsby-telemetry "^1.3.28"
+    gatsby-core-utils "^1.3.18"
+    gatsby-recipes "^0.2.19"
+    gatsby-telemetry "^1.3.30"
     hosted-git-info "^3.0.4"
     ink "^2.7.1"
     ink-spinner "^3.1.0"
@@ -6672,7 +6677,7 @@ gatsby-cli@^2.12.88:
     stack-trace "^0.0.10"
     strip-ansi "^5.2.0"
     update-notifier "^4.1.0"
-    uuid "3.4.0"
+    uuid "^8.3.0"
     yargs "^15.3.1"
     yurnalist "^1.1.2"
 
@@ -6688,10 +6693,10 @@ gatsby-core-utils@^1.3.15:
     proper-lockfile "^4.1.1"
     xdg-basedir "^4.0.0"
 
-gatsby-core-utils@^1.3.16:
-  version "1.3.16"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.3.16.tgz#3f275c91cee5ed4e7820e59386d8ebb72ddf8181"
-  integrity sha512-RezVD6iwMBARVcb+/bMR6TNm7bW73ceM2fh6v+TPBlb6WCXrete87gJkURLaIVQY+HOPy9+iQsg5LljAIV7hwg==
+gatsby-core-utils@^1.3.18:
+  version "1.3.18"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.3.18.tgz#8eecb424f8709bbb3dac9653973068643b3fd66f"
+  integrity sha512-B7ixQb4H0e2yB0nNfM2zshOAUw3nW9MvcNsRskVFwIPJY+ngh8Srla4XWXVMJ60Fyt103+jPVZTxGq72/u5HuQ==
   dependencies:
     ci-info "2.0.0"
     configstore "^5.0.1"
@@ -6990,10 +6995,10 @@ gatsby-recipes@^0.2.16:
     yoga-layout-prebuilt "^1.9.6"
     yup "^0.27.0"
 
-gatsby-recipes@^0.2.17:
-  version "0.2.17"
-  resolved "https://registry.yarnpkg.com/gatsby-recipes/-/gatsby-recipes-0.2.17.tgz#3345ed5140d1defadcf6eda03585b94ec9cffe74"
-  integrity sha512-BwscTYe1d1wxVUrBt9DZSrDTAhZjjvCj5ncEdfxHXz5BgiJcz6KUb4AVBboI/frOtSGbcSNWBGRJbEWcBQMCvA==
+gatsby-recipes@^0.2.19:
+  version "0.2.19"
+  resolved "https://registry.yarnpkg.com/gatsby-recipes/-/gatsby-recipes-0.2.19.tgz#0d4e43b1b74b73046089797f9ec677483b5de645"
+  integrity sha512-VkickYkzFzS2qXLuhvw7mxcNxc9Yh1kpEBKIJPJcknpCURakGiScckwSTLQzHU41vXZiG3Tgsx7AVTd0HCzDNA==
   dependencies:
     "@babel/core" "^7.9.6"
     "@babel/generator" "^7.9.6"
@@ -7017,7 +7022,7 @@ gatsby-recipes@^0.2.17:
     ansi-html "^0.0.7"
     babel-plugin-remove-export-keywords "^1.6.5"
     better-queue "^3.8.10"
-    chokidar "3.4.0"
+    chokidar "^3.4.2"
     concurrently "^5.0.0"
     contentful-management "^5.26.3"
     cors "^2.8.5"
@@ -7030,9 +7035,9 @@ gatsby-recipes@^0.2.17:
     flatted "^3.0.0"
     formik "^2.0.8"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.3.16"
+    gatsby-core-utils "^1.3.18"
     gatsby-interface "^0.0.166"
-    gatsby-telemetry "^1.3.28"
+    gatsby-telemetry "^1.3.30"
     glob "^7.1.6"
     graphql "^14.6.0"
     graphql-compose "^6.3.8"
@@ -7073,7 +7078,7 @@ gatsby-recipes@^0.2.17:
     unist-util-remove "^2.0.0"
     unist-util-visit "^2.0.2"
     urql "^1.9.7"
-    uuid "^8.2.0"
+    uuid "^8.3.0"
     ws "^7.3.0"
     xstate "^4.9.1"
     yoga-layout-prebuilt "^1.9.6"
@@ -7178,26 +7183,26 @@ gatsby-telemetry@^1.3.27:
     node-fetch "2.6.0"
     uuid "3.4.0"
 
-gatsby-telemetry@^1.3.28:
-  version "1.3.28"
-  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-1.3.28.tgz#282e08ecc4c6cce8a83d6cf1a2f5b47cd293092d"
-  integrity sha512-nG0lQdY4h+2tbtvHoPEm7UNOu6x/lITFqT1lkXsDl1vkvTMB9sgM2IIoyjBndRH41rjYtaYnPLBGRdYLtTXoZw==
+gatsby-telemetry@^1.3.30:
+  version "1.3.30"
+  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-1.3.30.tgz#dd169f8674017597907cad2ce95127af7a4d7465"
+  integrity sha512-2EJdu8f7CqLfENnShK1gSJdlxC/me6eImrbReYQDuf7Bu7l9UT5Ag07D1vC8qA58wjj+p9mhZqAL5pYCdQ04jA==
   dependencies:
     "@babel/code-frame" "^7.10.3"
     "@babel/runtime" "^7.10.3"
-    "@turist/fetch" "^7.1.6"
+    "@turist/fetch" "^7.1.7"
     "@turist/time" "^0.0.1"
     async-retry-ng "^2.0.1"
     boxen "^4.2.0"
     configstore "^5.0.1"
-    envinfo "^7.5.1"
+    envinfo "^7.7.3"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.3.16"
-    git-up "4.0.1"
-    is-docker "2.0.0"
+    gatsby-core-utils "^1.3.18"
+    git-up "^4.0.2"
+    is-docker "^2.1.1"
     lodash "^4.17.15"
-    node-fetch "2.6.0"
-    uuid "3.4.0"
+    node-fetch "^2.6.0"
+    uuid "^8.3.0"
 
 gatsby-transformer-json@^2.2.25:
   version "2.4.11"
@@ -7539,6 +7544,14 @@ git-up@4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/git-up/-/git-up-4.0.1.tgz#cb2ef086653640e721d2042fe3104857d89007c0"
   integrity sha512-LFTZZrBlrCrGCG07/dm1aCjjpL1z9L3+5aEeI9SBhAqSc+kiA9Or1bgZhQFNppJX6h/f5McrvJt1mQXTFm6Qrw==
+  dependencies:
+    is-ssh "^1.3.0"
+    parse-url "^5.0.0"
+
+git-up@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/git-up/-/git-up-4.0.2.tgz#10c3d731051b366dc19d3df454bfca3f77913a7c"
+  integrity sha512-kbuvus1dWQB2sSW4cbfTeGpCMd8ge9jx9RKnhXhuJ7tnvT+NIrTVfYZxjtflZddQYcmdOTlkAcjmx7bor+15AQ==
   dependencies:
     is-ssh "^1.3.0"
     parse-url "^5.0.0"
@@ -8905,7 +8918,7 @@ is-docker@2.0.0:
   resolved "https://registry.yarnpkg.com/is-docker/-/is-docker-2.0.0.tgz#2cb0df0e75e2d064fe1864c37cdeacb7b2dcf25b"
   integrity sha512-pJEdRugimx4fBMra5z2/5iRdZ63OhYV0vr0Dwm5+xtW4D1FvRkB8hamMIhnWfyJeDdyr/aa7BDyNbtG38VxgoQ==
 
-is-docker@^2.0.0:
+is-docker@^2.0.0, is-docker@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/is-docker/-/is-docker-2.1.1.tgz#4125a88e44e450d384e09047ede71adc2d144156"
   integrity sha512-ZOoqiXfEwtGknTiuDEy8pN2CfE3TxMHprvNer1mXiqwkOT77Rw3YVrUQ52EqAOU3QAWDQ+bQdx7HJzrv7LS2Hw==
@@ -15266,7 +15279,7 @@ uuid@3.4.0, uuid@^3.0.0, uuid@^3.0.1, uuid@^3.3.2, uuid@^3.4.0:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
-uuid@^8.2.0:
+uuid@^8.2.0, uuid@^8.3.0:
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.0.tgz#ab738085ca22dc9a8c92725e459b1d507df5d6ea"
   integrity sha512-fX6Z5o4m6XsXBdli9g7DtWgAx+osMsRRZFKma1mIUsLCz6vRvv+pz5VNbyu9UEDzpMWulZfvpgb/cmDXVulYFQ==
