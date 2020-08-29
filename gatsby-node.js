@@ -309,7 +309,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
     related: { type: "[Frontmatter!]" },
     wikipedia: { type: "String" },
     date: {
-      type: "Date!",
+      type: "Date",
       extensions: { dateformat: {} },
     },
   };
