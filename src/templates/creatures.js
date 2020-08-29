@@ -6,14 +6,16 @@ import PageList from "../components/PageList";
 import Pagination from "../components/Pagination";
 import SEO from "../components/seo";
 import useTranslations from "../i18n/translations/useTranslations";
+import { LocaleContext } from "../components/Layout";
 
 const Creatures = props => {
   const { getCreaturesUrl } = require("../utils/url-helpers");
+  const { language } = React.useContext(LocaleContext);
 
   // Logic for Pagination Component
   const { currentPage, numPages } = props.pageContext;
-  const prevPage = getCreaturesUrl(currentPage - 1);
-  const nextPage = getCreaturesUrl(currentPage + 1);
+  const prevPage = getCreaturesUrl(currentPage - 1, language.code);
+  const nextPage = getCreaturesUrl(currentPage + 1, language.code);
   const pages = props.data.allMarkdownRemark.edges;
   const translations = useTranslations();
 

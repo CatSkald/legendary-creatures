@@ -6,10 +6,12 @@ import TitlePage from "../components/TitlePage";
 import PageList from "../components/PageList";
 import LocalizedLink from "../components/LocalizedLink";
 import useTranslations from "../i18n/translations/useTranslations";
+import { LocaleContext } from "../components/Layout";
 
 const Index = ({ data: { allMarkdownRemark } }) => {
   const translations = useTranslations();
-  const { tagsPath, creaturesPath } = require("../utils/url-helpers");
+  const { getTagsPath, getCreaturesPath } = require("../utils/url-helpers");
+  const { language } = React.useContext(LocaleContext);
 
   const pages = allMarkdownRemark.edges;
 
@@ -26,9 +28,13 @@ const Index = ({ data: { allMarkdownRemark } }) => {
       <PageList pages={pages} />
       <br />
       <span>{translations.View} </span>
-      <LocalizedLink to={creaturesPath}>{translations.all}</LocalizedLink>
+      <LocalizedLink to={getCreaturesPath(language.code)}>
+        {translations.all}
+      </LocalizedLink>
       <span> {translations.orSearchBy} </span>
-      <LocalizedLink to={tagsPath}>{translations.tags}</LocalizedLink>
+      <LocalizedLink to={getTagsPath(language.code)}>
+        {translations.tags}
+      </LocalizedLink>
     </div>
   );
 };

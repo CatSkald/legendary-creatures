@@ -3,9 +3,11 @@ import styles from "./index.module.scss";
 import React from "react";
 import PropTypes from "prop-types";
 import CreaturePage from "../CreaturePage";
+import { LocaleContext } from "../Layout";
 
 const PageList = props => {
-  const { creaturesPath } = require("../../utils/url-helpers");
+  const { getCreaturesPath } = require("../../utils/url-helpers");
+  const { language } = React.useContext(LocaleContext);
 
   return (
     <section className={styles.PageList}>
@@ -18,7 +20,7 @@ const PageList = props => {
         }) => (
           <CreaturePage
             key={slug}
-            slug={`${creaturesPath}/${slug}`}
+            slug={`${getCreaturesPath(language.code)}/${slug}`}
             date={date}
             title={title}
             description={description}

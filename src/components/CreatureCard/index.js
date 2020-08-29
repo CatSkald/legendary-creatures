@@ -68,7 +68,7 @@ const CardRow = props => {
 
   data = localizedSort(data, props.language.code, x => x.value);
   const { getTagUrl, getTagValueUrl } = require("../../utils/url-helpers");
-  const tagUrl = getTagUrl(props.tag);
+  const tagUrl = getTagUrl(props.tag, props.language.code);
 
   return (
     <tr>
@@ -77,7 +77,11 @@ const CardRow = props => {
       </th>
       <td className={styles.InfoRow}>
         {data.map((category, index) => {
-          const tagValueUrl = getTagValueUrl(props.tag, category.value);
+          const tagValueUrl = getTagValueUrl(
+            props.tag,
+            category.value,
+            props.language.code,
+          );
 
           let comment = "";
           if (category.comment && category.sometimes)

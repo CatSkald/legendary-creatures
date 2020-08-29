@@ -67,20 +67,20 @@ module.exports = {
     },
     creatures: {
       en: { title: "Creatures", path: "/creatures" },
-      ru: { title: "Библиотека существ", path: "/creatures" },
-      uk: { title: "Бібліотека істот", path: "/creatures" },
+      ru: { title: "Библиотека существ", path: "/существа" },
+      uk: { title: "Бібліотека істот", path: "/істоти" },
       type: "menu",
     },
     tags: {
       en: { title: "Tags", path: "/tags" },
-      ru: { title: "Метки", path: "/tags" },
-      uk: { title: "Мітки", path: "/tags" },
+      ru: { title: "Метки", path: "/метки" },
+      uk: { title: "Мітки", path: "/мітки" },
       type: "menu",
     },
     search: {
       en: { title: "", path: "/search" },
-      ru: { title: "", path: "/search" },
-      uk: { title: "", path: "/search" },
+      ru: { title: "", path: "/поиск" },
+      uk: { title: "", path: "/пошук" },
     },
     about: {
       en: { title: "About", path: "/about" },

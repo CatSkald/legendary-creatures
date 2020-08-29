@@ -2,7 +2,7 @@ const path = require("path");
 const languages = require("./src/i18n/languages");
 const localizedNavigation = require("./src/i18n/navigation");
 const {
-  tagsPath,
+  getTagsPath,
   getCreatureUrl,
   getCreaturesUrl,
   getTagValueUrl,
@@ -163,7 +163,7 @@ exports.createPages = async ({ graphql, actions }) => {
       .forEach(({ node: page }) => {
         const path = page.frontmatter.path || page.fields.slug;
         localizedLinks[page.fields.locale] = {
-          path: isPage ? path : getCreatureUrl(path),
+          path: isPage ? path : getCreatureUrl(path, page.fields.locale),
         };
       });
     return localizedLinks;
@@ -229,7 +229,7 @@ exports.createPages = async ({ graphql, actions }) => {
   Object.entries(languages).forEach(([lang, langProps]) => {
     //create tags list
     createPage({
-      path: langProps.path + tagsPath,
+      path: langProps.path + getTagsPath(langProps.code),
       component: tagListTemplate,
       context: {
         language: langProps,
@@ -246,7 +246,7 @@ exports.createPages = async ({ graphql, actions }) => {
     createPaginatedPages(
       creaturePagesCount,
       langProps,
-      getCreaturesUrl,
+      index => getCreaturesUrl(index, lang),
       creatureListTemplate,
       localizedNavigation.pages.creatures,
     );
@@ -278,7 +278,8 @@ exports.createPages = async ({ graphql, actions }) => {
           createPaginatedPages(
             creaturePagesCount,
             langProps,
-            pageIndex => getTagValueUrl(tagName, value, pageIndex),
+            pageIndex =>
+              getTagValueUrl(tagName, value, langProps.code, pageIndex),
             creatureListTemplate,
             localizedNavigation.pages.tags,
             context,

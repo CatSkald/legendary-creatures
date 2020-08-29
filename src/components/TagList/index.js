@@ -27,14 +27,17 @@ const TagList = props => {
       {getSortedTags(props.tags).map(({ tag, values }) => {
         return (
           <div key={tag} className={styles.TagListItem}>
-            <LocalizedLink className={styles.Tag} to={getTagUrl(tag)}>
+            <LocalizedLink
+              className={styles.Tag}
+              to={getTagUrl(tag, language.code)}
+            >
               {tag}
             </LocalizedLink>
             {values.map((value, index) => (
               <LocalizedLink
                 className={styles.TagValue}
                 key={`${tag}_${value}${index}`}
-                to={getTagValueUrl(tag, value)}
+                to={getTagValueUrl(tag, value, language.code)}
               >
                 {value}
               </LocalizedLink>
