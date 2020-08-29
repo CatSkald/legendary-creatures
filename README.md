@@ -12,6 +12,7 @@
 
 - Run website locally: `npm run develop`
 - Run CMS locally: `npm run build-serve`
+- Deploy: `npm run deploy`
 
 ### Debug
 
