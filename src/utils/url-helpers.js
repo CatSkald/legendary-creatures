@@ -9,6 +9,8 @@ const getCreaturesPath = languageCode =>
 const getSearchPath = languageCode =>
   localizedNavigation.pages.search[languageCode].path;
 
+const removeSpecialCharacters = s => s.replace(/\s/g, "");
+
 exports.getTagsPath = getTagsPath;
 exports.getCreaturesPath = getCreaturesPath;
 exports.getSearchPath = getSearchPath;
@@ -26,18 +28,20 @@ exports.localizedSlug = ({ isDefault, locale, slug, isPage }) => {
 };
 
 exports.getTagUrl = (tag, languageCode) =>
-  `${getTagsPath(languageCode)}#${tag}`;
+  `${getTagsPath(languageCode)}#${removeSpecialCharacters(tag)}`;
 
 exports.getTagValueUrl = (tag, value, languageCode, pageIndex) => {
   if (!tag || !value) return null;
-  const url = `${getSearchPath(
-    languageCode,
-  )}/${tag.toLowerCase()}/${value.toLowerCase()}`;
+  const url = `${getSearchPath(languageCode)}/${removeSpecialCharacters(
+    tag,
+  ).toLowerCase()}/${removeSpecialCharacters(value).toLowerCase()}`;
   return url + pagePath(pageIndex);
 };
 
 exports.getCreatureUrl = (creatureName, languageCode) => {
-  return `${getCreaturesPath(languageCode)}/${creatureName}`;
+  return `${getCreaturesPath(languageCode)}/${removeSpecialCharacters(
+    creatureName,
+  )}`;
 };
 
 exports.getCreaturesUrl = (pageIndex, languageCode) => {
