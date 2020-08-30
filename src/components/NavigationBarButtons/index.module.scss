@@ -31,11 +31,11 @@
 
 .Language {
   &:after {
-    content: " ⤋"; //non-breaking space
+    content: " ⇓"; //non-breaking space
   }
 
   &.active:after {
-    content: " ⤊"; //non-breaking space
+    content: " ⇑"; //non-breaking space
   }
 }
 
