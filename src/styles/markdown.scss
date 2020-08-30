@@ -1,6 +1,8 @@
 .markdown {
   margin: auto;
-  padding: var(--space-lg) 0;
+  @media screen and (min-width: 1056px /*--screen-large*/) {
+    padding: var(--space-lg) 0;
+  }
 
   & > *:first-child {
     margin-top: 0 !important;

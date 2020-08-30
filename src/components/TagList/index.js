@@ -33,6 +33,7 @@ const TagList = props => {
             >
               {tag}
             </LocalizedLink>
+            <br />
             {values.map((value, index) => (
               <LocalizedLink
                 className={styles.TagValue}

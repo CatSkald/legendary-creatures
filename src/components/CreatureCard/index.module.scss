@@ -71,21 +71,26 @@
   z-index: 1;
   position: relative;
   background: var(--content-bg);
-  margin: 0 0 var(--space) var(--space-sm);
-  padding: 0 0 var(--space) var(--space-sm);
-  min-width: 400px;
-  width: 50%;
   -webkit-font-smoothing: antialiased;
-  float: right;
   word-wrap: break-word;
 
-  @media screen and (max-width: 576px /*--screen-small*/) {
-    float: none;
+  float: none;
+  clear: both;
+  width: 95%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  padding-bottom: var(--space);
+
+  @media screen and (min-width: 768px /*--screen-medium*/) {
+    float: right;
     clear: both;
-    width: 80%;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    min-width: 400px;
+    max-width: inherit;
+    width: 50%;
+    margin: 0 0 var(--space) var(--space-sm);
+    padding: 0 0 var(--space) var(--space-sm);
   }
 }
 
