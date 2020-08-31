@@ -29,6 +29,7 @@ exports.onCreatePage = ({ page, actions }) => {
         language: langProps,
         locale: lang,
         dateFormat: langProps.dateFormat,
+        limit: configuration.creaturesPerPage,
       },
     });
   });

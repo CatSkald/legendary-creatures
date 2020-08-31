@@ -56,14 +56,14 @@ Index.propTypes = {
 export default Index;
 
 export const query = graphql`
-  query Index($locale: String!, $dateFormat: String!) {
+  query Index($locale: String!, $dateFormat: String!, $limit: Int!) {
     allMarkdownRemark(
       filter: {
         fields: { locale: { eq: $locale } }
         frontmatter: { page: { eq: null } }
       }
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 3
+      limit: $limit
     ) {
       edges {
         node {
