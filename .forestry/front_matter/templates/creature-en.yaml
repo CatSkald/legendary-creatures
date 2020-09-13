@@ -1,8 +1,6 @@
 ---
 label: Creature (English)
 hide_body: false
-pages:
-  - creatures/*.en.md
 fields:
 - name: title
   type: text
@@ -76,7 +74,6 @@ fields:
       section: creatures-english
   label: Related creatures
   description: Other creatures that have any relations to the creature.
-# tags
 - name: taxonomy
   type: field_group_list
   fields:
@@ -92,7 +89,8 @@ fields:
     type: boolean
     default: false
     label: Contradictory, unusual or appears rarely
-    description: Check it if the characteristic appears rarely or deviates from the common sources
+    description: Check it if the characteristic appears rarely or deviates from the
+      common sources
   default: []
   label: Taxonomy
   description: Kinds and types of the creature
@@ -111,7 +109,8 @@ fields:
     type: boolean
     default: false
     label: Contradictory, unusual or appears rarely
-    description: Check it if the characteristic appears rarely or deviates from the common sources
+    description: Check it if the characteristic appears rarely or deviates from the
+      common sources
   default: []
   label: Shapeshifting
   description: Forms to which the creature can transform
@@ -130,7 +129,8 @@ fields:
     type: boolean
     default: false
     label: Contradictory, unusual or appears rarely
-    description: Check it if the characteristic appears rarely or deviates from the common sources
+    description: Check it if the characteristic appears rarely or deviates from the
+      common sources
   default: []
   label: Voice
   description: Voice
@@ -149,7 +149,8 @@ fields:
     type: boolean
     default: false
     label: Contradictory, unusual or appears rarely
-    description: Check it if the characteristic appears rarely or deviates from the common sources
+    description: Check it if the characteristic appears rarely or deviates from the
+      common sources
   default: []
   label: Character
   description: Character
@@ -168,7 +169,8 @@ fields:
     type: boolean
     default: false
     label: Contradictory, unusual or appears rarely
-    description: Check it if the characteristic appears rarely or deviates from the common sources
+    description: Check it if the characteristic appears rarely or deviates from the
+      common sources
   default: []
   label: Appearance
   description: Appearance
@@ -187,7 +189,8 @@ fields:
     type: boolean
     default: false
     label: Contradictory, unusual or appears rarely
-    description: Check it if the characteristic appears rarely or deviates from the common sources
+    description: Check it if the characteristic appears rarely or deviates from the
+      common sources
   default: []
   label: Clothes
   description: Clothes
@@ -206,7 +209,8 @@ fields:
     type: boolean
     default: false
     label: Contradictory, unusual or appears rarely
-    description: Check it if the characteristic appears rarely or deviates from the common sources
+    description: Check it if the characteristic appears rarely or deviates from the
+      common sources
   default: []
   label: Paraphernalia
   description: Equipment and things belonging to or associated with the creature
@@ -225,7 +229,8 @@ fields:
     type: boolean
     default: false
     label: Contradictory, unusual or appears rarely
-    description: Check it if the characteristic appears rarely or deviates from the common sources
+    description: Check it if the characteristic appears rarely or deviates from the
+      common sources
   default: []
   label: Origin
   description: One or more countries or regions where the creature is originating
@@ -254,7 +259,8 @@ fields:
     type: boolean
     default: false
     label: Contradictory, unusual or appears rarely
-    description: Check it if the characteristic appears rarely or deviates from the common sources
+    description: Check it if the characteristic appears rarely or deviates from the
+      common sources
   default: []
   label: Distribution
   description: According to beliefs was it a single unique creature, a rare species
@@ -274,7 +280,8 @@ fields:
     type: boolean
     default: false
     label: Contradictory, unusual or appears rarely
-    description: Check it if the characteristic appears rarely or deviates from the common sources
+    description: Check it if the characteristic appears rarely or deviates from the
+      common sources
   default: []
   label: Habitat
   description: The type of environment in which the creature usually lives.
@@ -307,6 +314,7 @@ fields:
     type: boolean
     default: false
     label: Contradictory, unusual or appears rarely
-    description: Check it if the characteristic appears rarely or deviates from the common sources
+    description: Check it if the characteristic appears rarely or deviates from the
+      common sources
   label: Activity time
   description: When the creature is active
