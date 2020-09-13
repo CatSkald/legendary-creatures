@@ -46,6 +46,7 @@ const queryTranslations = graphql`
             plural
             CreaturesPageTitle
             TagsPageTitle
+            related
             origin
             taxonomy
             shapeshifting

@@ -25,6 +25,7 @@ Tags: Tags
 plural: plural
 CreaturesPageTitle: Creatures
 TagsPageTitle: Tags
+related: related creatures #non-breaking space
 #tags
 origin: origin
 taxonomy: taxonomy

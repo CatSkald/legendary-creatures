@@ -308,7 +308,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
     //creatures
     names: { type: "[Name!]" },
     map: { type: "String" },
-    related: { type: "[Frontmatter!]" },
+    related: { type: "[String!]" },
     wikipedia: { type: "String" },
     date: {
       type: "Date",

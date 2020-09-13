@@ -51,6 +51,11 @@ const CreatureCard = props => {
                 key={tag}
               />
             ))}
+            <RelatedCreatures
+              data={props.frontmatter}
+              label={translations.related}
+              language={language}
+            />
           </tbody>
         </table>
         <CardButtons data={props.frontmatter} />
@@ -103,7 +108,42 @@ const CardRow = props => {
   );
 };
 
+const RelatedCreatures = props => {
+  if (!props.data.related || props.data.related.length === 0) return <></>;
+
+  const { getCreatureUrl } = require("../../utils/url-helpers");
+
+  let creatureLinks = props.data.related.map(path => {
+    var name = path.substring("creatures/".length, path.indexOf("."));
+    return {
+      name: name,
+      link: getCreatureUrl(name, props.language.code),
+    };
+  });
+  creatureLinks = localizedSort(
+    creatureLinks,
+    props.language.code,
+    x => x.name,
+  );
+
+  return (
+    <tr>
+      <th className={styles.InfoHeader}>{props.label}</th>
+      <td className={styles.InfoRow}>
+        {creatureLinks.map(({ name, link }) => (
+          <span className={styles.InfoRowEntry} key={name}>
+            <LocalizedLink to={link}>{name}</LocalizedLink>
+          </span>
+        ))}
+      </td>
+    </tr>
+  );
+};
+
 const CardButtons = props => {
+  const anyButtons = props.data.wikipedia;
+  if (!anyButtons) return <></>;
+
   return (
     <div className={styles.InfoButtons}>
       {props.data.wikipedia && (
@@ -124,6 +164,9 @@ CreatureCard.propTypes = {
   frontmatter: PropTypes.object.isRequired,
 };
 
+const languageShape = {
+  code: PropTypes.string.isRequired,
+};
 const categoryShape = {
   value: PropTypes.string.isRequired,
   comment: PropTypes.string,
@@ -135,12 +178,20 @@ CardRow.propTypes = {
     PropTypes.shape(categoryShape),
     PropTypes.arrayOf(PropTypes.shape(categoryShape)),
   ]),
-  language: PropTypes.object.isRequired,
+  language: PropTypes.shape(languageShape).isRequired,
   sometimesText: PropTypes.string.isRequired,
 };
 
 CardButtons.propTypes = {
   data: PropTypes.object.isRequired,
+};
+
+RelatedCreatures.propTypes = {
+  label: PropTypes.string.isRequired,
+  language: PropTypes.shape(languageShape).isRequired,
+  data: PropTypes.shape({
+    related: PropTypes.arrayOf(PropTypes.string.isRequired),
+  }).isRequired,
 };
 
 export default CreatureCard;

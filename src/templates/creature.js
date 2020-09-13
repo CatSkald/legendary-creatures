@@ -54,6 +54,7 @@ export const query = graphql`
           language
         }
         description
+        related
         origin {
           value
           comment
