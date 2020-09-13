@@ -114,9 +114,10 @@ const RelatedCreatures = props => {
   const { getCreatureUrl } = require("../../utils/url-helpers");
 
   let creatureLinks = props.data.related.map(path => {
+    //TODO extract this and the same from gatsby-node into utils
     var name = path.substring("creatures/".length, path.indexOf("."));
     return {
-      name: name,
+      name: name, //TODO capitalization
       link: getCreatureUrl(name, props.language.code),
     };
   });
