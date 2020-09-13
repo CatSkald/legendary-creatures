@@ -3,8 +3,8 @@ taxonomy:
 - value: demon
 - value: spirit
 - value: undead
-activityTime:
-voice:
+activityTime: 
+voice: 
 appearance:
 - value: long hair
 - value: loose hair
@@ -13,14 +13,14 @@ appearance:
 - value: young
 clothes:
 - value: naked
-paraphernalia:
+paraphernalia: 
 origin:
 - value: Ukraine
 number:
 - value: common
 habitat:
 - value: forest
-date: 2020-06-04T00:00:00Z
+date: 2020-06-04T00:00:00.000+00:00
 title: Mavka
 names:
 - name: ма́вка (mávka)
@@ -41,7 +41,8 @@ names:
 description: Forest mermaid
 image: ''
 wikipedia: https://en.wikipedia.org/wiki/Мавка
-related: []
+related:
+- creatures/chuhajster.en.md
 id: 92f36dc320e54bd99bca752423f66c6c
 
 ---
