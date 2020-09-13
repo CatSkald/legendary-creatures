@@ -30,7 +30,7 @@ appearance:
 - value: toothless
 - value: blue eyes
 - value: toad eyes
-  comment: "toad-like eyes"
+  comment: toad-like eyes
 - value: shaggy
   comment: body covered with black or white hair
 - value: one leg
@@ -42,16 +42,17 @@ appearance:
 clothes:
 - value: white
 - value: naked
-paraphernalia:
+paraphernalia: 
 origin:
 - value: Ukraine
-number: 
+number:
 - value: unique
-  comment: according to different sources there is only one, seven (7 brothers) or several (3-4) individuals
+  comment: according to different sources there is only one, seven (7 brothers) or
+    several (3-4) individuals
 habitat:
 - value: forest
   comment: lives only in forests as outside of them "the air is not sweet for him»
-date: 2020-05-22T10:54:12Z
+date: 2020-05-22T10:54:12.000+00:00
 title: Chuhaister
 names:
 - name: чуга́йстер (chuhaister)
@@ -61,13 +62,13 @@ names:
   plural: чуга́йстри (chuhaistry)
   language: Ukrainian
 - name: чуга́йстирь (chuhaistyr)
-  plural:
+  plural: 
   language: Ukrainian
 - name: чуга́йстрин (chuhaistryn)
-  plural:
+  plural: 
   language: Ukrainian
 - name: очуга́йстер (ochuhaister)
-  plural:
+  plural: 
   language: Ukrainian
 - name: чуга́й (chuhai)
   plural: чугаї́  (chuhaji)
@@ -93,7 +94,8 @@ names:
 description: Forest tutelary deity
 image: ''
 wikipedia: https://en.wikipedia.org/wiki/Chuhaister
-related: []
+related:
+- creatures/mavka.en.md
 id: f183362605a846b2b09e1f0c93316262
 
 ---
