@@ -5,20 +5,22 @@ taxonomy:
 - value: undead
 activityTime:
 voice:
-- value: frog-like croaking
+- value: croaking
+  comment: sounds like a frog-like croaking
 appearance:
 - value: childlike
 clothes:
 paraphernalia:
 - value: nightlight
-  comment: a small oil lamp used to lure people into a trap
+  comment: a small lamp used to lure people into a trap, the origin of will-o'-the-wisp or ignis fatuus
 origin:
 - value: Ukraine
 number:
 - value: common
 habitat:
 - value: lake
-- value: swamp
+- value: wetland
+  comment: swamp, marsh, bog, fen
 date: 2020-02-22T10:54:12Z
 title: Potercha
 names:
