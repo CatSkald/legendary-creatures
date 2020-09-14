@@ -102,5 +102,23 @@ module.exports = {
     },
   },
   tags: tags,
+  notFound: {
+    default: "en",
+    en: {
+      header: "Oops, it's not found!",
+      content:
+        "The knowledge you seek is missing - lost, forgotten or not yet gathered... Try searching for the term, look through the categories and tags. Please contact us if you think this is a mistake.",
+    },
+    ru: {
+      header: "Ой, страница не найдена!",
+      content:
+        "Здесь нет искомых знаний — они забыты, утеряны или ещё не собраны... Попробуйте воспользоваться поиском или взглянуть на метки и категории. Сообщите нам, если считаете, что произошла ошибка.",
+    },
+    uk: {
+      header: "Ой, сторінки не знайдено!",
+      content:
+        "Тут немає шуканих знань — вони забуті, втрачені або ще не зібрані... Спробуйте скористатися пошуком або поглянути на мітки і категорії. Напишіть нам, якщо вважаєте, що трапилася помилка.",
+    },
+  },
   supportedTags: Object.keys(tags),
 };

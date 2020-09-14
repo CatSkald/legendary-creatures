@@ -25,8 +25,6 @@ const queryTranslations = graphql`
             Description
             Title
             ShortTitle
-            NotFound404Header
-            NotFound404Content
             footerMoto
             by
             for

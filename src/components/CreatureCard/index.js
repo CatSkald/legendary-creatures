@@ -13,6 +13,7 @@ const { supportedTags } = require("../../i18n/navigation");
 
 const { localizedSort } = require("../../utils/array-helpers");
 const { getImageNameOrDefaultCover } = require("../../utils/image-helpers");
+const { getCreatureUrl, getNameFromPath } = require("../../utils/url-helpers");
 
 const CreatureCard = props => {
   const translations = useTranslations();
@@ -110,11 +111,6 @@ const CardRow = props => {
 
 const RelatedCreatures = props => {
   if (!props.data.related || props.data.related.length === 0) return <></>;
-
-  const {
-    getCreatureUrl,
-    getNameFromPath,
-  } = require("../../utils/url-helpers");
 
   let creatureLinks = props.data.related.map(path => {
     var name = getNameFromPath(path).name;

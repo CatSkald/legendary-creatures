@@ -1,17 +1,31 @@
+import "../styles/404.scss";
 import React from "react";
 import SEO from "../components/seo";
-import useTranslations from "../i18n/translations/useTranslations";
+const localizedNavigation = require("../i18n/navigation");
 
 const NotFound = ({ location }) => {
-  const { NotFound404Header, NotFound404Content } = useTranslations();
+  const language =
+    location.pathname && /\/[a-z]{2}\/.+/.test(location.pathname)
+      ? location.pathname.slice(1, 3)
+      : "";
+  const translation =
+    localizedNavigation.notFound[language] ||
+    localizedNavigation.notFound[localizedNavigation.notFound.default];
 
-  // TODO make it work for non-en language
   return (
     <>
       <SEO title="404: Not found" />
-      <h1>404</h1>
-      <h2>{NotFound404Header}</h2>
-      {NotFound404Content}
+      <h1>
+        404
+        <span role="img" aria-label="Emoji: face screaming in fear">
+          😱
+        </span>
+      </h1>
+      <br />
+      <h2>{translation.header}</h2>
+      <br />
+      <br />
+      {translation.content}
     </>
   );
 };
