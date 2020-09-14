@@ -8,6 +8,11 @@
 
 ## Local Development
 
+### Setup
+
+- Clone the repository: `git clone ...`
+- Add upstream to the production environment: `git remote add upstream ...`
+
 ### Run
 
 - Run website locally: `npm run develop`
