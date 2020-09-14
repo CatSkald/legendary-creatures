@@ -26,6 +26,7 @@
 
 ### URLs
 
+- [Production](https://legendary-creatures.github.io)
 - [Website](http://localhost:8000/)
 - [GraphQL](http://localhost:8000/___graphql)
 - [CMS](http://localhost:9000/admin/)
