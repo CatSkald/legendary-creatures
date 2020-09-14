@@ -1,7 +1,7 @@
 import styles from "./index.module.scss";
 
 import React from "react";
-import { Github } from "styled-icons/boxicons-logos/Github";
+import { Github } from "@styled-icons/boxicons-logos/Github";
 
 const SocialLinks = () => {
   return (

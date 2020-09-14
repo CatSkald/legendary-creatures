@@ -7,24 +7,55 @@ module.exports = {
   },
   pathPrefix: "/legendary-creatures",
   plugins: [
+    {
+      // always load static before other loading others
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/assets/images`,
+        name: `image-assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: `images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/i18n/translations`,
+        name: `translations`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/creatures`,
+        name: `creatures`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/pages`,
+        name: `pages`,
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          {
-            resolve: `gatsby-remark-relative-images`,
-            options: {
-              name: `image-assets`,
-            },
-          },
+          // this must precede gatsby-remark-images
+          `gatsby-remark-relative-images`,
           {
             resolve: `gatsby-remark-images`,
             options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
+              // maxWidth in pixels of the content container is used
+              // as the base for generating different widths of each image
               maxWidth: 1040,
               linkImagesToOriginal: false,
             },
@@ -43,42 +74,6 @@ module.exports = {
     },
     `gatsby-transformer-json`,
     `gatsby-transformer-yaml`,
-    {
-      // keep as first gatsby-source-filesystem plugin for gatsby image support
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/static/assets/images`,
-        name: `image-assets`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/i18n/translations`,
-        name: `translations`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/images`,
-        name: `images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/creatures`,
-        name: `creatures`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/pages`,
-        name: `pages`,
-      },
-    },
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {

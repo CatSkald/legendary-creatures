@@ -7,7 +7,7 @@ import useTranslations from "../../i18n/translations/useTranslations";
 import { useImages } from "../../hooks/use-images";
 import LocalizedLink from "../LocalizedLink";
 import { LocaleContext } from "../Layout";
-import { Wikipedia } from "styled-icons/boxicons-logos/Wikipedia";
+import { Wikipedia } from "@styled-icons/boxicons-logos/Wikipedia";
 const { noTag } = require("../../configuration");
 const { supportedTags } = require("../../i18n/navigation");
 
