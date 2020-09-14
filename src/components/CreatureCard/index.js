@@ -111,11 +111,13 @@ const CardRow = props => {
 const RelatedCreatures = props => {
   if (!props.data.related || props.data.related.length === 0) return <></>;
 
-  const { getCreatureUrl } = require("../../utils/url-helpers");
+  const {
+    getCreatureUrl,
+    getNameFromPath,
+  } = require("../../utils/url-helpers");
 
   let creatureLinks = props.data.related.map(path => {
-    //TODO extract this and the same from gatsby-node into utils
-    var name = path.substring("creatures/".length, path.indexOf("."));
+    var name = getNameFromPath(path).name;
     return {
       name: name, //TODO capitalization
       link: getCreatureUrl(name, props.language.code),

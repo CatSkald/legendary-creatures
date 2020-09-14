@@ -1,4 +1,5 @@
 const localizedNavigation = require("../i18n/navigation");
+const path = require("path");
 
 const pagePath = pageIndex => (pageIndex >= 1 ? `/${pageIndex}` : "");
 
@@ -46,4 +47,15 @@ exports.getCreatureUrl = (creatureName, languageCode) => {
 
 exports.getCreaturesUrl = (pageIndex, languageCode) => {
   return getCreaturesPath(languageCode) + pagePath(pageIndex);
+};
+
+exports.getNameFromPath = value => {
+  const nameWithLanguage = path.basename(value, ".md");
+  const name = nameWithLanguage.slice(0, -3); //".en".length = 3
+  const language = nameWithLanguage.slice(-2); //"en".length = 2
+
+  return {
+    name,
+    language,
+  };
 };

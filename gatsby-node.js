@@ -7,6 +7,7 @@ const {
   getCreaturesUrl,
   getTagValueUrl,
   localizedSlug,
+  getNameFromPath,
 } = require("./src/utils/url-helpers");
 const { parseTags } = require("./src/utils/tags-helpers");
 const configuration = require("./src/configuration");
@@ -47,9 +48,7 @@ exports.onCreateNode = ({ node, actions }) => {
     // Expected format of node.fileAbsolutePath is
     // "path/filename.en.md" where "en" is language code
     // https://nodejs.org/api/path.html#path_path_basename_path_ext
-    const name = path.basename(node.fileAbsolutePath, ".md");
-    const slug = name.slice(0, -3); //".en".length = 3
-    const language = name.slice(-2); //"en".length = 2
+    const { language, name: slug } = getNameFromPath(node.fileAbsolutePath); //"en".length = 2
     const isDefault =
       language &&
       languages[language] &&
