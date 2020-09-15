@@ -1,4 +1,2 @@
-exports.getImageNameOrDefaultCover = imagePath =>
-  imagePath
-    ? imagePath.slice(imagePath.lastIndexOf("/") + 1, imagePath.length)
-    : "cover.jpg";
+exports.getImageNameOrDefaultCover = (imagePath) =>
+  imagePath ? imagePath.split("\\").pop().split("/").pop() : "cover.jpg";
