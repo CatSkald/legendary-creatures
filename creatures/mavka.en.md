@@ -39,7 +39,7 @@ names:
   plural: не́йки (néjky)
   language: Ukrainian
 description: Forest mermaid
-image: ''
+image: "/static/assets/images/goddess-5025497_1920.jpg"
 wikipedia: https://en.wikipedia.org/wiki/Мавка
 related:
 - creatures/chuhajster.en.md
@@ -49,3 +49,7 @@ id: 92f36dc320e54bd99bca752423f66c6c
 ## Description
 
 Beautiful naked girl with a long green loose hair
+
+## External Links
+
+* Image by <a href="https://pixabay.com/users/darksouls1-2189876/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5025497">Enrique Meseguer</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5025497">Pixabay</a>
