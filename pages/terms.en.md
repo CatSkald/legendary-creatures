@@ -8,7 +8,7 @@ page: true
 
 By using our website you agree to this terms.
 
-This page was last modified on June 1, 2020.
+This page was last modified on December 27, 2020 ([changelog](https://github.com/CatSkald/legendary-creatures/commits/master/pages/terms.en.md)).
 
 ### In this article
 
@@ -56,6 +56,6 @@ The license of every image is specified on the corresponding page where the imag
 
 - First of all, thank you, dear visitor, for showing interest in our project and the topic.
 
-- Thanks to [OpenClipart-Vectors](https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1295218) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1295218) for the icon used by the website.
+- Thanks to [OpenClipart-Vectors](https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1295218) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1295218) for the icon used on this website.
 
 - Thanks to [Johannes Plenio](https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2562083) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2562083) for the beautiful image used as the default creature cover.

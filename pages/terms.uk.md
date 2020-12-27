@@ -6,7 +6,7 @@ id: 360c8124bba842869dbb027c1015afc6
 page: true
 ---
 
-Ця сторінка була змінена 1 червня 2020.
+Ця сторінка була змінена 27 грудня 2020 ([історія змін](https://github.com/CatSkald/legendary-creatures/commits/master/pages/terms.uk.md)).
 
 Використовуючи наш сайт, Ви виражаєте згоду с даними умовами використання.
 
@@ -56,6 +56,6 @@ page: true
 
 - В первую чергу дякуємо Вам, дорогий гість, за Ваш інтерес до нашого проекту та тематики.
 
-- Іконка сайту від [OpenClipart-Vectors](https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1295218) з [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1295218)
+- Дякую [OpenClipart-Vectors](https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1295218) з сайту [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1295218) за іконку використану на нашому сайті.
 
-- Стандартна обкладинка сторінок від [Johannes Plenio](https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2562083) з [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2562083)
+- Дякую [Johannes Plenio](https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2562083) з сайту [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2562083) за красиве зображення використане в якості стандартної обкладинки для істот без зображення.

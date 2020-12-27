@@ -6,7 +6,7 @@ id: 360c8124bba842869dbb027c1015afc6
 page: true
 ---
 
-Эта страница была изменена 1 июня 2020.
+Эта страница была изменена 27 декабря 2020 ([история изменений](https://github.com/CatSkald/legendary-creatures/commits/master/pages/terms.ru.md)).
 
 Используя данный Сайт, Вы выражаете свое согласие с данными условиями пользования.
 
@@ -56,6 +56,6 @@ page: true
 
 - В первую очередь спасибо Вам, дорогой гость, за Ваш интерес к нашему проекту и тематике.
 
-- Значок сайта от [OpenClipart-Vectors](https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1295218) из [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1295218)
+- Спасибо [OpenClipart-Vectors](https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1295218) с сайта [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1295218) за иконку, использованною в качестве значка этого сайта. 
 
-- Стандартная обложка страниц от [Johannes Plenio](https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2562083) из [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2562083)
+- Спасибо [Johannes Plenio](https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2562083) с сайта [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2562083) за красивое изображение использованное в качестве стандартной обложки существ без изображений.

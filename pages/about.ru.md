@@ -31,3 +31,13 @@ page: true
 #### Фольклорные источники
 
 Описывать существ из народных преданий, мифов и сказок. Популярная культура, фантастика и фэнтези не подходят в качестве источников для этого ресурса.
+
+---
+
+### Спасибо
+
+- В первую очередь спасибо Вам, дорогой гость, за Ваш интерес к нашему проекту и тематике.
+
+- Спасибо [OpenClipart-Vectors](https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1295218) с сайта [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1295218) за иконку, использованною в качестве значка этого сайта. 
+
+- Спасибо [Johannes Plenio](https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2562083) с сайта [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2562083) за красивое изображение использованное в качестве стандартной обложки существ без изображений.

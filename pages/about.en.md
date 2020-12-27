@@ -31,3 +31,13 @@ Highlight peculiar features and characteristics of creatures, format and general
 #### Folklore sources
 
 Describe creatures originating from folklore, mythos, legends and tales. Popular culture and fiction literature are not suitable sources for this website.
+
+---
+
+### Thanks
+
+- First of all, thank you, dear visitor, for showing interest in our project and the topic.
+
+- Thanks to [OpenClipart-Vectors](https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1295218) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1295218) for the icon used on this website.
+
+- Thanks to [Johannes Plenio](https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2562083) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2562083) for the beautiful image used as the default creature cover.

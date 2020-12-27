@@ -31,3 +31,13 @@ page: true
 #### Фольклорні джерела
 
 Документувати істот з народних переказів, легенд та казок. Популярна культура, фантастика та фентезі не підходять в якості джерел для нашого ресурсу.
+
+---
+
+### Подяка
+
+- В первую чергу дякуємо Вам, дорогий гість, за Ваш інтерес до нашого проекту та тематики.
+
+- Дякую [OpenClipart-Vectors](https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1295218) з сайту [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1295218) за іконку використану на нашому сайті.
+
+- Дякую [Johannes Plenio](https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2562083) з сайту [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2562083) за красиве зображення використане в якості стандартної обкладинки для істот без зображення.
