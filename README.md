@@ -1,5 +1,7 @@
 # Legendary Creatures and Fabulous Beasts
 
+[![legendary-creatures.github.io](https://img.shields.io/badge/legendary--creatures.github.io-247329)](https://legendary-creatures.github.io)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen)](/LICENSE)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-brightgreen?logo=Creative-Commons)](https://creativecommons.org/licenses/by-sa/4.0/)
 
@@ -24,9 +26,8 @@
 - Set VSCode setting `Auto Attach: On`
 - Run: `node --nolazy --inspect-brk node_modules/gatsby/dist/bin/gatsby develop`
 
-### URLs
+### Local URLs
 
-- [Production](https://legendary-creatures.github.io)
 - [Website](http://localhost:8000/)
 - [GraphQL](http://localhost:8000/___graphql)
 - [CMS](http://localhost:9000/admin/)
