@@ -10,10 +10,16 @@
 
 ## Local Development
 
+### Prerequisites
+
+- [npm](https://www.npmjs.com/)
+- [yarn](https://yarnpkg.com/)
+
 ### Setup
 
 - Clone the repository: `git clone ...`
 - Add upstream to the production environment: `git remote add upstream ...`
+- Run `yarn` in the root folder to install all the packages
 
 ### Run
 
@@ -23,7 +29,7 @@
 
 ### Debug
 
-- Set VSCode setting `Auto Attach: On`
+- If using VSCode: set setting `Auto Attach: On`
 - Run: `node --nolazy --inspect-brk node_modules/gatsby/dist/bin/gatsby develop`
 
 ### Local URLs
