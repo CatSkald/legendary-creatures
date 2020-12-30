@@ -24,7 +24,7 @@ const CreaturePage = props => {
           alt={props.title}
         />
         <div className={styles.CreatureInfo}>
-          <h1 className={styles.PageTitle}>{props.title}</h1>
+          <h3 className={styles.PageTitle}>{props.title}</h3>
           <p className={styles.PageDescription}>{props.description}</p>
         </div>
       </section>
