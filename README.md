@@ -12,14 +12,14 @@
 
 ### Prerequisites
 
-- [npm](https://www.npmjs.com/)
-- [yarn](https://yarnpkg.com/)
+[![npm](https://img.shields.io/badge/Install-npm-CB3837?logo=NPM)](https://www.npmjs.com/)
+[![Yarn](https://img.shields.io/badge/Install-Yarn-2C8EBB?logo=Yarn)](https://yarnpkg.com/)
 
 ### Setup
 
 - Clone the repository: `git clone ...`
-- Add upstream to the production environment: `git remote add upstream ...`
-- Run `yarn` in the root folder to install all the packages
+- Add upstream to the production environment (only if you need to release to prod): `git remote add upstream ...`
+- Install the project dependencies by running `yarn` in the root folder
 
 ### Run
 
@@ -29,7 +29,7 @@
 
 ### Debug
 
-- If using VSCode: set setting `Auto Attach: On`
+- If using [![Visual Studio Code](https://img.shields.io/badge/VSCode-007ACC?logo=visual-studio-code)](https://code.visualstudio.com/): set setting `Auto Attach: On`
 - Run: `node --nolazy --inspect-brk node_modules/gatsby/dist/bin/gatsby develop`
 
 ### Local URLs
