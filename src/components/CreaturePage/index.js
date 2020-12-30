@@ -20,7 +20,7 @@ const CreaturePage = props => {
       <section className={styles.CreaturePreviewContainer}>
         <Img
           className={styles.CreaturePageImage}
-          fluid={image}
+          fluid={image.preview}
           alt={props.title}
         />
         <div className={styles.CreatureInfo}>

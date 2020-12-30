@@ -28,7 +28,7 @@ const CreatureCard = props => {
       <div className={styles.Card}>
         <Img
           className={styles.CardImage}
-          fluid={image}
+          fluid={image.fluid}
           alt={props.frontmatter.title}
         />
         <table className={styles.Info}>

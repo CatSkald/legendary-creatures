@@ -10,10 +10,14 @@ export const useImages = () => {
           edges {
             node {
               childImageSharp {
-                fluid(maxWidth: 600, maxHeight: 350) {
+                previewImage: fluid {
+                  ...GatsbyImageSharpFluid
+                }
+                fluidImage: fluid(fit: INSIDE) {
                   src
                   originalName
                   ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluidLimitPresentationSize
                 }
               }
             }
@@ -22,5 +26,10 @@ export const useImages = () => {
       }
     `,
   );
-  return listImages.edges.map(edge => edge.node.childImageSharp.fluid);
+  return listImages.edges.map(edge => ({
+    src: edge.node.childImageSharp.fluidImage.src,
+    originalName: edge.node.childImageSharp.fluidImage.originalName,
+    preview: edge.node.childImageSharp.previewImage,
+    fluid: edge.node.childImageSharp.fluidImage,
+  }));
 };
