@@ -39,7 +39,7 @@ names:
   plural: не́йки (néjky)
   language: Ukrainian
 description: Forest mermaid
-image: "/static/assets/images/goddess-5025497_1920.jpg"
+image: "/assets/images/goddess-5025497_1920.jpg"
 wikipedia: https://en.wikipedia.org/wiki/Мавка
 related:
 - creatures/chuhajster.en.md
