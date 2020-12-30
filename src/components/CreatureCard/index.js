@@ -3,17 +3,18 @@ import styles from "./index.module.scss";
 import React from "react";
 import PropTypes from "prop-types";
 import Img from "gatsby-image";
+import { Wikipedia } from "@styled-icons/boxicons-logos/Wikipedia";
+
 import useTranslations from "../../i18n/translations/useTranslations";
 import { useImages } from "../../hooks/use-images";
 import LocalizedLink from "../LocalizedLink";
 import { LocaleContext } from "../Layout";
-import { Wikipedia } from "@styled-icons/boxicons-logos/Wikipedia";
-const { noTag } = require("../../configuration");
-const { supportedTags } = require("../../i18n/navigation");
-
-const { localizedSort } = require("../../utils/array-helpers");
-const { getImageNameOrDefaultCover } = require("../../utils/image-helpers");
-const { getCreatureUrl, getNameFromPath } = require("../../utils/url-helpers");
+import { noTag } from "../../configuration";
+import { supportedTags } from "../../i18n/navigation";
+import { localizedSort } from "../../utils/array-helpers";
+import { getImageNameOrDefaultCover } from "../../utils/image-helpers";
+import { getCreatureUrl, getNameFromPath } from "../../utils/url-helpers";
+import { getTagUrl, getTagValueUrl } from "../../utils/url-helpers";
 
 const CreatureCard = props => {
   const translations = useTranslations();
@@ -73,7 +74,6 @@ const CardRow = props => {
   if (data.length === 0) return null;
 
   data = localizedSort(data, props.language.code, x => x.value);
-  const { getTagUrl, getTagValueUrl } = require("../../utils/url-helpers");
   const tagUrl = getTagUrl(props.tag, props.language.code);
 
   return (

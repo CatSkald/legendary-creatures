@@ -1,17 +1,17 @@
 import styles from "./index.module.scss";
 
 import React from "react";
+
 import SocialLinks from "../SocialLinks";
 import LocalizedLink from "../LocalizedLink";
 import useTranslations from "../../i18n/translations/useTranslations";
 import { LocaleContext } from "../Layout";
-
-const localizedNavigation = require("../../i18n/navigation");
+import { pages } from "../../i18n/navigation";
 
 const Footer = () => {
   const translations = useTranslations();
   const { language } = React.useContext(LocaleContext);
-  var menuItems = Object.entries(localizedNavigation.pages)
+  var menuItems = Object.entries(pages)
     .filter(([page, data]) => data.type === "footer")
     .map(([page, data]) => data[language.code]);
 

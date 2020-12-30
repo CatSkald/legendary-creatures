@@ -1,14 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
+
 import TitlePage from "../components/TitlePage";
 import TagList from "../components/TagList";
 import SEO from "../components/seo";
 import useTranslations from "../i18n/translations/useTranslations";
+import { parseTags } from "../utils/tags-helpers";
 
 const Tags = props => {
   const translations = useTranslations();
-  const { parseTags } = require("../utils/tags-helpers");
   const tags = parseTags(props.data.allMarkdownRemark.edges);
 
   return (

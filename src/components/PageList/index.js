@@ -4,9 +4,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import CreaturePage from "../CreaturePage";
 import { LocaleContext } from "../Layout";
+import { getCreaturesPath } from "../../utils/url-helpers";
 
 const PageList = props => {
-  const { getCreaturesPath } = require("../../utils/url-helpers");
   const { language } = React.useContext(LocaleContext);
 
   return (

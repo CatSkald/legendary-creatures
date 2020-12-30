@@ -2,13 +2,14 @@ import styles from "./index.module.scss";
 
 import React from "react";
 import PropTypes from "prop-types";
+
 import LocalizedLink from "../LocalizedLink";
 import { LocaleContext } from "../Layout";
 import useTranslations from "../../i18n/translations/useTranslations";
+import { getTagUrl, getTagValueUrl } from "../../utils/url-helpers";
+import { localizedSort } from "../../utils/array-helpers";
 
 const TagList = props => {
-  const { getTagUrl, getTagValueUrl } = require("../../utils/url-helpers");
-  const { localizedSort } = require("../../utils/array-helpers");
   const translations = useTranslations();
   const { language } = React.useContext(LocaleContext);
 

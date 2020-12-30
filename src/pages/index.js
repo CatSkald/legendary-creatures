@@ -1,16 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
+
 import SEO from "../components/seo";
 import TitlePage from "../components/TitlePage";
 import PageList from "../components/PageList";
 import LocalizedLink from "../components/LocalizedLink";
 import useTranslations from "../i18n/translations/useTranslations";
 import { LocaleContext } from "../components/Layout";
+import { getTagsPath, getCreaturesPath } from "../utils/url-helpers";
 
 const Index = ({ data: { allMarkdownRemark } }) => {
   const translations = useTranslations();
-  const { getTagsPath, getCreaturesPath } = require("../utils/url-helpers");
   const { language } = React.useContext(LocaleContext);
 
   const pages = allMarkdownRemark.edges;

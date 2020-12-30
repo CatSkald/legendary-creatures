@@ -2,10 +2,10 @@ import styles from "./index.module.scss";
 
 import React from "react";
 import PropTypes from "prop-types";
+
 import { navigate, Link } from "gatsby";
 import { LocaleContext } from "../Layout";
-
-const languages = require("../../i18n/languages");
+import languages from "../../i18n/languages";
 
 const Languages = props => {
   const { language } = React.useContext(LocaleContext);

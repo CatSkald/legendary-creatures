@@ -3,10 +3,10 @@ import styles from "./index.module.scss";
 import React from "react";
 import PropTypes from "prop-types";
 import Img from "gatsby-image";
+
 import LocalizedLink from "../LocalizedLink";
 import { useImages } from "../../hooks/use-images";
-
-const { getImageNameOrDefaultCover } = require("../../utils/image-helpers");
+import { getImageNameOrDefaultCover } from "../../utils/image-helpers";
 
 const CreaturePage = props => {
   const imagePath = props.image;

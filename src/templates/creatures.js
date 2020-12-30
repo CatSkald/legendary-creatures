@@ -1,15 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
+
 import TitlePage from "../components/TitlePage";
 import PageList from "../components/PageList";
 import Pagination from "../components/Pagination";
 import SEO from "../components/seo";
 import useTranslations from "../i18n/translations/useTranslations";
 import { LocaleContext } from "../components/Layout";
+import { getCreaturesUrl } from "../utils/url-helpers";
 
 const Creatures = props => {
-  const { getCreaturesUrl } = require("../utils/url-helpers");
   const { language } = React.useContext(LocaleContext);
 
   // Logic for Pagination Component

@@ -2,14 +2,14 @@ import styles from "./index.module.scss";
 
 import React from "react";
 import PropTypes from "prop-types";
+
 import LocalizedLink from "../LocalizedLink";
 import { LocaleContext } from "../Layout";
-
-const localizedNavigation = require("../../i18n/navigation");
+import { pages } from "../../i18n/navigation";
 
 const NavigationBar = props => {
   const { language } = React.useContext(LocaleContext);
-  var menuItems = Object.entries(localizedNavigation.pages)
+  var menuItems = Object.entries(pages)
     .filter(([page, data]) => data.type === "menu")
     .map(([page, data]) => data[language.code]);
 

@@ -1,16 +1,14 @@
 import "../styles/404.scss";
 import React from "react";
 import SEO from "../components/seo";
-const localizedNavigation = require("../i18n/navigation");
+import { notFound } from "../i18n/navigation";
 
 const NotFound = ({ location }) => {
   const language =
     location.pathname && /\/[a-z]{2}\/.+/.test(location.pathname)
       ? location.pathname.slice(1, 3)
       : "";
-  const translation =
-    localizedNavigation.notFound[language] ||
-    localizedNavigation.notFound[localizedNavigation.notFound.default];
+  const translation = notFound[language] || notFound[notFound.default];
 
   return (
     <>
