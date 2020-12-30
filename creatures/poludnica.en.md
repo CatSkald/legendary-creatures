@@ -10,10 +10,12 @@ shapeshifting:
 - value: whirlwind
 - value: haystack
 - value: size
-  comment: can change height from «lower than grass» or «size of a cat» to high «up to the sky» or «4 human heights»
+  comment: can change height from «lower than grass» or «size of a cat» to high «up
+    to the sky» or «4 human heights»
 activityTime:
 - value: noon
-  comment: usually in summer during the harvest period (from 12:00 to 14:00, less common from 11:00 to 12:00), rarely also during winter on snowy fields
+  comment: usually in summer during the harvest period (from 12:00 to 14:00, less
+    common from 11:00 to 12:00), rarely also during winter on snowy fields
 voice:
 - value: ringing
 - value: beautifully sings
@@ -59,18 +61,23 @@ number:
 habitat:
 - value: field
 - value: garden
-date: 2020-06-04T00:00:00Z
+date: 2020-06-04T00:00:00.000+00:00
 title: Poludnitsa
 names:
 - name: полудниця
   plural: полудниці
   language: українська
 description: Field spirit that appears at noon
-image: ''
+image: "/assets/images/nature-5255727_1920.jpg"
 wikipedia: https://en.wikipedia.org/wiki/Lady_Midday
 related: []
 id: 45c42e70adad4ed6ae5b22274d7639cf
 
 ---
 ## Description
+
 Field spirit that appears at noon. Personification of sunstroke.
+
+## External Links
+
+- Image by <a href="https://pixabay.com/users/rauschenberger-4614580/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5255727">RENE RAUSCHENBERGER</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5255727">Pixabay</a>
