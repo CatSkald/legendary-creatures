@@ -14,6 +14,7 @@
 
 [![npm](https://img.shields.io/badge/Install-npm-CB3837?logo=NPM)](https://www.npmjs.com/)
 [![Yarn](https://img.shields.io/badge/Install-Yarn-2C8EBB?logo=Yarn)](https://yarnpkg.com/)
+[![Gatsby CLI](https://img.shields.io/badge/Install-Gatsby_CLI-663399?logo=Gatsby)](https://www.gatsbyjs.com/docs/reference/gatsby-cli/)
 
 ### Setup
 

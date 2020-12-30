@@ -75,7 +75,7 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-transformer-yaml`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
           {
