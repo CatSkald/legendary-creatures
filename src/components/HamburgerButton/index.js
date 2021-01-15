@@ -10,6 +10,7 @@ export const HamburgerButton = props => {
       className={`${styles.HamburgerButton} ${
         props.isActive ? styles.active : ""
       }`}
+      aria-label="Show menu"
     >
       <span></span>
     </button>
