@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TitlePage renders correctly 1`] = `
+<h1
+  className="TitleElement"
+>
+  Hello, World
+</h1>
+`;

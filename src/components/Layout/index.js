@@ -3,7 +3,7 @@ import "../../styles/theme-light.scss";
 import "../../styles/theme-dark.scss";
 import styles from "./index.module.scss";
 
-import React, { useState } from "react";
+import React from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import storage from "../../utils/local-storage-helpers";
@@ -12,7 +12,7 @@ const LocaleContext = React.createContext();
 
 const Layout = props => {
   var userSettings = storage.getUserSettings();
-  const [isDarkColorTheme, switchColorTheme] = useState(
+  const [isDarkColorTheme, switchColorTheme] = React.useState(
     userSettings.isDarkColorTheme,
   );
 

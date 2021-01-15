@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "build": "gatsby build",
+    "test": "jest",
     "develop": "gatsby develop",
     "build-serve": "gatsby build && gatsby serve",
     "start": "npm run develop",
