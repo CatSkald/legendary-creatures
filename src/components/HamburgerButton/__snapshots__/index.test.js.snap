@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HamburgerButton renders correctly when active is false 1`] = `
+<div>
+  <button
+    aria-label="Show menu"
+    class="HamburgerButton "
+  >
+    <span />
+  </button>
+</div>
+`;
+
+exports[`HamburgerButton renders correctly when active is true 1`] = `
+<div>
+  <button
+    aria-label="Show menu"
+    class="HamburgerButton active"
+  >
+    <span />
+  </button>
+</div>
+`;
