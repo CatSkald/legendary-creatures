@@ -13,7 +13,7 @@ function SEO({ description, lang, meta, title, image }) {
             title
             description
             author
-            url
+            siteUrl
             image
           }
         }
@@ -24,7 +24,9 @@ function SEO({ description, lang, meta, title, image }) {
   const translations = useTranslations();
   const ogTitle = title || translations.Title;
   const ogDescription = description || translations.Description;
-  const ogImage = `${site.siteMetadata.url}${image || site.siteMetadata.image}`;
+  const ogImage = `${site.siteMetadata.siteUrl}${
+    image || site.siteMetadata.image
+  }`;
 
   return (
     <Helmet

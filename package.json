@@ -11,13 +11,12 @@
     "defaults"
   ],
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build && yarn test",
     "test": "jest",
-    "test-watch": "yarn test --watch",
     "develop": "gatsby develop",
     "build-serve": "gatsby build && gatsby serve",
     "start": "npm run develop",
-    "deploy": "gatsby build && gh-pages -d public -b master --remote upstream --message \"New release\"",
+    "deploy": "gatsby build && jest && gh-pages -d public -b master --remote upstream --message \"New release\"",
     "forestry:preview": "gatsby develop -p 8080 -H 0.0.0.0",
     "prettier": "prettier --write src/**/*.{md,css,scss,yaml,yml,ts,js,jsx}",
     "lint": "eslint src/**/*.{js,jsx}"

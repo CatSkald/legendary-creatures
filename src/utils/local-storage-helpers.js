@@ -26,7 +26,7 @@ exports.keys = keys;
 class UserSettings {
   constructor(theme) {
     const getDefaultTheme = () => {
-      window.matchMedia("(prefers-color-scheme: dark)").matches
+      isBrowser && window.matchMedia("(prefers-color-scheme: dark)").matches
         ? "dark"
         : configuration.defaultTheme;
     };
