@@ -1,11 +1,11 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import { render } from "@testing-library/react";
 
 import SocialLinks from "../SocialLinks";
 
 describe("SocialLinks", () => {
   it("renders correctly", () => {
-    const tree = renderer.create(<SocialLinks />).toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<SocialLinks />);
+    expect(container).toMatchSnapshot();
   });
 });

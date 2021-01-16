@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Languages renders correctly for en is active false 1`] = `
+<div>
+  <ul
+    class="LanguageList "
+  >
+    <li
+      class="LanguageItem"
+    >
+      <a
+        class="LanguageLink active"
+        href="/"
+        hreflang="en"
+      >
+        English
+      </a>
+    </li>
+    <li
+      class="LanguageItem"
+    >
+      <a
+        class="LanguageLink "
+        href="/ru"
+        hreflang="ru"
+      >
+        Русский
+      </a>
+    </li>
+    <li
+      class="LanguageItem"
+    >
+      <a
+        class="LanguageLink "
+        href="/uk"
+        hreflang="uk"
+      >
+        Українська
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Languages renders correctly for en is active true 1`] = `
+<div>
+  <ul
+    class="LanguageList active"
+  >
+    <li
+      class="LanguageItem"
+    >
+      <a
+        class="LanguageLink active"
+        href="/"
+        hreflang="en"
+      >
+        English
+      </a>
+    </li>
+    <li
+      class="LanguageItem"
+    >
+      <a
+        class="LanguageLink "
+        href="/ru"
+        hreflang="ru"
+      >
+        Русский
+      </a>
+    </li>
+    <li
+      class="LanguageItem"
+    >
+      <a
+        class="LanguageLink "
+        href="/uk"
+        hreflang="uk"
+      >
+        Українська
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Languages renders correctly for ru is active true 1`] = `
+<div>
+  <ul
+    class="LanguageList active"
+  >
+    <li
+      class="LanguageItem"
+    >
+      <a
+        class="LanguageLink "
+        href="/"
+        hreflang="en"
+      >
+        English
+      </a>
+    </li>
+    <li
+      class="LanguageItem"
+    >
+      <a
+        class="LanguageLink active"
+        href="/ru"
+        hreflang="ru"
+      >
+        Русский
+      </a>
+    </li>
+    <li
+      class="LanguageItem"
+    >
+      <a
+        class="LanguageLink "
+        href="/uk"
+        hreflang="uk"
+      >
+        Українська
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Languages renders correctly for uk is active true 1`] = `
+<div>
+  <ul
+    class="LanguageList active"
+  >
+    <li
+      class="LanguageItem"
+    >
+      <a
+        class="LanguageLink "
+        href="/"
+        hreflang="en"
+      >
+        English
+      </a>
+    </li>
+    <li
+      class="LanguageItem"
+    >
+      <a
+        class="LanguageLink "
+        href="/ru"
+        hreflang="ru"
+      >
+        Русский
+      </a>
+    </li>
+    <li
+      class="LanguageItem"
+    >
+      <a
+        class="LanguageLink active"
+        href="/uk"
+        hreflang="uk"
+      >
+        Українська
+      </a>
+    </li>
+  </ul>
+</div>
+`;

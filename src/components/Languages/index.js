@@ -2,8 +2,8 @@ import styles from "./index.module.scss";
 
 import React from "react";
 import PropTypes from "prop-types";
-
 import { navigate, Link } from "gatsby";
+
 import { LocaleContext } from "../Layout";
 import languages from "../../i18n/languages";
 

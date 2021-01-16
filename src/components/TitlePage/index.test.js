@@ -1,11 +1,11 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import { render } from "@testing-library/react";
 
 import TitlePage from "../TitlePage";
 
 describe("TitlePage", () => {
   it("renders correctly", () => {
-    const tree = renderer.create(<TitlePage text="Hello, World" />).toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<TitlePage text="Hello, World" />);
+    expect(container).toMatchSnapshot();
   });
 });
