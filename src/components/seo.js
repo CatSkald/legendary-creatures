@@ -54,6 +54,10 @@ function SEO({ description, lang, meta, title, image }) {
           property: "og:type",
           content: "website",
         },
+        {
+          name: "google-site-verification",
+          content: "JnZn9fkts-5GXljCjalVBDSCtoD5RwKt0GWw6n5yuMQ",
+        },
       ].concat(meta)}
     />
   );
