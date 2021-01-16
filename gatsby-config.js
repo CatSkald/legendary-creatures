@@ -3,7 +3,8 @@ module.exports = {
     title: `Legendary Creatures and Fabulous Beasts`,
     description: `An encyclopaedia of creatures originating from the folklore, legends, mythos`,
     author: `CatSkald`,
-    siteUrl: `https://legendary-creatures.github.io`,
+    url: `https://legendary-creatures.github.io`,
+    image: `/assets/images/cover.jpg`,
   },
   pathPrefix: "/legendary-creatures",
   plugins: [

@@ -12,64 +12,37 @@ function SEO({ description, lang, meta, title, image }) {
           siteMetadata {
             title
             description
-            # author
-            siteUrl
+            author
+            url
+            image
           }
         }
       }
     `,
   );
 
-  const separators = [
-    "🐲",
-    "🦄",
-    "🐉",
-    "🦚",
-    "🐾",
-    "🐁",
-    "🐈",
-    "🦇",
-    "🦖",
-    "😈",
-    "👹",
-    "👺",
-    "👻",
-    "🧚",
-    "🧙",
-    "🧛",
-    "🧟",
-    "🦉",
-    "🧝",
-    "🎅",
-    "👼",
-    "🍀",
-  ];
-  const randomSeparator =
-    separators[Math.floor(Math.random() * separators.length)];
-
   const translations = useTranslations();
-  const metaTitle = title || translations.Title;
-  const metaDescription = description || translations.Description;
-  const url = site.siteMetadata.siteUrl;
-  const ogImage = `${url}${image || "/assets/images/cover.jpg"}`;
+  const ogTitle = title || translations.Title;
+  const ogDescription = description || translations.Description;
+  const ogImage = `${site.siteMetadata.url}${image || site.siteMetadata.image}`;
 
   return (
     <Helmet
       htmlAttributes={{ lang }}
-      title={metaTitle}
-      titleTemplate={`%s ${randomSeparator} ${translations.Title}`}
+      title={ogTitle}
+      titleTemplate={`%s 🐾 ${translations.ShortTitle}`}
       meta={[
         {
-          name: "description",
-          content: metaDescription,
+          property: "og:title",
+          content: ogTitle,
         },
         {
-          property: "og:title",
-          content: metaTitle,
+          name: "description",
+          content: ogDescription,
         },
         {
           property: "og:description",
-          content: metaDescription,
+          content: ogDescription,
         },
         {
           property: "og:image",
@@ -91,10 +64,10 @@ SEO.defaultProps = {
 };
 
 SEO.propTypes = {
+  title: PropTypes.string.isRequired,
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 };
 
 export default SEO;
