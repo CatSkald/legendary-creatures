@@ -24,9 +24,10 @@
 
 ### Run
 
-- Run website locally: `npm run develop`
-- Run CMS locally: `npm run build-serve`
-- Deploy: `npm run deploy`
+- Build: `yarn build`
+- Run website locally: `yarn develop`
+- Run CMS locally: `yarn build-serve`
+- Deploy: `yarn deploy`
 
 ### Debug
 
