@@ -1,4 +1,4 @@
-.Title {
+.card__title {
   font-size: 2.5rem;
   font-weight: bold;
   margin: 0 0 var(--space-sm) 0;
@@ -7,7 +7,7 @@
   border-bottom: 1px solid var(--card-separator);
 }
 
-.InfoHeader {
+.card__header {
   font-weight: bold;
   text-align: left;
 
@@ -16,7 +16,7 @@
   }
 }
 
-.InfoRow {
+.card__row {
   text-align: left;
 
   a {
@@ -24,7 +24,7 @@
   }
 }
 
-.InfoButtons {
+.card__buttons {
   border-top: 1px solid var(--card-separator);
   width: 100%;
 
@@ -41,7 +41,7 @@
   }
 }
 
-.Info {
+.card__content {
   font-size: 1.3rem;
   width: 100%;
   margin: 0 var(--space-sm);
@@ -52,7 +52,7 @@
   }
 }
 
-.InfoRowEntry {
+.card__row__item {
   &:after {
     content: ", ";
   }
@@ -64,17 +64,17 @@
   }
 }
 
-.Hint {
+.card__hint {
   font-style: italic;
 }
 
-.CardImage {
+.card__image {
   box-shadow: 0 0 5px 1px var(--menu-shadow);
   margin-left: auto;
   margin-right: auto;
 }
 
-.Container {
+.card__container {
   z-index: 1;
   position: relative;
   background: var(--content-bg);
@@ -101,7 +101,7 @@
   }
 }
 
-.Card {
+.card {
   background: var(--card-bg);
   border-radius: 5px;
   box-shadow: 0 4px 4px 0 var(--background-shadow);

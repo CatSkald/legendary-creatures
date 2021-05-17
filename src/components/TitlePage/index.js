@@ -4,7 +4,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const TitlePage = (props) => {
-  return <h1 className={styles.TitleElement}>{props.text}</h1>;
+  return <h1 className={styles.title}>{props.text}</h1>;
 };
 
 TitlePage.propTypes = {

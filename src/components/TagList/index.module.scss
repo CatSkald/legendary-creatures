@@ -1,4 +1,4 @@
-.TagList {
+.tagList {
   a {
     border-radius: 3px;
     text-align: center;
@@ -8,11 +8,11 @@
   }
 }
 
-.TagListItem {
+.tagList__item {
   margin-bottom: var(--space-sm);
 }
 
-.Tag {
+.tagList__tag {
   margin: var(--space) var(--space-sm);
   padding: var(--space-sm);
   font-weight: bold;
@@ -25,7 +25,7 @@
   }
 }
 
-.TagValue {
+.tagList__value {
   margin: var(--space-sm);
   margin-left: var(--space);
   border: solid;

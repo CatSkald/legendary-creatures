@@ -2,7 +2,7 @@
   /* placeholder to be referenced from styles */
 }
 
-.ButtonList {
+.navigationBarButtons {
   display: flex;
   right: var(--space-sm);
 
@@ -13,7 +13,7 @@
   }
 }
 
-.Button {
+.navigationBarButtons__button {
   display: inline-block;
   color: var(--menu-text);
   text-decoration: none;
@@ -29,7 +29,7 @@
   }
 }
 
-.Language {
+.navigationBarButtons__language {
   &:after {
     content: " ⇓"; //non-breaking space
   }
@@ -39,19 +39,19 @@
   }
 }
 
-.ThemeLight {
+.navigationBarButtons__theme__light {
   &:after {
     content: "🌣";
   }
 }
 
-.ThemeDark {
+.navigationBarButtons__theme__dark {
   &:after {
     content: "☽";
   }
 }
 
-.ColorTheme {
+.navigationBarButtons__theme {
   font-weight: bold;
   padding: 0 0.3em;
 }

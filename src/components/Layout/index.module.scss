@@ -1,16 +1,16 @@
-.Wrapper {
+.layout__container {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
 
-.SiteContent {
+.layout {
   display: flex;
   flex: 1;
   width: 100%;
 }
 
-.Container {
+.layout__content {
   width: 100%;
   max-width: var(--container-width);
   margin: 0 auto;

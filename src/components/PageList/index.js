@@ -10,7 +10,7 @@ const PageList = (props) => {
   const { language } = React.useContext(LocaleContext);
 
   return (
-    <section className={styles.PageList}>
+    <section className={styles.pageList}>
       {props.pages.map(
         ({
           node: {

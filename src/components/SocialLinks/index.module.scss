@@ -1,13 +1,13 @@
-.SocialLinksList {
+.socialLinks {
   display: flex;
 }
 
-.SocialLinksItem {
+.socialLinks__item {
   display: block;
   margin: 0 0.6rem;
 }
 
-.SocialLinksLink {
+.socialLinks__link {
   display: block;
   width: 26px;
   color: var(--content-link);

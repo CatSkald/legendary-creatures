@@ -8,11 +8,11 @@ const NavigationBarButtons = (props) => {
   const { language } = React.useContext(LocaleContext);
 
   return (
-    <ul className={styles.ButtonList}>
-      <li className={styles.Button}>
+    <ul className={styles.navigationBarButtons}>
+      <li className={styles.navigationBarButtons__button}>
         <span
           title="Change language"
-          className={`${styles.Language} ${
+          className={`${styles.navigationBarButtons__language} ${
             props.isLanguageSelectionActive ? styles.active : ""
           }`}
           onClick={() => props.handleToggleLanguageSelection()}
@@ -20,13 +20,15 @@ const NavigationBarButtons = (props) => {
           {language.name}
         </span>
       </li>
-      <li className={styles.Button}>
+      <li className={styles.navigationBarButtons__button}>
         <span
           title="Switch color theme"
           role="img"
           aria-label="Change website color theme"
-          className={`${styles.ColorTheme} ${
-            props.isDarkColorTheme ? styles.ThemeDark : styles.ThemeLight
+          className={`${styles.navigationBarButtons__theme} ${
+            props.isDarkColorTheme
+              ? styles.navigationBarButtons__theme__dark
+              : styles.navigationBarButtons__theme__light
           }`}
           onClick={() => props.handleToggleColorTheme()}
         ></span>

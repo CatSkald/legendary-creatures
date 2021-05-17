@@ -25,15 +25,15 @@ const CreatureCard = (props) => {
   const image = images.find((img) => img.originalName === imageName);
 
   return (
-    <div className={styles.Container}>
-      <div className={styles.Card}>
+    <div className={styles.card__container}>
+      <div className={styles.card}>
         <Img
-          className={styles.CardImage}
+          className={styles.card__image}
           fluid={image.fluid}
           alt={props.frontmatter.title}
         />
-        <table className={styles.Info}>
-          <caption className={styles.Title}>
+        <table className={styles.card__content}>
+          <caption className={styles.card__title}>
             <span>{props.frontmatter.title}</span>
           </caption>
           <tbody>
@@ -78,10 +78,10 @@ const CardRow = (props) => {
 
   return (
     <tr>
-      <th className={styles.InfoHeader}>
+      <th className={styles.card__header}>
         <LocalizedLink to={tagUrl}>{props.tag}</LocalizedLink>
       </th>
-      <td className={styles.InfoRow}>
+      <td className={styles.card__row}>
         {data.map((category, index) => {
           const tagValueUrl = getTagValueUrl(
             props.tag,
@@ -96,9 +96,9 @@ const CardRow = (props) => {
           else if (category.sometimes) comment = props.sometimesText;
 
           return (
-            <span key={props.tag + index} className={styles.InfoRowEntry}>
+            <span key={props.tag + index} className={styles.card__row__item}>
               <LocalizedLink to={tagValueUrl}>{category.value}</LocalizedLink>
-              <span className={styles.Hint}>
+              <span className={styles.card__hint}>
                 {comment ? ` (${comment})` : ""}
               </span>
             </span>
@@ -127,10 +127,10 @@ const RelatedCreatures = (props) => {
 
   return (
     <tr>
-      <th className={styles.InfoHeader}>{props.label}</th>
-      <td className={styles.InfoRow}>
+      <th className={styles.card__header}>{props.label}</th>
+      <td className={styles.card__row}>
         {creatureLinks.map(({ name, link }) => (
-          <span className={styles.InfoRowEntry} key={name}>
+          <span className={styles.card__row__item} key={name}>
             <LocalizedLink to={link}>{name}</LocalizedLink>
           </span>
         ))}
@@ -144,7 +144,7 @@ const CardButtons = (props) => {
   if (!anyButtons) return <></>;
 
   return (
-    <div className={styles.InfoButtons}>
+    <div className={styles.card__buttons}>
       {props.data.wikipedia && (
         <a
           href={props.data.wikipedia}

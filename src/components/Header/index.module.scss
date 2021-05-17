@@ -1,4 +1,4 @@
-.HeaderWrapper {
+.header__container {
   background-color: var(--menu-bg);
 
   @media screen and (min-width: 1056px /*--screen-large*/) {
@@ -6,7 +6,7 @@
   }
 }
 
-.Container {
+.header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -25,7 +25,7 @@
   }
 }
 
-.NavMenu {
+.header__menu {
   width: 100%;
 
   @media screen and (min-width: 768px /*--screen-medium*/) {
@@ -35,6 +35,6 @@
   }
 }
 
-.NavLanguages {
+.header__languages {
   margin-left: var(--space);
 }

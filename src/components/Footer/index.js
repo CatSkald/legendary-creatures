@@ -16,21 +16,16 @@ const Footer = () => {
     .map(([page, data]) => data[language.code]);
 
   return (
-    <div className={styles.FooterWrapper}>
-      <div className={styles.FooterContainer}>
-        <div className={styles.FooterAuthor}>
+    <div className={styles.footer__container}>
+      <div className={styles.footer}>
+        <div className={styles.footer__author}>
           <p>{`${translations.footerMoto} © 2020 CatSkald`}</p>
           <SocialLinks />
         </div>
-        <div className={styles.FooterMenu}>
+        <div className={styles.footer__menu}>
           {menuItems.map((menu) => (
             <p key={menu.path}>
-              <LocalizedLink
-                className={styles.NavigationLink}
-                to={menu.path}
-                aria-label={menu.title}
-                activeClassName={styles.active}
-              >
+              <LocalizedLink to={menu.path} aria-label={menu.title}>
                 {menu.title}
               </LocalizedLink>
             </p>

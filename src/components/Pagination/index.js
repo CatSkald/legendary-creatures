@@ -13,7 +13,7 @@ const Pagination = (props) => {
   const isLast = current === props.numPages;
 
   return (
-    <div className={styles.PaginationContainer}>
+    <div className={styles.pagination}>
       <p>
         {!isFirst && (
           <LocalizedLink to={props.prevPage}>

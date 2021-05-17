@@ -16,16 +16,18 @@ const CreaturePage = (props) => {
   const image = images.find((img) => img.originalName === imageName);
 
   return (
-    <LocalizedLink className={styles.CreaturePageLink} to={props.slug}>
-      <section className={styles.CreaturePreviewContainer}>
+    <LocalizedLink className={styles.creaturePage__link} to={props.slug}>
+      <section className={styles.creaturePage}>
         <Img
-          className={styles.CreaturePageImage}
+          className={styles.creaturePage__image}
           fluid={image.preview}
           alt={props.title}
         />
-        <div className={styles.CreatureInfo}>
-          <h3 className={styles.PageTitle}>{props.title}</h3>
-          <p className={styles.PageDescription}>{props.description}</p>
+        <div className={styles.creaturePage__content}>
+          <h3 className={styles.creaturePage__title}>{props.title}</h3>
+          <p className={styles.creaturePage__description}>
+            {props.description}
+          </p>
         </div>
       </section>
     </LocalizedLink>

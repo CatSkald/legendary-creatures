@@ -3,13 +3,13 @@
 exports[`SocialLinks renders correctly 1`] = `
 <div>
   <ul
-    class="SocialLinksList"
+    class="socialLinks"
   >
     <li
-      class="SocialLinksItem"
+      class="socialLinks__item"
     >
       <a
-        class="SocialLinksLink"
+        class="socialLinks__link"
         href="https://github.com/CatSkald/legendary-creatures"
         rel="noopener noreferrer"
         target="_blank"

@@ -27,7 +27,7 @@ const Layout = (props) => {
   return (
     <LocaleContext.Provider value={{ language: props.pageContext.language }}>
       <div
-        className={`body ${styles.Wrapper} ${
+        className={`body ${styles.layout__container} ${
           isDarkColorTheme ? "theme-dark" : "theme-light"
         }`}
       >
@@ -36,8 +36,8 @@ const Layout = (props) => {
           handleToggleColorTheme={handleToggleColorTheme}
           localizedLinks={props.pageContext.localizedLinks}
         />
-        <section className={styles.SiteContent} role="main">
-          <div className={styles.Container}>{props.children}</div>
+        <section className={styles.layout} role="main">
+          <div className={styles.layout__content}>{props.children}</div>
         </section>
         <Footer />
       </div>

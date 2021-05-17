@@ -7,7 +7,7 @@ export const HamburgerButton = (props) => {
   return (
     <button
       onClick={props.handleClick}
-      className={`${styles.HamburgerButton} ${
+      className={`${styles.hamburgerMenu} ${
         props.isActive ? styles.active : ""
       }`}
       aria-label="Show menu"

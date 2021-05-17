@@ -2,7 +2,7 @@
   /* placeholder to be referenced from styles */
 }
 
-.LanguageList {
+.languageMenu {
   display: none;
   flex-direction: column;
   padding-bottom: 0;
@@ -20,12 +20,12 @@
   }
 }
 
-.LanguageItem {
+.languageMenu__language {
   margin: var(--space-sm);
   margin-bottom: 0;
 }
 
-.LanguageLink {
+.languageMenu__link {
   position: relative;
   color: var(--menu-text);
   text-decoration: none;

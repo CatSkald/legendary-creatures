@@ -16,13 +16,13 @@ const NavigationBar = (props) => {
   return (
     <>
       <nav
-        className={`${styles.NavigationBar} ${
+        className={`${styles.navigationBar} ${
           props.isActive ? styles.active : ""
         }`}
       >
         {menuItems.map((menu) => (
           <LocalizedLink
-            className={styles.NavigationLink}
+            className={styles.navigationBar__link}
             key={menu.path}
             to={menu.path}
             aria-label={menu.title}

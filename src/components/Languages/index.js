@@ -33,16 +33,16 @@ const Languages = (props) => {
 
   return (
     <ul
-      className={`${styles.LanguageList} ${
+      className={`${styles.languageMenu} ${
         props.isActive ? styles.active : ""
       }`}
     >
       {Object.entries(languages)
         .filter(([lang, languageProps]) => !languageProps.hidden)
         .map(([lang, languageProps]) => (
-          <li className={styles.LanguageItem} key={lang}>
+          <li className={styles.languageMenu__language} key={lang}>
             <Link
-              className={`${styles.LanguageLink} ${
+              className={`${styles.languageMenu__link} ${
                 language.code === lang ? styles.active : ""
               }`}
               key={lang}

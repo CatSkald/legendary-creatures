@@ -4,7 +4,7 @@ exports[`HamburgerButton renders correctly when active is false 1`] = `
 <div>
   <button
     aria-label="Show menu"
-    class="HamburgerButton "
+    class="hamburgerMenu "
   >
     <span />
   </button>
@@ -15,7 +15,7 @@ exports[`HamburgerButton renders correctly when active is true 1`] = `
 <div>
   <button
     aria-label="Show menu"
-    class="HamburgerButton active"
+    class="hamburgerMenu active"
   >
     <span />
   </button>

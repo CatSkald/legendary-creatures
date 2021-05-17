@@ -1,9 +1,9 @@
-.FooterWrapper {
+.footer__container {
   margin-top: var(--space);
   border-top: 1px solid var(--footer-separator);
 }
 
-.FooterContainer {
+.footer {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: var(--space);
@@ -26,13 +26,13 @@
   }
 }
 
-.FooterAuthor {
+.footer__author {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
 }
 
-.FooterMenu {
+.footer__menu {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;

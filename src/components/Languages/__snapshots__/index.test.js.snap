@@ -3,13 +3,13 @@
 exports[`Languages renders correctly when not active 1`] = `
 <div>
   <ul
-    class="LanguageList "
+    class="languageMenu "
   >
     <li
-      class="LanguageItem"
+      class="languageMenu__language"
     >
       <a
-        class="LanguageLink active"
+        class="languageMenu__link active"
         href="/"
         hreflang="en"
       >
@@ -17,10 +17,10 @@ exports[`Languages renders correctly when not active 1`] = `
       </a>
     </li>
     <li
-      class="LanguageItem"
+      class="languageMenu__language"
     >
       <a
-        class="LanguageLink "
+        class="languageMenu__link "
         href="/ru"
         hreflang="ru"
       >
@@ -28,10 +28,10 @@ exports[`Languages renders correctly when not active 1`] = `
       </a>
     </li>
     <li
-      class="LanguageItem"
+      class="languageMenu__language"
     >
       <a
-        class="LanguageLink "
+        class="languageMenu__link "
         href="/uk"
         hreflang="uk"
       >
@@ -50,13 +50,13 @@ exports[`Languages renders correctly with {
 } active 1`] = `
 <div>
   <ul
-    class="LanguageList active"
+    class="languageMenu active"
   >
     <li
-      class="LanguageItem"
+      class="languageMenu__language"
     >
       <a
-        class="LanguageLink "
+        class="languageMenu__link "
         href="/"
         hreflang="en"
       >
@@ -64,10 +64,10 @@ exports[`Languages renders correctly with {
       </a>
     </li>
     <li
-      class="LanguageItem"
+      class="languageMenu__language"
     >
       <a
-        class="LanguageLink "
+        class="languageMenu__link "
         href="/ru"
         hreflang="ru"
       >
@@ -75,10 +75,10 @@ exports[`Languages renders correctly with {
       </a>
     </li>
     <li
-      class="LanguageItem"
+      class="languageMenu__language"
     >
       <a
-        class="LanguageLink active"
+        class="languageMenu__link active"
         href="/uk"
         hreflang="uk"
       >
@@ -92,13 +92,13 @@ exports[`Languages renders correctly with {
 exports[`Languages renders correctly with { name: 'English', code: 'en', path: '', dateFormat: 'DD/MM/YYYY' } active 1`] = `
 <div>
   <ul
-    class="LanguageList active"
+    class="languageMenu active"
   >
     <li
-      class="LanguageItem"
+      class="languageMenu__language"
     >
       <a
-        class="LanguageLink active"
+        class="languageMenu__link active"
         href="/"
         hreflang="en"
       >
@@ -106,10 +106,10 @@ exports[`Languages renders correctly with { name: 'English', code: 'en', path: '
       </a>
     </li>
     <li
-      class="LanguageItem"
+      class="languageMenu__language"
     >
       <a
-        class="LanguageLink "
+        class="languageMenu__link "
         href="/ru"
         hreflang="ru"
       >
@@ -117,10 +117,10 @@ exports[`Languages renders correctly with { name: 'English', code: 'en', path: '
       </a>
     </li>
     <li
-      class="LanguageItem"
+      class="languageMenu__language"
     >
       <a
-        class="LanguageLink "
+        class="languageMenu__link "
         href="/uk"
         hreflang="uk"
       >
@@ -134,13 +134,13 @@ exports[`Languages renders correctly with { name: 'English', code: 'en', path: '
 exports[`Languages renders correctly with { name: 'Русский', code: 'ru', path: '/ru', dateFormat: 'DD.MM.YYYY' } active 1`] = `
 <div>
   <ul
-    class="LanguageList active"
+    class="languageMenu active"
   >
     <li
-      class="LanguageItem"
+      class="languageMenu__language"
     >
       <a
-        class="LanguageLink "
+        class="languageMenu__link "
         href="/"
         hreflang="en"
       >
@@ -148,10 +148,10 @@ exports[`Languages renders correctly with { name: 'Русский', code: 'ru', 
       </a>
     </li>
     <li
-      class="LanguageItem"
+      class="languageMenu__language"
     >
       <a
-        class="LanguageLink active"
+        class="languageMenu__link active"
         href="/ru"
         hreflang="ru"
       >
@@ -159,10 +159,10 @@ exports[`Languages renders correctly with { name: 'Русский', code: 'ru', 
       </a>
     </li>
     <li
-      class="LanguageItem"
+      class="languageMenu__language"
     >
       <a
-        class="LanguageLink "
+        class="languageMenu__link "
         href="/uk"
         hreflang="uk"
       >

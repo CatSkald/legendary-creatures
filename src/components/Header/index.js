@@ -27,19 +27,19 @@ const Header = (props) => {
   }
 
   return (
-    <div className={styles.HeaderWrapper}>
-      <div className={styles.Container}>
+    <div className={styles.header__container}>
+      <div className={styles.header}>
         <HamburgerButton
           handleClick={handleToggleMenu}
           isActive={isMenuActive}
         />
-        <div className={styles.NavMenu}>
+        <div className={styles.header__menu}>
           <NavigationBar
             isActive={isMenuActive}
             handleToggleMenu={handleToggleMenu}
           />
         </div>
-        <div className={styles.NavLanguages}>
+        <div className={styles.header__languages}>
           <NavigationBarButtons
             isDarkColorTheme={props.isDarkColorTheme}
             handleToggleColorTheme={props.handleToggleColorTheme}
