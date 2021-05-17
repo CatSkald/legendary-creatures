@@ -7,7 +7,7 @@ import LocalizedLink from "../LocalizedLink";
 import { LocaleContext } from "../Layout";
 import { pages } from "../../i18n/navigation";
 
-const NavigationBar = props => {
+const NavigationBar = (props) => {
   const { language } = React.useContext(LocaleContext);
   var menuItems = Object.entries(pages)
     .filter(([page, data]) => data.type === "menu")
@@ -20,7 +20,7 @@ const NavigationBar = props => {
           props.isActive ? styles.active : ""
         }`}
       >
-        {menuItems.map(menu => (
+        {menuItems.map((menu) => (
           <LocalizedLink
             className={styles.NavigationLink}
             key={menu.path}

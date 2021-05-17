@@ -8,7 +8,7 @@ import SEO from "../components/seo";
 import useTranslations from "../i18n/translations/useTranslations";
 import { parseTags } from "../utils/tags-helpers";
 
-const Tags = props => {
+const Tags = (props) => {
   const translations = useTranslations();
   const tags = parseTags(props.data.allMarkdownRemark.edges);
 

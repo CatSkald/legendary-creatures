@@ -26,7 +26,7 @@ export const useImages = () => {
       }
     `,
   );
-  return listImages.edges.map(edge => ({
+  return listImages.edges.map((edge) => ({
     src: edge.node.childImageSharp.fluidImage.src,
     originalName: edge.node.childImageSharp.fluidImage.originalName,
     preview: edge.node.childImageSharp.previewImage,

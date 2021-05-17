@@ -10,7 +10,7 @@ import useTranslations from "../i18n/translations/useTranslations";
 import { LocaleContext } from "../components/Layout";
 import { getCreaturesUrl } from "../utils/url-helpers";
 
-const Creatures = props => {
+const Creatures = (props) => {
   const { language } = React.useContext(LocaleContext);
 
   // Logic for Pagination Component

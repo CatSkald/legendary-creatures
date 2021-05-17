@@ -10,7 +10,7 @@ import storage from "../../utils/local-storage-helpers";
 
 const LocaleContext = React.createContext();
 
-const Layout = props => {
+const Layout = (props) => {
   var userSettings = storage.getUserSettings();
   const [isDarkColorTheme, switchColorTheme] = React.useState(
     userSettings.isDarkColorTheme,

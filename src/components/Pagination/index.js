@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import LocalizedLink from "../LocalizedLink";
 import useTranslations from "../../i18n/translations/useTranslations";
 
-const Pagination = props => {
+const Pagination = (props) => {
   const translations = useTranslations();
 
   const current = props.currentPage + 1;

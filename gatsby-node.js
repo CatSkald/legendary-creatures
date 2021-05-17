@@ -214,7 +214,7 @@ exports.createPages = async ({ graphql, actions }) => {
         localizedLinks: localizedLinks,
       };
 
-      supportedTags.forEach(tagName => {
+      supportedTags.forEach((tagName) => {
         if (context[tagName]) pageContext[tagName] = context[tagName];
       });
 
@@ -240,13 +240,13 @@ exports.createPages = async ({ graphql, actions }) => {
 
     //create paginated creatures list
     const creaturePagesCount = pageContentFromMarkdown.filter(
-      page => !page.node.frontmatter.page && page.node.fields.locale === lang,
+      (page) => !page.node.frontmatter.page && page.node.fields.locale === lang,
     ).length;
 
     createPaginatedPages(
       creaturePagesCount,
       langProps,
-      index => getCreaturesUrl(index, lang),
+      (index) => getCreaturesUrl(index, lang),
       creatureListTemplate,
       localizedNavigation.pages.creatures,
     );
@@ -254,17 +254,17 @@ exports.createPages = async ({ graphql, actions }) => {
     //create paginated tag search results
     Object.entries(tags).forEach(([tag, values]) => {
       if (values && values.length > 0) {
-        values.forEach(value => {
+        values.forEach((value) => {
           if (!value) return;
 
-          const creaturePagesCount = pageContentFromMarkdown.filter(page => {
+          const creaturePagesCount = pageContentFromMarkdown.filter((page) => {
             if (
               page.node.fields.locale === lang &&
               page.node.frontmatter[tag]
             ) {
               const tagValue = page.node.frontmatter[tag];
               return Array.isArray(tagValue)
-                ? tagValue.some(x => x.value === value)
+                ? tagValue.some((x) => x.value === value)
                 : tagValue.value === value;
             }
 
@@ -278,7 +278,7 @@ exports.createPages = async ({ graphql, actions }) => {
           createPaginatedPages(
             creaturePagesCount,
             langProps,
-            pageIndex =>
+            (pageIndex) =>
               getTagValueUrl(tagName, value, langProps.code, pageIndex),
             creatureListTemplate,
             localizedNavigation.pages.tags,
@@ -292,9 +292,9 @@ exports.createPages = async ({ graphql, actions }) => {
 
 exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes } = actions;
-  const categoryType = name => ({
+  const categoryType = (name) => ({
     type: "[Category!]",
-    resolve: source => source[name] || [{ value: configuration.noTag }],
+    resolve: (source) => source[name] || [{ value: configuration.noTag }],
   });
   const pageFields = {
     //all
@@ -317,7 +317,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
 
   //add tags to the fields
   supportedTags.forEach(
-    tagName => (pageFields[tagName] = categoryType(tagName)),
+    (tagName) => (pageFields[tagName] = categoryType(tagName)),
   );
 
   const typeDefs = [
@@ -347,7 +347,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         comment: { type: "String" },
         sometimes: {
           type: "Boolean",
-          resolve: source => source.sometimes || false,
+          resolve: (source) => source.sometimes || false,
         },
       },
     }),

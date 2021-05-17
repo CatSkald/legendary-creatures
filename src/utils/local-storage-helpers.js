@@ -9,11 +9,11 @@ exports.store = (key, value) => {
   if (isBrowser) window.localStorage.setItem(key, value);
 };
 
-exports.get = key => {
+exports.get = (key) => {
   return isBrowser ? window.localStorage.getItem(key) : null;
 };
 
-exports.getUserSettings = key => {
+exports.getUserSettings = (key) => {
   if (!isBrowser) return new UserSettings();
 
   const theme = window.localStorage.getItem(keys.theme);

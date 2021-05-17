@@ -1,16 +1,16 @@
 const localizedNavigation = require("../i18n/navigation");
 const path = require("path");
 
-const pagePath = pageIndex => (pageIndex >= 1 ? `/${pageIndex}` : "");
+const pagePath = (pageIndex) => (pageIndex >= 1 ? `/${pageIndex}` : "");
 
-const getTagsPath = languageCode =>
+const getTagsPath = (languageCode) =>
   localizedNavigation.pages.tags[languageCode].path;
-const getCreaturesPath = languageCode =>
+const getCreaturesPath = (languageCode) =>
   localizedNavigation.pages.creatures[languageCode].path;
-const getSearchPath = languageCode =>
+const getSearchPath = (languageCode) =>
   localizedNavigation.pages.search[languageCode].path;
 
-const removeSpecialCharacters = s => s.replace(/\s/g, "");
+const removeSpecialCharacters = (s) => s.replace(/\s/g, "");
 
 exports.getTagsPath = getTagsPath;
 exports.getCreaturesPath = getCreaturesPath;
@@ -49,7 +49,7 @@ exports.getCreaturesUrl = (pageIndex, languageCode) => {
   return getCreaturesPath(languageCode) + pagePath(pageIndex);
 };
 
-exports.getNameFromPath = value => {
+exports.getNameFromPath = (value) => {
   const nameWithLanguage = path.basename(value, ".md");
   const name = nameWithLanguage.slice(0, -3); //".en".length = 3
   const language = nameWithLanguage.slice(-2); //"en".length = 2

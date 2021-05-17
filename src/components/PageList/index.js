@@ -6,7 +6,7 @@ import CreaturePage from "../CreaturePage";
 import { LocaleContext } from "../Layout";
 import { getCreaturesPath } from "../../utils/url-helpers";
 
-const PageList = props => {
+const PageList = (props) => {
   const { language } = React.useContext(LocaleContext);
 
   return (

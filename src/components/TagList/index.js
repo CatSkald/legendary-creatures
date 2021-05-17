@@ -9,18 +9,18 @@ import useTranslations from "../../i18n/translations/useTranslations";
 import { getTagUrl, getTagValueUrl } from "../../utils/url-helpers";
 import { localizedSort } from "../../utils/array-helpers";
 
-const TagList = props => {
+const TagList = (props) => {
   const translations = useTranslations();
   const { language } = React.useContext(LocaleContext);
 
-  const getSortedTags = tags =>
+  const getSortedTags = (tags) =>
     localizedSort(
       Object.entries(tags).map(([tag, values]) => ({
         tag: translations[tag],
         values: localizedSort(values, language.code),
       })),
       language.code,
-      x => x.tag,
+      (x) => x.tag,
     );
 
   return (

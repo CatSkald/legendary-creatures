@@ -7,7 +7,7 @@ import { navigate, Link } from "gatsby";
 import { LocaleContext } from "../Layout";
 import languages from "../../i18n/languages";
 
-const Languages = props => {
+const Languages = (props) => {
   const { language } = React.useContext(LocaleContext);
 
   function handleClickLanguage(e, lang) {
@@ -48,7 +48,7 @@ const Languages = props => {
               key={lang}
               to={languageProps.path || "/"}
               hrefLang={lang}
-              onClick={e => handleClickLanguage(e, lang)}
+              onClick={(e) => handleClickLanguage(e, lang)}
             >
               {languageProps.name}
             </Link>

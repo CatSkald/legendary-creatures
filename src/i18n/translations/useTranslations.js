@@ -7,8 +7,8 @@ function useTranslations() {
   const { rawData } = useStaticQuery(queryTranslations);
 
   const translationsForCurrentLocale = rawData.edges
-    .filter(item => item.node.name === language.code)
-    .map(item => item.node.translations)[0];
+    .filter((item) => item.node.name === language.code)
+    .map((item) => item.node.translations)[0];
 
   return translationsForCurrentLocale;
 }

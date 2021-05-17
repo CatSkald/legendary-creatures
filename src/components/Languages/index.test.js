@@ -13,7 +13,7 @@ describe("Languages", () => {
   const allLanguages = Object.entries(languages).map(
     ([lang, langProps]) => langProps,
   );
-  const createLocaleContext = language => ({
+  const createLocaleContext = (language) => ({
     language: {
       code: language,
     },
@@ -38,7 +38,7 @@ describe("Languages", () => {
     expect(container).toMatchSnapshot();
   });
 
-  each(allLanguages).it("renders correctly with %s active", language => {
+  each(allLanguages).it("renders correctly with %s active", (language) => {
     const { container } = render(
       <LocaleContext.Provider value={createLocaleContext(language.code)}>
         <Languages
@@ -51,7 +51,7 @@ describe("Languages", () => {
     expect(container).toMatchSnapshot();
   });
 
-  each(allLanguages).describe("click %s", language => {
+  each(allLanguages).describe("click %s", (language) => {
     describe("when active", () => {
       beforeEach(() => {
         //render with current language active in context

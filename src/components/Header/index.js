@@ -7,7 +7,7 @@ import Languages from "../Languages";
 import NavigationBarButtons from "../NavigationBarButtons";
 import HamburgerButton from "../HamburgerButton";
 
-const Header = props => {
+const Header = (props) => {
   const [isMenuActive, toggleMenu] = useState(false);
   const [isLanguageSelectionActive, toggleLanguageSelection] = useState(false);
 

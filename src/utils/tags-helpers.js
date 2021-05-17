@@ -1,7 +1,7 @@
 const localizedNavigation = require("../i18n/navigation");
 const { noTag } = require("../configuration");
 
-exports.parseTags = edges => {
+exports.parseTags = (edges) => {
   let tags = {};
 
   edges.forEach(({ node: { frontmatter } }) => {
@@ -12,9 +12,9 @@ exports.parseTags = edges => {
       if (!tagValues) continue;
 
       tagValues = Array.isArray(tagValues)
-        ? tagValues.map(v => v.value)
+        ? tagValues.map((v) => v.value)
         : [tagValues.value];
-      tagValues = tagValues.filter(value => value !== noTag);
+      tagValues = tagValues.filter((value) => value !== noTag);
       if (tagValues.length === 0) continue;
 
       const existingTags = tags[tag];

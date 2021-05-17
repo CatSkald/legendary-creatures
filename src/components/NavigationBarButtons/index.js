@@ -4,7 +4,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { LocaleContext } from "../Layout";
 
-const NavigationBarButtons = props => {
+const NavigationBarButtons = (props) => {
   const { language } = React.useContext(LocaleContext);
 
   return (

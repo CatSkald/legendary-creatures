@@ -6,7 +6,7 @@ import { graphql } from "gatsby";
 import TitlePage from "../components/TitlePage";
 import SEO from "../components/seo";
 
-const Page = props => {
+const Page = (props) => {
   const content = props.data.markdownRemark;
 
   return (

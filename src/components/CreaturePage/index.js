@@ -8,12 +8,12 @@ import LocalizedLink from "../LocalizedLink";
 import { useImages } from "../../hooks/use-images";
 import { getImageNameOrDefaultCover } from "../../utils/image-helpers";
 
-const CreaturePage = props => {
+const CreaturePage = (props) => {
   const imagePath = props.image;
 
   const imageName = getImageNameOrDefaultCover(imagePath);
   const images = useImages();
-  const image = images.find(img => img.originalName === imageName);
+  const image = images.find((img) => img.originalName === imageName);
 
   return (
     <LocalizedLink className={styles.CreaturePageLink} to={props.slug}>

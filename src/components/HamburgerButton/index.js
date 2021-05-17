@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 import React from "react";
 import PropTypes from "prop-types";
 
-export const HamburgerButton = props => {
+export const HamburgerButton = (props) => {
   return (
     <button
       onClick={props.handleClick}

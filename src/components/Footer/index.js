@@ -23,7 +23,7 @@ const Footer = () => {
           <SocialLinks />
         </div>
         <div className={styles.FooterMenu}>
-          {menuItems.map(menu => (
+          {menuItems.map((menu) => (
             <p key={menu.path}>
               <LocalizedLink
                 className={styles.NavigationLink}

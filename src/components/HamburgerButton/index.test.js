@@ -5,7 +5,7 @@ import each from "jest-each";
 import HamburgerButton from "../HamburgerButton";
 
 describe("HamburgerButton", () => {
-  each([true, false]).it("renders correctly when active is %s", active => {
+  each([true, false]).it("renders correctly when active is %s", (active) => {
     const { container } = render(
       <HamburgerButton handleClick={jest.fn()} isActive={active} />,
     );

@@ -16,13 +16,13 @@ import { getImageNameOrDefaultCover } from "../../utils/image-helpers";
 import { getCreatureUrl, getNameFromPath } from "../../utils/url-helpers";
 import { getTagUrl, getTagValueUrl } from "../../utils/url-helpers";
 
-const CreatureCard = props => {
+const CreatureCard = (props) => {
   const translations = useTranslations();
   const { language } = React.useContext(LocaleContext);
 
   const imageName = getImageNameOrDefaultCover(props.frontmatter.image);
   const images = useImages();
-  const image = images.find(img => img.originalName === imageName);
+  const image = images.find((img) => img.originalName === imageName);
 
   return (
     <div className={styles.Container}>
@@ -38,12 +38,12 @@ const CreatureCard = props => {
           </caption>
           <tbody>
             {localizedSort(
-              supportedTags.map(tag => ({
+              supportedTags.map((tag) => ({
                 tag: translations[tag],
                 values: props.frontmatter[tag],
               })),
               language.code,
-              x => x.tag,
+              (x) => x.tag,
             ).map(({ tag, values }) => (
               <CardRow
                 tag={tag}
@@ -66,14 +66,14 @@ const CreatureCard = props => {
   );
 };
 
-const CardRow = props => {
+const CardRow = (props) => {
   if (!props.data) return null;
 
   let data = Array.isArray(props.data) ? props.data : [props.data];
-  data = data.filter(x => x && x.value !== noTag);
+  data = data.filter((x) => x && x.value !== noTag);
   if (data.length === 0) return null;
 
-  data = localizedSort(data, props.language.code, x => x.value);
+  data = localizedSort(data, props.language.code, (x) => x.value);
   const tagUrl = getTagUrl(props.tag, props.language.code);
 
   return (
@@ -109,10 +109,10 @@ const CardRow = props => {
   );
 };
 
-const RelatedCreatures = props => {
+const RelatedCreatures = (props) => {
   if (!props.data.related || props.data.related.length === 0) return <></>;
 
-  let creatureLinks = props.data.related.map(path => {
+  let creatureLinks = props.data.related.map((path) => {
     var name = getNameFromPath(path).name;
     return {
       name: name, //TODO capitalization
@@ -122,7 +122,7 @@ const RelatedCreatures = props => {
   creatureLinks = localizedSort(
     creatureLinks,
     props.language.code,
-    x => x.name,
+    (x) => x.name,
   );
 
   return (
@@ -139,7 +139,7 @@ const RelatedCreatures = props => {
   );
 };
 
-const CardButtons = props => {
+const CardButtons = (props) => {
   const anyButtons = props.data.wikipedia;
   if (!anyButtons) return <></>;
 

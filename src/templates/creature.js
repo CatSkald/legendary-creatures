@@ -6,7 +6,7 @@ import { graphql } from "gatsby";
 import CreatureCard from "../components/CreatureCard";
 import SEO from "../components/seo";
 
-const Creature = props => {
+const Creature = (props) => {
   const content = props.data.markdownRemark;
 
   return (
