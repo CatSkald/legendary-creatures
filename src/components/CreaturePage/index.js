@@ -1,8 +1,15 @@
-import styles from "./index.module.scss";
+import {
+  creaturePage__link,
+  creaturePage__image,
+  creaturePage,
+  creaturePage__content,
+  creaturePage__title,
+  creaturePage__description,
+} from "./index.module.scss";
 
 import React from "react";
 import PropTypes from "prop-types";
-import Img from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import LocalizedLink from "../LocalizedLink";
 import { useImages } from "../../hooks/use-images";
@@ -13,21 +20,19 @@ const CreaturePage = (props) => {
 
   const imageName = getImageNameOrDefaultCover(imagePath);
   const images = useImages();
-  const image = images.find((img) => img.originalName === imageName);
+  const image = images.find((img) => img.name === imageName);
 
   return (
-    <LocalizedLink className={styles.creaturePage__link} to={props.slug}>
-      <section className={styles.creaturePage}>
-        <Img
-          className={styles.creaturePage__image}
-          fluid={image.preview}
+    <LocalizedLink className={creaturePage__link} to={props.slug}>
+      <section className={creaturePage}>
+        <GatsbyImage
+          className={creaturePage__image}
+          image={image.image}
           alt={props.title}
         />
-        <div className={styles.creaturePage__content}>
-          <h3 className={styles.creaturePage__title}>{props.title}</h3>
-          <p className={styles.creaturePage__description}>
-            {props.description}
-          </p>
+        <div className={creaturePage__content}>
+          <h3 className={creaturePage__title}>{props.title}</h3>
+          <p className={creaturePage__description}>{props.description}</p>
         </div>
       </section>
     </LocalizedLink>

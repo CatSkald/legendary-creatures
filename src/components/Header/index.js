@@ -1,4 +1,9 @@
-import styles from "./index.module.scss";
+import {
+  header__container,
+  header,
+  header__menu,
+  header__languages,
+} from "./index.module.scss";
 
 import React, { useState } from "react";
 import PropTypes from "prop-types";
@@ -27,19 +32,19 @@ const Header = (props) => {
   }
 
   return (
-    <div className={styles.header__container}>
-      <div className={styles.header}>
+    <div className={header__container}>
+      <div className={header}>
         <HamburgerButton
           handleClick={handleToggleMenu}
           isActive={isMenuActive}
         />
-        <div className={styles.header__menu}>
+        <div className={header__menu}>
           <NavigationBar
             isActive={isMenuActive}
             handleToggleMenu={handleToggleMenu}
           />
         </div>
-        <div className={styles.header__languages}>
+        <div className={header__languages}>
           <NavigationBarButtons
             isDarkColorTheme={props.isDarkColorTheme}
             handleToggleColorTheme={props.handleToggleColorTheme}

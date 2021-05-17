@@ -1,8 +1,19 @@
-import styles from "./index.module.scss";
+import {
+  card__container,
+  card,
+  card__image,
+  card__title,
+  card__content,
+  card__header,
+  card__row,
+  card__row__item,
+  card__buttons,
+  card__hint,
+} from "./index.module.scss";
 
 import React from "react";
 import PropTypes from "prop-types";
-import Img from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Wikipedia } from "@styled-icons/boxicons-logos/Wikipedia";
 
 import useTranslations from "../../i18n/translations/useTranslations";
@@ -22,18 +33,18 @@ const CreatureCard = (props) => {
 
   const imageName = getImageNameOrDefaultCover(props.frontmatter.image);
   const images = useImages();
-  const image = images.find((img) => img.originalName === imageName);
+  const image = images.find((img) => img.name === imageName);
 
   return (
-    <div className={styles.card__container}>
-      <div className={styles.card}>
-        <Img
-          className={styles.card__image}
-          fluid={image.fluid}
+    <div className={card__container}>
+      <div className={card}>
+        <GatsbyImage
+          className={card__image}
+          image={image.image}
           alt={props.frontmatter.title}
         />
-        <table className={styles.card__content}>
-          <caption className={styles.card__title}>
+        <table className={card__content}>
+          <caption className={card__title}>
             <span>{props.frontmatter.title}</span>
           </caption>
           <tbody>
@@ -78,10 +89,10 @@ const CardRow = (props) => {
 
   return (
     <tr>
-      <th className={styles.card__header}>
+      <th className={card__header}>
         <LocalizedLink to={tagUrl}>{props.tag}</LocalizedLink>
       </th>
-      <td className={styles.card__row}>
+      <td className={card__row}>
         {data.map((category, index) => {
           const tagValueUrl = getTagValueUrl(
             props.tag,
@@ -96,9 +107,9 @@ const CardRow = (props) => {
           else if (category.sometimes) comment = props.sometimesText;
 
           return (
-            <span key={props.tag + index} className={styles.card__row__item}>
+            <span key={props.tag + index} className={card__row__item}>
               <LocalizedLink to={tagValueUrl}>{category.value}</LocalizedLink>
-              <span className={styles.card__hint}>
+              <span className={card__hint}>
                 {comment ? ` (${comment})` : ""}
               </span>
             </span>
@@ -127,10 +138,10 @@ const RelatedCreatures = (props) => {
 
   return (
     <tr>
-      <th className={styles.card__header}>{props.label}</th>
-      <td className={styles.card__row}>
+      <th className={card__header}>{props.label}</th>
+      <td className={card__row}>
         {creatureLinks.map(({ name, link }) => (
-          <span className={styles.card__row__item} key={name}>
+          <span className={card__row__item} key={name}>
             <LocalizedLink to={link}>{name}</LocalizedLink>
           </span>
         ))}
@@ -144,7 +155,7 @@ const CardButtons = (props) => {
   if (!anyButtons) return <></>;
 
   return (
-    <div className={styles.card__buttons}>
+    <div className={card__buttons}>
       {props.data.wikipedia && (
         <a
           href={props.data.wikipedia}

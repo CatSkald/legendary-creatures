@@ -1,14 +1,18 @@
-import styles from "./index.module.scss";
+import {
+  socialLinks,
+  socialLinks__item,
+  socialLinks__link,
+} from "./index.module.scss";
 
 import React from "react";
 import { Github } from "@styled-icons/boxicons-logos/Github";
 
 const SocialLinks = () => {
   return (
-    <ul className={styles.socialLinks}>
-      <li className={styles.socialLinks__item}>
+    <ul className={socialLinks}>
+      <li className={socialLinks__item}>
         <a
-          className={styles.socialLinks__link}
+          className={socialLinks__link}
           href="https://github.com/CatSkald/legendary-creatures"
           title="Github"
           target="_blank"

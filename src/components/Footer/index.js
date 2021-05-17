@@ -1,4 +1,9 @@
-import styles from "./index.module.scss";
+import {
+  footer__container,
+  footer,
+  footer__author,
+  footer__menu,
+} from "./index.module.scss";
 
 import React from "react";
 
@@ -16,13 +21,13 @@ const Footer = () => {
     .map(([page, data]) => data[language.code]);
 
   return (
-    <div className={styles.footer__container}>
-      <div className={styles.footer}>
-        <div className={styles.footer__author}>
-          <p>{`${translations.footerMoto} © 2020 CatSkald`}</p>
+    <div className={footer__container}>
+      <div className={footer}>
+        <div className={footer__author}>
+          <p>{`${translations.footerMoto} © 2020—2021 CatSkald`}</p>
           <SocialLinks />
         </div>
-        <div className={styles.footer__menu}>
+        <div className={footer__menu}>
           {menuItems.map((menu) => (
             <p key={menu.path}>
               <LocalizedLink to={menu.path} aria-label={menu.title}>

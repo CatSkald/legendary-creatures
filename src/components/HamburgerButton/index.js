@@ -1,4 +1,4 @@
-import styles from "./index.module.scss";
+import { hamburgerMenu, active } from "./index.module.scss";
 
 import React from "react";
 import PropTypes from "prop-types";
@@ -7,9 +7,7 @@ export const HamburgerButton = (props) => {
   return (
     <button
       onClick={props.handleClick}
-      className={`${styles.hamburgerMenu} ${
-        props.isActive ? styles.active : ""
-      }`}
+      className={`${hamburgerMenu} ${props.isActive ? active : ""}`}
       aria-label="Show menu"
     >
       <span></span>

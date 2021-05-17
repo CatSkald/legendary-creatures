@@ -1,4 +1,4 @@
-import styles from "./index.module.scss";
+import { pagination } from "./index.module.scss";
 
 import React from "react";
 import PropTypes from "prop-types";
@@ -13,7 +13,7 @@ const Pagination = (props) => {
   const isLast = current === props.numPages;
 
   return (
-    <div className={styles.pagination}>
+    <div className={pagination}>
       <p>
         {!isFirst && (
           <LocalizedLink to={props.prevPage}>

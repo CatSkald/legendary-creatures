@@ -1,4 +1,8 @@
-import styles from "./index.module.scss";
+import {
+  navigationBar,
+  active,
+  navigationBar__link,
+} from "./index.module.scss";
 
 import React from "react";
 import PropTypes from "prop-types";
@@ -15,18 +19,14 @@ const NavigationBar = (props) => {
 
   return (
     <>
-      <nav
-        className={`${styles.navigationBar} ${
-          props.isActive ? styles.active : ""
-        }`}
-      >
+      <nav className={`${navigationBar} ${props.isActive ? active : ""}`}>
         {menuItems.map((menu) => (
           <LocalizedLink
-            className={styles.navigationBar__link}
+            className={navigationBar__link}
             key={menu.path}
             to={menu.path}
             aria-label={menu.title}
-            activeClassName={styles.active}
+            activeClassName={active}
             onClick={() => props.handleToggleMenu()}
           >
             {menu.title}

@@ -1,4 +1,12 @@
-import styles from "./index.module.scss";
+import {
+  active,
+  navigationBarButtons,
+  navigationBarButtons__button,
+  navigationBarButtons__language,
+  navigationBarButtons__theme,
+  navigationBarButtons__theme__dark,
+  navigationBarButtons__theme__light,
+} from "./index.module.scss";
 
 import React from "react";
 import PropTypes from "prop-types";
@@ -8,27 +16,27 @@ const NavigationBarButtons = (props) => {
   const { language } = React.useContext(LocaleContext);
 
   return (
-    <ul className={styles.navigationBarButtons}>
-      <li className={styles.navigationBarButtons__button}>
+    <ul className={navigationBarButtons}>
+      <li className={navigationBarButtons__button}>
         <span
           title="Change language"
-          className={`${styles.navigationBarButtons__language} ${
-            props.isLanguageSelectionActive ? styles.active : ""
+          className={`${navigationBarButtons__language} ${
+            props.isLanguageSelectionActive ? active : ""
           }`}
           onClick={() => props.handleToggleLanguageSelection()}
         >
           {language.name}
         </span>
       </li>
-      <li className={styles.navigationBarButtons__button}>
+      <li className={navigationBarButtons__button}>
         <span
           title="Switch color theme"
           role="img"
           aria-label="Change website color theme"
-          className={`${styles.navigationBarButtons__theme} ${
+          className={`${navigationBarButtons__theme} ${
             props.isDarkColorTheme
-              ? styles.navigationBarButtons__theme__dark
-              : styles.navigationBarButtons__theme__light
+              ? navigationBarButtons__theme__dark
+              : navigationBarButtons__theme__light
           }`}
           onClick={() => props.handleToggleColorTheme()}
         ></span>

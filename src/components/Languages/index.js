@@ -1,4 +1,9 @@
-import styles from "./index.module.scss";
+import {
+  active,
+  languageMenu,
+  languageMenu__language,
+  languageMenu__link,
+} from "./index.module.scss";
 
 import React from "react";
 import PropTypes from "prop-types";
@@ -32,18 +37,14 @@ const Languages = (props) => {
   }
 
   return (
-    <ul
-      className={`${styles.languageMenu} ${
-        props.isActive ? styles.active : ""
-      }`}
-    >
+    <ul className={`${languageMenu} ${props.isActive ? active : ""}`}>
       {Object.entries(languages)
         .filter(([lang, languageProps]) => !languageProps.hidden)
         .map(([lang, languageProps]) => (
-          <li className={styles.languageMenu__language} key={lang}>
+          <li className={languageMenu__language} key={lang}>
             <Link
-              className={`${styles.languageMenu__link} ${
-                language.code === lang ? styles.active : ""
+              className={`${languageMenu__link} ${
+                language.code === lang ? active : ""
               }`}
               key={lang}
               to={languageProps.path || "/"}

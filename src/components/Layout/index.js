@@ -1,7 +1,11 @@
 import "../../styles/global.scss";
 import "../../styles/theme-light.scss";
 import "../../styles/theme-dark.scss";
-import styles from "./index.module.scss";
+import {
+  layout__container,
+  layout,
+  layout__content,
+} from "./index.module.scss";
 
 import React from "react";
 import Header from "../Header";
@@ -27,7 +31,7 @@ const Layout = (props) => {
   return (
     <LocaleContext.Provider value={{ language: props.pageContext.language }}>
       <div
-        className={`body ${styles.layout__container} ${
+        className={`body ${layout__container} ${
           isDarkColorTheme ? "theme-dark" : "theme-light"
         }`}
       >
@@ -36,8 +40,8 @@ const Layout = (props) => {
           handleToggleColorTheme={handleToggleColorTheme}
           localizedLinks={props.pageContext.localizedLinks}
         />
-        <section className={styles.layout} role="main">
-          <div className={styles.layout__content}>{props.children}</div>
+        <section className={layout} role="main">
+          <div className={layout__content}>{props.children}</div>
         </section>
         <Footer />
       </div>

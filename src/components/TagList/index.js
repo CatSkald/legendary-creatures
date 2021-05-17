@@ -1,4 +1,9 @@
-import styles from "./index.module.scss";
+import {
+  tagList,
+  tagList__item,
+  tagList__tag,
+  tagList__value,
+} from "./index.module.scss";
 
 import React from "react";
 import PropTypes from "prop-types";
@@ -24,12 +29,12 @@ const TagList = (props) => {
     );
 
   return (
-    <section className={styles.tagList}>
+    <section className={tagList}>
       {getSortedTags(props.tags).map(({ tag, values }) => {
         return (
-          <div key={tag} className={styles.tagList__item}>
+          <div key={tag} className={tagList__item}>
             <LocalizedLink
-              className={styles.tagList__tag}
+              className={tagList__tag}
               to={getTagUrl(tag, language.code)}
             >
               {tag}
@@ -37,7 +42,7 @@ const TagList = (props) => {
             <br />
             {values.map((value, index) => (
               <LocalizedLink
-                className={styles.tagList__value}
+                className={tagList__value}
                 key={`${tag}_${value}${index}`}
                 to={getTagValueUrl(tag, value, language.code)}
               >

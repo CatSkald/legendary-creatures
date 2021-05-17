@@ -1,4 +1,4 @@
-import styles from "./index.module.scss";
+import { pageList } from "./index.module.scss";
 
 import React from "react";
 import PropTypes from "prop-types";
@@ -10,7 +10,7 @@ const PageList = (props) => {
   const { language } = React.useContext(LocaleContext);
 
   return (
-    <section className={styles.pageList}>
+    <section className={pageList}>
       {props.pages.map(
         ({
           node: {
