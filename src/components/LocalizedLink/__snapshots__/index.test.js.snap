@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LocalizedLink renders correct props 1`] = `
+<div>
+  <a
+    aria-label="test"
+    class="my-class"
+    href="/my-url"
+    hreflang="en"
+  />
+</div>
+`;
+
+exports[`LocalizedLink renders correctly for path  and code ru 1`] = `
+<div>
+  <a
+    href="my-url"
+    hreflang="ru"
+  />
+</div>
+`;
+
+exports[`LocalizedLink renders correctly for path / and code en 1`] = `
+<div>
+  <a
+    href="/my-url"
+    hreflang="en"
+  />
+</div>
+`;
+
+exports[`LocalizedLink renders correctly for path /uk/ and code uk 1`] = `
+<div>
+  <a
+    href="/uk/my-url"
+    hreflang="uk"
+  />
+</div>
+`;
+
+exports[`LocalizedLink renders link to homepage correctly 1`] = `
+<div>
+  <a
+    href="/"
+    hreflang="en"
+  />
+</div>
+`;
+
+exports[`LocalizedLink renders link to homepage correctly 2`] = `
+<div>
+  <a
+    href="/en/"
+    hreflang="en"
+  />
+</div>
+`;
+
+exports[`LocalizedLink renders link to homepage correctly 3`] = `
+<div>
+  <a
+    href="en"
+    hreflang="en"
+  />
+</div>
+`;
+
+exports[`LocalizedLink renders link to homepage correctly 4`] = `
+<div>
+  <a
+    href="/"
+    hreflang="en"
+  />
+</div>
+`;
