@@ -1,4 +1,6 @@
 module.exports = {
+  errorOnDeprecated: true,
+  testEnvironment: "jsdom",
   transform: {
     "^.+\\.jsx?$": `<rootDir>/__mocks__/jest-preprocess.js`,
   },
