@@ -9,7 +9,7 @@ import {
 
 import React from "react";
 import PropTypes from "prop-types";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import LocalizedLink from "../LocalizedLink";
 import { useImages } from "../../hooks/use-images";

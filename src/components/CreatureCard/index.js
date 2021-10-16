@@ -13,7 +13,7 @@ import {
 
 import React from "react";
 import PropTypes from "prop-types";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { Wikipedia } from "@styled-icons/boxicons-logos/Wikipedia";
 
 import useTranslations from "../../i18n/translations/useTranslations";

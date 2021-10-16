@@ -12,10 +12,11 @@
   ],
   "scripts": {
     "build": "gatsby build && yarn test",
+    "clean-build": "gatsby clean && yarn build",
     "test": "jest",
     "develop": "gatsby develop",
     "build-serve": "gatsby build && gatsby serve",
-    "start": "npm run develop",
+    "start": "yarn develop",
     "deploy": "gatsby build && jest && gh-pages -d public -b master --remote upstream --message \"New release\"",
     "forestry:preview": "gatsby develop -p 8080 -H 0.0.0.0",
     "prettier": "prettier --write src/**/*.{md,css,scss,yaml,yml,ts,js,jsx}",

@@ -1,6 +1,6 @@
 import "../styles/404.scss";
 import React from "react";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 import { notFound } from "../i18n/navigation";
 
 const NotFound = ({ location }) => {
@@ -12,7 +12,7 @@ const NotFound = ({ location }) => {
 
   return (
     <>
-      <SEO title="404: Not found" />
+      <Seo title="404: Not found" />
       <h1>
         404
         <span role="img" aria-label="Emoji: face screaming in fear">

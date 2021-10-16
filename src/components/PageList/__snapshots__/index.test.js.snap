@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageList renders correct props for en 1`] = `
+<div>
+  <section
+    class="pageList"
+  >
+    <a
+      class="creaturePage__link"
+      href="undefined/creatures//"
+      hreflang="en"
+    >
+      <section
+        class="creaturePage"
+      >
+        <div
+          class="creaturePage__content"
+        >
+          <h3
+            class="creaturePage__title"
+          >
+            My Title
+          </h3>
+          <p
+            class="creaturePage__description"
+          >
+            test description
+          </p>
+        </div>
+      </section>
+    </a>
+  </section>
+</div>
+`;
+
+exports[`PageList renders correct props for ru 1`] = `
+<div>
+  <section
+    class="pageList"
+  >
+    <a
+      class="creaturePage__link"
+      href="undefined/существа//"
+      hreflang="ru"
+    >
+      <section
+        class="creaturePage"
+      >
+        <div
+          class="creaturePage__content"
+        >
+          <h3
+            class="creaturePage__title"
+          >
+            My Title
+          </h3>
+          <p
+            class="creaturePage__description"
+          >
+            test description
+          </p>
+        </div>
+      </section>
+    </a>
+  </section>
+</div>
+`;
+
+exports[`PageList renders correct props for uk 1`] = `
+<div>
+  <section
+    class="pageList"
+  >
+    <a
+      class="creaturePage__link"
+      href="undefined/істоти//"
+      hreflang="uk"
+    >
+      <section
+        class="creaturePage"
+      >
+        <div
+          class="creaturePage__content"
+        >
+          <h3
+            class="creaturePage__title"
+          >
+            My Title
+          </h3>
+          <p
+            class="creaturePage__description"
+          >
+            test description
+          </p>
+        </div>
+      </section>
+    </a>
+  </section>
+</div>
+`;
