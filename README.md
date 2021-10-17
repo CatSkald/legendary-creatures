@@ -31,8 +31,7 @@
 
 ### Debug
 
-- If using [![Visual Studio Code](https://img.shields.io/badge/VSCode-007ACC?logo=visual-studio-code)](https://code.visualstudio.com/): set setting `Auto Attach: On`
-- Run: `node --nolazy --inspect-brk node_modules/gatsby/dist/bin/gatsby develop`
+The `launch.json` contains the setup for [![Visual Studio Code](https://img.shields.io/badge/VSCode-007ACC?logo=visual-studio-code)](https://code.visualstudio.com/). Just run the app (`yarn develop`) and choose `Debug in Chrome` from the debug menu.
 
 ### Local URLs
 

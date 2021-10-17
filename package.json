@@ -14,7 +14,7 @@
     "build": "gatsby build && yarn test",
     "clean-build": "gatsby clean && yarn build",
     "test": "jest",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop --open",
     "build-serve": "gatsby build && gatsby serve",
     "start": "yarn develop",
     "deploy": "gatsby build && jest && gh-pages -d public -b master --remote upstream --message \"New release\"",
