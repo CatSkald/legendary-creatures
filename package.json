@@ -1,7 +1,7 @@
 {
   "name": "catskald-legendary-creatures",
   "private": true,
-  "description": "Legendary Creatures and Fabulous Beasts website",
+  "description": "Legendary Creatures and Fabulous Beasts",
   "author": "CatSkald",
   "version": "1.0.0",
   "license": "MIT",
@@ -13,9 +13,9 @@
   "scripts": {
     "build": "gatsby build && yarn test",
     "clean-build": "gatsby clean && yarn build",
-    "deploy": "gatsby build && jest && gh-pages -d public -b master --remote upstream --message \"New release\"",
+    "deploy": "gatsby build && jest && gh-pages --dist public --branch master --remote upstream --message \"New release\"",
     "develop": "gatsby develop --open",
-    "forestry:preview": "gatsby develop -p 8080 -H 0.0.0.0",
+    "forestry:preview": "gatsby develop --port 8080",
     "lint": "eslint src/**/*.{js,jsx}",
     "prettier": "prettier --write src/**/*.{md,css,scss,yaml,yml,ts,js,jsx}",
     "serve": "gatsby build && gatsby serve",
