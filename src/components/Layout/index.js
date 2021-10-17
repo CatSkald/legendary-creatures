@@ -24,7 +24,7 @@ const Layout = (props) => {
     switchColorTheme(!isDarkColorTheme);
     storage.store(
       storage.keys.theme,
-      !isDarkColorTheme ? storage.keys.themes.dark : storage.keys.themes.light,
+      isDarkColorTheme ? storage.keys.themes.dark : storage.keys.themes.light,
     );
   }
 
