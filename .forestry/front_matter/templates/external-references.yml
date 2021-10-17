@@ -1,4 +1,21 @@
 ---
 label: External References
 hide_body: true
-fields: []
+fields:
+- name: references
+  type: field_group_list
+  fields:
+  - name: reference
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Reference
+  config:
+    min: 
+    max: 
+    labelField: reference
+  label: References
