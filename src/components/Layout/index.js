@@ -10,22 +10,19 @@ import {
 import React from "react";
 import Header from "../Header";
 import Footer from "../Footer";
-import storage from "../../utils/local-storage-helpers";
+import { loadUserSettings } from "../../utils/user-settings-helpers";
 
 const LocaleContext = React.createContext();
 
 const Layout = (props) => {
-  var userSettings = storage.getUserSettings();
+  var userSettings = loadUserSettings();
   const [isDarkColorTheme, switchColorTheme] = React.useState(
     userSettings.isDarkColorTheme,
   );
 
   function handleToggleColorTheme() {
-    switchColorTheme(!isDarkColorTheme);
-    storage.store(
-      storage.keys.theme,
-      !isDarkColorTheme ? storage.keys.themes.dark : storage.keys.themes.light,
-    );
+    userSettings.toggleTheme();
+    switchColorTheme(userSettings.isDarkColorTheme);
   }
 
   return (

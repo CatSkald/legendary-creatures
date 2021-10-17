@@ -13,14 +13,14 @@
   "scripts": {
     "build": "gatsby build && yarn test",
     "clean-build": "gatsby clean && yarn build",
-    "test": "jest",
-    "develop": "gatsby develop --open",
-    "build-serve": "gatsby build && gatsby serve",
-    "start": "yarn develop",
     "deploy": "gatsby build && jest && gh-pages -d public -b master --remote upstream --message \"New release\"",
+    "develop": "gatsby develop --open",
     "forestry:preview": "gatsby develop -p 8080 -H 0.0.0.0",
+    "lint": "eslint src/**/*.{js,jsx}",
     "prettier": "prettier --write src/**/*.{md,css,scss,yaml,yml,ts,js,jsx}",
-    "lint": "eslint src/**/*.{js,jsx}"
+    "serve": "gatsby build && gatsby serve",
+    "start": "yarn develop",
+    "test": "jest"
   },
   "dependencies": {
     "@types/react": "^17.0.30",
