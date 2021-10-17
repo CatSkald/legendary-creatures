@@ -263,6 +263,8 @@ fields:
   label: Поширення
   description: Згідно до вірувань, чи є істота єдиною (унікальною), рідкісною, чи
     поширеним видом?
+  config:
+    labelField: value
 - name: habitat
   type: field_group_list
   fields:
