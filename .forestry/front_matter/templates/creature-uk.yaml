@@ -93,6 +93,8 @@ fields:
   default: []
   label: Таксономія
   description: Типи та різновиди істоти
+  config:
+    labelField: value
 - name: shapeshifting
   type: field_group_list
   fields:
@@ -113,6 +115,8 @@ fields:
   default: []
   label: Іпостасі та форми
   description: Здатність змінювати подобу
+  config:
+    labelField: value
 - name: voice
   type: field_group_list
   fields:
@@ -133,6 +137,8 @@ fields:
   default: []
   label: Голос
   description: Голос
+  config:
+    labelField: value
 - name: character
   type: field_group_list
   fields:
@@ -153,6 +159,8 @@ fields:
   default: []
   label: Характер
   description: Характер
+  config:
+    labelField: value
 - name: appearance
   type: field_group_list
   fields:
@@ -173,6 +181,8 @@ fields:
   default: []
   label: Зовнішність
   description: Зовнішність
+  config:
+    labelField: value
 - name: clothes
   type: field_group_list
   fields:
@@ -193,6 +203,8 @@ fields:
   default: []
   label: Одяг
   description: Одяг
+  config:
+    labelField: value
 - name: paraphernalia
   type: field_group_list
   fields:
@@ -213,6 +225,8 @@ fields:
   default: []
   label: Атрибутика
   description: Атрибутика
+  config:
+    labelField: value
 - name: origin
   type: field_group_list
   fields:
@@ -233,6 +247,8 @@ fields:
   default: []
   label: Походження
   description: Країни або райони походження істоти.
+  config:
+    labelField: value
 - name: number
   type: field_group_list
   fields:
@@ -285,6 +301,8 @@ fields:
   default: []
   label: Ареал
   description: Тип середовища в якому зазвичай живе істота.
+  config:
+    labelField: value
 - name: activityTime
   type: field_group_list
   fields:
@@ -301,12 +319,14 @@ fields:
       - нерегулярний
       - північ
       - полудень
+      - цілодобово
       source:
         type: simple
         section: 
         file: 
         path: 
     label: Значення
+    default: нерегулярний
   - name: comment
     type: text
     label: Необов’язковий коментар
@@ -318,5 +338,7 @@ fields:
       або відхиляється від більшості джерел
   label: Спосіб життя (час активності)
   description: Коли істота активна
+  config:
+    labelField: value
 pages:
 - creatures/блуд.uk.md
