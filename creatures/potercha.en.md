@@ -3,16 +3,17 @@ taxonomy:
 - value: demon
 - value: spirit
 - value: undead
-activityTime:
+activityTime: 
 voice:
 - value: croaking
   comment: sounds like a frog-like croaking
 appearance:
 - value: childlike
-clothes:
+clothes: 
 paraphernalia:
 - value: nightlight
-  comment: a small lamp used to lure people into a trap, the origin of will-o'-the-wisp or ignis fatuus
+  comment: a small lamp used to lure people into a trap, the origin of will-o'-the-wisp
+    or ignis fatuus
 origin:
 - value: Ukraine
 number:
@@ -21,7 +22,7 @@ habitat:
 - value: lake
 - value: wetland
   comment: swamp, marsh, bog, fen
-date: 2020-02-22T10:54:12Z
+date: 2020-02-22T10:54:12.000+00:00
 title: Potercha
 names:
 - name: потерча́
@@ -37,7 +38,7 @@ names:
   plural: потерчуки́
   language: Ukrainian
 description: A small demon or undead, formed from the soul of a deceased child
-image: ''
+image: "/assets/images/night-g7d4fb2ad6_1920.jpg"
 wikipedia: 
 related: []
 id: 4ef8e1739cf344109bdbf04efbce101a
@@ -57,3 +58,7 @@ From Ukrainian «потеряти» (poteriaty) or «потирати» (potyrat
 * Myling (Sweden)
 * Utburd (Norway)
 * Drekavac, Дрекавац (Southern Slavs: Serbia, Croatia, Bosnia and Herzegovina, Montenegro)
+
+## External Links
+
+* Image by <a href="[https://pixabay.com/users/yuri_b-2216431/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3078326](https://pixabay.com/users/yuri_b-2216431/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3078326 "https://pixabay.com/users/yuri_b-2216431/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3078326")">Yuri_B</a> from <a href="[https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3078326](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3078326 "https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3078326")">Pixabay</a>

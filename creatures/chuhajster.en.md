@@ -92,7 +92,7 @@ names:
   origin: Zakarpattia region, Ukraine
   language: Ukrainian
 description: Forest tutelary deity
-image: ''
+image: "/assets/images/horror-g31891560d_1920.jpg"
 wikipedia: https://en.wikipedia.org/wiki/Chuhaister
 related:
 - creatures/mavka.en.md
@@ -107,22 +107,23 @@ Data about chuhajster is contradictive. Reports about chuhajster are somewhat si
 
 ### Skills, habits, functions
 
-- Prevents growth of the population of forest spirits-pests (by hunting them).
-- According to one tale, can tear off his own leg and cut wood with it.
-- Runs very fast, even when moving on one leg
-- Can create hail: freezes a lake, grind the ice into pieces, lift them in the sky and forwards wherever he wants.
-- Can control animals: a wolf and a fox brought him water; a bear attacked a human by his order.
-- Невразливий: neither human nor animal can harm him
-- According to some beliefs chuhajster has his own household or farm
-- Smokes tobacco, can ask passers-by to share their tobacco.
-- According to one of the versions, chuhajster appeared when a man was cursed by a wizard or the god.
-- Helps people lost in woods.
-- Greets people he meets, asks them not to be afraid.
-- Likes to warm, chatter and smoke tabacco at the human camp fire in the forest.
-- Is afraid of an axe.
-- Teaches craft. Translation of notes by Ukrainian entographer Stepan Pushyk:
+* Prevents growth of the population of forest spirits-pests (by hunting them).
+* According to one tale, can tear off his own leg and cut wood with it.
+* Runs very fast, even when moving on one leg
+* Can create hail: freezes a lake, grind the ice into pieces, lift them in the sky and forwards wherever he wants.
+* Can control animals: a wolf and a fox brought him water; a bear attacked a human by his order.
+* Невразливий: neither human nor animal can harm him
+* According to some beliefs chuhajster has his own household or farm
+* Smokes tobacco, can ask passers-by to share their tobacco.
+* According to one of the versions, chuhajster appeared when a man was cursed by a wizard or the god.
+* Helps people lost in woods.
+* Greets people he meets, asks them not to be afraid.
+* Likes to warm, chatter and smoke tabacco at the human camp fire in the forest.
+* Is afraid of an axe.
+* Teaches craft. Translation of notes by Ukrainian entographer Stepan Pushyk:
+
 > When some craftsman had not succeeded in some work, then Chuhajster tought how to do it. Chuhajster had given people every talent!
-> [Original] Коли якомусь майстрові не вдалася робота, то Чугайстер поучував, як треба зробити. Чугайстер усякий дар людям дав!
+> \[Original\] Коли якомусь майстрові не вдалася робота, то Чугайстер поучував, як треба зробити. Чугайстер усякий дар людям дав!
 
 ### Feeding and hunting
 
@@ -143,11 +144,11 @@ Sleeps curled up in a dense thichet, in dry leaves and branches. Also can sleep,
 
 ### How to know that a chuhajster is nearby
 
-- strong wind
-- strong rain
-- thunder
-- hail
-- unusual (unnormal?) movement of the Moon in the sky
+* strong wind
+* strong rain
+* thunder
+* hail
+* unusual (unnormal?) movement of the Moon in the sky
 
 ## Classification
 
@@ -158,10 +159,11 @@ The origin of the word «chuhajster» is not exactly known. Scientists suggest f
 Ukrainian linguist Bronislaw Kobylanskii suggested that both the character and its name originated from the South-Western dialects of Ukrainian language when hermits from Moldavian and Bukovinian monsteries appeared in Carpathian forests in XVII—XVIII centuries.
 
 The word part «chuha-» can originate from the Proto-Slavic «čuga» («watch», «sentry»):
-- «chuha» («чу́га») - a cossac guard tower or pole wrapped in straw that is set on fire to warn about the approaching enemies
-- «chuha» («чу́га»), «chuhanja» («чуганя»), «hunja» («гуня») - traditional ethnic woolen otwear of Gutsuls
-- «chuhylo» («чугило») - a hole made in stone by running water
-- «chuha» («чу́га») - scarecrow (in the dialect spoken in Negostyna village)
+
+* «chuha» («чу́га») - a cossac guard tower or pole wrapped in straw that is set on fire to warn about the approaching enemies
+* «chuha» («чу́га»), «chuhanja» («чуганя»), «hunja» («гуня») - traditional ethnic woolen otwear of Gutsuls
+* «chuhylo» («чугило») - a hole made in stone by running water
+* «chuha» («чу́га») - scarecrow (in the dialect spoken in Negostyna village)
 
 Значення «-(a)jster» is not clear. Might be related to the dialect name for a stork «hajster» («гайстер»).
 
@@ -181,7 +183,12 @@ Others mention that he does not like and even despises people. Except the ones w
 ## Sources
 
 In Ukrainian:
-- Гнатюк Володимир. Знадоби до української демонольоґії. Том ІІ. Випуск 1 // Етноґрафічний збірник. / Видає Етноґрафічна комісія Наукового товариства імени Шевченка. — Львів, 1912. — Том ХХХІІІ
-- Онищук Антін. Матеріяли до гуцульської демонольоґії // Львів, 1909.  — Т.11
-- Потушняк Федір. Демоны въ народномъ вѣрованіи // Русская Правда. — Ужгород, 1940 — №№ 178—180
-- Пушик Степан. Чугайстер: міфічний персонаж народної поезії Карпат // Народна творчість та етнографія. — 1994
+
+* Гнатюк Володимир. Знадоби до української демонольоґії. Том ІІ. Випуск 1 // Етноґрафічний збірник. / Видає Етноґрафічна комісія Наукового товариства імени Шевченка. — Львів, 1912. — Том ХХХІІІ
+* Онищук Антін. Матеріяли до гуцульської демонольоґії // Львів, 1909.  — Т.11
+* Потушняк Федір. Демоны въ народномъ вѣрованіи // Русская Правда. — Ужгород, 1940 — №№ 178—180
+* Пушик Степан. Чугайстер: міфічний персонаж народної поезії Карпат // Народна творчість та етнографія. — 1994
+
+## External Links
+
+* Image by <a href="[https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2156302](https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2156302 "https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2156302")">Gerd Altmann</a> from <a href="[https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2156302](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2156302 "https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2156302")">Pixabay</a>
