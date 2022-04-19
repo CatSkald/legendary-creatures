@@ -26,7 +26,7 @@
 
 - Build: `yarn build`
 - Run website locally: `yarn develop`
-- Run CMS locally: `yarn build-serve`
+- Run CMS locally: `yarn serve`
 - Deploy: `yarn deploy`
 
 ### Debug

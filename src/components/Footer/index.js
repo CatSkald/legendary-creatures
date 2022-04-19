@@ -24,7 +24,7 @@ const Footer = () => {
     <div className={footer__container}>
       <div className={footer}>
         <div className={footer__author}>
-          <p>{`${translations.footerMoto} © 2020—2021 CatSkald`}</p>
+          <p>{`${translations.footerMoto} © 2020—2022 CatSkald`}</p>
           <SocialLinks />
         </div>
         <div className={footer__menu}>
