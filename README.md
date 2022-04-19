@@ -28,6 +28,8 @@
 - Run website locally: `yarn develop`
 - Run CMS locally: `yarn serve`
 - Deploy: `yarn deploy`
+- Fix vulnerabilities: `npx yarn-audit-fix && yarn dedupe`
+- Upgrade packages: `yarn up "*" "@*/*" && yarn dedupe`
 
 ### Debug
 
