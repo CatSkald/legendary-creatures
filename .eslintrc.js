@@ -13,8 +13,9 @@ module.exports = {
     browser: true,
     node: true,
     es2021: true,
+    "jest/globals": true,
   },
-  plugins: ["react", "prettier"],
+  plugins: ["react", "prettier", "jest"],
   parserOptions: {
     parser: "@babel/eslint-parser",
     ecmaFeatures: {
@@ -26,5 +27,10 @@ module.exports = {
   rules: {
     "react/prop-types": [0],
     "prettier/prettier": "error",
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error",
   },
 };
