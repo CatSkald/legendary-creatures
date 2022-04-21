@@ -24,6 +24,8 @@
   },
   "dependencies": {
     "@types/react": "^18.0.6",
+    "ansi-html": "^0.0.9",
+    "async": "3.2.3",
     "autoprefixer": "^10.4.4",
     "browserslist": "^4.20.2",
     "codemirror": "^5.65.3",
@@ -50,6 +52,7 @@
     "gatsby-transformer-yaml": "^4.12.1",
     "immer": "^9.0.12",
     "lazysizes": "^5.3.2",
+    "node-fetch": "2.6.7",
     "node-sass": "^7.0.1",
     "path-browserify": "^1.0.1",
     "postcss": "^8.4.12",
@@ -84,6 +87,9 @@
     "prettier": "^2.6.2"
   },
   "resolutions": {
-    "immer": "^9.0.12"
+    "ansi-html": "^0.0.9",
+    "async": "^3.2.3",
+    "immer": "^9.0.12",
+    "node-fetch": "^2.6.7"
   }
 }
