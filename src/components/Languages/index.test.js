@@ -2,16 +2,13 @@ import React from "react";
 import { render, fireEvent, screen } from "@testing-library/react";
 import { navigate } from "gatsby";
 
-import languages from "../../i18n/languages";
+import { allLanguages } from "../../../__mocks__/all-languages";
 import Languages from "../Languages";
 import { LocaleContext } from "../Layout";
 
 describe("Languages", () => {
   let localizedLinks = {};
   const handleLanguageSelectedMock = jest.fn();
-  const allLanguages = Object.entries(languages).map(
-    ([lang, langProps]) => langProps,
-  );
   const createLocaleContext = (language) => ({
     language: {
       code: language,

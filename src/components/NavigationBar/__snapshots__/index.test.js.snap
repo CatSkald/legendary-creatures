@@ -1,0 +1,595 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationBar language {
+  name: 'Українська',
+  code: 'uk',
+  path: '/uk',
+  dateFormat: 'DD.MM.YYYY'
+} renders correctly for isActive false 1`] = `
+<div>
+  <nav
+    class="navigationBar "
+  >
+    <a
+      aria-label="Головна"
+      class="navigationBar__link"
+      href="/uk"
+      hreflang="uk"
+    >
+      Головна
+    </a>
+    <a
+      aria-label="Бібліотека істот"
+      class="navigationBar__link"
+      href="/uk/істоти"
+      hreflang="uk"
+    >
+      Бібліотека істот
+    </a>
+    <a
+      aria-label="Мітки"
+      class="navigationBar__link"
+      href="/uk/мітки"
+      hreflang="uk"
+    >
+      Мітки
+    </a>
+    <a
+      aria-label="Про проект"
+      class="navigationBar__link"
+      href="/uk/about"
+      hreflang="uk"
+    >
+      Про проект
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`NavigationBar language {
+  name: 'Українська',
+  code: 'uk',
+  path: '/uk',
+  dateFormat: 'DD.MM.YYYY'
+} renders correctly for isActive true 1`] = `
+<div>
+  <nav
+    class="navigationBar active"
+  >
+    <a
+      aria-label="Головна"
+      class="navigationBar__link"
+      href="/uk"
+      hreflang="uk"
+    >
+      Головна
+    </a>
+    <a
+      aria-label="Бібліотека істот"
+      class="navigationBar__link"
+      href="/uk/істоти"
+      hreflang="uk"
+    >
+      Бібліотека істот
+    </a>
+    <a
+      aria-label="Мітки"
+      class="navigationBar__link"
+      href="/uk/мітки"
+      hreflang="uk"
+    >
+      Мітки
+    </a>
+    <a
+      aria-label="Про проект"
+      class="navigationBar__link"
+      href="/uk/about"
+      hreflang="uk"
+    >
+      Про проект
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`NavigationBar language { name: 'English', code: 'en', path: '', dateFormat: 'DD/MM/YYYY' } renders correctly for isActive false 1`] = `
+<div>
+  <nav
+    class="navigationBar "
+  >
+    <a
+      aria-label="Home"
+      class="navigationBar__link"
+      href="/"
+      hreflang="en"
+    >
+      Home
+    </a>
+    <a
+      aria-label="Creatures"
+      class="navigationBar__link"
+      href="/creatures"
+      hreflang="en"
+    >
+      Creatures
+    </a>
+    <a
+      aria-label="Tags"
+      class="navigationBar__link"
+      href="/tags"
+      hreflang="en"
+    >
+      Tags
+    </a>
+    <a
+      aria-label="About"
+      class="navigationBar__link"
+      href="/about"
+      hreflang="en"
+    >
+      About
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`NavigationBar language { name: 'English', code: 'en', path: '', dateFormat: 'DD/MM/YYYY' } renders correctly for isActive true 1`] = `
+<div>
+  <nav
+    class="navigationBar active"
+  >
+    <a
+      aria-label="Home"
+      class="navigationBar__link"
+      href="/"
+      hreflang="en"
+    >
+      Home
+    </a>
+    <a
+      aria-label="Creatures"
+      class="navigationBar__link"
+      href="/creatures"
+      hreflang="en"
+    >
+      Creatures
+    </a>
+    <a
+      aria-label="Tags"
+      class="navigationBar__link"
+      href="/tags"
+      hreflang="en"
+    >
+      Tags
+    </a>
+    <a
+      aria-label="About"
+      class="navigationBar__link"
+      href="/about"
+      hreflang="en"
+    >
+      About
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`NavigationBar language { name: 'Русский', code: 'ru', path: '/ru', dateFormat: 'DD.MM.YYYY' } renders correctly for isActive false 1`] = `
+<div>
+  <nav
+    class="navigationBar "
+  >
+    <a
+      aria-label="Главная"
+      class="navigationBar__link"
+      href="/ru"
+      hreflang="ru"
+    >
+      Главная
+    </a>
+    <a
+      aria-label="Библиотека существ"
+      class="navigationBar__link"
+      href="/ru/существа"
+      hreflang="ru"
+    >
+      Библиотека существ
+    </a>
+    <a
+      aria-label="Метки"
+      class="navigationBar__link"
+      href="/ru/метки"
+      hreflang="ru"
+    >
+      Метки
+    </a>
+    <a
+      aria-label="О проекте"
+      class="navigationBar__link"
+      href="/ru/about"
+      hreflang="ru"
+    >
+      О проекте
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`NavigationBar language { name: 'Русский', code: 'ru', path: '/ru', dateFormat: 'DD.MM.YYYY' } renders correctly for isActive true 1`] = `
+<div>
+  <nav
+    class="navigationBar active"
+  >
+    <a
+      aria-label="Главная"
+      class="navigationBar__link"
+      href="/ru"
+      hreflang="ru"
+    >
+      Главная
+    </a>
+    <a
+      aria-label="Библиотека существ"
+      class="navigationBar__link"
+      href="/ru/существа"
+      hreflang="ru"
+    >
+      Библиотека существ
+    </a>
+    <a
+      aria-label="Метки"
+      class="navigationBar__link"
+      href="/ru/метки"
+      hreflang="ru"
+    >
+      Метки
+    </a>
+    <a
+      aria-label="О проекте"
+      class="navigationBar__link"
+      href="/ru/about"
+      hreflang="ru"
+    >
+      О проекте
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`NavigationBar renders correctly for isActive false 1`] = `
+<div>
+  <nav
+    class="navigationBar "
+  >
+    <a
+      aria-label="Home"
+      class="navigationBar__link"
+      href="undefined"
+      hreflang="en"
+    >
+      Home
+    </a>
+    <a
+      aria-label="Creatures"
+      class="navigationBar__link"
+      href="undefined/creatures"
+      hreflang="en"
+    >
+      Creatures
+    </a>
+    <a
+      aria-label="Tags"
+      class="navigationBar__link"
+      href="undefined/tags"
+      hreflang="en"
+    >
+      Tags
+    </a>
+    <a
+      aria-label="About"
+      class="navigationBar__link"
+      href="undefined/about"
+      hreflang="en"
+    >
+      About
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`NavigationBar renders correctly for isActive true 1`] = `
+<div>
+  <nav
+    class="navigationBar active"
+  >
+    <a
+      aria-label="Home"
+      class="navigationBar__link"
+      href="undefined"
+      hreflang="en"
+    >
+      Home
+    </a>
+    <a
+      aria-label="Creatures"
+      class="navigationBar__link"
+      href="undefined/creatures"
+      hreflang="en"
+    >
+      Creatures
+    </a>
+    <a
+      aria-label="Tags"
+      class="navigationBar__link"
+      href="undefined/tags"
+      hreflang="en"
+    >
+      Tags
+    </a>
+    <a
+      aria-label="About"
+      class="navigationBar__link"
+      href="undefined/about"
+      hreflang="en"
+    >
+      About
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`NavigationBar renders correctly for language {
+  name: 'Українська',
+  code: 'uk',
+  path: '/uk',
+  dateFormat: 'DD.MM.YYYY'
+} when isActive false 1`] = `
+<div>
+  <nav
+    class="navigationBar "
+  >
+    <a
+      aria-label="Головна"
+      class="navigationBar__link"
+      href="/uk"
+      hreflang="uk"
+    >
+      Головна
+    </a>
+    <a
+      aria-label="Бібліотека істот"
+      class="navigationBar__link"
+      href="/uk/істоти"
+      hreflang="uk"
+    >
+      Бібліотека істот
+    </a>
+    <a
+      aria-label="Мітки"
+      class="navigationBar__link"
+      href="/uk/мітки"
+      hreflang="uk"
+    >
+      Мітки
+    </a>
+    <a
+      aria-label="Про проект"
+      class="navigationBar__link"
+      href="/uk/about"
+      hreflang="uk"
+    >
+      Про проект
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`NavigationBar renders correctly for language {
+  name: 'Українська',
+  code: 'uk',
+  path: '/uk',
+  dateFormat: 'DD.MM.YYYY'
+} when isActive true 1`] = `
+<div>
+  <nav
+    class="navigationBar active"
+  >
+    <a
+      aria-label="Головна"
+      class="navigationBar__link"
+      href="/uk"
+      hreflang="uk"
+    >
+      Головна
+    </a>
+    <a
+      aria-label="Бібліотека істот"
+      class="navigationBar__link"
+      href="/uk/істоти"
+      hreflang="uk"
+    >
+      Бібліотека істот
+    </a>
+    <a
+      aria-label="Мітки"
+      class="navigationBar__link"
+      href="/uk/мітки"
+      hreflang="uk"
+    >
+      Мітки
+    </a>
+    <a
+      aria-label="Про проект"
+      class="navigationBar__link"
+      href="/uk/about"
+      hreflang="uk"
+    >
+      Про проект
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`NavigationBar renders correctly for language { name: 'English', code: 'en', path: '', dateFormat: 'DD/MM/YYYY' } when isActive false 1`] = `
+<div>
+  <nav
+    class="navigationBar "
+  >
+    <a
+      aria-label="Home"
+      class="navigationBar__link"
+      href="/"
+      hreflang="en"
+    >
+      Home
+    </a>
+    <a
+      aria-label="Creatures"
+      class="navigationBar__link"
+      href="/creatures"
+      hreflang="en"
+    >
+      Creatures
+    </a>
+    <a
+      aria-label="Tags"
+      class="navigationBar__link"
+      href="/tags"
+      hreflang="en"
+    >
+      Tags
+    </a>
+    <a
+      aria-label="About"
+      class="navigationBar__link"
+      href="/about"
+      hreflang="en"
+    >
+      About
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`NavigationBar renders correctly for language { name: 'English', code: 'en', path: '', dateFormat: 'DD/MM/YYYY' } when isActive true 1`] = `
+<div>
+  <nav
+    class="navigationBar active"
+  >
+    <a
+      aria-label="Home"
+      class="navigationBar__link"
+      href="/"
+      hreflang="en"
+    >
+      Home
+    </a>
+    <a
+      aria-label="Creatures"
+      class="navigationBar__link"
+      href="/creatures"
+      hreflang="en"
+    >
+      Creatures
+    </a>
+    <a
+      aria-label="Tags"
+      class="navigationBar__link"
+      href="/tags"
+      hreflang="en"
+    >
+      Tags
+    </a>
+    <a
+      aria-label="About"
+      class="navigationBar__link"
+      href="/about"
+      hreflang="en"
+    >
+      About
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`NavigationBar renders correctly for language { name: 'Русский', code: 'ru', path: '/ru', dateFormat: 'DD.MM.YYYY' } when isActive false 1`] = `
+<div>
+  <nav
+    class="navigationBar "
+  >
+    <a
+      aria-label="Главная"
+      class="navigationBar__link"
+      href="/ru"
+      hreflang="ru"
+    >
+      Главная
+    </a>
+    <a
+      aria-label="Библиотека существ"
+      class="navigationBar__link"
+      href="/ru/существа"
+      hreflang="ru"
+    >
+      Библиотека существ
+    </a>
+    <a
+      aria-label="Метки"
+      class="navigationBar__link"
+      href="/ru/метки"
+      hreflang="ru"
+    >
+      Метки
+    </a>
+    <a
+      aria-label="О проекте"
+      class="navigationBar__link"
+      href="/ru/about"
+      hreflang="ru"
+    >
+      О проекте
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`NavigationBar renders correctly for language { name: 'Русский', code: 'ru', path: '/ru', dateFormat: 'DD.MM.YYYY' } when isActive true 1`] = `
+<div>
+  <nav
+    class="navigationBar active"
+  >
+    <a
+      aria-label="Главная"
+      class="navigationBar__link"
+      href="/ru"
+      hreflang="ru"
+    >
+      Главная
+    </a>
+    <a
+      aria-label="Библиотека существ"
+      class="navigationBar__link"
+      href="/ru/существа"
+      hreflang="ru"
+    >
+      Библиотека существ
+    </a>
+    <a
+      aria-label="Метки"
+      class="navigationBar__link"
+      href="/ru/метки"
+      hreflang="ru"
+    >
+      Метки
+    </a>
+    <a
+      aria-label="О проекте"
+      class="navigationBar__link"
+      href="/ru/about"
+      hreflang="ru"
+    >
+      О проекте
+    </a>
+  </nav>
+</div>
+`;
