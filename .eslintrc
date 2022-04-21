@@ -19,5 +19,5 @@
     "react/prop-types": [0],
     "prettier/prettier": "error"
   },
-  "parser": "babel-eslint"
+  "parser": "@babel/eslint-parser"
 }
