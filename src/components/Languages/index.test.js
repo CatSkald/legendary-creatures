@@ -1,6 +1,5 @@
 import React from "react";
 import { render, fireEvent, screen } from "@testing-library/react";
-import each from "jest-each";
 import { navigate } from "gatsby";
 
 import languages from "../../i18n/languages";
@@ -25,7 +24,7 @@ describe("Languages", () => {
     localizedLinks = {};
   });
 
-  it("renders correctly when not active", () => {
+  test("renders correctly when not active", () => {
     const { container } = render(
       <LocaleContext.Provider value={createLocaleContext("en")}>
         <Languages
@@ -38,7 +37,7 @@ describe("Languages", () => {
     expect(container).toMatchSnapshot();
   });
 
-  each(allLanguages).it("renders correctly with %s active", (language) => {
+  test.each(allLanguages)("renders correctly with %s active", (language) => {
     const { container } = render(
       <LocaleContext.Provider value={createLocaleContext(language.code)}>
         <Languages
@@ -51,7 +50,7 @@ describe("Languages", () => {
     expect(container).toMatchSnapshot();
   });
 
-  each(allLanguages).describe("click %s", (language) => {
+  describe.each(allLanguages)("click %s", (language) => {
     describe("when active", () => {
       beforeEach(() => {
         //render with current language active in context
@@ -65,13 +64,13 @@ describe("Languages", () => {
         );
       });
 
-      it("does not navigate", () => {
+      test("does not navigate", () => {
         fireEvent.click(screen.getByText(language.name));
 
         expect(navigate).not.toHaveBeenCalled();
       });
 
-      it("calls handleLanguageSelected", () => {
+      test("calls handleLanguageSelected", () => {
         fireEvent.click(screen.getByText(language.name));
 
         expect(handleLanguageSelectedMock).toHaveBeenCalledTimes(1);
@@ -92,13 +91,13 @@ describe("Languages", () => {
         );
       });
 
-      it("calls handleLanguageSelected", () => {
+      test("calls handleLanguageSelected", () => {
         fireEvent.click(screen.getByText(language.name));
 
         expect(handleLanguageSelectedMock).toHaveBeenCalledTimes(1);
       });
 
-      it("navigates to localized path", () => {
+      test("navigates to localized path", () => {
         const localizedPath = "/localized-path";
         localizedLinks[language.code] = { path: localizedPath };
 

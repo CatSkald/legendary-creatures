@@ -1,7 +1,6 @@
 import React from "react";
 import * as Gatsby from "gatsby";
 import { render } from "@testing-library/react";
-import each from "jest-each";
 
 import { LocaleContext } from "../Layout";
 import PageList from "../PageList";
@@ -31,7 +30,7 @@ describe("PageList", () => {
     },
   });
 
-  each(["en", "uk", "ru"]).it(
+  test.each(["en", "uk", "ru"])(
     "renders correct props for %s",
     (languageCode) => {
       const useStaticQuery = jest.spyOn(Gatsby, "useStaticQuery");

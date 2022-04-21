@@ -6133,7 +6133,6 @@ __metadata:
     immer: ^9.0.12
     jest: ^27.5.1
     jest-chain: ^1.1.5
-    jest-each: ^27.5.1
     lazysizes: ^5.3.2
     lodash: 4.17.21
     node-fetch: 2.6.7

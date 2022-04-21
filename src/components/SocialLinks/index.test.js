@@ -4,7 +4,7 @@ import { render } from "@testing-library/react";
 import SocialLinks from "../SocialLinks";
 
 describe("SocialLinks", () => {
-  it("renders correctly", () => {
+  test("renders correctly", () => {
     const { container } = render(<SocialLinks />);
     expect(container).toMatchSnapshot();
   });
