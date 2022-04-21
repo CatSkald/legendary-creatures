@@ -48,6 +48,7 @@
     "gatsby-transformer-remark": "^5.12.1",
     "gatsby-transformer-sharp": "^4.12.1",
     "gatsby-transformer-yaml": "^4.12.1",
+    "immer": "^9.0.12",
     "lazysizes": "^5.3.2",
     "node-sass": "^7.0.1",
     "path-browserify": "^1.0.1",
@@ -81,5 +82,8 @@
     "jest-chain": "^1.1.5",
     "jest-each": "^27.5.1",
     "prettier": "^2.6.2"
+  },
+  "resolutions": {
+    "immer": "^9.0.12"
   }
 }
