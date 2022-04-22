@@ -6457,6 +6457,7 @@ __metadata:
     eslint-loader: ^4.0.2
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-react: ^7.29.4
+    eslint-webpack-plugin: ^3.1.1
     gatsby: ^4.12.1
     gatsby-cli: ^4.12.1
     gatsby-image: ^3.11.0
@@ -8873,6 +8874,22 @@ __metadata:
     eslint: ^7.0.0 || ^8.0.0
     webpack: ^4.0.0 || ^5.0.0
   checksum: 1f3c944f85b7473eb0a2d4b72e2ef90680ca9413419caf152d5864162e3b88d4aa9fbabaceef7d842124b3e5b3cc0d5e63f9f9c8efe6a15086347e739be711e2
+  languageName: node
+  linkType: hard
+
+"eslint-webpack-plugin@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "eslint-webpack-plugin@npm:3.1.1"
+  dependencies:
+    "@types/eslint": ^7.28.2
+    jest-worker: ^27.3.1
+    micromatch: ^4.0.4
+    normalize-path: ^3.0.0
+    schema-utils: ^3.1.1
+  peerDependencies:
+    eslint: ^7.0.0 || ^8.0.0
+    webpack: ^5.0.0
+  checksum: 4ff3f3fc8f03a187792f783513c3f4274221623d5f5c16ca90542c1b781fd04ed646ab6043caa55a51a654d5ab2c7039677faedee8bfb526d1310edc3909cbd2
   languageName: node
   linkType: hard
 
