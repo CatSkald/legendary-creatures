@@ -87,7 +87,6 @@
     "gh-pages": "^3.2.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
-    "jest-chain": "^1.1.5",
     "prettier": "^2.6.2"
   },
   "resolutions": {
