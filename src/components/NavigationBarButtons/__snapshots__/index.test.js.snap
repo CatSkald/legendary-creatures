@@ -5,108 +5,6 @@ exports[`NavigationBarButtons renders correctly for language {
   code: 'uk',
   path: '/uk',
   dateFormat: 'DD.MM.YYYY'
-} when isActive false 1`] = `
-<div>
-  <ul
-    class="navigationBarButtons"
-  >
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        class="navigationBarButtons__language "
-        title="Change language"
-      >
-        Українська
-      </span>
-    </li>
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__light"
-        role="img"
-        title="Switch color theme"
-      />
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`NavigationBarButtons renders correctly for language {
-  name: 'Українська',
-  code: 'uk',
-  path: '/uk',
-  dateFormat: 'DD.MM.YYYY'
-} when isActive true 1`] = `
-<div>
-  <ul
-    class="navigationBarButtons"
-  >
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        class="navigationBarButtons__language active"
-        title="Change language"
-      >
-        Українська
-      </span>
-    </li>
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__dark"
-        role="img"
-        title="Switch color theme"
-      />
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`NavigationBarButtons renders correctly for language {
-  name: 'Українська',
-  code: 'uk',
-  path: '/uk',
-  dateFormat: 'DD.MM.YYYY'
-} when isDarkColorTheme false and isLanguageSelectionActive %s 1`] = `
-<div>
-  <ul
-    class="navigationBarButtons"
-  >
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        class="navigationBarButtons__language "
-        title="Change language"
-      >
-        Українська
-      </span>
-    </li>
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__light"
-        role="img"
-        title="Switch color theme"
-      />
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`NavigationBarButtons renders correctly for language {
-  name: 'Українська',
-  code: 'uk',
-  path: '/uk',
-  dateFormat: 'DD.MM.YYYY'
 } when isDarkColorTheme false and isLanguageSelectionActive false 1`] = `
 <div>
   <ul
@@ -162,40 +60,6 @@ exports[`NavigationBarButtons renders correctly for language {
       <span
         aria-label="Change website color theme"
         class="navigationBarButtons__theme navigationBarButtons__theme__light"
-        role="img"
-        title="Switch color theme"
-      />
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`NavigationBarButtons renders correctly for language {
-  name: 'Українська',
-  code: 'uk',
-  path: '/uk',
-  dateFormat: 'DD.MM.YYYY'
-} when isDarkColorTheme true and isLanguageSelectionActive %s 1`] = `
-<div>
-  <ul
-    class="navigationBarButtons"
-  >
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        class="navigationBarButtons__language active"
-        title="Change language"
-      >
-        Українська
-      </span>
-    </li>
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__dark"
         role="img"
         title="Switch color theme"
       />
@@ -272,93 +136,6 @@ exports[`NavigationBarButtons renders correctly for language {
 </div>
 `;
 
-exports[`NavigationBarButtons renders correctly for language { name: 'English', code: 'en', path: '', dateFormat: 'DD/MM/YYYY' } when isActive false 1`] = `
-<div>
-  <ul
-    class="navigationBarButtons"
-  >
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        class="navigationBarButtons__language "
-        title="Change language"
-      >
-        English
-      </span>
-    </li>
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__light"
-        role="img"
-        title="Switch color theme"
-      />
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`NavigationBarButtons renders correctly for language { name: 'English', code: 'en', path: '', dateFormat: 'DD/MM/YYYY' } when isActive true 1`] = `
-<div>
-  <ul
-    class="navigationBarButtons"
-  >
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        class="navigationBarButtons__language active"
-        title="Change language"
-      >
-        English
-      </span>
-    </li>
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__dark"
-        role="img"
-        title="Switch color theme"
-      />
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`NavigationBarButtons renders correctly for language { name: 'English', code: 'en', path: '', dateFormat: 'DD/MM/YYYY' } when isDarkColorTheme false and isLanguageSelectionActive %s 1`] = `
-<div>
-  <ul
-    class="navigationBarButtons"
-  >
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        class="navigationBarButtons__language "
-        title="Change language"
-      >
-        English
-      </span>
-    </li>
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__light"
-        role="img"
-        title="Switch color theme"
-      />
-    </li>
-  </ul>
-</div>
-`;
-
 exports[`NavigationBarButtons renders correctly for language { name: 'English', code: 'en', path: '', dateFormat: 'DD/MM/YYYY' } when isDarkColorTheme false and isLanguageSelectionActive false 1`] = `
 <div>
   <ul
@@ -409,35 +186,6 @@ exports[`NavigationBarButtons renders correctly for language { name: 'English', 
       <span
         aria-label="Change website color theme"
         class="navigationBarButtons__theme navigationBarButtons__theme__light"
-        role="img"
-        title="Switch color theme"
-      />
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`NavigationBarButtons renders correctly for language { name: 'English', code: 'en', path: '', dateFormat: 'DD/MM/YYYY' } when isDarkColorTheme true and isLanguageSelectionActive %s 1`] = `
-<div>
-  <ul
-    class="navigationBarButtons"
-  >
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        class="navigationBarButtons__language active"
-        title="Change language"
-      >
-        English
-      </span>
-    </li>
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__dark"
         role="img"
         title="Switch color theme"
       />
@@ -504,93 +252,6 @@ exports[`NavigationBarButtons renders correctly for language { name: 'English', 
 </div>
 `;
 
-exports[`NavigationBarButtons renders correctly for language { name: 'Русский', code: 'ru', path: '/ru', dateFormat: 'DD.MM.YYYY' } when isActive false 1`] = `
-<div>
-  <ul
-    class="navigationBarButtons"
-  >
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        class="navigationBarButtons__language "
-        title="Change language"
-      >
-        Русский
-      </span>
-    </li>
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__light"
-        role="img"
-        title="Switch color theme"
-      />
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`NavigationBarButtons renders correctly for language { name: 'Русский', code: 'ru', path: '/ru', dateFormat: 'DD.MM.YYYY' } when isActive true 1`] = `
-<div>
-  <ul
-    class="navigationBarButtons"
-  >
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        class="navigationBarButtons__language active"
-        title="Change language"
-      >
-        Русский
-      </span>
-    </li>
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__dark"
-        role="img"
-        title="Switch color theme"
-      />
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`NavigationBarButtons renders correctly for language { name: 'Русский', code: 'ru', path: '/ru', dateFormat: 'DD.MM.YYYY' } when isDarkColorTheme false and isLanguageSelectionActive %s 1`] = `
-<div>
-  <ul
-    class="navigationBarButtons"
-  >
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        class="navigationBarButtons__language "
-        title="Change language"
-      >
-        Русский
-      </span>
-    </li>
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__light"
-        role="img"
-        title="Switch color theme"
-      />
-    </li>
-  </ul>
-</div>
-`;
-
 exports[`NavigationBarButtons renders correctly for language { name: 'Русский', code: 'ru', path: '/ru', dateFormat: 'DD.MM.YYYY' } when isDarkColorTheme false and isLanguageSelectionActive false 1`] = `
 <div>
   <ul
@@ -641,35 +302,6 @@ exports[`NavigationBarButtons renders correctly for language { name: 'Русск
       <span
         aria-label="Change website color theme"
         class="navigationBarButtons__theme navigationBarButtons__theme__light"
-        role="img"
-        title="Switch color theme"
-      />
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`NavigationBarButtons renders correctly for language { name: 'Русский', code: 'ru', path: '/ru', dateFormat: 'DD.MM.YYYY' } when isDarkColorTheme true and isLanguageSelectionActive %s 1`] = `
-<div>
-  <ul
-    class="navigationBarButtons"
-  >
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        class="navigationBarButtons__language active"
-        title="Change language"
-      >
-        Русский
-      </span>
-    </li>
-    <li
-      class="navigationBarButtons__button"
-    >
-      <span
-        aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__dark"
         role="img"
         title="Switch color theme"
       />
