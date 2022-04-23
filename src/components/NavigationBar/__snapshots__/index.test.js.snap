@@ -45,7 +45,7 @@ exports[`NavigationBar renders correctly for language {
     <a
       aria-label="Пошук"
       class="navigationBar__link"
-      href="/uk/пошук"
+      href="/uk/search"
       hreflang="uk"
     >
       Пошук
@@ -99,7 +99,7 @@ exports[`NavigationBar renders correctly for language {
     <a
       aria-label="Пошук"
       class="navigationBar__link"
-      href="/uk/пошук"
+      href="/uk/search"
       hreflang="uk"
     >
       Пошук
@@ -246,7 +246,7 @@ exports[`NavigationBar renders correctly for language { name: 'Русский', 
     <a
       aria-label="Поиск"
       class="navigationBar__link"
-      href="/ru/поиск"
+      href="/ru/search"
       hreflang="ru"
     >
       Поиск
@@ -295,7 +295,7 @@ exports[`NavigationBar renders correctly for language { name: 'Русский', 
     <a
       aria-label="Поиск"
       class="navigationBar__link"
-      href="/ru/поиск"
+      href="/ru/search"
       hreflang="ru"
     >
       Поиск
