@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TagList renders correctly 1`] = `
+<div>
+  <section
+    class="tagList"
+  >
+    <div
+      class="tagList__item"
+    >
+      <a
+        class="tagList__tag"
+        href="undefined/tags#tag1"
+        hreflang="en"
+      >
+        tag 1
+      </a>
+      <br />
+      <a
+        class="tagList__value"
+        href="undefined/search/tag1/value1"
+        hreflang="en"
+      >
+        value1
+      </a>
+      <a
+        class="tagList__value"
+        href="undefined/search/tag1/value2"
+        hreflang="en"
+      >
+        value2
+      </a>
+      <br />
+    </div>
+    <div
+      class="tagList__item"
+    >
+      <a
+        class="tagList__tag"
+        href="undefined/tags#tag2"
+        hreflang="en"
+      >
+        tag 2
+      </a>
+      <br />
+      <a
+        class="tagList__value"
+        href="undefined/search/tag2/value3"
+        hreflang="en"
+      >
+        value3
+      </a>
+      <br />
+    </div>
+    <div
+      class="tagList__item"
+    >
+      <a
+        class="tagList__tag"
+        href="undefined/tags#tag3"
+        hreflang="en"
+      >
+        tag 3
+      </a>
+      <br />
+      <br />
+    </div>
+  </section>
+  ,
+</div>
+`;

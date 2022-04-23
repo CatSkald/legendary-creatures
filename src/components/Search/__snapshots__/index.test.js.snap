@@ -3,6 +3,7 @@
 exports[`Search renders correctly 1`] = `
 <div>
   <label>
+    Search using
      
     Search Me
     :
@@ -15,6 +16,8 @@ exports[`Search renders correctly 1`] = `
   <a
     class="searchButton"
     href="https://localhost/?q="
-  />
+  >
+    Search
+  </a>
 </div>
 `;

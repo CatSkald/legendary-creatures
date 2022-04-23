@@ -10,10 +10,8 @@ mockWindowLocation();
 jest.mock("../../i18n/translations/useTranslations");
 
 useTranslations.mockImplementation(() => ({
-  useTranslations: () => ({
-    SearchUsing: () => "Search using",
-    Search: () => "Search",
-  }),
+  SearchUsing: "Search using",
+  Search: "Search",
 }));
 
 describe("Search", () => {

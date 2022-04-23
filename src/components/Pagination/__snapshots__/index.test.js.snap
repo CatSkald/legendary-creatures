@@ -9,6 +9,7 @@ exports[`Pagination renders correctly 1`] = `
     <p>
       1
        
+      of
        
       1
     </p>
@@ -27,6 +28,7 @@ exports[`Pagination renders correctly 2`] = `
     <p>
       1
        
+      of
        
       2
     </p>
@@ -35,6 +37,7 @@ exports[`Pagination renders correctly 2`] = `
         href="/a"
         hreflang="en"
       >
+        Next
          →
       </a>
     </p>
@@ -54,11 +57,13 @@ exports[`Pagination renders correctly 3`] = `
         hreflang="en"
       >
         ← 
+        Previous
       </a>
     </p>
     <p>
       2
        
+      of
        
       2
     </p>
@@ -79,11 +84,13 @@ exports[`Pagination renders correctly 4`] = `
         hreflang="en"
       >
         ← 
+        Previous
       </a>
     </p>
     <p>
       2
        
+      of
        
       3
     </p>
@@ -92,6 +99,7 @@ exports[`Pagination renders correctly 4`] = `
         href="/d"
         hreflang="en"
       >
+        Next
          →
       </a>
     </p>
