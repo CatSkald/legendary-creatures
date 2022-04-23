@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination renders correctly 1`] = `
+<div>
+  <div
+    class="pagination"
+  >
+    <p />
+    <p>
+      1
+       
+       
+      1
+    </p>
+    <p />
+  </div>
+  ,
+</div>
+`;
+
+exports[`Pagination renders correctly 2`] = `
+<div>
+  <div
+    class="pagination"
+  >
+    <p />
+    <p>
+      1
+       
+       
+      2
+    </p>
+    <p>
+      <a
+        href="/a"
+        hreflang="en"
+      >
+         →
+      </a>
+    </p>
+  </div>
+  ,
+</div>
+`;
+
+exports[`Pagination renders correctly 3`] = `
+<div>
+  <div
+    class="pagination"
+  >
+    <p>
+      <a
+        href="/b"
+        hreflang="en"
+      >
+        ← 
+      </a>
+    </p>
+    <p>
+      2
+       
+       
+      2
+    </p>
+    <p />
+  </div>
+  ,
+</div>
+`;
+
+exports[`Pagination renders correctly 4`] = `
+<div>
+  <div
+    class="pagination"
+  >
+    <p>
+      <a
+        href="/c"
+        hreflang="en"
+      >
+        ← 
+      </a>
+    </p>
+    <p>
+      2
+       
+       
+      3
+    </p>
+    <p>
+      <a
+        href="/d"
+        hreflang="en"
+      >
+         →
+      </a>
+    </p>
+  </div>
+  ,
+</div>
+`;
