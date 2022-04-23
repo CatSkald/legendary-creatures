@@ -17,8 +17,8 @@ const Footer = () => {
   const translations = useTranslations();
   const { language } = React.useContext(LocaleContext);
   var menuItems = Object.entries(pages)
-    .filter(([page, data]) => data.type === "footer")
-    .map(([page, data]) => data[language.code]);
+    .filter(([, data]) => data.type === "footer")
+    .map(([, data]) => data[language.code]);
 
   return (
     <div className={footer__container}>
