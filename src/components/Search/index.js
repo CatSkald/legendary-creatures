@@ -13,7 +13,7 @@ const Search = ({ searchEngine, queryTemplate }) => {
     createSearchQuery(""),
   );
 
-  const handleOnKeyDown = (e) => {
+  const handleOnKeyPress = (e) => {
     if (searchQuery && e.key === "Enter") {
       window.location.assign(searchQuery);
       return false;
@@ -31,7 +31,7 @@ const Search = ({ searchEngine, queryTemplate }) => {
           onChange={(e) =>
             onChangeSearchQuery(createSearchQuery(e.target.value))
           }
-          onKeyPress={handleOnKeyDown}
+          onKeyPress={handleOnKeyPress}
         />
       </label>
       <a className={searchButton} href={searchQuery}>

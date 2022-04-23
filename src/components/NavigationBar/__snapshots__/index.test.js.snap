@@ -11,6 +11,7 @@ exports[`NavigationBar renders correctly for language {
     class="navigationBar "
   >
     <a
+      activeclassname="active"
       aria-label="Головна"
       class="navigationBar__link"
       href="/uk"
@@ -19,6 +20,7 @@ exports[`NavigationBar renders correctly for language {
       Головна
     </a>
     <a
+      activeclassname="active"
       aria-label="Бібліотека істот"
       class="navigationBar__link"
       href="/uk/істоти"
@@ -27,6 +29,7 @@ exports[`NavigationBar renders correctly for language {
       Бібліотека істот
     </a>
     <a
+      activeclassname="active"
       aria-label="Мітки"
       class="navigationBar__link"
       href="/uk/мітки"
@@ -35,6 +38,7 @@ exports[`NavigationBar renders correctly for language {
       Мітки
     </a>
     <a
+      activeclassname="active"
       aria-label="Про проект"
       class="navigationBar__link"
       href="/uk/about"
@@ -43,6 +47,7 @@ exports[`NavigationBar renders correctly for language {
       Про проект
     </a>
     <a
+      activeclassname="active"
       aria-label="Пошук"
       class="navigationBar__link"
       href="/uk/search"
@@ -65,6 +70,7 @@ exports[`NavigationBar renders correctly for language {
     class="navigationBar active"
   >
     <a
+      activeclassname="active"
       aria-label="Головна"
       class="navigationBar__link"
       href="/uk"
@@ -73,6 +79,7 @@ exports[`NavigationBar renders correctly for language {
       Головна
     </a>
     <a
+      activeclassname="active"
       aria-label="Бібліотека істот"
       class="navigationBar__link"
       href="/uk/істоти"
@@ -81,6 +88,7 @@ exports[`NavigationBar renders correctly for language {
       Бібліотека істот
     </a>
     <a
+      activeclassname="active"
       aria-label="Мітки"
       class="navigationBar__link"
       href="/uk/мітки"
@@ -89,6 +97,7 @@ exports[`NavigationBar renders correctly for language {
       Мітки
     </a>
     <a
+      activeclassname="active"
       aria-label="Про проект"
       class="navigationBar__link"
       href="/uk/about"
@@ -97,6 +106,7 @@ exports[`NavigationBar renders correctly for language {
       Про проект
     </a>
     <a
+      activeclassname="active"
       aria-label="Пошук"
       class="navigationBar__link"
       href="/uk/search"
@@ -114,6 +124,7 @@ exports[`NavigationBar renders correctly for language { name: 'English', code: '
     class="navigationBar "
   >
     <a
+      activeclassname="active"
       aria-label="Home"
       class="navigationBar__link"
       href="/"
@@ -122,6 +133,7 @@ exports[`NavigationBar renders correctly for language { name: 'English', code: '
       Home
     </a>
     <a
+      activeclassname="active"
       aria-label="Creatures"
       class="navigationBar__link"
       href="/creatures"
@@ -130,6 +142,7 @@ exports[`NavigationBar renders correctly for language { name: 'English', code: '
       Creatures
     </a>
     <a
+      activeclassname="active"
       aria-label="Tags"
       class="navigationBar__link"
       href="/tags"
@@ -138,6 +151,7 @@ exports[`NavigationBar renders correctly for language { name: 'English', code: '
       Tags
     </a>
     <a
+      activeclassname="active"
       aria-label="About"
       class="navigationBar__link"
       href="/about"
@@ -146,6 +160,7 @@ exports[`NavigationBar renders correctly for language { name: 'English', code: '
       About
     </a>
     <a
+      activeclassname="active"
       aria-label="Search"
       class="navigationBar__link"
       href="/search"
@@ -163,6 +178,7 @@ exports[`NavigationBar renders correctly for language { name: 'English', code: '
     class="navigationBar active"
   >
     <a
+      activeclassname="active"
       aria-label="Home"
       class="navigationBar__link"
       href="/"
@@ -171,6 +187,7 @@ exports[`NavigationBar renders correctly for language { name: 'English', code: '
       Home
     </a>
     <a
+      activeclassname="active"
       aria-label="Creatures"
       class="navigationBar__link"
       href="/creatures"
@@ -179,6 +196,7 @@ exports[`NavigationBar renders correctly for language { name: 'English', code: '
       Creatures
     </a>
     <a
+      activeclassname="active"
       aria-label="Tags"
       class="navigationBar__link"
       href="/tags"
@@ -187,6 +205,7 @@ exports[`NavigationBar renders correctly for language { name: 'English', code: '
       Tags
     </a>
     <a
+      activeclassname="active"
       aria-label="About"
       class="navigationBar__link"
       href="/about"
@@ -195,6 +214,7 @@ exports[`NavigationBar renders correctly for language { name: 'English', code: '
       About
     </a>
     <a
+      activeclassname="active"
       aria-label="Search"
       class="navigationBar__link"
       href="/search"
@@ -212,6 +232,7 @@ exports[`NavigationBar renders correctly for language { name: 'Русский', 
     class="navigationBar "
   >
     <a
+      activeclassname="active"
       aria-label="Главная"
       class="navigationBar__link"
       href="/ru"
@@ -220,6 +241,7 @@ exports[`NavigationBar renders correctly for language { name: 'Русский', 
       Главная
     </a>
     <a
+      activeclassname="active"
       aria-label="Библиотека существ"
       class="navigationBar__link"
       href="/ru/существа"
@@ -228,6 +250,7 @@ exports[`NavigationBar renders correctly for language { name: 'Русский', 
       Библиотека существ
     </a>
     <a
+      activeclassname="active"
       aria-label="Метки"
       class="navigationBar__link"
       href="/ru/метки"
@@ -236,6 +259,7 @@ exports[`NavigationBar renders correctly for language { name: 'Русский', 
       Метки
     </a>
     <a
+      activeclassname="active"
       aria-label="О проекте"
       class="navigationBar__link"
       href="/ru/about"
@@ -244,6 +268,7 @@ exports[`NavigationBar renders correctly for language { name: 'Русский', 
       О проекте
     </a>
     <a
+      activeclassname="active"
       aria-label="Поиск"
       class="navigationBar__link"
       href="/ru/search"
@@ -261,6 +286,7 @@ exports[`NavigationBar renders correctly for language { name: 'Русский', 
     class="navigationBar active"
   >
     <a
+      activeclassname="active"
       aria-label="Главная"
       class="navigationBar__link"
       href="/ru"
@@ -269,6 +295,7 @@ exports[`NavigationBar renders correctly for language { name: 'Русский', 
       Главная
     </a>
     <a
+      activeclassname="active"
       aria-label="Библиотека существ"
       class="navigationBar__link"
       href="/ru/существа"
@@ -277,6 +304,7 @@ exports[`NavigationBar renders correctly for language { name: 'Русский', 
       Библиотека существ
     </a>
     <a
+      activeclassname="active"
       aria-label="Метки"
       class="navigationBar__link"
       href="/ru/метки"
@@ -285,6 +313,7 @@ exports[`NavigationBar renders correctly for language { name: 'Русский', 
       Метки
     </a>
     <a
+      activeclassname="active"
       aria-label="О проекте"
       class="navigationBar__link"
       href="/ru/about"
@@ -293,6 +322,7 @@ exports[`NavigationBar renders correctly for language { name: 'Русский', 
       О проекте
     </a>
     <a
+      activeclassname="active"
       aria-label="Поиск"
       class="navigationBar__link"
       href="/ru/search"
