@@ -5,10 +5,8 @@ import { LocaleContext } from "../Layout";
 import TagList from "../TagList";
 import useTranslations from "../../i18n/translations/useTranslations";
 
-import { mockWindowLocation } from "../../../__mocks__/window-location-mock";
 import { allLanguages } from "../../../__mocks__/all-languages";
 
-mockWindowLocation();
 jest.mock("../../i18n/translations/useTranslations");
 
 useTranslations.mockImplementation(() => ({
@@ -26,7 +24,7 @@ describe("TagList", () => {
     };
     const { container } = render(
       <LocaleContext.Provider value={{ language }}>
-        <TagList tags={tags} />,
+        <TagList tags={tags} />
       </LocaleContext.Provider>,
     );
     expect(container).toMatchSnapshot();

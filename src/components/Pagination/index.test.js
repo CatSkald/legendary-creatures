@@ -5,9 +5,6 @@ import { LocaleContext } from "../Layout";
 import Pagination from "../Pagination";
 import useTranslations from "../../i18n/translations/useTranslations";
 
-import { mockWindowLocation } from "../../../__mocks__/window-location-mock";
-
-mockWindowLocation();
 jest.mock("../../i18n/translations/useTranslations");
 
 useTranslations.mockImplementation(() => ({
@@ -32,7 +29,6 @@ describe("Pagination", () => {
           prevPage={prevPage}
           nextPage={nextPage}
         />
-        ,
       </LocaleContext.Provider>,
     );
     expect(container).toMatchSnapshot();

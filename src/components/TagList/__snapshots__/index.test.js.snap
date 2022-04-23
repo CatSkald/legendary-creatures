@@ -71,7 +71,6 @@ exports[`TagList renders correctly for language {
       <br />
     </div>
   </section>
-  ,
 </div>
 `;
 
@@ -141,7 +140,6 @@ exports[`TagList renders correctly for language { name: 'English', code: 'en', p
       <br />
     </div>
   </section>
-  ,
 </div>
 `;
 
@@ -211,6 +209,5 @@ exports[`TagList renders correctly for language { name: 'Русский', code: 
       <br />
     </div>
   </section>
-  ,
 </div>
 `;

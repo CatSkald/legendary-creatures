@@ -15,7 +15,6 @@ exports[`Pagination renders correctly 1`] = `
     </p>
     <p />
   </div>
-  ,
 </div>
 `;
 
@@ -42,7 +41,6 @@ exports[`Pagination renders correctly 2`] = `
       </a>
     </p>
   </div>
-  ,
 </div>
 `;
 
@@ -69,7 +67,6 @@ exports[`Pagination renders correctly 3`] = `
     </p>
     <p />
   </div>
-  ,
 </div>
 `;
 
@@ -104,6 +101,5 @@ exports[`Pagination renders correctly 4`] = `
       </a>
     </p>
   </div>
-  ,
 </div>
 `;
