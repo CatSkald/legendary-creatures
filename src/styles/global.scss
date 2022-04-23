@@ -157,6 +157,15 @@ a {
   }
 }
 
+input {
+  border: solid;
+  border-width: 0.1rem;
+  border-color: var(--card-bg);
+  background-color: var(--card-bg);
+  color: var(--content-text);
+  padding: calc(var(--space-sm) * 0.6);
+}
+
 hr {
   height: 2px;
   padding: 0;

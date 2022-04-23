@@ -10,6 +10,7 @@ of: из
 View: Просмотреть
 all: все
 orSearchBy: или искать по
+SearchUsing: Искать c помощью
 tags: меткам
 All: Все
 Home: Главная
@@ -20,6 +21,7 @@ Tags: Метки
 plural: мн. ч.
 CreaturesPageTitle: Библиотека существ
 TagsPageTitle: Метки
+Search: Поиск
 related: связанные существа #non-breaking space
 #tags
 origin: происхождение

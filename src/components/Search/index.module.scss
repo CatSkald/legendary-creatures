@@ -1,0 +1,23 @@
+.searchButton {
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: var(--space);
+  padding: var(--space-sm);
+  border: solid;
+  border-width: 0.1rem;
+  border-color: var(--card-bg);
+  color: var(--content-link);
+  &:hover {
+    color: var(--content-link-hover);
+    border-color: var(--content-link-hover);
+  }
+}
+
+.searchInput {
+  margin-left: var(--space);
+  height: 40;
+  margin: 12;
+  border-width: 1;
+  padding: 10;
+}

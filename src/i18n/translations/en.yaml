@@ -10,6 +10,7 @@ of: of
 View: View
 all: all
 orSearchBy: or search by
+SearchUsing: Search using
 tags: tags
 All: All
 Home: Home
@@ -20,6 +21,7 @@ Tags: Tags
 plural: plural
 CreaturesPageTitle: Compendium
 TagsPageTitle: Tags
+Search: Search
 related: related creatures #non-breaking space
 #tags
 origin: origin

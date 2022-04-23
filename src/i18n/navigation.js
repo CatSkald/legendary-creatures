@@ -77,15 +77,16 @@ module.exports = {
       uk: { title: "Мітки", path: "/мітки" },
       type: "menu",
     },
-    search: {
-      en: { title: "", path: "/search" },
-      ru: { title: "", path: "/поиск" },
-      uk: { title: "", path: "/пошук" },
-    },
     about: {
       en: { title: "About", path: "/about" },
       ru: { title: "О проекте", path: "/about" },
       uk: { title: "Про проект", path: "/about" },
+      type: "menu",
+    },
+    search: {
+      en: { title: "Search", path: "/search" },
+      ru: { title: "Поиск", path: "/search" },
+      uk: { title: "Пошук", path: "/search" },
       type: "menu",
     },
     terms: {

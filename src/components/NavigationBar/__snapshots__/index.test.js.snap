@@ -42,6 +42,14 @@ exports[`NavigationBar renders correctly for language {
     >
       Про проект
     </a>
+    <a
+      aria-label="Пошук"
+      class="navigationBar__link"
+      href="/uk/пошук"
+      hreflang="uk"
+    >
+      Пошук
+    </a>
   </nav>
 </div>
 `;
@@ -88,6 +96,14 @@ exports[`NavigationBar renders correctly for language {
     >
       Про проект
     </a>
+    <a
+      aria-label="Пошук"
+      class="navigationBar__link"
+      href="/uk/пошук"
+      hreflang="uk"
+    >
+      Пошук
+    </a>
   </nav>
 </div>
 `;
@@ -128,6 +144,14 @@ exports[`NavigationBar renders correctly for language { name: 'English', code: '
       hreflang="en"
     >
       About
+    </a>
+    <a
+      aria-label="Search"
+      class="navigationBar__link"
+      href="/search"
+      hreflang="en"
+    >
+      Search
     </a>
   </nav>
 </div>
@@ -170,6 +194,14 @@ exports[`NavigationBar renders correctly for language { name: 'English', code: '
     >
       About
     </a>
+    <a
+      aria-label="Search"
+      class="navigationBar__link"
+      href="/search"
+      hreflang="en"
+    >
+      Search
+    </a>
   </nav>
 </div>
 `;
@@ -211,6 +243,14 @@ exports[`NavigationBar renders correctly for language { name: 'Русский', 
     >
       О проекте
     </a>
+    <a
+      aria-label="Поиск"
+      class="navigationBar__link"
+      href="/ru/поиск"
+      hreflang="ru"
+    >
+      Поиск
+    </a>
   </nav>
 </div>
 `;
@@ -251,6 +291,14 @@ exports[`NavigationBar renders correctly for language { name: 'Русский', 
       hreflang="ru"
     >
       О проекте
+    </a>
+    <a
+      aria-label="Поиск"
+      class="navigationBar__link"
+      href="/ru/поиск"
+      hreflang="ru"
+    >
+      Поиск
     </a>
   </nav>
 </div>

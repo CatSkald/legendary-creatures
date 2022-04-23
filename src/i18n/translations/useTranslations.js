@@ -34,6 +34,7 @@ const queryTranslations = graphql`
             View
             all
             orSearchBy
+            SearchUsing
             tags
             All
             Home
@@ -44,6 +45,7 @@ const queryTranslations = graphql`
             plural
             CreaturesPageTitle
             TagsPageTitle
+            Search
             related
             origin
             taxonomy

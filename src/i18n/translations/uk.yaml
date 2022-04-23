@@ -10,6 +10,7 @@ of: з
 View: Переглянути
 all: всі
 orSearchBy: або шукати за
+SearchUsing: Шукати за допомогою
 tags: мітками
 All: Все
 Home: Головна
@@ -20,6 +21,7 @@ Tags: Мітки
 plural: мн.
 CreaturesPageTitle: Бібліотека істот
 TagsPageTitle: Мітки
+Search: Пошук
 related: пов’язані істоти #non-breaking space
 #tags
 origin: походження
