@@ -42,5 +42,5 @@ module.exports = {
       { skipComments: true, skipTemplates: true },
     ],
   },
-  ignorePatterns: ["public/*", ".cache/*", "/node_modules/*"],
+  ignorePatterns: ["public/", ".cache/", "node_modules/"],
 };
