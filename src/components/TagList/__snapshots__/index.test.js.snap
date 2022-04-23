@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TagList renders correctly 1`] = `
+exports[`TagList renders correctly for language {
+  name: 'Українська',
+  code: 'uk',
+  path: '/uk',
+  dateFormat: 'DD.MM.YYYY'
+} 1`] = `
 <div>
   <section
     class="tagList"
@@ -10,7 +15,77 @@ exports[`TagList renders correctly 1`] = `
     >
       <a
         class="tagList__tag"
-        href="undefined/tags#tag1"
+        href="/uk/мітки#tag1"
+        hreflang="uk"
+      >
+        tag 1
+      </a>
+      <br />
+      <a
+        class="tagList__value"
+        href="/uk/search/tag1/value1"
+        hreflang="uk"
+      >
+        value1
+      </a>
+      <a
+        class="tagList__value"
+        href="/uk/search/tag1/value2"
+        hreflang="uk"
+      >
+        value2
+      </a>
+      <br />
+    </div>
+    <div
+      class="tagList__item"
+    >
+      <a
+        class="tagList__tag"
+        href="/uk/мітки#tag2"
+        hreflang="uk"
+      >
+        tag 2
+      </a>
+      <br />
+      <a
+        class="tagList__value"
+        href="/uk/search/tag2/value3"
+        hreflang="uk"
+      >
+        value3
+      </a>
+      <br />
+    </div>
+    <div
+      class="tagList__item"
+    >
+      <a
+        class="tagList__tag"
+        href="/uk/мітки#tag3"
+        hreflang="uk"
+      >
+        tag 3
+      </a>
+      <br />
+      <br />
+    </div>
+  </section>
+  ,
+</div>
+`;
+
+exports[`TagList renders correctly for language { name: 'English', code: 'en', path: '', dateFormat: 'DD/MM/YYYY' } 1`] = `
+<div>
+  <section
+    class="tagList"
+  >
+    <div
+      class="tagList__item"
+    >
+      <a
+        class="tagList__tag"
+        href="/tags#tag1"
         hreflang="en"
       >
         tag 1
@@ -18,14 +93,14 @@ exports[`TagList renders correctly 1`] = `
       <br />
       <a
         class="tagList__value"
-        href="undefined/search/tag1/value1"
+        href="/search/tag1/value1"
         hreflang="en"
       >
         value1
       </a>
       <a
         class="tagList__value"
-        href="undefined/search/tag1/value2"
+        href="/search/tag1/value2"
         hreflang="en"
       >
         value2
@@ -37,7 +112,7 @@ exports[`TagList renders correctly 1`] = `
     >
       <a
         class="tagList__tag"
-        href="undefined/tags#tag2"
+        href="/tags#tag2"
         hreflang="en"
       >
         tag 2
@@ -45,7 +120,7 @@ exports[`TagList renders correctly 1`] = `
       <br />
       <a
         class="tagList__value"
-        href="undefined/search/tag2/value3"
+        href="/search/tag2/value3"
         hreflang="en"
       >
         value3
@@ -57,8 +132,78 @@ exports[`TagList renders correctly 1`] = `
     >
       <a
         class="tagList__tag"
-        href="undefined/tags#tag3"
+        href="/tags#tag3"
         hreflang="en"
+      >
+        tag 3
+      </a>
+      <br />
+      <br />
+    </div>
+  </section>
+  ,
+</div>
+`;
+
+exports[`TagList renders correctly for language { name: 'Русский', code: 'ru', path: '/ru', dateFormat: 'DD.MM.YYYY' } 1`] = `
+<div>
+  <section
+    class="tagList"
+  >
+    <div
+      class="tagList__item"
+    >
+      <a
+        class="tagList__tag"
+        href="/ru/метки#tag1"
+        hreflang="ru"
+      >
+        tag 1
+      </a>
+      <br />
+      <a
+        class="tagList__value"
+        href="/ru/search/tag1/value1"
+        hreflang="ru"
+      >
+        value1
+      </a>
+      <a
+        class="tagList__value"
+        href="/ru/search/tag1/value2"
+        hreflang="ru"
+      >
+        value2
+      </a>
+      <br />
+    </div>
+    <div
+      class="tagList__item"
+    >
+      <a
+        class="tagList__tag"
+        href="/ru/метки#tag2"
+        hreflang="ru"
+      >
+        tag 2
+      </a>
+      <br />
+      <a
+        class="tagList__value"
+        href="/ru/search/tag2/value3"
+        hreflang="ru"
+      >
+        value3
+      </a>
+      <br />
+    </div>
+    <div
+      class="tagList__item"
+    >
+      <a
+        class="tagList__tag"
+        href="/ru/метки#tag3"
+        hreflang="ru"
       >
         tag 3
       </a>

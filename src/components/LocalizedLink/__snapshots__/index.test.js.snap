@@ -11,25 +11,12 @@ exports[`LocalizedLink renders correct props 1`] = `
 </div>
 `;
 
-exports[`LocalizedLink renders correctly for path  and code ru 1`] = `
-<div>
-  <a
-    href="my-url"
-    hreflang="ru"
-  />
-</div>
-`;
-
-exports[`LocalizedLink renders correctly for path / and code en 1`] = `
-<div>
-  <a
-    href="/my-url"
-    hreflang="en"
-  />
-</div>
-`;
-
-exports[`LocalizedLink renders correctly for path /uk/ and code uk 1`] = `
+exports[`LocalizedLink renders correctly for language {
+  name: 'Українська',
+  code: 'uk',
+  path: '/uk',
+  dateFormat: 'DD.MM.YYYY'
+} 1`] = `
 <div>
   <a
     href="/uk/my-url"
@@ -38,7 +25,25 @@ exports[`LocalizedLink renders correctly for path /uk/ and code uk 1`] = `
 </div>
 `;
 
-exports[`LocalizedLink renders link to homepage correctly 1`] = `
+exports[`LocalizedLink renders correctly for language { name: 'English', code: 'en', path: '', dateFormat: 'DD/MM/YYYY' } 1`] = `
+<div>
+  <a
+    href="/my-url"
+    hreflang="en"
+  />
+</div>
+`;
+
+exports[`LocalizedLink renders correctly for language { name: 'Русский', code: 'ru', path: '/ru', dateFormat: 'DD.MM.YYYY' } 1`] = `
+<div>
+  <a
+    href="/ru/my-url"
+    hreflang="ru"
+  />
+</div>
+`;
+
+exports[`LocalizedLink renders link to homepage correctly for path  1`] = `
 <div>
   <a
     href="/"
@@ -47,7 +52,16 @@ exports[`LocalizedLink renders link to homepage correctly 1`] = `
 </div>
 `;
 
-exports[`LocalizedLink renders link to homepage correctly 2`] = `
+exports[`LocalizedLink renders link to homepage correctly for path / 1`] = `
+<div>
+  <a
+    href="/"
+    hreflang="en"
+  />
+</div>
+`;
+
+exports[`LocalizedLink renders link to homepage correctly for path /en/ 1`] = `
 <div>
   <a
     href="/en/"
@@ -56,19 +70,10 @@ exports[`LocalizedLink renders link to homepage correctly 2`] = `
 </div>
 `;
 
-exports[`LocalizedLink renders link to homepage correctly 3`] = `
+exports[`LocalizedLink renders link to homepage correctly for path en 1`] = `
 <div>
   <a
     href="en"
-    hreflang="en"
-  />
-</div>
-`;
-
-exports[`LocalizedLink renders link to homepage correctly 4`] = `
-<div>
-  <a
-    href="/"
     hreflang="en"
   />
 </div>
