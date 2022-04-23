@@ -13,7 +13,7 @@ const SearchContainer = () => {
       <SEO title={translations.Search} />
       <TitlePage text={translations.Search} />
       <Search
-        engine="DuckDuckGo"
+        searchEngine="DuckDuckGo"
         queryTemplate="https://duckduckgo.com/?q=site%3Alegendary-creatures.github.io+"
       />
     </>

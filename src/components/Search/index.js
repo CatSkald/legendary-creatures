@@ -1,9 +1,11 @@
 import { searchInput, searchButton } from "./index.module.scss";
 
 import React from "react";
+import PropTypes from "prop-types";
+
 import useTranslations from "../../i18n/translations/useTranslations";
 
-const Search = ({ engine, queryTemplate }) => {
+const Search = ({ searchEngine, queryTemplate }) => {
   const createSearchQuery = (term) => `${queryTemplate}${term}`;
   const translations = useTranslations();
 
@@ -20,7 +22,7 @@ const Search = ({ engine, queryTemplate }) => {
   return (
     <>
       <label>
-        {translations.SearchUsing} {engine}:
+        {translations.SearchUsing} {searchEngine}:
         <input
           className={searchInput}
           type="search"
@@ -37,6 +39,11 @@ const Search = ({ engine, queryTemplate }) => {
       </a>
     </>
   );
+};
+
+Search.propTypes = {
+  searchEngine: PropTypes.string.isRequired,
+  queryTemplate: PropTypes.string.isRequired,
 };
 
 export default Search;
