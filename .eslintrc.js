@@ -1,3 +1,6 @@
+const rulesDirPlugin = require("eslint-plugin-rulesdir");
+rulesDirPlugin.RULES_DIR = `${__dirname}/node_modules/gatsby/dist/utils/eslint-rules`;
+
 module.exports = {
   extends: [
     "eslint:recommended",
@@ -15,7 +18,7 @@ module.exports = {
     es2021: true,
     "jest/globals": true,
   },
-  plugins: ["react", "prettier", "jest"],
+  plugins: ["rulesdir", "react", "prettier", "jest"],
   parserOptions: {
     parser: "@babel/eslint-parser",
     ecmaFeatures: {
@@ -32,5 +35,12 @@ module.exports = {
     "jest/no-identical-title": "error",
     "jest/prefer-to-have-length": "warn",
     "jest/valid-expect": "error",
+    "rulesdir/no-anonymous-exports-page-templates": "warn",
+    "rulesdir/limited-exports-page-templates": "warn",
+    "no-irregular-whitespace": [
+      "error",
+      { skipComments: true, skipTemplates: true },
+    ],
   },
+  ignorePatterns: ["public/*", ".cache/*", "/node_modules/*"],
 };

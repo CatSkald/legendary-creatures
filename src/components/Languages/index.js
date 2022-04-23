@@ -39,7 +39,7 @@ const Languages = (props) => {
   return (
     <ul className={`${languageMenu} ${props.isActive ? active : ""}`}>
       {Object.entries(languages)
-        .filter(([lang, languageProps]) => !languageProps.hidden)
+        .filter(([, languageProps]) => !languageProps.hidden)
         .map(([lang, languageProps]) => (
           <li className={languageMenu__language} key={lang}>
             <Link

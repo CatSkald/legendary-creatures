@@ -14,8 +14,8 @@ import { pages } from "../../i18n/navigation";
 const NavigationBar = (props) => {
   const { language } = React.useContext(LocaleContext);
   var menuItems = Object.entries(pages)
-    .filter(([page, data]) => data.type === "menu")
-    .map(([page, data]) => data[language.code]);
+    .filter(([, data]) => data.type === "menu")
+    .map(([, data]) => data[language.code]);
 
   return (
     <>

@@ -6457,6 +6457,7 @@ __metadata:
     eslint-loader: ^4.0.2
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-react: ^7.29.4
+    eslint-plugin-rulesdir: ^0.2.1
     eslint-webpack-plugin: ^3.1.1
     gatsby: ^4.12.1
     gatsby-cli: ^4.12.1
@@ -8784,6 +8785,13 @@ __metadata:
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
   checksum: bb7d3715ccd7f3e0d7bfaa2125b26d96865695bcfea4a3d510a5763342a74ab5b99a88e13aad9245f9461ad87e4bce69c33fc946888115d576233f9b6e69700d
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-rulesdir@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "eslint-plugin-rulesdir@npm:0.2.1"
+  checksum: 2bf80915e810a93e19989a8a4ed3bfe4642d31c3c131945954f9f0b0766f7131e3dcfa86bd5390891058e53f257ca65ef1eb988f1f9d992f051b19191f60d618
   languageName: node
   linkType: hard
 
