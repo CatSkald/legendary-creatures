@@ -6147,21 +6147,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:4.14.2":
-  version: 4.14.2
-  resolution: "browserslist@npm:4.14.2"
-  dependencies:
-    caniuse-lite: ^1.0.30001125
-    electron-to-chromium: ^1.3.564
-    escalade: ^3.0.2
-    node-releases: ^1.1.61
-  bin:
-    browserslist: cli.js
-  checksum: 44b5d7a444b867e1f027923f37a8ed537b4403f8a85a35869904e7d3e4071b37459df08d41ab4d425f5191f3125f1c5a191cbff9070f81f4d311803dc0a2fb0f
-  languageName: node
-  linkType: hard
-
-"browserslist@npm:^4.0.0, browserslist@npm:^4.14.5, browserslist@npm:^4.16.3, browserslist@npm:^4.16.6, browserslist@npm:^4.17.5, browserslist@npm:^4.20.2, browserslist@npm:^4.6.6":
+"browserslist@npm:^4.20.2":
   version: 4.20.2
   resolution: "browserslist@npm:4.20.2"
   dependencies:
@@ -6421,7 +6407,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001125, caniuse-lite@npm:^1.0.30001317, caniuse-lite@npm:^1.0.30001332":
+"caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001317, caniuse-lite@npm:^1.0.30001332":
   version: 1.0.30001332
   resolution: "caniuse-lite@npm:1.0.30001332"
   checksum: e54182ea42ab3d2ff1440f9a6480292f7ab23c00c188df7ad65586312e4da567e8bedd5cb5fb8f0ff4193dc027a54e17e0b3c0b6db5d5a3fb61c7726ff9c45b3
@@ -8184,7 +8170,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron-to-chromium@npm:^1.3.564, electron-to-chromium@npm:^1.4.84":
+"electron-to-chromium@npm:^1.4.84":
   version: 1.4.117
   resolution: "electron-to-chromium@npm:1.4.117"
   checksum: 9a0147824b52b25bdac9e6c70f35810f007bf9c55d72e1b646417a7797cf51e6120c585f220728f8de16ad2b033adfd8d92dbb11f43af1ebdcc085427ae57064
@@ -8480,7 +8466,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"escalade@npm:^3.0.2, escalade@npm:^3.1.1":
+"escalade@npm:^3.1.1":
   version: 3.1.1
   resolution: "escalade@npm:3.1.1"
   checksum: a3e2a99f07acb74b3ad4989c48ca0c3140f69f923e56d0cba0526240ee470b91010f9d39001f2a4a313841d237ede70a729e92125191ba5d21e74b106800b133
@@ -15101,13 +15087,6 @@ __metadata:
   version: 2.3.10
   resolution: "node-object-hash@npm:2.3.10"
   checksum: 5d2a80f67810294d352205bfc4823aa6097b06cd5dee6e0fec7e2bc40b55bfe5251e90313046230abe2fd230b8b7c5dcda967243e4136b94971e2630e6c7d0cd
-  languageName: node
-  linkType: hard
-
-"node-releases@npm:^1.1.61":
-  version: 1.1.77
-  resolution: "node-releases@npm:1.1.77"
-  checksum: eb2fcb45310e7d77f82bfdadeca546a698d258e011f15d88ad9a452a5e838a672ec532906581096ca19c66284a788330c3b09227ffc540e67228730f41b9c2e2
   languageName: node
   linkType: hard
 
