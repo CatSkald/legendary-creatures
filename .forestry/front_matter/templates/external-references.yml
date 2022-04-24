@@ -5,6 +5,29 @@ fields:
 - name: references
   type: field_group_list
   fields:
+  - name: extertnal_reference_type
+    type: select
+    default: []
+    config:
+      required: true
+      options:
+      - Wikipedia
+      - Image source
+      - Other
+      - YouTube
+      - IMDB
+      - ISBN
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Extertnal Reference Type
+  - name: external_reference_url
+    type: text
+    config:
+      required: false
+    label: External Reference URL
   - name: reference
     type: textarea
     default: ''
@@ -13,7 +36,7 @@ fields:
       wysiwyg: false
       schema:
         format: markdown
-    label: Reference
+    label: External Reference HTML
   config:
     min: 
     max: 
