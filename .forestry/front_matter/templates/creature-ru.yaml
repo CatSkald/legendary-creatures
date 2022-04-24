@@ -47,6 +47,11 @@ fields:
   type: file
   label: Изображение
   description: Необязательное изображение существа.
+- name: external_references
+  type: include
+  config: {}
+  template: external-references-ru
+  label: External References
 - name: wikipedia
   type: text
   config:

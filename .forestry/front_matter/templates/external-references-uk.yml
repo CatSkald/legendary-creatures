@@ -1,5 +1,5 @@
 ---
-label: External References
+label: Зовнішні посилання
 hide_body: true
 fields:
 - name: references
@@ -7,27 +7,27 @@ fields:
   fields:
   - name: external_reference_type
     type: select
-    default: Image attribution
+    default: Авторство зображення
     config:
       required: true
       options:
-      - Image attribution
+      - Авторство зображення
       - Wikipedia
       - IMDB
       - ISBN
       - YouTube
-      - Other
+      - Інше
       source:
         type: simple
         section: 
         file: 
         path: 
-    label: Type
+    label: Тип посилання
   - name: external_reference_url
     type: text
     config:
       required: false
-    label: Reference as URL
+    label: Посилання як URL
   - name: reference
     type: textarea
     default: ''
@@ -36,9 +36,9 @@ fields:
       wysiwyg: false
       schema:
         format: markdown
-    label: Reference as HTML
+    label: Посилання як HTML
   config:
     min: 
     max: 
     labelField: reference
-  label: References
+  label: Посилання

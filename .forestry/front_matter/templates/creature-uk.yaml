@@ -47,6 +47,10 @@ fields:
   type: file
   label: Зображення
   description: Необов’язкове зображення істоти.
+- name: external_references
+  type: include
+  config: {}
+  template: external-references-uk
 - name: wikipedia
   type: text
   config:
