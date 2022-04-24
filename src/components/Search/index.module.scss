@@ -2,14 +2,16 @@
   border-radius: 3px;
   text-align: center;
   text-decoration: none;
+  font-weight: bold;
   margin-left: var(--space);
   padding: var(--space-sm);
   border: solid;
   border-width: 0.1rem;
   border-color: var(--card-bg);
-  color: var(--content-link);
+  background-color: var(--card-bg);
+  color: var(--card-link);
   &:hover {
-    color: var(--content-link-hover);
+    color: var(--card-link-hover);
     border-color: var(--content-link-hover);
   }
 }

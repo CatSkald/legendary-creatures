@@ -19,15 +19,13 @@
     }
   }
 
-  a,
-  a.anchor svg {
+  a {
     color: var(--content-link);
     font-weight: bold;
     text-decoration: none;
     transition: 0.3s;
 
-    &:hover,
-    &.anchor svg:hover {
+    &:hover {
       color: var(--content-link-hover);
     }
 
@@ -48,6 +46,14 @@
       top: 0;
       left: 0;
       bottom: 0;
+
+      & svg {
+        visibility: visible;
+        color: var(--content-link);
+        &:hover {
+          color: var(--content-link-hover);
+        }
+      }
     }
   }
 

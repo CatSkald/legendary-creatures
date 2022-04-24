@@ -16,12 +16,16 @@
   margin: var(--space) var(--space-sm);
   padding: var(--space-sm);
   font-weight: bold;
+  border: solid;
+  border-width: 0.1rem;
 
+  border-color: var(--card-bg);
   background-color: var(--card-bg);
   color: var(--card-link);
 
   &:hover {
     color: var(--card-link-hover);
+    border-color: var(--content-link-hover);
   }
 }
 

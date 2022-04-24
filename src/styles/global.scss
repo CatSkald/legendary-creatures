@@ -160,8 +160,8 @@ a {
 input {
   border: solid;
   border-width: 0.1rem;
-  border-color: var(--card-bg);
-  background-color: var(--card-bg);
+  border-color: var(--color-feature);
+  background-color: var(--color-background);
   color: var(--content-text);
   padding: calc(var(--space-sm) * 0.6);
 }
@@ -172,10 +172,6 @@ hr {
   margin: 24px 0;
   background-color: var(--content-separator);
   border: 0;
-}
-
-a.anchor svg {
-  visibility: visible;
 }
 
 :root {
