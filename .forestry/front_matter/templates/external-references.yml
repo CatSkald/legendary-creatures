@@ -40,5 +40,5 @@ fields:
   config:
     min: 
     max: 
-    labelField: reference
+    labelField: external_reference_type
   label: References
