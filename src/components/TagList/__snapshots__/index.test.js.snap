@@ -12,6 +12,7 @@ exports[`TagList renders correctly for language {
   >
     <div
       class="tagList__item"
+      id="tag 1"
     >
       <a
         class="tagList__tag"
@@ -39,6 +40,7 @@ exports[`TagList renders correctly for language {
     </div>
     <div
       class="tagList__item"
+      id="tag 2"
     >
       <a
         class="tagList__tag"
@@ -59,6 +61,7 @@ exports[`TagList renders correctly for language {
     </div>
     <div
       class="tagList__item"
+      id="tag 3"
     >
       <a
         class="tagList__tag"
@@ -81,6 +84,7 @@ exports[`TagList renders correctly for language { name: 'English', code: 'en', p
   >
     <div
       class="tagList__item"
+      id="tag 1"
     >
       <a
         class="tagList__tag"
@@ -108,6 +112,7 @@ exports[`TagList renders correctly for language { name: 'English', code: 'en', p
     </div>
     <div
       class="tagList__item"
+      id="tag 2"
     >
       <a
         class="tagList__tag"
@@ -128,6 +133,7 @@ exports[`TagList renders correctly for language { name: 'English', code: 'en', p
     </div>
     <div
       class="tagList__item"
+      id="tag 3"
     >
       <a
         class="tagList__tag"
@@ -150,6 +156,7 @@ exports[`TagList renders correctly for language { name: 'Русский', code: 
   >
     <div
       class="tagList__item"
+      id="tag 1"
     >
       <a
         class="tagList__tag"
@@ -177,6 +184,7 @@ exports[`TagList renders correctly for language { name: 'Русский', code: 
     </div>
     <div
       class="tagList__item"
+      id="tag 2"
     >
       <a
         class="tagList__tag"
@@ -197,6 +205,7 @@ exports[`TagList renders correctly for language { name: 'Русский', code: 
     </div>
     <div
       class="tagList__item"
+      id="tag 3"
     >
       <a
         class="tagList__tag"

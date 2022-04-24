@@ -34,7 +34,12 @@ const Search = ({ searchEngine, queryTemplate }) => {
           onKeyPress={handleOnKeyPress}
         />
       </label>
-      <a className={searchButton} href={searchQuery}>
+      <a
+        className={searchButton}
+        href={searchQuery}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {translations.Search}
       </a>
     </>

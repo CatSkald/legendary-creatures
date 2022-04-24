@@ -16,6 +16,8 @@ exports[`Search renders correctly 1`] = `
   <a
     class="searchButton"
     href="https://localhost/?q="
+    rel="noopener noreferrer"
+    target="_blank"
   >
     Search
   </a>

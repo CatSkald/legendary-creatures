@@ -32,7 +32,7 @@ const TagList = (props) => {
     <section className={tagList}>
       {getSortedTags(props.tags).map(({ tag, values }) => {
         return (
-          <div key={tag} className={tagList__item}>
+          <div key={tag} id={tag} className={tagList__item}>
             <LocalizedLink
               className={tagList__tag}
               to={getTagUrl(tag, language.code)}
