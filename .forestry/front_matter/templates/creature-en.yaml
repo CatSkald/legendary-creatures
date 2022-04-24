@@ -47,6 +47,11 @@ fields:
   type: file
   label: Image
   description: An optional image of the creature.
+- name: external_references
+  type: include
+  config: {}
+  template: external-references
+  label: External References
 - name: wikipedia
   type: text
   config:
@@ -265,6 +270,8 @@ fields:
   label: Distribution
   description: According to beliefs was it a single unique creature, a rare species
     or a common wide-spread kind?
+  config:
+    labelField: value
 - name: habitat
   type: field_group_list
   fields:
@@ -318,8 +325,5 @@ fields:
       common sources
   label: Activity time
   description: When the creature is active
-- name: external_references
-  type: include
-  config: {}
-  template: external-references
-  label: External References
+  config:
+    labelField: value
