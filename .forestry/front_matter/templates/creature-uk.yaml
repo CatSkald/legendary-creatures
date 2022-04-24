@@ -1,5 +1,5 @@
 ---
-label: Creature (Ukrainian)
+label: Створіння (UK)
 hide_body: false
 display_field: title
 fields:
@@ -51,6 +51,7 @@ fields:
   type: include
   config: {}
   template: external-references-uk
+  label: Зовнішні посилання
 - name: wikipedia
   type: text
   config:

@@ -1,5 +1,5 @@
 ---
-label: Creature (Russian)
+label: Существо (RU)
 hide_body: false
 fields:
 - name: title
@@ -51,7 +51,7 @@ fields:
   type: include
   config: {}
   template: external-references-ru
-  label: External References
+  label: Внешние ссылки
 - name: wikipedia
   type: text
   config:
@@ -99,6 +99,8 @@ fields:
   default: []
   label: Таксономия
   description: Таксономия
+  config:
+    labelField: value
 - name: shapeshifting
   type: field_group_list
   fields:
@@ -119,6 +121,8 @@ fields:
   default: []
   label: Ипостаси и формы
   description: Способность менять облик
+  config:
+    labelField: value
 - name: voice
   type: field_group_list
   fields:
@@ -139,6 +143,8 @@ fields:
   default: []
   label: Голос
   description: Голос
+  config:
+    labelField: value
 - name: character
   type: field_group_list
   fields:
@@ -159,6 +165,8 @@ fields:
   default: []
   label: Характер
   description: Характер
+  config:
+    labelField: value
 - name: appearance
   type: field_group_list
   fields:
@@ -179,6 +187,8 @@ fields:
   default: []
   label: Внешность
   description: Внешность
+  config:
+    labelField: value
 - name: clothes
   type: field_group_list
   fields:
@@ -199,6 +209,8 @@ fields:
   default: []
   label: Одежда
   description: Одежда существа или её отсутствие
+  config:
+    labelField: value
 - name: paraphernalia
   type: field_group_list
   fields:
@@ -219,6 +231,8 @@ fields:
   default: []
   label: Атрибутика
   description: Вещи существа
+  config:
+    labelField: value
 - name: origin
   type: field_group_list
   fields:
@@ -239,6 +253,8 @@ fields:
   default: []
   label: Происхождение
   description: Страны или регионы откуда происходит существо.
+  config:
+    labelField: value
 - name: number
   type: field_group_list
   fields:
@@ -269,6 +285,8 @@ fields:
   label: Распространение
   description: Согласно верованиям, является ли существо единственным (уникальным),
     редко встречающимся или широко распространённым видом?
+  config:
+    labelField: value
 - name: habitat
   type: field_group_list
   fields:
@@ -289,6 +307,8 @@ fields:
   default: []
   label: Ареал
   description: Тип среды в которой проживает существо.
+  config:
+    labelField: value
 - name: activityTime
   type: field_group_list
   fields:
@@ -322,3 +342,5 @@ fields:
       или отклоняется от общих источников
   label: Образ жизни (время активности)
   description: Когда существо активно
+  config:
+    labelField: value
