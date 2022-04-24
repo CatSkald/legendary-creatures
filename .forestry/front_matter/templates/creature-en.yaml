@@ -1,5 +1,5 @@
 ---
-label: Creature (English)
+label: Creature (EN)
 hide_body: false
 fields:
 - name: title
@@ -99,6 +99,8 @@ fields:
   default: []
   label: Taxonomy
   description: Kinds and types of the creature
+  config:
+    labelField: value
 - name: shapeshifting
   type: field_group_list
   fields:
@@ -119,6 +121,8 @@ fields:
   default: []
   label: Shapeshifting
   description: Forms to which the creature can transform
+  config:
+    labelField: value
 - name: voice
   type: field_group_list
   fields:
@@ -139,6 +143,8 @@ fields:
   default: []
   label: Voice
   description: Voice
+  config:
+    labelField: value
 - name: character
   type: field_group_list
   fields:
@@ -159,6 +165,8 @@ fields:
   default: []
   label: Character
   description: Character
+  config:
+    labelField: value
 - name: appearance
   type: field_group_list
   fields:
@@ -179,6 +187,8 @@ fields:
   default: []
   label: Appearance
   description: Appearance
+  config:
+    labelField: value
 - name: clothes
   type: field_group_list
   fields:
@@ -199,6 +209,8 @@ fields:
   default: []
   label: Clothes
   description: Clothes
+  config:
+    labelField: value
 - name: paraphernalia
   type: field_group_list
   fields:
@@ -219,6 +231,8 @@ fields:
   default: []
   label: Paraphernalia
   description: Equipment and things belonging to or associated with the creature
+  config:
+    labelField: value
 - name: origin
   type: field_group_list
   fields:
@@ -240,6 +254,8 @@ fields:
   label: Origin
   description: One or more countries or regions where the creature is originating
     from.
+  config:
+    labelField: value
 - name: number
   type: field_group_list
   fields:
@@ -292,6 +308,8 @@ fields:
   default: []
   label: Habitat
   description: The type of environment in which the creature usually lives.
+  config:
+    labelField: value
 - name: activityTime
   type: field_group_list
   fields:
