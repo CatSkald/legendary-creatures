@@ -7,7 +7,7 @@ fields:
   fields:
   - name: extertnal_reference_type
     type: select
-    default: []
+    default: Other
     config:
       required: true
       options:
