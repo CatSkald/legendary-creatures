@@ -112,6 +112,11 @@ export const query = graphql`
         }
         wikipedia
         image
+        external_references {
+          type
+          reference_url
+          reference_html
+        }
       }
       html
     }

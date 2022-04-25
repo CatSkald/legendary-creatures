@@ -50,8 +50,8 @@ fields:
 - name: external_references
   type: include
   config: {}
-  template: external-references
-  label: External References
+  template: external-references-en
+  label: External references
 - name: wikipedia
   type: text
   config:

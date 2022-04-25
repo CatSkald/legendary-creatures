@@ -2,10 +2,10 @@
 label: Внешние ссылки
 hide_body: true
 fields:
-- name: references
+- name: external_references
   type: field_group_list
   fields:
-  - name: external_reference_type
+  - name: type
     type: select
     default: Авторство изображения
     config:
@@ -23,12 +23,12 @@ fields:
         file: 
         path: 
     label: Тип ссылки
-  - name: external_reference_url
+  - name: reference_url
     type: text
     config:
       required: false
     label: Ссылка как URL
-  - name: reference
+  - name: reference_html
     type: textarea
     default: ''
     config:
@@ -40,5 +40,5 @@ fields:
   config:
     min: 
     max: 
-    labelField: external_reference_type
+    labelField: type
   label: Ссылки

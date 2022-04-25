@@ -44,13 +44,14 @@ wikipedia: https://en.wikipedia.org/wiki/Мавка
 related:
 - creatures/chuhajster.en.md
 id: 92f36dc320e54bd99bca752423f66c6c
-references:
-- external_reference_type: Wikipedia
-  external_reference_url: https://en.wikipedia.org/wiki/Мавка
-  reference: ''
-- reference: Image by <a href="https://pixabay.com/users/darksouls1-2189876/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5025497">Enrique
+external_references:
+- type: Wikipedia
+  reference_url: https://en.wikipedia.org/wiki/Мавка
+  reference_html: ''
+- type: Image attribution
+  reference_url: ''
+  reference_html: Image by <a href="https://pixabay.com/users/darksouls1-2189876/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5025497">Enrique
     Meseguer</a> from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5025497">Pixabay</a>
-  external_reference_type: Image attribution
 
 ---
 ## Description
