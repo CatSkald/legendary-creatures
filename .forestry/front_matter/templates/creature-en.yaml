@@ -345,3 +345,11 @@ fields:
   description: When the creature is active
   config:
     labelField: value
+- name: id
+  type: text
+  config:
+    required: true
+  label: Id
+  description: Unique identifier for the page that links translations of the same
+    page in different languages. Use <a href="https://duckduckgo.com/?q=new+guid"
+    title="value generated here" target="_blank">https://duckduckgo.com/?q=new+guid</a>
