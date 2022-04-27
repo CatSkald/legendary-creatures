@@ -344,3 +344,10 @@ fields:
   description: Когда существо активно
   config:
     labelField: value
+- name: id
+  type: text
+  config:
+    required: true
+  label: ID
+  description: Уникальный идентификатор страницы. Используйте <a href="https://duckduckgo.com/?q=new+guid"
+    title="GUID generator" target="_blank">https://duckduckgo.com/?q=new+guid</a>
