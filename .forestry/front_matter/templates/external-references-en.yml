@@ -23,6 +23,15 @@ fields:
         file: 
         path: 
     label: Type
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Description
   - name: reference_url
     type: text
     config:

@@ -110,10 +110,10 @@ export const query = graphql`
           comment
           sometimes
         }
-        wikipedia
         image
         external_references {
           type
+          description
           reference_url
           reference_html
         }

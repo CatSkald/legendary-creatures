@@ -30,10 +30,16 @@ number:
 habitat:
 - value: forest
 - value: garden
-wikipedia: https://en.wikipedia.org/wiki/Dryad
 image: "/assets/images/Pan_e_amadriade,_collez._farnese,_27708.jpg"
 date: 2020-02-02 14:50:00
 id: 8795ec7144bd4a708bb9732e96a27840
+external_references:
+- type: Wikipedia
+  reference_url: https://en.wikipedia.org/wiki/Dryad
+  reference_html: ''
+- type: Image attribution
+  reference_url: ''
+  reference_html: Image "Pan e amadriade" (Pan and Hamadryad) by [Sailko](https://commons.wikimedia.org/wiki/File:Pan_e_amadriade,_collez._farnese,_27708.jpg) under license [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0)
 
 ---
 ## Description
@@ -68,7 +74,3 @@ From the Greek word "δρυς" ("drys") meaning "oak".
 ### Relationships with humans
 
 Dryads help people who grow tree, and can harm those who destroy or harm trees.
-
-## References
-
-* Image "Pan e amadriade" (Pan and Hamadryad) by [Sailko](https://commons.wikimedia.org/wiki/File:Pan_e_amadriade,_collez._farnese,_27708.jpg) under license [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0)

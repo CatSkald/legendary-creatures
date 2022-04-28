@@ -141,9 +141,9 @@ exports.createPages = async ({ graphql, actions }) => {
                 comment
                 sometimes
               }
-              wikipedia
               external_references {
                 type
+                description
                 reference_url
                 reference_html
               }
@@ -314,7 +314,6 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
     map: { type: "String" },
     related: { type: "[String!]" },
     external_references: { type: "[ExternalReference!]" },
-    wikipedia: { type: "String" },
     date: {
       type: "Date",
       extensions: { dateformat: {} },
@@ -350,6 +349,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       name: "ExternalReference",
       fields: {
         type: { type: "String!" },
+        description: { type: "String" },
         reference_url: { type: "String" },
         reference_html: { type: "String" },
       },

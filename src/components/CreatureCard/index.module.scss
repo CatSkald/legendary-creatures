@@ -27,14 +27,16 @@
 .card__buttons {
   border-top: 1px solid var(--card-separator);
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: var(--space-sm);
 
   a {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: inline-block;
+    padding-top: var(--space-sm);
     width: 2em;
     color: var(--content-link);
-
     &:hover {
       color: var(--content-link-hover);
     }

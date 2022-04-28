@@ -93,10 +93,16 @@ names:
   language: Ukrainian
 description: Forest tutelary deity
 image: "/assets/images/horror-g31891560d_1920.jpg"
-wikipedia: https://en.wikipedia.org/wiki/Chuhaister
 related:
 - creatures/mavka.en.md
 id: f183362605a846b2b09e1f0c93316262
+external_references:
+- type: Wikipedia
+  reference_url: https://en.wikipedia.org/wiki/Chuhaister
+  reference_html: ''
+- type: Image attribution
+  reference_url: ''
+  reference_html: Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2156302">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2156302">Pixabay</a>
 
 ---
 ## Description
@@ -188,7 +194,3 @@ In Ukrainian:
 * Онищук Антін. Матеріяли до гуцульської демонольоґії // Львів, 1909.  — Т.11
 * Потушняк Федір. Демоны въ народномъ вѣрованіи // Русская Правда. — Ужгород, 1940 — №№ 178—180
 * Пушик Степан. Чугайстер: міфічний персонаж народної поезії Карпат // Народна творчість та етнографія. — 1994
-
-## External Links
-
-* Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2156302">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2156302">Pixabay</a>

@@ -53,9 +53,12 @@ names:
   language: Ukrainian
 description: Slavic household deity that protects and looks after the home
 image: ''
-wikipedia: https://en.wikipedia.org/wiki/Domovoy
 related: []
 id: 7c8a6f12e2764a43bddd1915f0fdb897
+external_references:
+- type: Wikipedia
+  reference_url: https://en.wikipedia.org/wiki/Domovoy
+  reference_html: ''
 
 ---
 ## Description

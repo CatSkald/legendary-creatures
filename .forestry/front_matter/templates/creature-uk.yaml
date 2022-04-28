@@ -52,12 +52,6 @@ fields:
   config: {}
   template: external-references-uk
   label: Зовнішні посилання
-- name: wikipedia
-  type: text
-  config:
-    required: false
-  description: Необов’язкове посилання на статтю з Вікіпедії про істоту.
-  label: Сторінка з Вікіпедії
 - name: date
   type: datetime
   label: Дата

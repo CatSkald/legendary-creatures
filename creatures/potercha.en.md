@@ -39,9 +39,12 @@ names:
   language: Ukrainian
 description: A small demon or undead, formed from the soul of a deceased child
 image: "/assets/images/night-g7d4fb2ad6_1920.jpg"
-wikipedia: 
 related: []
 id: 4ef8e1739cf344109bdbf04efbce101a
+external_references:
+- type: Image attribution
+  reference_url: ''
+  reference_html: Image by <a href="https://pixabay.com/users/yuri_b-2216431/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3078326">Yuri_B</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3078326">Pixabay</a>
 
 ---
 ## Description
@@ -58,7 +61,3 @@ From Ukrainian «потеряти» (poteriaty) or «потирати» (potyrat
 * Myling (Sweden)
 * Utburd (Norway)
 * Drekavac, Дрекавац (Southern Slavs: Serbia, Croatia, Bosnia and Herzegovina, Montenegro)
-
-## External Links
-
-* Image by <a href="https://pixabay.com/users/yuri_b-2216431/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3078326">Yuri_B</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3078326">Pixabay</a>

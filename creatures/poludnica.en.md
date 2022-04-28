@@ -69,15 +69,17 @@ names:
   language: українська
 description: Field spirit that appears at noon
 image: "/assets/images/nature-5255727_1920.jpg"
-wikipedia: https://en.wikipedia.org/wiki/Lady_Midday
 related: []
 id: 45c42e70adad4ed6ae5b22274d7639cf
+external_references:
+- type: Wikipedia
+  reference_url: https://en.wikipedia.org/wiki/Lady_Midday
+  reference_html: ''
+- type: Image attribution
+  reference_url: ''
+  reference_html: Image by <a href="https://pixabay.com/users/rauschenberger-4614580/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5255727">RENE RAUSCHENBERGER</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5255727">Pixabay</a>
 
 ---
 ## Description
 
 Field spirit that appears at noon. Personification of sunstroke.
-
-## External Links
-
-- Image by <a href="https://pixabay.com/users/rauschenberger-4614580/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5255727">RENE RAUSCHENBERGER</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5255727">Pixabay</a>

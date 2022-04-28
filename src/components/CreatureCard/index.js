@@ -19,6 +19,8 @@ import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { Wikipedia } from "@styled-icons/boxicons-logos/Wikipedia";
 import { InfoCircleFill } from "@styled-icons/bootstrap/InfoCircleFill";
+import { Imdb } from "@styled-icons/simple-icons/Imdb";
+import { Youtube2 } from "@styled-icons/icomoon/Youtube2";
 
 import useTranslations from "../../i18n/translations/useTranslations";
 import { useImages } from "../../hooks/use-images";
@@ -173,19 +175,59 @@ const RelatedCreatures = (props) => {
 };
 
 const CardButtons = (props) => {
-  const anyButtons = props.data.wikipedia;
-  if (!anyButtons) return <></>;
+  const findButton = (type) => {
+    const result =
+      props.data.external_references &&
+      props.data.external_references.find(
+        (x) => x.type === type && x.reference_url,
+      );
+
+    if (result)
+      return {
+        type: type,
+        href: result.reference_url,
+        title: result.description ? `${type}: ${result.description}` : type,
+      };
+    else return null;
+  };
+
+  //TODO add other types
+  const wikipedia = findButton("Wikipedia");
+  const imdb = findButton("IMDB");
+  const youtube = findButton("YouTube");
+
+  if (!wikipedia && !imdb) return <></>;
 
   return (
     <div className={card__buttons}>
-      {props.data.wikipedia && (
+      {wikipedia && (
         <a
-          href={props.data.wikipedia}
-          title="Wikipedia"
+          href={wikipedia.href}
+          title={wikipedia.title}
           target="_blank"
           rel="noopener noreferrer"
         >
           <Wikipedia />
+        </a>
+      )}
+      {imdb && (
+        <a
+          href={imdb.href}
+          title={imdb.title}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Imdb />
+        </a>
+      )}
+      {youtube && (
+        <a
+          href={youtube.href}
+          title={youtube.title}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Youtube2 />
         </a>
       )}
     </div>

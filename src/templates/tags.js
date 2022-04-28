@@ -81,7 +81,6 @@ export const query = graphql`
             habitat {
               value
             }
-            wikipedia
           }
         }
       }

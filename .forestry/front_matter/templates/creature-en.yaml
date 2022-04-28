@@ -52,12 +52,6 @@ fields:
   config: {}
   template: external-references-en
   label: External references
-- name: wikipedia
-  type: text
-  config:
-    required: false
-  description: An optional link to the Wikipedia article about the creature.
-  label: Wikipedia link
 - name: date
   type: datetime
   label: Date
