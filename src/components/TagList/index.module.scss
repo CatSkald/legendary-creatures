@@ -1,6 +1,6 @@
 .tagList {
   a {
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     text-align: center;
     text-decoration: none;
     padding: var(--space-sm);

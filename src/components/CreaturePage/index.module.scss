@@ -3,7 +3,7 @@
   display: block;
   margin-bottom: var(--space);
   box-shadow: 0 4px 4px 0 var(--background-shadow);
-  transition: 0.3s;
+  transition: var(--transition);
   border-radius: 0 0 4px 4px;
 
   &:hover {

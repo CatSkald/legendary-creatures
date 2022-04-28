@@ -9,12 +9,16 @@ import {
   card__row__item,
   card__buttons,
   card__hint,
+  card__image__container,
+  card__image__copyright,
+  card__image__copyright__info,
 } from "./index.module.scss";
 
 import React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { Wikipedia } from "@styled-icons/boxicons-logos/Wikipedia";
+import { InfoCircleFill } from "@styled-icons/bootstrap/InfoCircleFill";
 
 import useTranslations from "../../i18n/translations/useTranslations";
 import { useImages } from "../../hooks/use-images";
@@ -35,14 +39,32 @@ const CreatureCard = (props) => {
   const images = useImages();
   const image = images.find((img) => img.name === imageName);
 
+  //TODO move this inside image?
+  const imageCopyrights = props.frontmatter.external_references
+    ? props.frontmatter.external_references
+        .filter((x) => x.type === "Image attribution")
+        .map((x) => x.reference_html)
+    : [];
+
   return (
     <div className={card__container}>
       <div className={card}>
-        <GatsbyImage
-          className={card__image}
-          image={image.image}
-          alt={props.frontmatter.title}
-        />
+        <div className={card__image__container}>
+          <GatsbyImage
+            className={card__image}
+            image={image.image}
+            alt={props.frontmatter.title}
+          />
+          {imageCopyrights && (
+            <>
+              <InfoCircleFill className={card__image__copyright__info} />
+              <div
+                className={card__image__copyright}
+                dangerouslySetInnerHTML={{ __html: imageCopyrights[0] }}
+              ></div>
+            </>
+          )}
+        </div>
         <table className={card__content}>
           <caption className={card__title}>
             <span>{props.frontmatter.title}</span>

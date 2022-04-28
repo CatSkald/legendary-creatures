@@ -9,7 +9,7 @@
   height: 20px;
   border: none;
   position: absolute;
-  border-radius: 3px;
+  border-radius: var(--border-radius);
   top: var(--space-sm);
   left: var(--space-sm);
   cursor: pointer;
@@ -59,7 +59,7 @@
       width: 100%;
       position: absolute;
       left: 0;
-      transition: 0.3s;
+      transition: var(--transition);
     }
 
     &:before {

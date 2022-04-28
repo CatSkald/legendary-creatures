@@ -1,5 +1,5 @@
 .searchButton {
-  border-radius: 3px;
+  border-radius: var(--border-radius);
   text-align: center;
   text-decoration: none;
   font-weight: bold;
@@ -18,5 +18,5 @@
 
 .searchInput {
   margin-left: var(--space);
-  border-radius: 3px;
+  border-radius: var(--border-radius);
 }

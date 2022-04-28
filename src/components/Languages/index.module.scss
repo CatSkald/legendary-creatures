@@ -15,7 +15,7 @@
     position: absolute;
     z-index: 999; //no one shall be on top of menu dropdown
     background-color: var(--menu-bg);
-    border-radius: 3px;
+    border-radius: var(--border-radius) 3px;
     padding: var(--space-sm);
   }
 }

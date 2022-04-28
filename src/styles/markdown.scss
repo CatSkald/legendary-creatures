@@ -23,7 +23,7 @@
     color: var(--content-link);
     font-weight: bold;
     text-decoration: none;
-    transition: 0.3s;
+    transition: var(--transition);
 
     &:hover {
       color: var(--content-link-hover);
