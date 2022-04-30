@@ -1,11 +1,13 @@
-const rulesDirPlugin = require("eslint-plugin-rulesdir");
-rulesDirPlugin.RULES_DIR = `${__dirname}/node_modules/gatsby/dist/utils/eslint-rules`;
-
 module.exports = {
   extends: [
+    "react-app",
+    "react-app/jest",
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:prettier/recommended",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
+    "plugin:jsx-a11y/recommended",
   ],
   settings: {
     react: {
@@ -18,7 +20,13 @@ module.exports = {
     es2021: true,
     "jest/globals": true,
   },
-  plugins: ["rulesdir", "react", "prettier", "jest"],
+  globals: {
+    graphql: "writable",
+    __PATH_PREFIX__: "writable",
+    __TRAILING_SLASH__: "writable",
+    __BASE_PATH__: "writable",
+  },
+  plugins: ["prettier", "graphql"],
   parserOptions: {
     parser: "@babel/eslint-parser",
     ecmaFeatures: {
@@ -29,14 +37,6 @@ module.exports = {
   },
   rules: {
     "react/prop-types": [0],
-    "prettier/prettier": "error",
-    "jest/no-disabled-tests": "warn",
-    "jest/no-focused-tests": "error",
-    "jest/no-identical-title": "error",
-    "jest/prefer-to-have-length": "warn",
-    "jest/valid-expect": "error",
-    "rulesdir/no-anonymous-exports-page-templates": "warn",
-    "rulesdir/limited-exports-page-templates": "warn",
     "no-irregular-whitespace": [
       "error",
       { skipComments: true, skipTemplates: true },

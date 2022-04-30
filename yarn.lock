@@ -6520,15 +6520,12 @@ __metadata:
     eslint-config-prettier: ^8.5.0
     eslint-config-react-app: ^7.0.1
     eslint-loader: ^4.0.2
+    eslint-plugin-graphql: ^4.0.0
     eslint-plugin-prettier: ^4.0.0
-    eslint-plugin-react: ^7.29.4
-    eslint-plugin-rulesdir: ^0.2.1
-    eslint-webpack-plugin: ^3.1.1
     gatsby: ^4.13.0
     gatsby-cli: ^4.13.0
     gatsby-image: ^3.11.0
     gatsby-plugin-catch-links: ^4.13.0
-    gatsby-plugin-eslint: ^4.0.2
     gatsby-plugin-google-fonts: ^1.0.1
     gatsby-plugin-image: ^2.13.0
     gatsby-plugin-manifest: ^4.13.0
@@ -8854,13 +8851,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-rulesdir@npm:^0.2.1":
-  version: 0.2.1
-  resolution: "eslint-plugin-rulesdir@npm:0.2.1"
-  checksum: 2bf80915e810a93e19989a8a4ed3bfe4642d31c3c131945954f9f0b0766f7131e3dcfa86bd5390891058e53f257ca65ef1eb988f1f9d992f051b19191f60d618
-  languageName: node
-  linkType: hard
-
 "eslint-plugin-testing-library@npm:^5.0.1":
   version: 5.3.1
   resolution: "eslint-plugin-testing-library@npm:5.3.1"
@@ -8947,22 +8937,6 @@ __metadata:
     eslint: ^7.0.0 || ^8.0.0
     webpack: ^4.0.0 || ^5.0.0
   checksum: 1f3c944f85b7473eb0a2d4b72e2ef90680ca9413419caf152d5864162e3b88d4aa9fbabaceef7d842124b3e5b3cc0d5e63f9f9c8efe6a15086347e739be711e2
-  languageName: node
-  linkType: hard
-
-"eslint-webpack-plugin@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "eslint-webpack-plugin@npm:3.1.1"
-  dependencies:
-    "@types/eslint": ^7.28.2
-    jest-worker: ^27.3.1
-    micromatch: ^4.0.4
-    normalize-path: ^3.0.0
-    schema-utils: ^3.1.1
-  peerDependencies:
-    eslint: ^7.0.0 || ^8.0.0
-    webpack: ^5.0.0
-  checksum: 4ff3f3fc8f03a187792f783513c3f4274221623d5f5c16ca90542c1b781fd04ed646ab6043caa55a51a654d5ab2c7039677faedee8bfb526d1310edc3909cbd2
   languageName: node
   linkType: hard
 
@@ -10055,19 +10029,6 @@ __metadata:
   peerDependencies:
     gatsby: ^4.0.0-next
   checksum: 1d9ad8e0107966943c61b4073c4c168291586815187a5e3aec45018869a076cfd0a5d6ac1289fe43f5c26cbde02d56b0dd497e58820da628cf6333da31cd23ec
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-eslint@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "gatsby-plugin-eslint@npm:4.0.2"
-  dependencies:
-    webpack-merge: ^5.8.0
-  peerDependencies:
-    eslint: ^7.18.0 || ^8
-    eslint-webpack-plugin: ^2.4.3 || ^3
-    gatsby: ^2 || ^3 || ^4
-  checksum: 49d220fafa5890e3a1dabdfb7d9b7c54c773c0aad91726a1968f9b20eb085ecd86ba4e75088d39675b0b38d572cd6b339c53a72214dcb68f201fe8f91c0e2f93
   languageName: node
   linkType: hard
 
