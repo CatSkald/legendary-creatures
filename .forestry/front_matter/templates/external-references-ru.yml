@@ -7,16 +7,16 @@ fields:
   fields:
   - name: type
     type: select
-    default: Авторство изображения
+    default: Image attribution
     config:
       required: true
       options:
-      - Авторство изображения
+      - Image attribution
       - Wikipedia
       - IMDB
       - ISBN
       - YouTube
-      - Другое
+      - Other
       source:
         type: simple
         section: 
