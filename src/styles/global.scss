@@ -160,8 +160,8 @@ a {
 input {
   border: solid;
   border-width: 0.1rem;
-  border-color: var(--color-feature);
-  background-color: var(--color-background);
+  border-color: var(--content-link);
+  background-color: var(--content-bg);
   color: var(--content-text);
   padding: calc(var(--space-sm) * 0.6);
 }
@@ -192,13 +192,4 @@ hr {
   --screen-small: 576px; /* 6" */
 
   --missing-content: red;
-
-  //overridden by the selected theme
-  --color-background: #ecf1ef;
-  --color-text: black;
-  --color-feature: #365359;
-  --color-feature-secondary: #436073;
-  --color-feature-contrast: #7c9aa6;
-  --color-feature-accent: #0e261d;
-  --external-content: #ecf1ef;
 }
