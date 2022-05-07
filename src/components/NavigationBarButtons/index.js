@@ -18,7 +18,7 @@ const NavigationBarButtons = (props) => {
   return (
     <ul className={navigationBarButtons}>
       <li className={navigationBarButtons__button}>
-        <span
+        <button
           title="Change language"
           className={`${navigationBarButtons__language} ${
             props.isLanguageSelectionActive ? active : ""
@@ -26,20 +26,23 @@ const NavigationBarButtons = (props) => {
           onClick={() => props.handleToggleLanguageSelection()}
         >
           {language.name}
-        </span>
+        </button>
       </li>
       <li className={navigationBarButtons__button}>
-        <span
+        <button
           title="Switch color theme"
-          role="img"
           aria-label="Change website color theme"
-          className={`${navigationBarButtons__theme} ${
-            props.isDarkColorTheme
-              ? navigationBarButtons__theme__dark
-              : navigationBarButtons__theme__light
-          }`}
           onClick={() => props.handleToggleColorTheme()}
-        ></span>
+        >
+          <span
+            role="img"
+            className={`${navigationBarButtons__theme} ${
+              props.isDarkColorTheme
+                ? navigationBarButtons__theme__dark
+                : navigationBarButtons__theme__light
+            }`}
+          ></span>
+        </button>
       </li>
     </ul>
   );

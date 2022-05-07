@@ -13,22 +13,25 @@ exports[`NavigationBarButtons renders correctly for language {
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         class="navigationBarButtons__language "
         title="Change language"
       >
         Українська
-      </span>
+      </button>
     </li>
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__light"
-        role="img"
         title="Switch color theme"
-      />
+      >
+        <span
+          class="navigationBarButtons__theme navigationBarButtons__theme__light"
+          role="img"
+        />
+      </button>
     </li>
   </ul>
 </div>
@@ -47,22 +50,25 @@ exports[`NavigationBarButtons renders correctly for language {
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         class="navigationBarButtons__language active"
         title="Change language"
       >
         Українська
-      </span>
+      </button>
     </li>
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__light"
-        role="img"
         title="Switch color theme"
-      />
+      >
+        <span
+          class="navigationBarButtons__theme navigationBarButtons__theme__light"
+          role="img"
+        />
+      </button>
     </li>
   </ul>
 </div>
@@ -81,22 +87,25 @@ exports[`NavigationBarButtons renders correctly for language {
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         class="navigationBarButtons__language "
         title="Change language"
       >
         Українська
-      </span>
+      </button>
     </li>
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__dark"
-        role="img"
         title="Switch color theme"
-      />
+      >
+        <span
+          class="navigationBarButtons__theme navigationBarButtons__theme__dark"
+          role="img"
+        />
+      </button>
     </li>
   </ul>
 </div>
@@ -115,22 +124,25 @@ exports[`NavigationBarButtons renders correctly for language {
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         class="navigationBarButtons__language active"
         title="Change language"
       >
         Українська
-      </span>
+      </button>
     </li>
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__dark"
-        role="img"
         title="Switch color theme"
-      />
+      >
+        <span
+          class="navigationBarButtons__theme navigationBarButtons__theme__dark"
+          role="img"
+        />
+      </button>
     </li>
   </ul>
 </div>
@@ -144,22 +156,25 @@ exports[`NavigationBarButtons renders correctly for language { name: 'English', 
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         class="navigationBarButtons__language "
         title="Change language"
       >
         English
-      </span>
+      </button>
     </li>
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__light"
-        role="img"
         title="Switch color theme"
-      />
+      >
+        <span
+          class="navigationBarButtons__theme navigationBarButtons__theme__light"
+          role="img"
+        />
+      </button>
     </li>
   </ul>
 </div>
@@ -173,22 +188,25 @@ exports[`NavigationBarButtons renders correctly for language { name: 'English', 
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         class="navigationBarButtons__language active"
         title="Change language"
       >
         English
-      </span>
+      </button>
     </li>
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__light"
-        role="img"
         title="Switch color theme"
-      />
+      >
+        <span
+          class="navigationBarButtons__theme navigationBarButtons__theme__light"
+          role="img"
+        />
+      </button>
     </li>
   </ul>
 </div>
@@ -202,22 +220,25 @@ exports[`NavigationBarButtons renders correctly for language { name: 'English', 
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         class="navigationBarButtons__language "
         title="Change language"
       >
         English
-      </span>
+      </button>
     </li>
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__dark"
-        role="img"
         title="Switch color theme"
-      />
+      >
+        <span
+          class="navigationBarButtons__theme navigationBarButtons__theme__dark"
+          role="img"
+        />
+      </button>
     </li>
   </ul>
 </div>
@@ -231,22 +252,25 @@ exports[`NavigationBarButtons renders correctly for language { name: 'English', 
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         class="navigationBarButtons__language active"
         title="Change language"
       >
         English
-      </span>
+      </button>
     </li>
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__dark"
-        role="img"
         title="Switch color theme"
-      />
+      >
+        <span
+          class="navigationBarButtons__theme navigationBarButtons__theme__dark"
+          role="img"
+        />
+      </button>
     </li>
   </ul>
 </div>
@@ -260,22 +284,25 @@ exports[`NavigationBarButtons renders correctly for language { name: 'Русск
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         class="navigationBarButtons__language "
         title="Change language"
       >
         Русский
-      </span>
+      </button>
     </li>
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__light"
-        role="img"
         title="Switch color theme"
-      />
+      >
+        <span
+          class="navigationBarButtons__theme navigationBarButtons__theme__light"
+          role="img"
+        />
+      </button>
     </li>
   </ul>
 </div>
@@ -289,22 +316,25 @@ exports[`NavigationBarButtons renders correctly for language { name: 'Русск
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         class="navigationBarButtons__language active"
         title="Change language"
       >
         Русский
-      </span>
+      </button>
     </li>
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__light"
-        role="img"
         title="Switch color theme"
-      />
+      >
+        <span
+          class="navigationBarButtons__theme navigationBarButtons__theme__light"
+          role="img"
+        />
+      </button>
     </li>
   </ul>
 </div>
@@ -318,22 +348,25 @@ exports[`NavigationBarButtons renders correctly for language { name: 'Русск
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         class="navigationBarButtons__language "
         title="Change language"
       >
         Русский
-      </span>
+      </button>
     </li>
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__dark"
-        role="img"
         title="Switch color theme"
-      />
+      >
+        <span
+          class="navigationBarButtons__theme navigationBarButtons__theme__dark"
+          role="img"
+        />
+      </button>
     </li>
   </ul>
 </div>
@@ -347,22 +380,25 @@ exports[`NavigationBarButtons renders correctly for language { name: 'Русск
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         class="navigationBarButtons__language active"
         title="Change language"
       >
         Русский
-      </span>
+      </button>
     </li>
     <li
       class="navigationBarButtons__button"
     >
-      <span
+      <button
         aria-label="Change website color theme"
-        class="navigationBarButtons__theme navigationBarButtons__theme__dark"
-        role="img"
         title="Switch color theme"
-      />
+      >
+        <span
+          class="navigationBarButtons__theme navigationBarButtons__theme__dark"
+          role="img"
+        />
+      </button>
     </li>
   </ul>
 </div>
