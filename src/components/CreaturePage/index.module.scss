@@ -5,6 +5,9 @@
   box-shadow: 0 4px 4px 0 var(--background-shadow);
   transition: var(--transition);
   border-radius: 0 0 4px 4px;
+  border-width: 1px;
+  border-color: var(--border-color);
+  border-style: var(--border-style);
 
   &:hover {
     box-shadow: 0 8px 8px 0 var(--background-shadow);

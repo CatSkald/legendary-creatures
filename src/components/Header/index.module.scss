@@ -12,6 +12,9 @@
   justify-content: flex-start;
   flex-flow: column-reverse;
   align-items: flex-end;
+  border-bottom-width: 1px;
+  border-color: var(--border-color);
+  border-style: var(--border-style);
 
   max-width: var(--container-width);
   margin: 0 auto;

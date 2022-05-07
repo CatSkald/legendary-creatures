@@ -14,10 +14,14 @@
   --menu-shadow: rgba(255, 255, 255, 0.1);
   --footer-separator: rgba(0, 0, 0, 0.2);
 
+  --border-color: var(--color-quaternary);
+  --border-style: none;
+
   --menu-bg: var(--color-primary);
   --menu-text: var(--color-on-primary);
   --menu-text-hover: var(--color-secondary);
   --menu-text-selected: var(--color-background);
+
   --content-bg: var(--color-background);
   --content-title: var(--color-on-background);
   --content-subtitle: var(--color-primary);
@@ -26,15 +30,18 @@
   --content-link: var(--color-quaternary);
   --content-link-hover: var(--color-primary);
   --content-link-visited: var(--color-primary);
+
   --card-bg: var(--color-quaternary);
   --card-title: var(--color-background);
   --card-separator: var(--color-tertiary);
   --card-text: var(--color-background);
   --card-link: var(--color-secondary);
   --card-link-hover: var(--color-tertiary);
+
   --page-preview-bg: var(--card-bg);
   --page-preview-title: var(--card-title);
   --page-preview-text: var(--card-text);
   --page-preview-hover: var(--card-link);
+
   --external-content: var(--color-background);
 }

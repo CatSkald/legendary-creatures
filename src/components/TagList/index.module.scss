@@ -9,17 +9,24 @@
 }
 
 .tagList__item {
-  margin-bottom: var(--space-sm);
+  padding-bottom: var(--space);
+  border-bottom-width: 1px;
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  &:last-child {
+    border-bottom-width: 0;
+  }
 }
 
 .tagList__tag {
   margin: var(--space) var(--space-sm);
   padding: var(--space-sm);
   font-weight: bold;
+
   border: solid;
   border-width: 0.1rem;
+  border-color: var(--border-color);
 
-  border-color: var(--card-bg);
   background-color: var(--card-bg);
   color: var(--card-link);
 
@@ -34,7 +41,7 @@
   margin-left: var(--space);
   border: solid;
   border-width: 0.1rem;
-  border-color: var(--card-bg);
+  border-color: var(--border-color);
   color: var(--content-link);
 
   &:hover {

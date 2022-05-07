@@ -106,6 +106,9 @@
 .card {
   background: var(--card-bg);
   border-radius: 5px;
+  border-width: 1px;
+  border-color: var(--border-color);
+  border-style: var(--border-style);
   box-shadow: 0 4px 4px 0 var(--background-shadow);
   transition: var(--transition);
   display: block;

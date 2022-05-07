@@ -1,7 +1,7 @@
 .pagination {
   align-items: center;
-  border-top: 1px solid var(--borders);
-  color: var(--texts);
+  border-top: 1px solid var(--border-color);
+  color: var(--content-text);
   display: flex;
   padding: 1.5rem 3rem;
   justify-content: center;
@@ -16,12 +16,12 @@
   }
 
   a {
-    color: var(--texts);
+    color: var(--content-link);
     text-decoration: none;
     transition: color 0.5s;
 
     &:hover {
-      color: var(--highlight);
+      color: var(--content-link-hover);
     }
   }
 }
