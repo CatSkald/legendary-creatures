@@ -1,281 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header renders correctly for isDarkColorTheme false 1`] = `
-<div>
-  <div
-    class="header__container"
-  >
-    <div
-      class="header"
-    >
-      <button
-        aria-label="Show menu"
-        class="hamburgerMenu "
-      >
-        <span />
-      </button>
-      <div
-        class="header__menu"
-      >
-        <nav
-          class="navigationBar "
-        >
-          <a
-            activeclassname="active"
-            aria-label="Home"
-            class="navigationBar__link"
-            href="/en"
-            hreflang="en"
-          >
-            Home
-          </a>
-          <a
-            activeclassname="active"
-            aria-label="Creatures"
-            class="navigationBar__link"
-            href="/en/creatures"
-            hreflang="en"
-          >
-            Creatures
-          </a>
-          <a
-            activeclassname="active"
-            aria-label="Tags"
-            class="navigationBar__link"
-            href="/en/tags"
-            hreflang="en"
-          >
-            Tags
-          </a>
-          <a
-            activeclassname="active"
-            aria-label="About"
-            class="navigationBar__link"
-            href="/en/about"
-            hreflang="en"
-          >
-            About
-          </a>
-          <a
-            activeclassname="active"
-            aria-label="Search"
-            class="navigationBar__link"
-            href="/en/search"
-            hreflang="en"
-          >
-            Search
-          </a>
-        </nav>
-      </div>
-      <div
-        class="header__languages"
-      >
-        <ul
-          class="navigationBarButtons"
-        >
-          <li
-            class="navigationBarButtons__button"
-          >
-            <button
-              class="navigationBarButtons__language "
-              title="Change language"
-            />
-          </li>
-          <li
-            class="navigationBarButtons__button"
-          >
-            <button
-              aria-label="Change website color theme"
-              title="Switch color theme"
-            >
-              <span
-                class="navigationBarButtons__theme navigationBarButtons__theme__light"
-                role="img"
-              />
-            </button>
-          </li>
-        </ul>
-        <ul
-          class="languageMenu "
-        >
-          <li
-            class="languageMenu__language"
-          >
-            <a
-              class="languageMenu__link active"
-              href="/"
-              hreflang="en"
-            >
-              English
-            </a>
-          </li>
-          <li
-            class="languageMenu__language"
-          >
-            <a
-              class="languageMenu__link "
-              href="/ru"
-              hreflang="ru"
-            >
-              Русский
-            </a>
-          </li>
-          <li
-            class="languageMenu__language"
-          >
-            <a
-              class="languageMenu__link "
-              href="/uk"
-              hreflang="uk"
-            >
-              Українська
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Header renders correctly for isDarkColorTheme true 1`] = `
-<div>
-  <div
-    class="header__container"
-  >
-    <div
-      class="header"
-    >
-      <button
-        aria-label="Show menu"
-        class="hamburgerMenu "
-      >
-        <span />
-      </button>
-      <div
-        class="header__menu"
-      >
-        <nav
-          class="navigationBar "
-        >
-          <a
-            activeclassname="active"
-            aria-label="Home"
-            class="navigationBar__link"
-            href="/en"
-            hreflang="en"
-          >
-            Home
-          </a>
-          <a
-            activeclassname="active"
-            aria-label="Creatures"
-            class="navigationBar__link"
-            href="/en/creatures"
-            hreflang="en"
-          >
-            Creatures
-          </a>
-          <a
-            activeclassname="active"
-            aria-label="Tags"
-            class="navigationBar__link"
-            href="/en/tags"
-            hreflang="en"
-          >
-            Tags
-          </a>
-          <a
-            activeclassname="active"
-            aria-label="About"
-            class="navigationBar__link"
-            href="/en/about"
-            hreflang="en"
-          >
-            About
-          </a>
-          <a
-            activeclassname="active"
-            aria-label="Search"
-            class="navigationBar__link"
-            href="/en/search"
-            hreflang="en"
-          >
-            Search
-          </a>
-        </nav>
-      </div>
-      <div
-        class="header__languages"
-      >
-        <ul
-          class="navigationBarButtons"
-        >
-          <li
-            class="navigationBarButtons__button"
-          >
-            <button
-              class="navigationBarButtons__language "
-              title="Change language"
-            />
-          </li>
-          <li
-            class="navigationBarButtons__button"
-          >
-            <button
-              aria-label="Change website color theme"
-              title="Switch color theme"
-            >
-              <span
-                class="navigationBarButtons__theme navigationBarButtons__theme__dark"
-                role="img"
-              />
-            </button>
-          </li>
-        </ul>
-        <ul
-          class="languageMenu "
-        >
-          <li
-            class="languageMenu__language"
-          >
-            <a
-              class="languageMenu__link active"
-              href="/"
-              hreflang="en"
-            >
-              English
-            </a>
-          </li>
-          <li
-            class="languageMenu__language"
-          >
-            <a
-              class="languageMenu__link "
-              href="/ru"
-              hreflang="ru"
-            >
-              Русский
-            </a>
-          </li>
-          <li
-            class="languageMenu__language"
-          >
-            <a
-              class="languageMenu__link "
-              href="/uk"
-              hreflang="uk"
-            >
-              Українська
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Header renders correctly for language {
   name: 'Українська',
   code: 'uk',
@@ -372,9 +96,11 @@ exports[`Header renders correctly for language {
               title="Switch color theme"
             >
               <span
-                class="navigationBarButtons__theme navigationBarButtons__theme__light"
+                class="navigationBarButtons__theme"
                 role="img"
-              />
+              >
+                ⨀
+              </span>
             </button>
           </li>
         </ul>
@@ -512,9 +238,11 @@ exports[`Header renders correctly for language { name: 'English', code: 'en', pa
               title="Switch color theme"
             >
               <span
-                class="navigationBarButtons__theme navigationBarButtons__theme__light"
+                class="navigationBarButtons__theme"
                 role="img"
-              />
+              >
+                ⨀
+              </span>
             </button>
           </li>
         </ul>
@@ -652,9 +380,11 @@ exports[`Header renders correctly for language { name: 'Русский', code: '
               title="Switch color theme"
             >
               <span
-                class="navigationBarButtons__theme navigationBarButtons__theme__light"
+                class="navigationBarButtons__theme"
                 role="img"
-              />
+              >
+                ⨀
+              </span>
             </button>
           </li>
         </ul>

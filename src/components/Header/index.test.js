@@ -13,25 +13,9 @@ describe("Header", () => {
   test.each(allLanguages)("renders correctly for language %s", (language) => {
     const { container } = render(
       <LocaleContext.Provider value={{ language }}>
-        <Header handleToggleColorTheme={jest.fn()} isDarkColorTheme={false} />
+        <Header handleToggleColorTheme={jest.fn()} selectedThemeIcon="⨀" />
       </LocaleContext.Provider>,
     );
     expect(container).toMatchSnapshot();
   });
-
-  test.each([true, false])(
-    "renders correctly for isDarkColorTheme %s",
-    (isDarkColorTheme) => {
-      const language = { code: "en", path: "/en" };
-      const { container } = render(
-        <LocaleContext.Provider value={{ language }}>
-          <Header
-            handleToggleColorTheme={jest.fn()}
-            isDarkColorTheme={isDarkColorTheme}
-          />
-        </LocaleContext.Provider>,
-      );
-      expect(container).toMatchSnapshot();
-    },
-  );
 });

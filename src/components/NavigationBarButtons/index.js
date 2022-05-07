@@ -4,8 +4,6 @@ import {
   navigationBarButtons__button,
   navigationBarButtons__language,
   navigationBarButtons__theme,
-  navigationBarButtons__theme__dark,
-  navigationBarButtons__theme__light,
 } from "./index.module.scss";
 
 import React from "react";
@@ -34,14 +32,9 @@ const NavigationBarButtons = (props) => {
           aria-label="Change website color theme"
           onClick={() => props.handleToggleColorTheme()}
         >
-          <span
-            role="img"
-            className={`${navigationBarButtons__theme} ${
-              props.isDarkColorTheme
-                ? navigationBarButtons__theme__dark
-                : navigationBarButtons__theme__light
-            }`}
-          ></span>
+          <span role="img" className={`${navigationBarButtons__theme}`}>
+            {props.selectedThemeIcon}
+          </span>
         </button>
       </li>
     </ul>
@@ -50,7 +43,7 @@ const NavigationBarButtons = (props) => {
 
 NavigationBarButtons.propTypes = {
   handleToggleColorTheme: PropTypes.func.isRequired,
-  isDarkColorTheme: PropTypes.bool.isRequired,
+  selectedThemeIcon: PropTypes.string.isRequired,
   handleToggleLanguageSelection: PropTypes.func.isRequired,
   isLanguageSelectionActive: PropTypes.bool.isRequired,
 };

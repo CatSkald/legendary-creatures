@@ -1,6 +1,7 @@
 import "../../styles/global.scss";
 import "../../styles/theme-light.scss";
 import "../../styles/theme-dark.scss";
+import "../../styles/theme-dark-high-contrast.scss";
 import {
   layout__container,
   layout,
@@ -16,24 +17,20 @@ const LocaleContext = React.createContext();
 
 const Layout = (props) => {
   var userSettings = loadUserSettings();
-  const [isDarkColorTheme, switchColorTheme] = React.useState(
-    userSettings.isDarkColorTheme,
+  const [selectedThemeClassName, switchColorTheme] = React.useState(
+    userSettings.selectedThemeClassName,
   );
 
   function handleToggleColorTheme() {
     userSettings.toggleTheme();
-    switchColorTheme(userSettings.isDarkColorTheme);
+    switchColorTheme(userSettings.selectedThemeClassName);
   }
 
   return (
     <LocaleContext.Provider value={{ language: props.pageContext.language }}>
-      <div
-        className={`body ${layout__container} ${
-          isDarkColorTheme ? "theme-dark" : "theme-light"
-        }`}
-      >
+      <div className={`body ${layout__container} ${selectedThemeClassName}`}>
         <Header
-          isDarkColorTheme={isDarkColorTheme}
+          selectedThemeIcon={userSettings.selectedThemeIcon}
           handleToggleColorTheme={handleToggleColorTheme}
           localizedLinks={props.pageContext.localizedLinks}
         />

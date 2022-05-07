@@ -1,0 +1,39 @@
+.theme-dark-high-contrast {
+  //color palette
+  --color-primary: #babf1f;
+  --color-background: #000000;
+  --color-text: #ffffff;
+
+  //theme
+  --background-shadow: var(--color-background);
+  --menu-shadow: var(--color-background);
+  --footer-separator: var(--color-text);
+
+  --menu-bg: var(--color-background);
+  --menu-text: var(--color-text);
+  --menu-text-hover: var(--color-primary);
+  --menu-text-selected: var(--color-primary);
+
+  --content-bg: var(--color-background);
+  --content-title: var(--color-text);
+  --content-subtitle: var(--color-text);
+  --content-text: var(--color-text);
+  --content-separator: var(--color-text);
+  --content-link: var(--color-primary);
+  --content-link-hover: var(--color-text);
+  --content-link-visited: var(--color-primary);
+
+  --card-bg: var(--color-background);
+  --card-title: var(--color-text);
+  --card-separator: var(--color-text);
+  --card-text: var(--color-text);
+  --card-link: var(--color-primary);
+  --card-link-hover: var(--color-text);
+
+  --page-preview-bg: var(--color-background);
+  --page-preview-title: var(--color-text);
+  --page-preview-text: var(--color-text);
+  --page-preview-hover: var(--color-primary);
+
+  --external-content: var(--color-text);
+}

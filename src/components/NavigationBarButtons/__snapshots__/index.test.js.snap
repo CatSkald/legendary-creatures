@@ -5,7 +5,7 @@ exports[`NavigationBarButtons renders correctly for language {
   code: 'uk',
   path: '/uk',
   dateFormat: 'DD.MM.YYYY'
-} when isDarkColorTheme false and isLanguageSelectionActive false 1`] = `
+} when isLanguageSelectionActive false 1`] = `
 <div>
   <ul
     class="navigationBarButtons"
@@ -28,9 +28,11 @@ exports[`NavigationBarButtons renders correctly for language {
         title="Switch color theme"
       >
         <span
-          class="navigationBarButtons__theme navigationBarButtons__theme__light"
+          class="navigationBarButtons__theme"
           role="img"
-        />
+        >
+          ⨁
+        </span>
       </button>
     </li>
   </ul>
@@ -42,7 +44,7 @@ exports[`NavigationBarButtons renders correctly for language {
   code: 'uk',
   path: '/uk',
   dateFormat: 'DD.MM.YYYY'
-} when isDarkColorTheme false and isLanguageSelectionActive true 1`] = `
+} when isLanguageSelectionActive true 1`] = `
 <div>
   <ul
     class="navigationBarButtons"
@@ -65,90 +67,18 @@ exports[`NavigationBarButtons renders correctly for language {
         title="Switch color theme"
       >
         <span
-          class="navigationBarButtons__theme navigationBarButtons__theme__light"
+          class="navigationBarButtons__theme"
           role="img"
-        />
+        >
+          ⨁
+        </span>
       </button>
     </li>
   </ul>
 </div>
 `;
 
-exports[`NavigationBarButtons renders correctly for language {
-  name: 'Українська',
-  code: 'uk',
-  path: '/uk',
-  dateFormat: 'DD.MM.YYYY'
-} when isDarkColorTheme true and isLanguageSelectionActive false 1`] = `
-<div>
-  <ul
-    class="navigationBarButtons"
-  >
-    <li
-      class="navigationBarButtons__button"
-    >
-      <button
-        class="navigationBarButtons__language "
-        title="Change language"
-      >
-        Українська
-      </button>
-    </li>
-    <li
-      class="navigationBarButtons__button"
-    >
-      <button
-        aria-label="Change website color theme"
-        title="Switch color theme"
-      >
-        <span
-          class="navigationBarButtons__theme navigationBarButtons__theme__dark"
-          role="img"
-        />
-      </button>
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`NavigationBarButtons renders correctly for language {
-  name: 'Українська',
-  code: 'uk',
-  path: '/uk',
-  dateFormat: 'DD.MM.YYYY'
-} when isDarkColorTheme true and isLanguageSelectionActive true 1`] = `
-<div>
-  <ul
-    class="navigationBarButtons"
-  >
-    <li
-      class="navigationBarButtons__button"
-    >
-      <button
-        class="navigationBarButtons__language active"
-        title="Change language"
-      >
-        Українська
-      </button>
-    </li>
-    <li
-      class="navigationBarButtons__button"
-    >
-      <button
-        aria-label="Change website color theme"
-        title="Switch color theme"
-      >
-        <span
-          class="navigationBarButtons__theme navigationBarButtons__theme__dark"
-          role="img"
-        />
-      </button>
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`NavigationBarButtons renders correctly for language { name: 'English', code: 'en', path: '', dateFormat: 'DD/MM/YYYY' } when isDarkColorTheme false and isLanguageSelectionActive false 1`] = `
+exports[`NavigationBarButtons renders correctly for language { name: 'English', code: 'en', path: '', dateFormat: 'DD/MM/YYYY' } when isLanguageSelectionActive false 1`] = `
 <div>
   <ul
     class="navigationBarButtons"
@@ -171,16 +101,18 @@ exports[`NavigationBarButtons renders correctly for language { name: 'English', 
         title="Switch color theme"
       >
         <span
-          class="navigationBarButtons__theme navigationBarButtons__theme__light"
+          class="navigationBarButtons__theme"
           role="img"
-        />
+        >
+          ⨁
+        </span>
       </button>
     </li>
   </ul>
 </div>
 `;
 
-exports[`NavigationBarButtons renders correctly for language { name: 'English', code: 'en', path: '', dateFormat: 'DD/MM/YYYY' } when isDarkColorTheme false and isLanguageSelectionActive true 1`] = `
+exports[`NavigationBarButtons renders correctly for language { name: 'English', code: 'en', path: '', dateFormat: 'DD/MM/YYYY' } when isLanguageSelectionActive true 1`] = `
 <div>
   <ul
     class="navigationBarButtons"
@@ -203,80 +135,18 @@ exports[`NavigationBarButtons renders correctly for language { name: 'English', 
         title="Switch color theme"
       >
         <span
-          class="navigationBarButtons__theme navigationBarButtons__theme__light"
+          class="navigationBarButtons__theme"
           role="img"
-        />
+        >
+          ⨁
+        </span>
       </button>
     </li>
   </ul>
 </div>
 `;
 
-exports[`NavigationBarButtons renders correctly for language { name: 'English', code: 'en', path: '', dateFormat: 'DD/MM/YYYY' } when isDarkColorTheme true and isLanguageSelectionActive false 1`] = `
-<div>
-  <ul
-    class="navigationBarButtons"
-  >
-    <li
-      class="navigationBarButtons__button"
-    >
-      <button
-        class="navigationBarButtons__language "
-        title="Change language"
-      >
-        English
-      </button>
-    </li>
-    <li
-      class="navigationBarButtons__button"
-    >
-      <button
-        aria-label="Change website color theme"
-        title="Switch color theme"
-      >
-        <span
-          class="navigationBarButtons__theme navigationBarButtons__theme__dark"
-          role="img"
-        />
-      </button>
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`NavigationBarButtons renders correctly for language { name: 'English', code: 'en', path: '', dateFormat: 'DD/MM/YYYY' } when isDarkColorTheme true and isLanguageSelectionActive true 1`] = `
-<div>
-  <ul
-    class="navigationBarButtons"
-  >
-    <li
-      class="navigationBarButtons__button"
-    >
-      <button
-        class="navigationBarButtons__language active"
-        title="Change language"
-      >
-        English
-      </button>
-    </li>
-    <li
-      class="navigationBarButtons__button"
-    >
-      <button
-        aria-label="Change website color theme"
-        title="Switch color theme"
-      >
-        <span
-          class="navigationBarButtons__theme navigationBarButtons__theme__dark"
-          role="img"
-        />
-      </button>
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`NavigationBarButtons renders correctly for language { name: 'Русский', code: 'ru', path: '/ru', dateFormat: 'DD.MM.YYYY' } when isDarkColorTheme false and isLanguageSelectionActive false 1`] = `
+exports[`NavigationBarButtons renders correctly for language { name: 'Русский', code: 'ru', path: '/ru', dateFormat: 'DD.MM.YYYY' } when isLanguageSelectionActive false 1`] = `
 <div>
   <ul
     class="navigationBarButtons"
@@ -299,16 +169,18 @@ exports[`NavigationBarButtons renders correctly for language { name: 'Русск
         title="Switch color theme"
       >
         <span
-          class="navigationBarButtons__theme navigationBarButtons__theme__light"
+          class="navigationBarButtons__theme"
           role="img"
-        />
+        >
+          ⨁
+        </span>
       </button>
     </li>
   </ul>
 </div>
 `;
 
-exports[`NavigationBarButtons renders correctly for language { name: 'Русский', code: 'ru', path: '/ru', dateFormat: 'DD.MM.YYYY' } when isDarkColorTheme false and isLanguageSelectionActive true 1`] = `
+exports[`NavigationBarButtons renders correctly for language { name: 'Русский', code: 'ru', path: '/ru', dateFormat: 'DD.MM.YYYY' } when isLanguageSelectionActive true 1`] = `
 <div>
   <ul
     class="navigationBarButtons"
@@ -331,73 +203,11 @@ exports[`NavigationBarButtons renders correctly for language { name: 'Русск
         title="Switch color theme"
       >
         <span
-          class="navigationBarButtons__theme navigationBarButtons__theme__light"
+          class="navigationBarButtons__theme"
           role="img"
-        />
-      </button>
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`NavigationBarButtons renders correctly for language { name: 'Русский', code: 'ru', path: '/ru', dateFormat: 'DD.MM.YYYY' } when isDarkColorTheme true and isLanguageSelectionActive false 1`] = `
-<div>
-  <ul
-    class="navigationBarButtons"
-  >
-    <li
-      class="navigationBarButtons__button"
-    >
-      <button
-        class="navigationBarButtons__language "
-        title="Change language"
-      >
-        Русский
-      </button>
-    </li>
-    <li
-      class="navigationBarButtons__button"
-    >
-      <button
-        aria-label="Change website color theme"
-        title="Switch color theme"
-      >
-        <span
-          class="navigationBarButtons__theme navigationBarButtons__theme__dark"
-          role="img"
-        />
-      </button>
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`NavigationBarButtons renders correctly for language { name: 'Русский', code: 'ru', path: '/ru', dateFormat: 'DD.MM.YYYY' } when isDarkColorTheme true and isLanguageSelectionActive true 1`] = `
-<div>
-  <ul
-    class="navigationBarButtons"
-  >
-    <li
-      class="navigationBarButtons__button"
-    >
-      <button
-        class="navigationBarButtons__language active"
-        title="Change language"
-      >
-        Русский
-      </button>
-    </li>
-    <li
-      class="navigationBarButtons__button"
-    >
-      <button
-        aria-label="Change website color theme"
-        title="Switch color theme"
-      >
-        <span
-          class="navigationBarButtons__theme navigationBarButtons__theme__dark"
-          role="img"
-        />
+        >
+          ⨁
+        </span>
       </button>
     </li>
   </ul>

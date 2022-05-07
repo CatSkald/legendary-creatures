@@ -50,18 +50,6 @@
   }
 }
 
-.navigationBarButtons__theme__light {
-  &:after {
-    content: "🌣";
-  }
-}
-
-.navigationBarButtons__theme__dark {
-  &:after {
-    content: "☽";
-  }
-}
-
 .navigationBarButtons__theme {
   font-weight: bold;
   padding: 0 0.3em;

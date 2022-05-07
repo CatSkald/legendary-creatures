@@ -15,20 +15,15 @@ describe("NavigationBarButtons", () => {
   describe.each(allLanguages)(
     "renders correctly for language %s",
     (language) => {
-      test.each([
-        [false, false],
-        [false, true],
-        [true, false],
-        [true, true],
-      ])(
-        "when isDarkColorTheme %s and isLanguageSelectionActive %s",
-        (isDarkColorTheme, isLanguageSelectionActive) => {
+      test.each([false, true])(
+        "when isLanguageSelectionActive %s",
+        (isLanguageSelectionActive) => {
           const { container } = render(
             <LocaleContext.Provider value={{ language }}>
               <NavigationBarButtons
                 handleToggleColorTheme={mock}
                 handleToggleLanguageSelection={mock}
-                isDarkColorTheme={isDarkColorTheme}
+                selectedThemeIcon="⨁"
                 isLanguageSelectionActive={isLanguageSelectionActive}
               />
             </LocaleContext.Provider>,

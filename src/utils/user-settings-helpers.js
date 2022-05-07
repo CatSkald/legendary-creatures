@@ -1,14 +1,23 @@
 const isBrowser = typeof window !== "undefined";
 const configuration = require("../configuration");
+const themes = {
+  light: { id: "light", name: "Light", cssClassName: "theme-light", icon: "🌣" },
+  dark: { id: "dark", name: "Dark", cssClassName: "theme-dark", icon: "☽" },
+  darkHighContrast: {
+    id: "darkHighContrast",
+    name: "Dark High Contrast",
+    cssClassName: "theme-dark-high-contrast",
+    icon: "✪",
+  },
+};
 const keys = {
   theme: "theme",
-  themes: { dark: "dark", light: "light" },
 };
 
-const getDefaultTheme = () => {
+const getDefaultThemeId = () => {
   return isBrowser && window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? keys.themes.dark
-    : configuration.defaultTheme;
+    ? themes.dark.id
+    : themes[configuration.defaultTheme].id;
 };
 
 const storeToLocalStorage = (key, value) => {
@@ -20,24 +29,42 @@ const getFromLocalStorage = (key) => {
 };
 
 exports.loadUserSettings = () => {
-  const selectedTheme = getFromLocalStorage(keys.theme);
+  const selectedThemeId = getFromLocalStorage(keys.theme);
 
-  return new UserSettings(selectedTheme);
+  return new UserSettings(selectedThemeId);
 };
 
 class UserSettings {
-  constructor(theme) {
-    this.selectedTheme = theme || getDefaultTheme();
+  constructor(themeId) {
+    this.selectedTheme = themes[themeId] || themes[getDefaultThemeId()];
   }
 
   toggleTheme() {
-    this.selectedTheme = this.isDarkColorTheme
-      ? keys.themes.light
-      : keys.themes.dark;
-    storeToLocalStorage(keys.theme, this.selectedTheme);
+    if (!this.selectedTheme) {
+      this.selectedTheme = themes[getDefaultThemeId()];
+      return;
+    }
+
+    switch (this.selectedTheme.id) {
+      case themes.light.id:
+        this.selectedTheme = themes.dark;
+        break;
+      case themes.dark.id:
+        this.selectedTheme = themes.darkHighContrast;
+        break;
+      case themes.darkHighContrast.id:
+      default:
+        this.selectedTheme = themes.light;
+        break;
+    }
+    storeToLocalStorage(keys.theme, this.selectedTheme.id);
   }
 
-  get isDarkColorTheme() {
-    return this.selectedTheme === keys.themes.dark;
+  get selectedThemeClassName() {
+    return this.selectedTheme && this.selectedTheme.cssClassName;
+  }
+
+  get selectedThemeIcon() {
+    return (this.selectedTheme && this.selectedTheme.icon) || "?";
   }
 }
