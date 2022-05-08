@@ -7,6 +7,11 @@ import NavigationBarButtons from "../NavigationBarButtons";
 
 describe("NavigationBarButtons", () => {
   const mock = jest.fn();
+  const theme = Object.freeze({
+    name: "Test Theme",
+    icon: "⨁",
+    cssClassName: "theme-custom",
+  });
 
   beforeEach(() => {
     mock.mockClear();
@@ -23,7 +28,7 @@ describe("NavigationBarButtons", () => {
               <NavigationBarButtons
                 handleToggleColorTheme={mock}
                 handleToggleLanguageSelection={mock}
-                selectedThemeIcon="⨁"
+                selectedTheme={theme}
                 isLanguageSelectionActive={isLanguageSelectionActive}
               />
             </LocaleContext.Provider>,

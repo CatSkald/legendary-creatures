@@ -10,10 +10,16 @@ jest.mock("../../i18n/translations/useTranslations");
 
 //TODO validate props are being used properly
 describe("Header", () => {
+  const theme = Object.freeze({
+    name: "Test Theme",
+    icon: "⨀",
+    cssClassName: "theme-custom",
+  });
+
   test.each(allLanguages)("renders correctly for language %s", (language) => {
     const { container } = render(
       <LocaleContext.Provider value={{ language }}>
-        <Header handleToggleColorTheme={jest.fn()} selectedThemeIcon="⨀" />
+        <Header handleToggleColorTheme={jest.fn()} selectedTheme={theme} />
       </LocaleContext.Provider>,
     );
     expect(container).toMatchSnapshot();

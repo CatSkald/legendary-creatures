@@ -40,12 +40,7 @@ class UserSettings {
   }
 
   toggleTheme() {
-    if (!this.selectedTheme) {
-      this.selectedTheme = themes[getDefaultThemeId()];
-      return;
-    }
-
-    switch (this.selectedTheme.id) {
+    switch (this.selectedTheme && this.selectedTheme.id) {
       case themes.light.id:
         this.selectedTheme = themes.dark;
         break;
@@ -53,18 +48,13 @@ class UserSettings {
         this.selectedTheme = themes.darkHighContrast;
         break;
       case themes.darkHighContrast.id:
-      default:
         this.selectedTheme = themes.light;
         break;
+      default:
+        this.selectedTheme = themes[getDefaultThemeId()];
+        break;
     }
+
     storeToLocalStorage(keys.theme, this.selectedTheme.id);
-  }
-
-  get selectedThemeClassName() {
-    return this.selectedTheme && this.selectedTheme.cssClassName;
-  }
-
-  get selectedThemeIcon() {
-    return (this.selectedTheme && this.selectedTheme.icon) || "?";
   }
 }

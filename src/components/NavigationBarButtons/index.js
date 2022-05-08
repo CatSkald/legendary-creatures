@@ -28,12 +28,12 @@ const NavigationBarButtons = (props) => {
       </li>
       <li className={navigationBarButtons__button}>
         <button
-          title="Switch color theme"
+          title={`Theme '${props.selectedTheme.name}', click to change`}
           aria-label="Change website color theme"
           onClick={() => props.handleToggleColorTheme()}
         >
-          <span role="img" className={`${navigationBarButtons__theme}`}>
-            {props.selectedThemeIcon}
+          <span role="img" className={navigationBarButtons__theme}>
+            {props.selectedTheme.icon}
           </span>
         </button>
       </li>
@@ -43,7 +43,11 @@ const NavigationBarButtons = (props) => {
 
 NavigationBarButtons.propTypes = {
   handleToggleColorTheme: PropTypes.func.isRequired,
-  selectedThemeIcon: PropTypes.string.isRequired,
+  selectedTheme: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
+    cssClassName: PropTypes.string.isRequired,
+  }).isRequired,
   handleToggleLanguageSelection: PropTypes.func.isRequired,
   isLanguageSelectionActive: PropTypes.bool.isRequired,
 };

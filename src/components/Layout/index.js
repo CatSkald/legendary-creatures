@@ -17,20 +17,22 @@ const LocaleContext = React.createContext();
 
 const Layout = (props) => {
   var userSettings = loadUserSettings();
-  const [selectedThemeClassName, switchColorTheme] = React.useState(
-    userSettings.selectedThemeClassName,
+  const [selectedTheme, switchColorTheme] = React.useState(
+    userSettings.selectedTheme,
   );
 
   function handleToggleColorTheme() {
     userSettings.toggleTheme();
-    switchColorTheme(userSettings.selectedThemeClassName);
+    switchColorTheme(userSettings.selectedTheme);
   }
 
   return (
     <LocaleContext.Provider value={{ language: props.pageContext.language }}>
-      <div className={`body ${layout__container} ${selectedThemeClassName}`}>
+      <div
+        className={`body ${layout__container} ${selectedTheme.cssClassName}`}
+      >
         <Header
-          selectedThemeIcon={userSettings.selectedThemeIcon}
+          selectedTheme={userSettings.selectedTheme}
           handleToggleColorTheme={handleToggleColorTheme}
           localizedLinks={props.pageContext.localizedLinks}
         />

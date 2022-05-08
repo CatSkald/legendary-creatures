@@ -46,7 +46,7 @@ const Header = (props) => {
         </div>
         <div className={header__languages}>
           <NavigationBarButtons
-            selectedThemeIcon={props.selectedThemeIcon}
+            selectedTheme={props.selectedTheme}
             handleToggleColorTheme={props.handleToggleColorTheme}
             isLanguageSelectionActive={isLanguageSelectionActive}
             handleToggleLanguageSelection={handleToggleLanguageSelection}
@@ -64,7 +64,11 @@ const Header = (props) => {
 
 Header.propTypes = {
   handleToggleColorTheme: PropTypes.func.isRequired,
-  selectedThemeIcon: PropTypes.string.isRequired,
+  selectedTheme: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
+    cssClassName: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Header;

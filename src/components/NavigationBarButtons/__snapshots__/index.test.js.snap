@@ -25,7 +25,7 @@ exports[`NavigationBarButtons renders correctly for language {
     >
       <button
         aria-label="Change website color theme"
-        title="Switch color theme"
+        title="Theme 'Test Theme', click to change"
       >
         <span
           class="navigationBarButtons__theme"
@@ -64,7 +64,7 @@ exports[`NavigationBarButtons renders correctly for language {
     >
       <button
         aria-label="Change website color theme"
-        title="Switch color theme"
+        title="Theme 'Test Theme', click to change"
       >
         <span
           class="navigationBarButtons__theme"
@@ -98,7 +98,7 @@ exports[`NavigationBarButtons renders correctly for language { name: 'English', 
     >
       <button
         aria-label="Change website color theme"
-        title="Switch color theme"
+        title="Theme 'Test Theme', click to change"
       >
         <span
           class="navigationBarButtons__theme"
@@ -132,7 +132,7 @@ exports[`NavigationBarButtons renders correctly for language { name: 'English', 
     >
       <button
         aria-label="Change website color theme"
-        title="Switch color theme"
+        title="Theme 'Test Theme', click to change"
       >
         <span
           class="navigationBarButtons__theme"
@@ -166,7 +166,7 @@ exports[`NavigationBarButtons renders correctly for language { name: 'Русск
     >
       <button
         aria-label="Change website color theme"
-        title="Switch color theme"
+        title="Theme 'Test Theme', click to change"
       >
         <span
           class="navigationBarButtons__theme"
@@ -200,7 +200,7 @@ exports[`NavigationBarButtons renders correctly for language { name: 'Русск
     >
       <button
         aria-label="Change website color theme"
-        title="Switch color theme"
+        title="Theme 'Test Theme', click to change"
       >
         <span
           class="navigationBarButtons__theme"
