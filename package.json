@@ -11,9 +11,9 @@
     "defaults"
   ],
   "scripts": {
-    "build": "gatsby build && yarn test",
+    "build": "gatsby build && yarn lint && yarn test",
     "clean-build": "gatsby clean && yarn build",
-    "deploy": "gatsby build && jest && gh-pages --dist public --branch master --remote upstream --message \"New release\"",
+    "deploy": "yarn build && gh-pages --dist public --branch master --remote upstream --message \"New release\"",
     "develop": "gatsby develop --open",
     "forestry:preview": "gatsby develop --port 8080",
     "lint": "eslint src/**/*.{js,jsx}",

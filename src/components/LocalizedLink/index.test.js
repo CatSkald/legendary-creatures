@@ -4,7 +4,7 @@ import { render } from "@testing-library/react";
 import { LocaleContext } from "../Layout";
 import LocalizedLink from "../LocalizedLink";
 
-import { allLanguages } from "../../../__mocks__/all-languages";
+import { allLanguages } from "../../../__test-helpers__/all-languages.helper";
 
 describe("LocalizedLink", () => {
   test.each(allLanguages)("renders correctly for language %s", (language) => {

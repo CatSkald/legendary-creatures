@@ -62,6 +62,7 @@ const Languages = (props) => {
 Languages.propTypes = {
   handleLanguageSelected: PropTypes.func.isRequired,
   isActive: PropTypes.bool.isRequired,
+  localizedLinks: PropTypes.object,
 };
 
 export default Languages;

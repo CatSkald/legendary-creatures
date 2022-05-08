@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
 
-import { allLanguages } from "../../../__mocks__/all-languages";
+import { allLanguages } from "../../../__test-helpers__/all-languages.helper";
 import { LocaleContext } from "../Layout";
 import NavigationBarButtons from "../NavigationBarButtons";
 

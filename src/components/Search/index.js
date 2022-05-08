@@ -25,8 +25,10 @@ const Search = ({ searchEngine, queryTemplate }) => {
         {translations.SearchUsing} {searchEngine}:
         <input
           className={searchInput}
+          title={translations.Search}
           type="search"
           name="q"
+          // eslint-disable-next-line jsx-a11y/no-autofocus
           autoFocus
           onChange={(e) =>
             onChangeSearchQuery(createSearchQuery(e.target.value))
@@ -39,6 +41,7 @@ const Search = ({ searchEngine, queryTemplate }) => {
         href={searchQuery}
         target="_blank"
         rel="noopener noreferrer"
+        role="button"
       >
         {translations.Search}
       </a>

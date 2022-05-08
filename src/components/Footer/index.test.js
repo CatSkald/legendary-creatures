@@ -5,7 +5,7 @@ import { LocaleContext } from "../Layout";
 import Footer from "../Footer";
 import useTranslations from "../../i18n/translations/useTranslations";
 
-import { allLanguages } from "../../../__mocks__/all-languages";
+import { allLanguages } from "../../../__test-helpers__/all-languages.helper";
 
 jest.mock("../../i18n/translations/useTranslations");
 

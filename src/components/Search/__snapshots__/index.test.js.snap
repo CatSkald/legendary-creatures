@@ -10,6 +10,7 @@ exports[`Search renders correctly 1`] = `
     <input
       class="searchInput"
       name="q"
+      title="Search"
       type="search"
     />
   </label>
@@ -17,6 +18,7 @@ exports[`Search renders correctly 1`] = `
     class="searchButton"
     href="https://localhost/?q="
     rel="noopener noreferrer"
+    role="button"
     target="_blank"
   >
     Search

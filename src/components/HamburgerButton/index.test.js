@@ -1,5 +1,5 @@
 import React from "react";
-import { render, fireEvent } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 
 import HamburgerButton from "../HamburgerButton";
 
@@ -13,11 +13,9 @@ describe("HamburgerButton", () => {
 
   test("click invokes handleClick", () => {
     const mockCallback = jest.fn();
-    const { container } = render(
-      <HamburgerButton handleClick={mockCallback} isActive={true} />,
-    );
+    render(<HamburgerButton handleClick={mockCallback} isActive={true} />);
 
-    fireEvent.click(container.firstChild);
+    fireEvent.click(screen.getByRole("button"));
 
     expect(mockCallback).toHaveBeenCalledTimes(1);
   });
