@@ -11,6 +11,9 @@ View: Просмотреть
 all: все
 orSearchBy: или искать по
 SearchUsing: Искать c помощью
+ChangeLanguage: Изменить язык
+ChangeColorTheme: Изменить цветовую гамму
+clickToChange: нажмите, чтобы изменить
 tags: меткам
 All: Все
 Home: Главная

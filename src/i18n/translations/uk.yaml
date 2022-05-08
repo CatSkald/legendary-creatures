@@ -11,6 +11,9 @@ View: Переглянути
 all: всі
 orSearchBy: або шукати за
 SearchUsing: Шукати за допомогою
+ChangeLanguage: Змінити мову
+ChangeColorTheme: Змінити колірну гаму
+clickToChange: натисніть, щоб змінити
 tags: мітками
 All: Все
 Home: Головна

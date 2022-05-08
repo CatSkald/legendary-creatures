@@ -9,15 +9,17 @@ import {
 import React from "react";
 import PropTypes from "prop-types";
 import { LocaleContext } from "../Layout";
+import useTranslations from "../../i18n/translations/useTranslations";
 
 const NavigationBarButtons = (props) => {
   const { language } = React.useContext(LocaleContext);
+  const translations = useTranslations();
 
   return (
     <ul className={navigationBarButtons}>
       <li className={navigationBarButtons__button}>
         <button
-          title="Change language"
+          title={translations.ChangeLanguage}
           className={`${navigationBarButtons__language} ${
             props.isLanguageSelectionActive ? active : ""
           }`}
@@ -28,8 +30,8 @@ const NavigationBarButtons = (props) => {
       </li>
       <li className={navigationBarButtons__button}>
         <button
-          title={`Theme '${props.selectedTheme.name}', click to change`}
-          aria-label="Change website color theme"
+          title={`'${props.selectedTheme.name}', ${translations.clickToChange}`}
+          aria-label={translations.ChangeColorTheme}
           onClick={() => props.handleToggleColorTheme()}
         >
           <span role="img" className={navigationBarButtons__theme}>

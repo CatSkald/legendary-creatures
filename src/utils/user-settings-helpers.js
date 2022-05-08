@@ -1,8 +1,8 @@
 const isBrowser = typeof window !== "undefined";
 const configuration = require("../configuration");
 const themes = {
-  light: { id: "light", name: "Light", cssClassName: "theme-light", icon: "🌣" },
-  dark: { id: "dark", name: "Dark", cssClassName: "theme-dark", icon: "☽" },
+  light: { name: "Light", id: "light", cssClassName: "theme-light", icon: "🌣" },
+  dark: { name: "Dark", id: "dark", cssClassName: "theme-dark", icon: "☽" },
   darkHighContrast: {
     id: "darkHighContrast",
     name: "Dark High Contrast",

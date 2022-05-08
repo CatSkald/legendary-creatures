@@ -11,6 +11,9 @@ View: View
 all: all
 orSearchBy: or search by
 SearchUsing: Search using
+ChangeLanguage: Change language
+ChangeColorTheme: Change color theme
+clickToChange: click to change
 tags: tags
 All: All
 Home: Home

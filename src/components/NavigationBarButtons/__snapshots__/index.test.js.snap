@@ -24,8 +24,8 @@ exports[`NavigationBarButtons renders correctly for language {
       class="navigationBarButtons__button"
     >
       <button
-        aria-label="Change website color theme"
-        title="Theme 'Test Theme', click to change"
+        aria-label="Change color"
+        title="'Test Theme', click to change"
       >
         <span
           class="navigationBarButtons__theme"
@@ -63,8 +63,8 @@ exports[`NavigationBarButtons renders correctly for language {
       class="navigationBarButtons__button"
     >
       <button
-        aria-label="Change website color theme"
-        title="Theme 'Test Theme', click to change"
+        aria-label="Change color"
+        title="'Test Theme', click to change"
       >
         <span
           class="navigationBarButtons__theme"
@@ -97,8 +97,8 @@ exports[`NavigationBarButtons renders correctly for language { name: 'English', 
       class="navigationBarButtons__button"
     >
       <button
-        aria-label="Change website color theme"
-        title="Theme 'Test Theme', click to change"
+        aria-label="Change color"
+        title="'Test Theme', click to change"
       >
         <span
           class="navigationBarButtons__theme"
@@ -131,8 +131,8 @@ exports[`NavigationBarButtons renders correctly for language { name: 'English', 
       class="navigationBarButtons__button"
     >
       <button
-        aria-label="Change website color theme"
-        title="Theme 'Test Theme', click to change"
+        aria-label="Change color"
+        title="'Test Theme', click to change"
       >
         <span
           class="navigationBarButtons__theme"
@@ -165,8 +165,8 @@ exports[`NavigationBarButtons renders correctly for language { name: 'Русск
       class="navigationBarButtons__button"
     >
       <button
-        aria-label="Change website color theme"
-        title="Theme 'Test Theme', click to change"
+        aria-label="Change color"
+        title="'Test Theme', click to change"
       >
         <span
           class="navigationBarButtons__theme"
@@ -199,8 +199,8 @@ exports[`NavigationBarButtons renders correctly for language { name: 'Русск
       class="navigationBarButtons__button"
     >
       <button
-        aria-label="Change website color theme"
-        title="Theme 'Test Theme', click to change"
+        aria-label="Change color"
+        title="'Test Theme', click to change"
       >
         <span
           class="navigationBarButtons__theme"

@@ -35,6 +35,9 @@ const queryTranslations = graphql`
             all
             orSearchBy
             SearchUsing
+            ChangeLanguage
+            ChangeColorTheme
+            clickToChange
             tags
             All
             Home
