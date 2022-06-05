@@ -25,9 +25,7 @@ const Index = ({ data: { allMarkdownRemark } }) => {
       <h2>
         <strong>{translations.Latest}</strong>
       </h2>
-      <br />
       <PageList pages={pages} />
-      <br />
       <span>{translations.View} </span>
       <LocalizedLink to={getCreaturesPath(language.code)}>
         {translations.all}

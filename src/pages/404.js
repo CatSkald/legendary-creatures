@@ -18,10 +18,7 @@ const NotFound = ({ location }) => {
           😱
         </span>
       </h1>
-      <br />
       <h2>{translation.header}</h2>
-      <br />
-      <br />
       {translation.content}
     </>
   );
