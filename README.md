@@ -43,4 +43,7 @@ The `launch.json` contains the setup for [![Visual Studio Code](https://img.shie
 
 ## Thanks
 
-Inspired by [Gatsby starter](https://github.com/diogorodrigues/iceberg-gatsby-multilang) from [diogorodrigues](https://github.com/diogorodrigues).
+- Inspired by [![Gatsby starter Iceberg](https://img.shields.io/badge/Gatsby_starter-Iceberg-663399)](https://github.com/diogorodrigues/iceberg-gatsby-multilang) by [diogorodrigues](https://github.com/diogorodrigues)
+- [![Font Vollkorn](https://img.shields.io/badge/Font-Vollkorn-000b1d?logo=Google-Fonts)](https://fonts.google.com/specimen/Vollkorn#about) by [Friedrich Althausen](https://github.com/FAlthausen)
+- [![Typographic Scale Calculator](https://img.shields.io/badge/Typography-Typographic_Scale_Calculator-b1cbe0)](https://www.layoutgridcalculator.com/typographic-scale/)
+- [![Accessible Colors](https://img.shields.io/badge/a11y-Accessible_Colors-c9d6de)](https://accessible-colors.com/)
