@@ -42,11 +42,11 @@ const CreatureCard = (props) => {
   const image = images.find((img) => img.name === imageName);
 
   //TODO move this inside image?
-  const imageCopyrights = props.frontmatter.external_references
-    ? props.frontmatter.external_references
-        .filter((x) => x.type === "Image attribution")
-        .map((x) => x.reference_html)
-    : [];
+  const imageAttribution = props.frontmatter.external_references
+    ? props.frontmatter.external_references.find(
+        (x) => x.type === "Image attribution",
+      )
+    : null;
 
   return (
     <div className={card__container}>
@@ -57,12 +57,14 @@ const CreatureCard = (props) => {
             image={image.image}
             alt={props.frontmatter.title}
           />
-          {imageCopyrights && (
+          {imageAttribution && (
             <>
               <InfoCircleFill className={card__image__copyright__info} />
               <div
                 className={card__image__copyright}
-                dangerouslySetInnerHTML={{ __html: imageCopyrights[0] }}
+                dangerouslySetInnerHTML={{
+                  __html: imageAttribution.reference_html,
+                }}
               ></div>
             </>
           )}
