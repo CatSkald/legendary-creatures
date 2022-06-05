@@ -2,6 +2,7 @@
   font-size: var(--font-size-h2);
   font-weight: bold;
   margin: 0 0 var(--space-sm) 0;
+  padding-bottom: var(--space-xxs);
   color: var(--card-title);
   border-bottom: var(--border-width) solid var(--card-separator);
 }
@@ -9,6 +10,7 @@
 .card__header {
   font-weight: bold;
   text-align: left;
+  vertical-align: top;
 
   &:after {
     content: ": "; //non-breaking space
@@ -80,10 +82,8 @@
   z-index: 1;
   position: relative;
   background: var(--content-bg);
-  -webkit-font-smoothing: antialiased;
   word-wrap: break-word;
 
-  float: none;
   clear: both;
   width: 95%;
   max-width: 400px;
