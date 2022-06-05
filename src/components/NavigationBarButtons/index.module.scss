@@ -17,7 +17,7 @@
   display: inline-block;
   color: var(--menu-text);
   text-decoration: none;
-  min-width: 25px;
+  min-width: var(--font-size-base);
   padding-left: var(--space-sm);
   cursor: pointer;
 

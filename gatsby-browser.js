@@ -1,5 +1,6 @@
-import "lazysizes";
 import "@fontsource/vollkorn";
+
+import "lazysizes";
 import "normalize.css";
 
 import CustomLayout from "./src/components/wrapPageElement";
