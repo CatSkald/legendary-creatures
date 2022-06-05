@@ -77,12 +77,6 @@ module.exports = {
     },
     `gatsby-transformer-json`,
     `gatsby-transformer-yaml`,
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: ["Open Sans:400,600,700"],
-      },
-    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     {

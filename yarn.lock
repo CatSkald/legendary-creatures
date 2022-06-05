@@ -6548,7 +6548,6 @@ __metadata:
     gatsby-cli: ^4.15.1
     gatsby-image: ^3.11.0
     gatsby-plugin-catch-links: ^4.15.0
-    gatsby-plugin-google-fonts: ^1.0.1
     gatsby-plugin-image: ^2.15.1
     gatsby-plugin-manifest: ^4.15.1
     gatsby-plugin-offline: ^5.15.1
@@ -10039,13 +10038,6 @@ __metadata:
   peerDependencies:
     gatsby: ^4.0.0-next
   checksum: 84c305803ae038b2760d8c3f59cd7ac6ba8e5ac7036ddede5de8a5b1e11b67d76b13e52e9354e3260289193f0e4761f932d4bbbd4cd8f3118bb1e232785a7f3b
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-google-fonts@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "gatsby-plugin-google-fonts@npm:1.0.1"
-  checksum: 775aee252ee1bf7d77ae6ffd8cd44e14ee3badfab4f46c3ed2a438527894cbffe9383464073e33ae5b2442d70b2434df1358749f5c2e575538143508ff68a1b5
   languageName: node
   linkType: hard
 
