@@ -4,7 +4,7 @@
 
 .navigationBarButtons {
   display: flex;
-  right: var(--space-sm);
+  margin: 0;
 
   @media screen and (min-width: 768px /*--screen-medium*/) {
     margin-left: 0;
@@ -32,10 +32,6 @@
 
   &:hover {
     color: var(--menu-text-hover);
-  }
-
-  @media screen and (max-width: 768px /*--screen-medium*/) {
-    font-size: 105%;
   }
 }
 

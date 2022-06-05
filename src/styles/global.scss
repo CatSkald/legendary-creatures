@@ -1,111 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-  v2.0 | 20110126
-  License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
 html {
   font-size: 62.5%;
 }
@@ -116,80 +8,135 @@ body,
   background: var(--content-bg);
   color: var(--content-text);
   font-weight: 400;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-text);
 
-  font-size: 1.5rem;
-}
+  ol,
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-ol,
-ul {
-  list-style: none;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-family-header);
+    font-weight: bold;
+    line-height: var(--line-height-header);
+  }
 
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: none;
-}
+  table {
+    border-collapse: collapse;
+  }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+  a {
+    color: var(--content-link);
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+    &:hover {
+      color: var(--content-link-hover);
+    }
+  }
 
-a {
-  color: var(--content-link);
+  input {
+    border: solid;
+    border-width: var(--border-width);
+    border-color: var(--content-link);
+    background-color: var(--content-bg);
+    color: var(--content-text);
+    padding: calc(var(--space-sm) * 0.6);
+  }
 
-  &:hover {
-    color: var(--content-link-hover);
+  hr {
+    height: var(--separator-height);
+    background-color: var(--content-separator);
+    border: 0;
   }
 }
 
-input {
-  border: solid;
-  border-width: 0.1rem;
-  border-color: var(--content-link);
-  background-color: var(--content-bg);
-  color: var(--content-text);
-  padding: calc(var(--space-sm) * 0.6);
-}
-
-hr {
-  height: 2px;
-  padding: 0;
-  margin: 24px 0;
-  background-color: var(--content-separator);
-  border: 0;
-}
-
 :root {
-  //todo remove this
-  --container-width: 1040px;
-
-  --transition: 0.3s;
-  --border-radius: 3px;
-
-  //spacing
-  --space: 2rem;
-  --space-sm: 1rem;
-  --space-lg: 3rem;
-
-  //break points
-  --screen-large: 1056px; /* 11" */
-  --screen-medium: 768px; /* 8" */
-  --screen-small: 576px; /* 6" */
+  --container-width: 1040px; //TODO remove me
 
   --missing-content: red;
+
+  // Design System
+
+  // Break Points
+  //TODO compare with 1056px; // 11"
+  --screen-large: 1260px; //13.1+"
+  --screen-medium: 768px; // 8"
+  --screen-small: 576px; // 6"
+
+  // Typography
+  --font-family-text: Vollkorn, Georgia, serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-header: Vollkorn, Georgia, serif;
+
+  // --font-size-small: 12px;
+  // --font-size-base: 16px;
+  // --font-size-h1: 42px;
+  // --font-size-h2: 26px;
+  // --font-size-h3: 19px;
+  --font-size-small: 13.33px;
+  --font-size-base: 18px;
+  --font-size-h1: 47.3215px;
+  --font-size-h2: 29.326px;
+  --font-size-h3: 21.328px;
+
+  --line-height-text: 1.618;
+  --line-height-header: 1.375;
+
+  // Spacing
+  --space-xxs: 11.33px;
+  --space-sm: 13.33px;
+  --space: 29.326px;
+  --space-lg: 47.3215px;
+
+  // Animation
+  --transition: 0.3s;
+
+  // Decoration
+  --separator-height: 2px;
+  --border-width: 1px;
+  --border-radius: 3px;
+}
+
+@media screen and (min-width: 768px /*--screen-medium*/) {
+  :root {
+    --font-size-small: 13.33px;
+    --font-size-base: 18px;
+    --font-size-h1: 47.3215px;
+    --font-size-h2: 29.326px;
+    --font-size-h3: 21.328px;
+
+    --line-height-text: 1.618;
+    --line-height-header: 1.375;
+
+    --space-xxs: 11.33px;
+    --space-sm: 13.33px;
+    --space: 29.326px;
+    --space-lg: 47.3215px;
+  }
+}
+
+@media screen and (min-width: 1260px /*--screen-large*/) {
+  :root {
+    --font-size-small: 14.663px;
+    --font-size-base: 20px;
+    --font-size-h1: 52.6535px;
+    --font-size-h2: 32.6585px;
+    --font-size-h3: 23.66px;
+
+    --line-height-text: 1.618;
+    --line-height-header: 1.375;
+
+    --space-xxs: 10px;
+    --space-sm: 14.663px;
+    --space: 32.6585px;
+    --space-lg: 52.6535px;
+  }
 }

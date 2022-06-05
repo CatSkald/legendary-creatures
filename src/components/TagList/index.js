@@ -3,6 +3,7 @@ import {
   tagList__item,
   tagList__tag,
   tagList__value,
+  tagList__values,
 } from "./index.module.scss";
 
 import React from "react";
@@ -40,16 +41,17 @@ const TagList = (props) => {
               {tag}
             </LocalizedLink>
             <br />
-            {values.map((value, index) => (
-              <LocalizedLink
-                className={tagList__value}
-                key={`${tag}_${value}${index}`}
-                to={getTagValueUrl(tag, value, language.code)}
-              >
-                {value}
-              </LocalizedLink>
-            ))}
-            <br />
+            <div className={tagList__values}>
+              {values.map((value, index) => (
+                <LocalizedLink
+                  className={tagList__value}
+                  key={`${tag}_${value}${index}`}
+                  to={getTagValueUrl(tag, value, language.code)}
+                >
+                  {value}
+                </LocalizedLink>
+              ))}
+            </div>
           </div>
         );
       })}

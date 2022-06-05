@@ -1,4 +1,3 @@
-import "../styles/404.scss";
 import React from "react";
 import Seo from "../components/seo";
 import { notFound } from "../i18n/navigation";

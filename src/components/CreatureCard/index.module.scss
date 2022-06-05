@@ -1,10 +1,9 @@
 .card__title {
-  font-size: 2.5rem;
+  font-size: var(--font-size-h2);
   font-weight: bold;
   margin: 0 0 var(--space-sm) 0;
-  padding: 0 0 var(--space-sm) 0;
   color: var(--card-title);
-  border-bottom: 1px solid var(--card-separator);
+  border-bottom: var(--border-width) solid var(--card-separator);
 }
 
 .card__header {
@@ -25,16 +24,17 @@
 }
 
 .card__buttons {
-  border-top: 1px solid var(--card-separator);
+  border-top: var(--border-width) solid var(--card-separator);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: var(--space-sm);
   column-gap: var(--space-sm);
+  font-size: var(--font-size-small);
 
   a {
     display: inline-block;
-    padding-top: var(--space-sm);
     width: 2em;
     color: var(--content-link);
     &:hover {
@@ -44,7 +44,7 @@
 }
 
 .card__content {
-  font-size: 1.3rem;
+  font-size: var(--font-size-small);
   width: 100%;
   margin: 0 var(--space-sm);
   tr,
@@ -71,7 +71,7 @@
 }
 
 .card__image {
-  box-shadow: 0 0 5px 1px var(--menu-shadow);
+  box-shadow: 0 0 5px var(--border-width) var(--menu-shadow);
   margin-left: auto;
   margin-right: auto;
 }
@@ -106,7 +106,7 @@
 .card {
   background: var(--card-bg);
   border-radius: 5px;
-  border-width: 1px;
+  border-width: var(--border-width);
   border-color: var(--border-color);
   border-style: var(--border-style);
   box-shadow: 0 4px 4px 0 var(--background-shadow);
@@ -137,11 +137,11 @@
 }
 
 .card__image__copyright {
-  font-size: 1.2rem;
+  font-size: var(--font-size-small);
   border-top-left-radius: var(--border-radius);
   position: absolute;
-  padding: var(--space-sm);
-  padding-right: calc(var(--space-sm) + 1.6rem);
+  padding: var(--space-xxs);
+  padding-right: var(--space);
   bottom: 0;
   right: 0;
   background: var(--menu-shadow);
@@ -157,7 +157,7 @@
   bottom: 0.5rem;
   right: 0.5rem;
   opacity: 1;
-  height: 1.5rem;
+  height: var(--font-size-small);
   color: var(--card-link);
   background: var(--menu-shadow);
 }

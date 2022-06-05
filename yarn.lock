@@ -1581,6 +1581,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fontsource/vollkorn@npm:^4.5.9":
+  version: 4.5.9
+  resolution: "@fontsource/vollkorn@npm:4.5.9"
+  checksum: 0d9ef9778da4272994ecfd32876013476e21de3c8a7724d8f9ddc856f40be760f52403388d60383c2c5b0f046b22293ae0a53631afe6208538dfb4196be9719b
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.0.1, @gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -6525,6 +6532,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.18.2
     "@babel/eslint-parser": ^7.18.2
+    "@fontsource/vollkorn": ^4.5.9
     "@testing-library/react": ^13.3.0
     "@types/react": ^18.0.11
     ansi-html: ^0.0.9
@@ -6571,8 +6579,9 @@ __metadata:
     jest-environment-jsdom: ^28.1.0
     lazysizes: ^5.3.2
     lodash: ^4.17.21
-    node-fetch: ^3.2.5
+    node-fetch: ^2.6.7
     node-sass: ^7.0.1
+    normalize.css: ^8.0.1
     nth-check: ^2.1.1
     path-browserify: ^1.0.1
     postcss: ^8.4.14
@@ -15064,6 +15073,13 @@ __metadata:
   version: 6.1.0
   resolution: "normalize-url@npm:6.1.0"
   checksum: 4a4944631173e7d521d6b80e4c85ccaeceb2870f315584fa30121f505a6dfd86439c5e3fdd8cd9e0e291290c41d0c3599f0cb12ab356722ed242584c30348e50
+  languageName: node
+  linkType: hard
+
+"normalize.css@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "normalize.css@npm:8.0.1"
+  checksum: 4698cae88ec35e3f3e82f9f9402e6ffb906c27ccd6373cad88e6b3f5634fc7a043cb38702472299e5edb73825cf8b18d5fd9283f58829eddda79ea97453049a2
   languageName: node
   linkType: hard
 

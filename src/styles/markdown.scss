@@ -1,6 +1,6 @@
 .markdown {
   margin: auto;
-  @media screen and (min-width: 1056px /*--screen-large*/) {
+  @media screen and (min-width: 1260px /*--screen-large*/) {
     padding: var(--space-lg) 0;
   }
 
@@ -14,7 +14,7 @@
 
   iframe {
     width: 100%;
-    @media screen and (max-width: 1056px /*--screen-large*/) {
+    @media screen and (max-width: 1260px /*--screen-large*/) {
       padding: 0 1rem;
     }
   }
@@ -40,12 +40,15 @@
     &.anchor {
       display: block;
       padding-left: var(--space-sm);
-      margin-left: calc(var(--space-sm) * -1);
       cursor: pointer;
       position: absolute;
       top: 0;
       left: 0;
       bottom: 0;
+
+      @media screen and (min-width: 1260px /*--screen-large*/) {
+        margin-left: calc(var(--space-sm) * -1);
+      }
 
       & svg {
         visibility: visible;
@@ -65,9 +68,9 @@
   h6 {
     margin: var(--space-lg) 0 var(--space-lg);
     padding: 0;
-    font-weight: bold;
     cursor: text;
     position: relative;
+    color: var(--content-title);
 
     &:first-child {
       margin-top: 0;
@@ -85,36 +88,29 @@
   }
 
   h1 {
-    font-size: 2.8rem;
+    font-size: var(--font-size-h1);
   }
 
   h2 {
-    font-size: 2.4rem;
+    font-size: var(--font-size-h2);
   }
 
   h1,
   h2 {
     padding-bottom: var(--space);
-    border-bottom: 1px solid var(--content-separator);
-    color: var(--content-title);
+    border-bottom: var(--border-width) solid var(--content-separator);
   }
 
   h3 {
-    font-size: 1.8rem;
+    font-size: var(--font-size-h3);
     color: var(--content-subtitle);
   }
 
-  h4 {
-    font-size: 1.6rem;
-  }
-
-  h5 {
-    font-size: 1.4rem;
-  }
-
+  h4,
+  h5,
   h6 {
-    color: var(--content-title);
-    font-size: 1.4rem;
+    color: var(--content-subtitle);
+    font-size: var(--font-size-base);
   }
 
   p,
@@ -128,29 +124,13 @@
     margin: 15px 0;
   }
 
-  & > h2:first-child {
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  & > h1:first-child {
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  & > h1:first-child + h2 {
-    margin-top: 0;
-    padding-top: 0;
-  }
-
+  & > h1:first-child,
+  & > h2:first-child,
+  & > h1:first-child + h2,
   & > h3:first-child,
   & > h4:first-child,
   & > h5:first-child,
-  & > h6:first-child {
-    margin-top: 0;
-    padding-top: 0;
-  }
-
+  & > h6:first-child,
   a:first-child h1,
   a:first-child h2,
   a:first-child h3,
@@ -247,6 +227,8 @@
   }
 
   img {
+    display: block;
+    height: auto;
     max-width: 100%;
   }
 
@@ -255,7 +237,7 @@
     overflow: hidden;
 
     & > span {
-      border: 1px solid #dddddd;
+      border: var(--border-width) solid #dddddd;
       display: block;
       float: left;
       overflow: hidden;
@@ -281,36 +263,36 @@
     display: block;
     overflow: hidden;
     clear: both;
-  }
 
-  span.align-center > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px auto 0;
-    text-align: center;
-  }
+    &.align-center > span {
+      display: block;
+      overflow: hidden;
+      margin: 13px auto 0;
+      text-align: center;
 
-  span.align-center span img {
-    margin: 0 auto;
-    text-align: center;
+      img {
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
   }
 
   span.align-right {
     display: block;
     overflow: hidden;
     clear: both;
-  }
 
-  span.align-right > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px 0 0;
-    text-align: right;
-  }
+    &.align-right > span {
+      display: block;
+      overflow: hidden;
+      margin: 13px 0 0;
+      text-align: right;
 
-  span.align-right span img {
-    margin: 0;
-    text-align: right;
+      img {
+        margin: 0;
+        text-align: right;
+      }
+    }
   }
 
   span.float-left {
@@ -318,10 +300,10 @@
     margin-right: 13px;
     overflow: hidden;
     float: left;
-  }
 
-  span.float-left span {
-    margin: 13px 0 0;
+    span {
+      margin: 13px 0 0;
+    }
   }
 
   span.float-right {
@@ -329,13 +311,13 @@
     margin-left: 13px;
     overflow: hidden;
     float: right;
-  }
 
-  span.float-right > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px auto 0;
-    text-align: right;
+    & > span {
+      display: block;
+      overflow: hidden;
+      margin: 13px auto 0;
+      text-align: right;
+    }
   }
 
   iframe {

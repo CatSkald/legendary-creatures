@@ -6,7 +6,7 @@
   padding: var(--space-sm);
   border-radius: var(--border-radius);
   border: solid;
-  border-width: 0.1rem;
+  border-width: var(--border-width);
   border-color: var(--border-color);
   background-color: var(--card-bg);
   color: var(--card-link);
@@ -17,6 +17,6 @@
 }
 
 .searchInput {
-  margin-left: var(--space);
+  margin-left: var(--space-sm);
   border-radius: var(--border-radius);
 }

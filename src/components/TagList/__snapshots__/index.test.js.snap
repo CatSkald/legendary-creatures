@@ -22,21 +22,24 @@ exports[`TagList renders correctly for language {
         tag 1
       </a>
       <br />
-      <a
-        class="tagList__value"
-        href="/uk/search/tag1/value1"
-        hreflang="uk"
+      <div
+        class="tagList__values"
       >
-        value1
-      </a>
-      <a
-        class="tagList__value"
-        href="/uk/search/tag1/value2"
-        hreflang="uk"
-      >
-        value2
-      </a>
-      <br />
+        <a
+          class="tagList__value"
+          href="/uk/search/tag1/value1"
+          hreflang="uk"
+        >
+          value1
+        </a>
+        <a
+          class="tagList__value"
+          href="/uk/search/tag1/value2"
+          hreflang="uk"
+        >
+          value2
+        </a>
+      </div>
     </div>
     <div
       class="tagList__item"
@@ -50,14 +53,17 @@ exports[`TagList renders correctly for language {
         tag 2
       </a>
       <br />
-      <a
-        class="tagList__value"
-        href="/uk/search/tag2/value3"
-        hreflang="uk"
+      <div
+        class="tagList__values"
       >
-        value3
-      </a>
-      <br />
+        <a
+          class="tagList__value"
+          href="/uk/search/tag2/value3"
+          hreflang="uk"
+        >
+          value3
+        </a>
+      </div>
     </div>
     <div
       class="tagList__item"
@@ -71,7 +77,9 @@ exports[`TagList renders correctly for language {
         tag 3
       </a>
       <br />
-      <br />
+      <div
+        class="tagList__values"
+      />
     </div>
   </section>
 </div>
@@ -94,21 +102,24 @@ exports[`TagList renders correctly for language { name: 'English', code: 'en', p
         tag 1
       </a>
       <br />
-      <a
-        class="tagList__value"
-        href="/search/tag1/value1"
-        hreflang="en"
+      <div
+        class="tagList__values"
       >
-        value1
-      </a>
-      <a
-        class="tagList__value"
-        href="/search/tag1/value2"
-        hreflang="en"
-      >
-        value2
-      </a>
-      <br />
+        <a
+          class="tagList__value"
+          href="/search/tag1/value1"
+          hreflang="en"
+        >
+          value1
+        </a>
+        <a
+          class="tagList__value"
+          href="/search/tag1/value2"
+          hreflang="en"
+        >
+          value2
+        </a>
+      </div>
     </div>
     <div
       class="tagList__item"
@@ -122,14 +133,17 @@ exports[`TagList renders correctly for language { name: 'English', code: 'en', p
         tag 2
       </a>
       <br />
-      <a
-        class="tagList__value"
-        href="/search/tag2/value3"
-        hreflang="en"
+      <div
+        class="tagList__values"
       >
-        value3
-      </a>
-      <br />
+        <a
+          class="tagList__value"
+          href="/search/tag2/value3"
+          hreflang="en"
+        >
+          value3
+        </a>
+      </div>
     </div>
     <div
       class="tagList__item"
@@ -143,7 +157,9 @@ exports[`TagList renders correctly for language { name: 'English', code: 'en', p
         tag 3
       </a>
       <br />
-      <br />
+      <div
+        class="tagList__values"
+      />
     </div>
   </section>
 </div>
@@ -166,21 +182,24 @@ exports[`TagList renders correctly for language { name: 'Русский', code: 
         tag 1
       </a>
       <br />
-      <a
-        class="tagList__value"
-        href="/ru/search/tag1/value1"
-        hreflang="ru"
+      <div
+        class="tagList__values"
       >
-        value1
-      </a>
-      <a
-        class="tagList__value"
-        href="/ru/search/tag1/value2"
-        hreflang="ru"
-      >
-        value2
-      </a>
-      <br />
+        <a
+          class="tagList__value"
+          href="/ru/search/tag1/value1"
+          hreflang="ru"
+        >
+          value1
+        </a>
+        <a
+          class="tagList__value"
+          href="/ru/search/tag1/value2"
+          hreflang="ru"
+        >
+          value2
+        </a>
+      </div>
     </div>
     <div
       class="tagList__item"
@@ -194,14 +213,17 @@ exports[`TagList renders correctly for language { name: 'Русский', code: 
         tag 2
       </a>
       <br />
-      <a
-        class="tagList__value"
-        href="/ru/search/tag2/value3"
-        hreflang="ru"
+      <div
+        class="tagList__values"
       >
-        value3
-      </a>
-      <br />
+        <a
+          class="tagList__value"
+          href="/ru/search/tag2/value3"
+          hreflang="ru"
+        >
+          value3
+        </a>
+      </div>
     </div>
     <div
       class="tagList__item"
@@ -215,7 +237,9 @@ exports[`TagList renders correctly for language { name: 'Русский', code: 
         tag 3
       </a>
       <br />
-      <br />
+      <div
+        class="tagList__values"
+      />
     </div>
   </section>
 </div>

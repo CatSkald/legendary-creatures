@@ -5,7 +5,6 @@
 .languageMenu {
   display: none;
   flex-direction: column;
-  padding-bottom: 0;
 
   &.active {
     display: flex;
@@ -16,12 +15,15 @@
     z-index: 999; //no one shall be on top of menu dropdown
     background-color: var(--menu-bg);
     border-radius: var(--border-radius) 3px;
-    padding: var(--space-sm);
+
+    &.active {
+      padding: var(--space-sm);
+    }
   }
 }
 
 .languageMenu__language {
-  margin: var(--space-sm);
+  margin: var(--space-xxs) var(--space-sm);
   margin-bottom: 0;
 }
 

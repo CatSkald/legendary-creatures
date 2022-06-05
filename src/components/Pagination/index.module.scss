@@ -1,18 +1,14 @@
 .pagination {
   align-items: center;
-  border-top: 1px solid var(--border-color);
   color: var(--content-text);
   display: flex;
-  padding: 1.5rem 3rem;
   justify-content: center;
   list-style: none;
 
   p {
-    padding: var(--space);
-  }
-
-  @media screen and (max-width: 1056px /*--screen-large*/) {
-    padding: 1rem;
+    margin: 0;
+    margin-top: var(--space-sm);
+    padding: 0 var(--space);
   }
 
   a {

@@ -24,27 +24,27 @@
   position: relative;
   padding: 0;
   margin: var(--space-sm);
-  margin-bottom: 0;
   text-align: center;
 
   @media screen and (min-width: 768px /*--screen-medium*/) {
-    margin-bottom: var(--space-sm);
-  }
+    &:hover,
+    &.active,
+    &.active:hover {
+      &:after {
+        opacity: 1;
+        width: 100%;
+      }
+    }
 
-  @media screen and (min-width: 1056px /*--screen-large*/) {
-    margin-right: var(--space);
-  }
-
-  @media screen and (min-width: 768px /*--screen-medium*/) {
     &:after {
       content: "";
       display: inline-block;
       width: 0;
-      height: 4px;
+      height: 0.4rem;
       background: var(--menu-text);
+      bottom: calc(0px - var(--space-sm));
       position: absolute;
       left: 0;
-      bottom: -10px;
       opacity: 0;
       transition: 0.3s ease-in-out;
     }
@@ -62,14 +62,5 @@
   &:hover,
   &.active:hover {
     color: var(--menu-text-hover);
-  }
-
-  &:hover,
-  &.active {
-    &:after {
-      opacity: 1;
-      bottom: -10px;
-      width: 100%;
-    }
   }
 }

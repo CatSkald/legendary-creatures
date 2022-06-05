@@ -1,7 +1,7 @@
 .header__container {
   background-color: var(--menu-bg);
 
-  @media screen and (min-width: 1056px /*--screen-large*/) {
+  @media screen and (min-width: 1260px /*--screen-large*/) {
     margin-bottom: var(--space);
   }
 }
@@ -12,7 +12,8 @@
   justify-content: flex-start;
   flex-flow: column-reverse;
   align-items: flex-end;
-  border-bottom-width: 1px;
+  border-width: 0;
+  border-bottom-width: var(--border-width);
   border-color: var(--border-color);
   border-style: var(--border-style);
 

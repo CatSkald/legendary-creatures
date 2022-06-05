@@ -9,22 +9,25 @@
 }
 
 .tagList__item {
-  padding-bottom: var(--space);
-  border-bottom-width: 1px;
+  border-width: 0;
+  border-bottom-width: var(--border-width);
   border-color: var(--border-color);
   border-style: var(--border-style);
+  padding-bottom: var(--space-sm);
+
   &:last-child {
     border-bottom-width: 0;
+    padding-bottom: 0;
   }
 }
 
 .tagList__tag {
-  margin: var(--space) var(--space-sm);
+  margin: var(--space) var(--space-sm) var(--space-sm) 0;
   padding: var(--space-sm);
   font-weight: bold;
 
   border: solid;
-  border-width: 0.1rem;
+  border-width: var(--border-width);
   border-color: var(--border-color);
 
   background-color: var(--card-bg);
@@ -36,11 +39,15 @@
   }
 }
 
+.tagList__values {
+  margin-left: var(--space-lg);
+}
+
 .tagList__value {
   margin: var(--space-sm);
-  margin-left: var(--space);
+  margin-left: var(--space-sm);
   border: solid;
-  border-width: 0.1rem;
+  border-width: var(--border-width);
   border-color: var(--border-color);
   color: var(--content-link);
 
