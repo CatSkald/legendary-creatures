@@ -43,7 +43,6 @@ external_references:
       href="https://commons.wikimedia.org/wiki/File:Pan_e_amadriade,_collez._farnese,_27708.jpg">Sailko</a>
       under license <a href="https://creativecommons.org/licenses/by-sa/3.0">CC
       BY-SA</a>
-lastmod: 2022-06-04T23:25:46.839Z
 ---
 ## Description
 
