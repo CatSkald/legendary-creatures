@@ -34,14 +34,6 @@ body,
     border-collapse: collapse;
   }
 
-  a {
-    color: var(--content-link);
-
-    &:hover {
-      color: var(--content-link-hover);
-    }
-  }
-
   input {
     border: solid;
     border-width: var(--border-width);
@@ -55,6 +47,14 @@ body,
     height: var(--separator-height);
     background-color: var(--content-separator);
     border: 0;
+  }
+}
+
+a {
+  color: var(--content-link);
+
+  &:hover {
+    color: var(--content-link-hover);
   }
 }
 
