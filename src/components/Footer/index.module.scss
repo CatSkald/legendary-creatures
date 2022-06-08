@@ -30,6 +30,18 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  padding: var(--space-sm);
+
+  p {
+    margin: 0 0 var(--space-sm);
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 768px /*--screen-medium*/) {
+      margin: 0;
+    }
+  }
 
   @media screen and (min-width: 768px /*--screen-medium*/) {
     flex-direction: row;
@@ -37,14 +49,6 @@
 
     a {
       padding-right: var(--space-sm);
-
-      &:first {
-        padding-right: 0;
-      }
-
-      @media screen and (min-width: 1260px /*--screen-large*/) {
-        padding-right: var(--space-sm);
-      }
     }
   }
 }

@@ -9,7 +9,7 @@
 
 .socialLinks__link {
   display: block;
-  width: var(--font-size-small);
+  width: calc(var(--font-size-base) * var(--line-height-text));
   color: var(--content-link);
 
   &:hover {

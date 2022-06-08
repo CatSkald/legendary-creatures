@@ -44,7 +44,12 @@ body,
   }
 
   hr {
-    margin: var(--space-lg) 0;
+    margin: var(--space) 0;
+
+    @media screen and (min-width: 768px /*--screen-medium*/) {
+      margin: var(--space-lg) 0;
+    }
+
     height: var(--separator-height);
     background-color: var(--content-separator);
     border: 0;
