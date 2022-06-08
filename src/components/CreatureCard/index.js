@@ -12,11 +12,13 @@ import {
   card__image__container,
   card__image__copyright,
   card__image__copyright__info,
+  card__section,
 } from "./index.module.scss";
 
 import React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
+
 import { Wikipedia } from "@styled-icons/boxicons-logos/Wikipedia";
 import { InfoCircleFill } from "@styled-icons/bootstrap/InfoCircleFill";
 import { Imdb } from "@styled-icons/simple-icons/Imdb";
@@ -72,6 +74,7 @@ const CreatureCard = (props) => {
         <table className={card__content}>
           <caption className={card__title}>
             <span>{props.frontmatter.title}</span>
+            <CardBadges data={props.frontmatter} />
           </caption>
           <tbody>
             {localizedSort(
@@ -101,6 +104,10 @@ const CreatureCard = (props) => {
       </div>
     </div>
   );
+};
+
+const CardBadges = (props) => {
+  return <></>; //TODO
 };
 
 const CardRow = (props) => {
@@ -201,7 +208,7 @@ const CardButtons = (props) => {
   if (!wikipedia && !imdb) return <></>;
 
   return (
-    <div className={card__buttons}>
+    <div className={`${card__section} ${card__buttons}`}>
       {wikipedia && (
         <a
           href={wikipedia.href}

@@ -25,8 +25,11 @@
   }
 }
 
-.card__buttons {
+.card__section {
   border-top: var(--border-width) solid var(--card-separator);
+}
+
+.card__buttons {
   width: 100%;
   display: flex;
   justify-content: center;
