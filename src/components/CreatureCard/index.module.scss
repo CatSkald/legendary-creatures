@@ -40,7 +40,7 @@
 
   a {
     display: inline-block;
-    width: 2em;
+    width: var(--font-size-h3);
     color: var(--content-link);
     &:hover {
       color: var(--content-link-hover);
