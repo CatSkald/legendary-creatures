@@ -4,6 +4,9 @@
   border-bottom-width: var(--border-width);
   border-color: var(--border-color);
   border-style: var(--border-style);
+  position: sticky;
+  top: 0;
+  z-index: 9;
 }
 
 .header {
