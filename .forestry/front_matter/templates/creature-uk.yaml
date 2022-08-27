@@ -347,3 +347,5 @@ fields:
   label: ID
   description: Унікальний ідентифікатор сторінки. Використайте <a href="https://duckduckgo.com/?q=new+guid"
     title="GUID generator" target="_blank">https://duckduckgo.com/?q=new+guid</a>
+pages:
+- creatures/блуд.uk.md
