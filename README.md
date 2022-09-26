@@ -25,7 +25,7 @@
 ### Run
 
 - Build: `yarn build`
-- Run website locally: `yarn develop`
+- Run website locally: `yarn start`
 - Run CMS locally: `yarn serve`
 - Deploy: `yarn deploy`
 - Fix vulnerabilities: `npx yarn-audit-fix && yarn dedupe`

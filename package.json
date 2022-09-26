@@ -12,14 +12,13 @@
   ],
   "scripts": {
     "build": "gatsby build && yarn lint && yarn test",
-    "clean-build": "gatsby clean && yarn build",
+    "build:clean": "gatsby clean && yarn build",
     "deploy": "yarn build && gh-pages --dist public --branch master --remote upstream --message \"New release\"",
-    "develop": "gatsby develop --open",
+    "start": "gatsby develop --open",
     "forestry:preview": "gatsby develop --port 8080",
     "lint": "eslint src/**/*.{js,jsx}",
     "prettier": "prettier --write src/**/*.{md,css,scss,yaml,yml,ts,js,jsx}",
     "serve": "gatsby build && gatsby serve",
-    "start": "yarn develop",
     "test": "jest"
   },
   "dependencies": {
