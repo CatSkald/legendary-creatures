@@ -35,16 +35,6 @@
   }
 }
 
-.navigationBarButtons__language {
-  &:after {
-    content: " ⇓"; //non-breaking space
-  }
-
-  &.active:after {
-    content: " ⇑"; //non-breaking space
-  }
-}
-
 .navigationBarButtons__theme {
   font-weight: bold;
   padding: 0 0.3em;
