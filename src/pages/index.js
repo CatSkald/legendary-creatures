@@ -61,7 +61,7 @@ export const query = graphql`
         fields: { locale: { eq: $locale } }
         frontmatter: { page: { eq: null } }
       }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
       limit: $limit
     ) {
       edges {

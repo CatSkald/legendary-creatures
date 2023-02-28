@@ -77,7 +77,7 @@ module.exports = {
     },
     `gatsby-transformer-json`,
     `gatsby-transformer-yaml`,
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet`, //TODO remove me https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,

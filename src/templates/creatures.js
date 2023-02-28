@@ -88,7 +88,7 @@ export const query = graphql`
           habitat: { elemMatch: { value: { glob: $habitat } } }
         }
       }
-      sort: { fields: frontmatter___date, order: DESC }
+      sort: { frontmatter: { date: DESC } }
       limit: $limit
       skip: $skip
     ) {

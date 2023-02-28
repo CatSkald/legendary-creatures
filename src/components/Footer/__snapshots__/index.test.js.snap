@@ -17,7 +17,7 @@ exports[`Footer renders correctly for language {
         class="footer__author"
       >
         <p>
-          hello, world © 2020—2022 CatSkald
+          hello, world © 2020—2023 CatSkald
         </p>
         <ul
           class="socialLinks"
@@ -34,7 +34,7 @@ exports[`Footer renders correctly for language {
             >
               <svg
                 aria-hidden="true"
-                class="StyledIconBase-sc-ea9ulj-0 jChdGK"
+                class="StyledIconBase-sc-ea9ulj-0 dXOYdB"
                 fill="currentColor"
                 focusable="false"
                 viewBox="0 0 24 24"
@@ -89,7 +89,7 @@ exports[`Footer renders correctly for language { name: 'English', code: 'en', pa
         class="footer__author"
       >
         <p>
-          hello, world © 2020—2022 CatSkald
+          hello, world © 2020—2023 CatSkald
         </p>
         <ul
           class="socialLinks"
@@ -106,7 +106,7 @@ exports[`Footer renders correctly for language { name: 'English', code: 'en', pa
             >
               <svg
                 aria-hidden="true"
-                class="StyledIconBase-sc-ea9ulj-0 jChdGK"
+                class="StyledIconBase-sc-ea9ulj-0 dXOYdB"
                 fill="currentColor"
                 focusable="false"
                 viewBox="0 0 24 24"
@@ -161,7 +161,7 @@ exports[`Footer renders correctly for language { name: 'Русский', code: '
         class="footer__author"
       >
         <p>
-          hello, world © 2020—2022 CatSkald
+          hello, world © 2020—2023 CatSkald
         </p>
         <ul
           class="socialLinks"
@@ -178,7 +178,7 @@ exports[`Footer renders correctly for language { name: 'Русский', code: '
             >
               <svg
                 aria-hidden="true"
-                class="StyledIconBase-sc-ea9ulj-0 jChdGK"
+                class="StyledIconBase-sc-ea9ulj-0 dXOYdB"
                 fill="currentColor"
                 focusable="false"
                 viewBox="0 0 24 24"

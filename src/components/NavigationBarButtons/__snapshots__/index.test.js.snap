@@ -14,7 +14,7 @@ exports[`NavigationBarButtons renders correctly for language {
       class="navigationBarButtons__button"
     >
       <button
-        class="navigationBarButtons__language "
+        class=""
         title="Change language"
       >
         Українська
@@ -53,7 +53,7 @@ exports[`NavigationBarButtons renders correctly for language {
       class="navigationBarButtons__button"
     >
       <button
-        class="navigationBarButtons__language active"
+        class="active"
         title="Change language"
       >
         Українська
@@ -87,7 +87,7 @@ exports[`NavigationBarButtons renders correctly for language { name: 'English', 
       class="navigationBarButtons__button"
     >
       <button
-        class="navigationBarButtons__language "
+        class=""
         title="Change language"
       >
         English
@@ -121,7 +121,7 @@ exports[`NavigationBarButtons renders correctly for language { name: 'English', 
       class="navigationBarButtons__button"
     >
       <button
-        class="navigationBarButtons__language active"
+        class="active"
         title="Change language"
       >
         English
@@ -155,7 +155,7 @@ exports[`NavigationBarButtons renders correctly for language { name: 'Русск
       class="navigationBarButtons__button"
     >
       <button
-        class="navigationBarButtons__language "
+        class=""
         title="Change language"
       >
         Русский
@@ -189,7 +189,7 @@ exports[`NavigationBarButtons renders correctly for language { name: 'Русск
       class="navigationBarButtons__button"
     >
       <button
-        class="navigationBarButtons__language active"
+        class="active"
         title="Change language"
       >
         Русский

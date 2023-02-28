@@ -2,7 +2,6 @@ import {
   active,
   navigationBarButtons,
   navigationBarButtons__button,
-  navigationBarButtons__language,
   navigationBarButtons__theme,
 } from "./index.module.scss";
 
@@ -20,9 +19,7 @@ const NavigationBarButtons = (props) => {
       <li className={navigationBarButtons__button}>
         <button
           title={translations.ChangeLanguage}
-          className={`${navigationBarButtons__language} ${
-            props.isLanguageSelectionActive ? active : ""
-          }`}
+          className={props.isLanguageSelectionActive ? active : ""}
           onClick={() => props.handleToggleLanguageSelection()}
         >
           {language.name}
