@@ -34,7 +34,7 @@ exports[`Footer renders correctly for language {
             >
               <svg
                 aria-hidden="true"
-                class="StyledIconBase-sc-ea9ulj-0 dXOYdB"
+                class="StyledIconBase-sc-ea9ulj-0 kEyKEb"
                 fill="currentColor"
                 focusable="false"
                 viewBox="0 0 24 24"
@@ -106,7 +106,7 @@ exports[`Footer renders correctly for language { name: 'English', code: 'en', pa
             >
               <svg
                 aria-hidden="true"
-                class="StyledIconBase-sc-ea9ulj-0 dXOYdB"
+                class="StyledIconBase-sc-ea9ulj-0 kEyKEb"
                 fill="currentColor"
                 focusable="false"
                 viewBox="0 0 24 24"
@@ -178,7 +178,7 @@ exports[`Footer renders correctly for language { name: 'Русский', code: '
             >
               <svg
                 aria-hidden="true"
-                class="StyledIconBase-sc-ea9ulj-0 dXOYdB"
+                class="StyledIconBase-sc-ea9ulj-0 kEyKEb"
                 fill="currentColor"
                 focusable="false"
                 viewBox="0 0 24 24"

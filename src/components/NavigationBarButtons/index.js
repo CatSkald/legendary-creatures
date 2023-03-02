@@ -1,5 +1,4 @@
 import {
-  active,
   navigationBarButtons,
   navigationBarButtons__button,
   navigationBarButtons__theme,
@@ -19,7 +18,6 @@ const NavigationBarButtons = (props) => {
       <li className={navigationBarButtons__button}>
         <button
           title={translations.ChangeLanguage}
-          className={props.isLanguageSelectionActive ? active : ""}
           onClick={() => props.handleToggleLanguageSelection()}
         >
           {language.name}

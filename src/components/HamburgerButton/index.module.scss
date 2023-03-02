@@ -1,5 +1,21 @@
 .active {
-  /* placeholder to be referenced from styles */
+  &.hamburgerMenu span {
+    background: transparent;
+
+    &:before,
+    &:after {
+      top: 0;
+      left: 0;
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
 }
 
 .hamburgerMenu {
@@ -16,26 +32,6 @@
 
   @media screen and (min-width: 768px /*--screen-medium*/) {
     display: none;
-  }
-
-  &.active {
-    span {
-      background: transparent;
-
-      &:before,
-      &:after {
-        top: 0;
-        left: 0;
-      }
-
-      &:before {
-        transform: rotate(-45deg);
-      }
-
-      &:after {
-        transform: rotate(45deg);
-      }
-    }
   }
 
   span {
