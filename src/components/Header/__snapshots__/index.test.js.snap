@@ -82,7 +82,6 @@ exports[`Header renders correctly for language {
             class="navigationBarButtons__button"
           >
             <button
-              class=""
               title="Change language"
             >
               Українська
@@ -224,7 +223,6 @@ exports[`Header renders correctly for language { name: 'English', code: 'en', pa
             class="navigationBarButtons__button"
           >
             <button
-              class=""
               title="Change language"
             >
               English
@@ -366,7 +364,6 @@ exports[`Header renders correctly for language { name: 'Русский', code: '
             class="navigationBarButtons__button"
           >
             <button
-              class=""
               title="Change language"
             >
               Русский
