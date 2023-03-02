@@ -17,6 +17,8 @@ import {
 
 import React from "react";
 import PropTypes from "prop-types";
+//TODO https://www.gatsbyjs.com/docs/reference/release-notes/image-migration-guide/
+// gatsby-image@npm:3.11.0 is deprecated: gatsby-image is now gatsby-plugin-image: https://npm.im/gatsby-plugin-image. This package will no longer receive updates.
 import { GatsbyImage } from "gatsby-plugin-image";
 
 import { Wikipedia } from "@styled-icons/boxicons-logos/Wikipedia";
